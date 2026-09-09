@@ -303,7 +303,7 @@ Ruskinian social criticism° · Morrisite socialism (*News from Nowhere*)°
 Sortition / demarchy (Burnheim)° · Citizens' assembly maximalism° ·
 Liquid democracy° · Delegative democracy° · Futarchy (Hanson)° — vote on values, bet on
 beliefs · Epistocracy (Brennan)° · Deliberative democracy (Habermas) ·
-Consensus democracy / consociationalism° · Directorial / collегial executive systems° ·
+Consensus democracy / consociationalism° · Directorial / collegial executive systems° ·
 Anational federalism° · Panarchism (cross-ref) · Constitutional patriotism°
 
 ## 30. Esoteric & syncretic fringe
