@@ -225,7 +225,11 @@ an entry lives in. A debatable placement therefore costs no accuracy.
 
 Each ideology has exactly one family. Cross-cutting cases are handled via `aliases`.
 
-~28 families, averaging ~15 entries each:
+**30 families**, averaging ~18 entries each. Two were added while building the seed
+roster: **Monetary & distributive heterodoxy** (Gesell, Douglas, Kelso) and
+**Constitutional & democratic-form** (sortition, futarchy, epistocracy — ideologies
+about how decisions get made, orthogonal to every economic tenet). The ultra-niche
+entries would not fit anywhere honest without them.
 
 Marxist-Leninist tendencies · Trotskyism & left communism · Social anarchism ·
 Individualist & market anarchism · Anarcho-capitalism · Classical liberalism &
@@ -236,7 +240,8 @@ socialism · Nationalism & national liberation · Populism · Green & ecological
 Primitivism & anti-civilisation · Technocracy & managerialism · Accelerationism &
 futurism · Feminist tendencies · Liberation movements · Globalism & world federalism ·
 Localism & communitarianism · Third Way & centrism · Post-left & antipolitical · Utopian
-& pre-Marxist socialism · Esoteric & syncretic fringe
+& pre-Marxist socialism · Monetary & distributive heterodoxy · Constitutional &
+democratic-form · Esoteric & syncretic fringe
 
 Two deliberate placements: **national anarchism** files under esoteric/syncretic, because
 on tenets it shares almost nothing with either anarchism family — the name is the only
@@ -258,7 +263,9 @@ reveals that mutualism and individualist anarchism have drifted into the same en
 
 1. Build the tenet vocabulary. Slowest and hardest; do it first and carefully. Changing
    an option later invalidates every ideology that used it.
-2. Skeleton all 400: id, name, aliases, family, prior_weight, blurb. No positions.
+2. Skeleton the roster: id, name, aliases, family, prior_weight, blurb. No positions.
+   The seed list is `docs/ideology-roster.md` — ~540 candidate entries, ~300 of them
+   marked ultra-niche. Expect 30–60 to merge or drop at step 4.
 3. Tenet sweeps, most-discriminating tenets first.
 4. Run the confusability check. It fails, listing every pair it cannot separate.
 5. Write questions to break those pairs. Return to 4.
@@ -329,7 +336,11 @@ each of the four selection modifiers.
 ## 12. Open questions
 
 - **The tenet vocabulary itself** is not yet written. It is the first work item and
-  deserves its own focused pass before mass authoring begins.
+  deserves its own focused pass before mass authoring begins. The ultra-niche entries
+  drive it: Gesell needs `money_form`, Cosmism needs `death_and_finitude`, sortition
+  needs `decision_procedure`, Anthroposophy needs `sphere_separation`. A tenet used by
+  five ideologies and `unspecified` for the other 535 is cheap (§5.2) and enormously
+  discriminating when it fires — resist generalising these away.
 - **`prior_weight` calibration** — initial values are guesses. Revisit once there is any
   real usage signal, even informal.
 - **Stopping thresholds** (0.55, 2x margin, 12/30 bounds) are starting points to be tuned
