@@ -345,3 +345,39 @@ each of the four selection modifiers.
   real usage signal, even informal.
 - **Stopping thresholds** (0.55, 2x margin, 12/30 bounds) are starting points to be tuned
   against the simulation harness, not fixed requirements.
+
+---
+
+## 13. Implementation notes — where the build departed from this spec
+
+Recorded because the simulation harness forced several changes.
+
+**Likelihood tempering (new).** Naive Bayes treats every question as independent evidence,
+which they are not — several questions probe one tenet, and tenets correlate. Untempered,
+belief spiked to near-certainty after a handful of answers and the stopping rule fired on
+evidence that was not there: the test stopped at 12 questions and was wrong. Log-likelihoods
+are now multiplied by 0.55. `minQuestions` rose 12 → 16 and `maxQuestions` 30 → 32.
+
+**Family defaults (new).** §8 prescribes authoring by tenet rather than by ideology. The
+implementation does this at family granularity: each ideology file carries a
+`family_defaults` block that expands into ordinary per-ideology positions at build time,
+overridden by anything the member states itself. This raised mean positions per ideology
+from 8.8 to 38, and with it top-1 accuracy from 33.9% to 53.5%. The engine never sees
+families; the compiled KB holds only per-ideology positions, exactly as §7 requires.
+
+**Confusability metric replaced.** §9's rule — fail when no single question separates a pair
+by 3 — flagged 64,453 of 128,778 pairs, almost all of them genuinely distinguishable by a
+dozen questions contributing 2 each. It measured the wrong thing. The check now uses
+Euclidean separation across the whole question bank, failing below 2.5. That leaves two
+pairs, both genuinely near-identical doctrines.
+
+**Prior normalised globally**, not within family. Family-relative normalisation would have
+given a 9-member family the same total mass as a 28-member one, which is not what
+`prior_weight` is for.
+
+**`constitutionalism` was missing** from the tenet vocabulary while being used by 30+
+ideologies and 2 questions. The build's reference check caught it on first run — the
+validation earning its place immediately.
+
+**Measured result.** 508 ideologies, 69 tenets, 284 questions: 56.6% top-1, 70.7% top-3,
+mean 23.9 questions, 8.1% hybrid verdicts, at 15% answer noise. Random baseline is 0.2%.
