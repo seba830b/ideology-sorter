@@ -1,0 +1,200 @@
+family: anarcho_capitalism
+label: Anarcho-capitalism
+family_defaults:
+  class_analysis: [rejected, typical]
+  constitutionalism: [no_constitution, typical]
+  decision_procedure: [market_signal, typical]
+  distribution_principle: [desert_market, typical]
+  ecology_priority: [managed_externality, typical]
+  economic_coordination: [free_market, typical]
+  education_aim: [individual_flourishing, typical]
+  electoral_participation: [boycott, typical]
+  epistemic_authority: [market_aggregation, typical]
+  federalism: [confederal, typical]
+  firm_form: [investor_owned, typical]
+  growth_stance: [growth_essential, typical]
+  healthcare: [market, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  housing: [market_commodity, typical]
+  human_nature: [self_interested_rational, typical]
+  inheritance: [unrestricted, typical]
+  land_regime: [private_absolute, typical]
+  legitimate_violence: [competing_providers, typical]
+  market_role: [central, typical]
+  money_form: [private_competing, typical]
+  nation_concept: [post_national, typical]
+  policing: [private, typical]
+  political_pluralism: [no_parties_traditional, typical]
+  property_in_person: [self_ownership_absolute, typical]
+  property_regime: [private_absolute, typical]
+  punishment: [deterrent_proportional, typical]
+  reproductive_politics: [reproductive_freedom, typical]
+  rights_basis: [natural_individual, typical]
+  secession_right: [exit_by_individual, typical]
+  sovereignty_locus: [individual, typical]
+  speech_norms: [absolutist, typical]
+  state_scope: [nightwatchman, typical]
+  state_trajectory: [replace_with_market, typical]
+  technology_stance: [accelerate, typical]
+  transition_method: [exit_secession, typical]
+  utopian_horizon: [none_pragmatic, typical]
+  wage_labour: [legitimate, typical]
+  welfare_provision: [charity_voluntary, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+
+  - id: anarcho_capitalism
+    name: Anarcho-capitalism
+    aliases: [Rothbardianism, private law society]
+    prior_weight: 0.5
+    blurb: "Every service the state provides, courts and police included, should be bought on the market from competing firms."
+    positions:
+      state_trajectory: [replace_with_market, core]
+      legitimate_violence: [competing_providers, core]
+      policing: [private, core]
+      property_regime: [private_absolute, core]
+      property_in_person: [self_ownership_absolute, core]
+      market_role: [central, core]
+      rights_basis: [natural_individual, core]
+      money_form: [private_competing, core]
+      welfare_provision: [charity_voluntary, core]
+      land_regime: [private_absolute, core]
+      healthcare: [market, core]
+      housing: [market_commodity, core]
+      punishment: [deterrent_proportional, strong]
+      decision_procedure: [market_signal, core]
+      inheritance: [unrestricted, core]
+
+  - id: hoppeanism
+    name: Hoppeanism
+    aliases: [argumentation ethics, covenant communities]
+    prior_weight: 0.12
+    blurb: "Anarcho-capitalism with covenant communities that may exclude whomever they like, and a low opinion of democracy."
+    positions:
+      state_trajectory: [replace_with_market, core]
+      immigration: [restrict_sharply, core]
+      decision_procedure: [monarch, typical]
+      political_pluralism: [no_parties_traditional, strong]
+      property_regime: [private_absolute, core]
+      family_form: [nuclear_traditional, strong]
+      hierarchy_stance: [natural_good, strong]
+      tradition_stance: [conserve, strong]
+      borders: [closed, strong]
+      sexuality_stance: [traditional_restrictive, strong]
+      rights_basis: [natural_individual, core]
+      legitimate_violence: [competing_providers, core]
+
+  - id: neocameralism
+    name: Neocameralism
+    aliases: [Moldbug, the state as joint-stock company, patchwork]
+    prior_weight: 0.08
+    blurb: "Run the state as a profitable corporation with shareholders and a CEO; residents are customers, not citizens."
+    positions:
+      decision_procedure: [expert_rule, core]
+      leadership_form: [technocratic_board, core]
+      political_pluralism: [no_parties_traditional, core]
+      state_scope: [limited, strong]
+      secession_right: [universal_right, core]
+      scale_of_polity: [regional, strong]
+      market_role: [central, core]
+      hierarchy_stance: [natural_good, core]
+      rights_basis: [positive_legal, strong]
+      speech_norms: [restricted_for_harm, typical]
+      attitude_to_modernity: [critical_engagement, strong]
+      epistemic_authority: [market_aggregation, strong]
+
+  - id: seasteading
+    name: Seasteading
+    prior_weight: 0.05
+    blurb: "Found new sovereign communities on the ocean so that governance itself faces competition and exit."
+    positions:
+      secession_right: [universal_right, core]
+      scale_of_polity: [village_commune, strong]
+      state_trajectory: [minimal, strong]
+      technology_stance: [accelerate, strong]
+      market_role: [central, core]
+      borders: [controlled, typical]
+      decision_procedure: [market_signal, strong]
+      transition_method: [exit_secession, core]
+      attitude_to_modernity: [embrace, core]
+
+  - id: network_state
+    name: Network state
+    aliases: [Balaji, cloud-first sovereignty]
+    prior_weight: 0.07
+    blurb: "Build an online community with shared values first, crowdfund territory second, seek recognition last."
+    positions:
+      transition_method: [exit_secession, core]
+      scale_of_polity: [household, typical]
+      organisation_form: [network, core]
+      technology_stance: [accelerate, core]
+      money_form: [private_competing, strong]
+      state_trajectory: [replace_with_market, strong]
+      borders: [abolished, typical]
+      nation_concept: [post_national, core]
+      decision_procedure: [market_signal, strong]
+      epistemic_authority: [market_aggregation, strong]
+      attitude_to_modernity: [transcend_forward, strong]
+
+  - id: crypto_anarchism
+    name: Crypto-anarchism
+    aliases: [Tim May, cypherpunk politics]
+    prior_weight: 0.08
+    blurb: "Strong cryptography makes taxation and censorship technically impossible, so the state simply stops working."
+    positions:
+      transition_method: [counter_economics, core]
+      money_form: [private_competing, core]
+      speech_norms: [absolutist, core]
+      state_trajectory: [replace_with_market, core]
+      technology_stance: [accelerate, core]
+      organisation_form: [network, core]
+      borders: [abolished, strong]
+      policing: [private, strong]
+      sovereignty_locus: [individual, core]
+      electoral_participation: [boycott, strong]
+
+  - id: charter_cities
+    name: Charter cities
+    aliases: [Romer, special jurisdictions]
+    prior_weight: 0.05
+    blurb: "Import good rules into a poor country by building new cities under a separate legal charter."
+    positions:
+      scale_of_polity: [regional, core]
+      state_scope: [limited, strong]
+      market_role: [central, strong]
+      growth_stance: [growth_essential, core]
+      decision_procedure: [expert_rule, strong]
+      transition_method: [gradual_reform, strong]
+      immigration: [welcome, strong]
+      colonialism_stance: [ambivalent, typical]
+      constitutionalism: [entrenched_rights, strong]
+
+  - id: paleolibertarianism
+    name: Paleolibertarianism
+    prior_weight: 0.06
+    blurb: "Free markets joined to cultural traditionalism, hostile to both the welfare state and social liberalism."
+    positions:
+      market_role: [central, core]
+      state_scope: [nightwatchman, core]
+      tradition_stance: [conserve, core]
+      family_form: [nuclear_traditional, core]
+      immigration: [restrict_sharply, strong]
+      internationalism: [isolationist, core]
+      welfare_provision: [charity_voluntary, core]
+      religion_in_public_life: [culturally_grounded, strong]
+      gender_order: [traditional_complementary, strong]
+      rights_basis: [natural_individual, core]
+
+  - id: free_state_project
+    name: Free State Project
+    prior_weight: 0.03
+    blurb: "Concentrate enough libertarians in one small jurisdiction to actually take it over and shrink it."
+    positions:
+      transition_method: [exit_secession, core]
+      scale_of_polity: [regional, core]
+      state_scope: [nightwatchman, core]
+      electoral_participation: [central, strong]
+      secession_right: [universal_right, strong]
+      market_role: [central, strong]
+      federalism: [confederal, strong]
+      rights_basis: [natural_individual, strong]

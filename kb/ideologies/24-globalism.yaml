@@ -1,0 +1,180 @@
+family: globalism
+label: Globalism & world federalism
+family_defaults:
+  attitude_to_modernity: [embrace, typical]
+  borders: [open, typical]
+  class_analysis: [rejected, typical]
+  constitutionalism: [entrenched_rights, typical]
+  decision_procedure: [representative_election, typical]
+  distribution_principle: [need, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [civic_formation, typical]
+  epistemic_authority: [scientific_expertise, typical]
+  federalism: [federal, typical]
+  gender_order: [formal_equality, typical]
+  hierarchy_stance: [minimise, typical]
+  human_nature: [cooperative_good, typical]
+  immigration: [open_borders, typical]
+  internationalism: [cosmopolitan_universal, typical]
+  language_politics: [multilingual_neutral, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [central, typical]
+  nation_concept: [post_national, typical]
+  nationalism_stance: [hostile, typical]
+  political_pluralism: [multiparty, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  rights_basis: [natural_individual, typical]
+  scale_of_polity: [world_federal, typical]
+  secession_right: [universal_right, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [welfare_broad, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [gradual_reform, typical]
+  utopian_horizon: [gradual_improvement, typical]
+  violence_legitimacy: [never, typical]
+ideologies:
+  - id: world_federalism
+    name: "World federalism"
+    prior_weight: 0.08
+    blurb: "One federal world government with enforceable law, ending war by ending international anarchy."
+    positions:
+      scale_of_polity: [world_federal, core]
+      federalism: [federal, core]
+      borders: [open, core]
+      internationalism: [cosmopolitan_universal, core]
+      nationalism_stance: [hostile, core]
+      constitutionalism: [entrenched_rights, core]
+      legitimate_violence: [state_monopoly, core]
+      decision_procedure: [representative_election, strong]
+      violence_legitimacy: [never, strong]
+      state_scope: [welfare_broad, strong]
+
+  - id: cosmopolitanism
+    name: "Cosmopolitanism"
+    prior_weight: 0.15
+    blurb: "Moral obligation does not stop at borders; you are a citizen of the world before your state."
+    positions:
+      internationalism: [cosmopolitan_universal, core]
+      borders: [open, core]
+      immigration: [open_borders, core]
+      nationalism_stance: [hostile, strong]
+      nation_concept: [post_national, core]
+      rights_basis: [natural_individual, strong]
+      distribution_principle: [need, strong]
+      education_aim: [civic_formation, typical]
+      sovereignty_locus: [humanity, core]
+      scale_of_polity: [national, weak]
+      transition_method: [cultural_metapolitics, strong]
+
+  - id: democratic_globalism
+    name: "Democratic globalism"
+    prior_weight: 0.05
+    blurb: "Global institutions should be directly elected rather than assembled from national executives."
+    positions:
+      scale_of_polity: [world_federal, core]
+      decision_procedure: [representative_election, core]
+      internationalism: [cosmopolitan_universal, core]
+      constitutionalism: [entrenched_rights, core]
+      political_pluralism: [multiparty, core]
+      federalism: [federal, strong]
+      borders: [open, strong]
+      electoral_participation: [central, core]
+
+  - id: internationalist_liberalism
+    name: "Internationalist liberalism"
+    prior_weight: 0.2
+    blurb: "Trade, treaties and international law knitting states into a peaceful rules-based order."
+    positions:
+      internationalism: [cosmopolitan_universal, core]
+      market_role: [central, core]
+      borders: [open, strong]
+      constitutionalism: [entrenched_rights, core]
+      transition_method: [gradual_reform, core]
+      political_pluralism: [multiparty, core]
+      state_scope: [limited, strong]
+      violence_legitimacy: [defensive_only, strong]
+  - id: global_justice_movement
+    name: "Global justice movement"
+    prior_weight: 0.08
+    blurb: "Another world is possible — against debt, structural adjustment and corporate trade rules."
+    positions:
+      imperialism_analysis: [central_frame, core]
+      organisation_form: [movement_of_movements, core]
+      internationalism: [proletarian_internationalist, strong]
+      decision_procedure: [consensus, strong]
+      market_role: [retained_bounded, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+      transition_method: [prefigurative, strong]
+      ecology_priority: [central_constraint, strong]
+  - id: alterglobalisation
+    name: "Alter-globalisation"
+    prior_weight: 0.06
+    blurb: "Not against global connection but against the corporate form of it; globalise resistance instead."
+    positions:
+      organisation_form: [movement_of_movements, core]
+      scale_of_polity: [municipal_confederal, strong]
+      internationalism: [cosmopolitan_universal, core]
+      decision_procedure: [consensus, core]
+      market_role: [retained_bounded, strong]
+      imperialism_analysis: [central_frame, strong]
+      ecology_priority: [central_constraint, strong]
+      hierarchy_stance: [abolish, strong]
+  - id: open_borders_maximalism
+    name: "Open borders maximalism"
+    prior_weight: 0.05
+    blurb: "Freedom of movement is a basic right and closed borders are the largest cause of global poverty."
+    positions:
+      borders: [abolished, core]
+      immigration: [open_borders, core]
+      internationalism: [cosmopolitan_universal, core]
+      nationalism_stance: [hostile, core]
+      rights_basis: [natural_individual, core]
+      market_role: [central, strong]
+      nation_concept: [post_national, core]
+      distribution_principle: [need, typical]
+      state_scope: [limited, strong]
+      welfare_provision: [insurance_contributory, typical]
+
+  - id: esperantist_anationalism
+    name: "Esperantist anationalism"
+    aliases: [Sennacieca Asocio Tutmonda, SAT]
+    prior_weight: 0.02
+    blurb: "World revolution conducted without nations at all, in a constructed language belonging to nobody."
+    positions:
+      language_politics: [constructed_universal, core]
+      nation_concept: [post_national, core]
+      nationalism_stance: [hostile, core]
+      borders: [abolished, core]
+      class_analysis: [central_marxist, core]
+      internationalism: [proletarian_internationalist, core]
+      scale_of_polity: [world_federal, strong]
+      organisation_form: [federation, strong]
+      education_aim: [critical_consciousness, strong]
+  - id: homaranismo
+    name: "Homaranismo"
+    aliases: [Zamenhof]
+    prior_weight: 0.02
+    blurb: "A neutral human ethic and language above every nation and creed, so that no one's tongue rules another's."
+    positions:
+      language_politics: [constructed_universal, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      nation_concept: [post_national, core]
+      internationalism: [cosmopolitan_universal, core]
+      nationalism_stance: [hostile, core]
+      violence_legitimacy: [never, strong]
+      rights_basis: [natural_individual, strong]
+      education_aim: [civic_formation, strong]
+  - id: technocratic_globalism
+    name: "Technocratic globalism"
+    prior_weight: 0.05
+    blurb: "Transnational problems handled by expert bodies insulated from national electorates."
+    positions:
+      decision_procedure: [expert_rule, core]
+      scale_of_polity: [world_federal, core]
+      leadership_form: [technocratic_board, core]
+      epistemic_authority: [scientific_expertise, core]
+      internationalism: [cosmopolitan_universal, strong]
+      political_pluralism: [no_parties_traditional, typical]
+      market_role: [retained_bounded, strong]

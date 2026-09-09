@@ -1,0 +1,333 @@
+family: green
+label: Green & ecological
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  basic_income: [support_ubi, typical]
+  class_analysis: [central_marxist, typical]
+  decision_procedure: [direct_democracy, typical]
+  distribution_principle: [need, typical]
+  ecology_priority: [primary_frame, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [critical_consciousness, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [scientific_expertise, typical]
+  federalism: [confederal, typical]
+  firm_form: [worker_cooperative, typical]
+  gender_order: [structural_liberation, typical]
+  growth_stance: [degrowth, typical]
+  healthcare: [universal_public, typical]
+  hierarchy_stance: [minimise, typical]
+  housing: [decommodified_commons, typical]
+  human_nature: [cooperative_good, typical]
+  immigration: [welcome, typical]
+  internationalism: [cosmopolitan_universal, typical]
+  land_regime: [commons, typical]
+  market_role: [retained_bounded, typical]
+  nonhuman_status: [rights_bearing, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [cooperative, typical]
+  punishment: [restorative, typical]
+  reform_vs_rupture: [reform_toward_rupture, typical]
+  scale_of_polity: [bioregional, typical]
+  speech_norms: [broadly_free, typical]
+  technology_stance: [appropriate_scale, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [prefigurative, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  violence_legitimacy: [never, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+  - id: green_politics
+    name: "Green politics"
+    prior_weight: 0.5
+    blurb: "Ecological limits, grassroots democracy, non-violence and social justice as four inseparable pillars."
+    positions:
+      ecology_priority: [central_constraint, core]
+      growth_stance: [growth_managed, core]
+      decision_procedure: [direct_democracy, strong]
+      violence_legitimacy: [never, strong]
+      scale_of_polity: [municipal_confederal, strong]
+      technology_stance: [appropriate_scale, strong]
+      economic_coordination: [regulated_market, strong]
+      electoral_participation: [central, core]
+      welfare_provision: [universal_public, strong]
+      immigration: [welcome, strong]
+  - id: eco_socialism
+    name: "Eco-socialism"
+    prior_weight: 0.3
+    blurb: "The ecological crisis is caused by capital accumulation, so it cannot be solved without ending it."
+    positions:
+      ecology_priority: [primary_frame, core]
+      class_analysis: [central_marxist, core]
+      growth_stance: [degrowth, strong]
+      property_regime: [communal, strong]
+      market_role: [abolished, strong]
+      economic_coordination: [indicative_planning, strong]
+      technology_stance: [appropriate_scale, strong]
+      imperialism_analysis: [central_frame, strong]
+      transition_method: [general_strike, typical]
+  - id: deep_ecology
+    name: "Deep ecology"
+    aliases: [Næss]
+    prior_weight: 0.1
+    blurb: "Nature has value independent of any use to humans, and human population and interference must fall."
+    positions:
+      ecology_priority: [misanthropic_deep, core]
+      nonhuman_status: [sacred, core]
+      growth_stance: [degrowth, core]
+      reproductive_politics: [antinatalist, strong]
+      technology_stance: [appropriate_scale, strong]
+      human_nature: [fallen_needs_restraint, typical]
+      urban_rural: [back_to_land, strong]
+      scale_of_polity: [bioregional, strong]
+  - id: bioregionalism
+    name: "Bioregionalism"
+    prior_weight: 0.06
+    blurb: "Learn to live in place — governance and economy shaped by the watershed you actually inhabit."
+    positions:
+      scale_of_polity: [bioregional, core]
+      ecology_priority: [primary_frame, core]
+      urban_rural: [balanced, strong]
+      federalism: [confederal, core]
+      technology_stance: [appropriate_scale, core]
+      indigenous_sovereignty: [land_return, strong]
+      growth_stance: [steady_state, core]
+      decision_procedure: [direct_democracy, strong]
+  - id: ecofeminism
+    name: "Ecofeminism"
+    prior_weight: 0.1
+    blurb: "The domination of nature and of women share a root, and must be undone together."
+    positions:
+      ecology_priority: [primary_frame, core]
+      gender_order: [structural_liberation, core]
+      nonhuman_status: [liberation_subject, strong]
+      hierarchy_stance: [abolish, core]
+      growth_stance: [degrowth, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+      technology_stance: [appropriate_scale, strong]
+      domestic_labour: [waged_socialised, typical]
+  - id: degrowth
+    name: "Degrowth"
+    prior_weight: 0.15
+    blurb: "Rich economies must deliberately shrink their material throughput, and organise abundance of time instead."
+    positions:
+      growth_stance: [degrowth, core]
+      ecology_priority: [primary_frame, core]
+      work_ethic: [work_reduced, core]
+      basic_income: [support_services_not_cash, strong]
+      technology_stance: [appropriate_scale, strong]
+      scale_of_polity: [municipal_confederal, strong]
+      market_role: [retained_bounded, typical]
+      distribution_principle: [need, strong]
+  - id: steady_state_economics
+    name: "Steady-state economics"
+    aliases: [Daly]
+    prior_weight: 0.06
+    blurb: "A constant stock of people and goods within ecological limits, with qualitative development instead of growth."
+    positions:
+      growth_stance: [steady_state, core]
+      ecology_priority: [central_constraint, core]
+      market_role: [retained_bounded, core]
+      reproductive_politics: [neutral, typical]
+      economic_coordination: [regulated_market, strong]
+      epistemic_authority: [scientific_expertise, strong]
+      distribution_principle: [subsistence_guarantee, strong]
+  - id: ecomodernism
+    name: "Ecomodernism"
+    prior_weight: 0.1
+    blurb: "Decouple human wellbeing from nature by intensifying technology — nuclear power, dense cities, spared land."
+    positions:
+      technology_stance: [accelerate, core]
+      growth_stance: [growth_essential, core]
+      ecology_priority: [managed_externality, core]
+      urban_rural: [urban_industrial, core]
+      epistemic_authority: [scientific_expertise, core]
+      attitude_to_modernity: [embrace, core]
+      market_role: [retained_bounded, strong]
+      nonhuman_status: [resource, typical]
+  - id: bright_green
+    name: "Bright green environmentalism"
+    prior_weight: 0.04
+    blurb: "Design, cities and innovation as the route to sustainability, not restraint or retreat."
+    positions:
+      technology_stance: [accelerate, core]
+      urban_rural: [urban_industrial, core]
+      ecology_priority: [central_constraint, strong]
+      growth_stance: [growth_managed, core]
+      attitude_to_modernity: [embrace, core]
+      art_and_culture: [avant_garde_rupture, typical]
+      market_role: [retained_bounded, strong]
+  - id: technogaianism
+    name: "Technogaianism"
+    prior_weight: 0.03
+    blurb: "Advanced technology is how we repair the biosphere, including deliberate planetary engineering."
+    positions:
+      technology_stance: [transhuman, core]
+      ecology_priority: [primary_frame, core]
+      epistemic_authority: [scientific_expertise, core]
+      attitude_to_modernity: [transcend_forward, core]
+      growth_stance: [growth_managed, strong]
+      nonhuman_status: [rights_bearing, strong]
+      space_expansion: [human_destiny, typical]
+  - id: solarpunk
+    name: "Solarpunk"
+    prior_weight: 0.06
+    blurb: "An optimistic future of decentralised renewables, communal abundance and cities full of growing things."
+    positions:
+      technology_stance: [appropriate_scale, core]
+      ecology_priority: [primary_frame, core]
+      scale_of_polity: [municipal_confederal, core]
+      utopian_horizon: [achievable_new_order, core]
+      art_and_culture: [avant_garde_rupture, strong]
+      hierarchy_stance: [abolish, strong]
+      housing: [decommodified_commons, strong]
+      growth_stance: [steady_state, strong]
+      welfare_provision: [communal_direct, strong]
+  - id: lunarpunk
+    name: "Lunarpunk"
+    prior_weight: 0.02
+    blurb: "Solarpunk's nocturnal sibling — privacy, cryptography and quiet autonomy rather than communal daylight."
+    positions:
+      technology_stance: [accelerate, core]
+      speech_norms: [absolutist, core]
+      organisation_form: [network, core]
+      ecology_priority: [central_constraint, strong]
+      scale_of_polity: [village_commune, typical]
+      state_trajectory: [abolish_now, strong]
+      money_form: [private_competing, strong]
+      art_and_culture: [avant_garde_rupture, strong]
+  - id: gaianism
+    name: "Gaianism"
+    prior_weight: 0.03
+    blurb: "The biosphere as a single living organism to which humans owe reverence and obedience."
+    positions:
+      nonhuman_status: [sacred, core]
+      ecology_priority: [misanthropic_deep, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      growth_stance: [degrowth, strong]
+      epistemic_authority: [esoteric_initiation, typical]
+      human_nature: [fallen_needs_restraint, strong]
+      technology_stance: [appropriate_scale, strong]
+  - id: eco_authoritarianism
+    name: "Eco-authoritarianism"
+    prior_weight: 0.05
+    blurb: "The ecological emergency is too urgent for democratic delay; competent authority must impose limits."
+    positions:
+      ecology_priority: [primary_frame, core]
+      decision_procedure: [expert_rule, core]
+      state_scope: [total, core]
+      political_pluralism: [no_parties_traditional, strong]
+      growth_stance: [degrowth, core]
+      reproductive_politics: [natalist_restrictive, typical]
+      leadership_form: [technocratic_board, core]
+      speech_norms: [restricted_for_harm, strong]
+  - id: lifeboat_ethics
+    name: "Lifeboat ethics"
+    aliases: [Hardin]
+    prior_weight: 0.02
+    blurb: "Rich nations are lifeboats that sink if they take everyone aboard, so aid and immigration must be refused."
+    positions:
+      immigration: [restrict_sharply, core]
+      borders: [closed, core]
+      ecology_priority: [central_constraint, core]
+      reproductive_politics: [antinatalist, strong]
+      welfare_provision: [charity_voluntary, strong]
+      internationalism: [isolationist, core]
+      human_nature: [self_interested_rational, strong]
+  - id: neo_malthusianism
+    name: "Neo-Malthusianism"
+    prior_weight: 0.04
+    blurb: "Population growth outruns resources, so limiting births is the central ecological task."
+    positions:
+      reproductive_politics: [antinatalist, core]
+      ecology_priority: [central_constraint, core]
+      growth_stance: [steady_state, core]
+      epistemic_authority: [scientific_expertise, strong]
+      immigration: [restrict_sharply, typical]
+      technology_stance: [industrial_neutral, typical]
+  - id: eco_fascism
+    name: "Eco-fascism"
+    prior_weight: 0.03
+    blurb: "Blood and soil ecology — a people bound to its territory, with population control aimed at outsiders."
+    positions:
+      ecology_priority: [misanthropic_deep, core]
+      nation_concept: [ethnic, core]
+      immigration: [restrict_sharply, core]
+      borders: [closed, core]
+      state_scope: [total, core]
+      urban_rural: [back_to_land, core]
+      reproductive_politics: [natalist_restrictive, strong]
+      hierarchy_stance: [natural_good, core]
+      technology_stance: [primitivist_reject, typical]
+  - id: linkolaism
+    name: "Linkolaism"
+    prior_weight: 0.02
+    blurb: "Humanity is a plague on the biosphere and its numbers should be reduced by whatever means."
+    positions:
+      ecology_priority: [misanthropic_deep, core]
+      reproductive_politics: [antinatalist, core]
+      decision_procedure: [expert_rule, core]
+      technology_stance: [primitivist_reject, core]
+      human_nature: [fallen_needs_restraint, core]
+      state_scope: [total, strong]
+      growth_stance: [degrowth, core]
+      nonhuman_status: [sacred, strong]
+      violence_legitimacy: [total_war, typical]
+  - id: permaculture_politics
+    name: "Permaculture politics"
+    prior_weight: 0.04
+    blurb: "Design human settlement on ecological patterns; earth care, people care and fair share as ethics."
+    positions:
+      technology_stance: [appropriate_scale, core]
+      urban_rural: [back_to_land, core]
+      scale_of_polity: [village_commune, core]
+      ecology_priority: [primary_frame, core]
+      transition_method: [prefigurative, core]
+      growth_stance: [steady_state, strong]
+      welfare_provision: [mutual_aid, strong]
+      land_regime: [commons, strong]
+  - id: food_sovereignty
+    name: "Food sovereignty"
+    aliases: [Via Campesina]
+    prior_weight: 0.08
+    blurb: "Peoples define their own food systems; peasants and small farmers against global agribusiness."
+    positions:
+      land_regime: [tenured_use, core]
+      urban_rural: [agrarian_rural, core]
+      firm_form: [household_artisan, core]
+      imperialism_analysis: [central_frame, core]
+      ecology_priority: [primary_frame, strong]
+      scale_of_polity: [regional, strong]
+      market_role: [retained_bounded, strong]
+      indigenous_sovereignty: [land_return, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+  - id: dark_mountain
+    name: "Dark Mountain"
+    prior_weight: 0.02
+    blurb: "Civilisation's collapse is already underway; the honest response is to tell better stories about it, not to avert it."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      attitude_to_modernity: [reject_return, core]
+      technology_stance: [primitivist_reject, strong]
+      art_and_culture: [avant_garde_rupture, core]
+      ecology_priority: [misanthropic_deep, strong]
+      transition_method: [withdrawal, core]
+      growth_stance: [degrowth, core]
+      human_nature: [fallen_needs_restraint, strong]
+  - id: buen_vivir
+    name: "Buen Vivir"
+    aliases: [Sumak Kawsay]
+    prior_weight: 0.05
+    blurb: "Living well in community with nature, drawn from Andean cosmology rather than from development economics."
+    positions:
+      ecology_priority: [primary_frame, core]
+      indigenous_sovereignty: [primary_frame, core]
+      growth_stance: [degrowth, core]
+      nonhuman_status: [rights_bearing, core]
+      scale_of_polity: [village_commune, core]
+      welfare_provision: [communal_direct, core]
+      colonialism_stance: [reparative_decolonial, core]
+      distribution_principle: [need, strong]
+      religion_in_public_life: [spiritual_syncretic, strong]

@@ -1,0 +1,19 @@
+{
+  "name": "ideology-sorter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "kb": "node scripts/build-kb.ts",
+    "dev": "npm run kb && vite",
+    "build": "npm run kb && vite build",
+    "preview": "vite preview",
+    "sim": "npm run kb && node scripts/simulate.ts",
+    "test": "npm run kb && node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "yaml": "^2.6.0"
+  }
+}

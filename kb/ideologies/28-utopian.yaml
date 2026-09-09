@@ -1,0 +1,242 @@
+family: utopian_socialism
+label: Utopian & pre-Marxist socialism
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  class_analysis: [producer_parasite, typical]
+  decision_procedure: [direct_democracy, typical]
+  distribution_principle: [need, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [individual_flourishing, typical]
+  epistemic_authority: [popular_reason, typical]
+  family_form: [communal_rearing, typical]
+  firm_form: [worker_cooperative, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [steady_state, typical]
+  hierarchy_stance: [minimise, typical]
+  housing: [decommodified_commons, typical]
+  human_nature: [cooperative_good, typical]
+  land_regime: [commons, typical]
+  leadership_form: [collective, typical]
+  market_role: [retained_bounded, typical]
+  money_form: [mutual_credit, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_regime: [cooperative, typical]
+  reform_vs_rupture: [reform_toward_rupture, typical]
+  religion_in_public_life: [spiritual_syncretic, typical]
+  scale_of_polity: [village_commune, typical]
+  state_scope: [limited, typical]
+  technology_stance: [appropriate_scale, typical]
+  tradition_stance: [reject, typical]
+  transition_method: [prefigurative, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  violence_legitimacy: [never, typical]
+  wage_labour: [abolish_via_coops, typical]
+  welfare_provision: [communal_direct, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+  - id: owenism
+    name: "Owenism"
+    aliases: [New Harmony]
+    prior_weight: 0.05
+    blurb: "Character is formed by environment, so build model communities of cooperation and the new person follows."
+    positions:
+      human_nature: [historically_produced, core]
+      scale_of_polity: [village_commune, core]
+      property_regime: [cooperative, core]
+      transition_method: [prefigurative, core]
+      education_aim: [individual_flourishing, core]
+      money_form: [mutual_credit, strong]
+      religion_in_public_life: [militantly_secular, strong]
+      violence_legitimacy: [never, core]
+      work_ethic: [work_is_virtue, strong]
+      distribution_principle: [contribution_labour, strong]
+  - id: fourierism
+    name: "Fourierism"
+    aliases: [phalanstery, passionate attraction]
+    prior_weight: 0.05
+    blurb: "Organise work around the passions so labour becomes attractive; twelve hundred people to a phalanstery."
+    positions:
+      scale_of_polity: [village_commune, core]
+      work_ethic: [work_reduced, core]
+      human_nature: [cooperative_good, core]
+      sexuality_stance: [liberationist, core]
+      family_form: [communal_rearing, core]
+      property_regime: [cooperative, core]
+      transition_method: [prefigurative, core]
+      utopian_horizon: [achievable_new_order, core]
+      distribution_principle: [contribution_labour, strong]
+      gender_order: [structural_liberation, strong]
+  - id: saint_simonianism
+    name: "Saint-Simonianism"
+    prior_weight: 0.04
+    blurb: "Rule by industrialists, engineers and bankers organising production for all, replacing government of men with administration of things."
+    positions:
+      decision_procedure: [expert_rule, core]
+      leadership_form: [technocratic_board, core]
+      class_analysis: [producer_parasite, core]
+      economic_coordination: [indicative_planning, core]
+      technology_stance: [accelerate, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      distribution_principle: [contribution_labour, core]
+      state_trajectory: [wither_away, strong]
+      education_aim: [technical_capacity, core]
+  - id: icarianism
+    name: "Icarianism"
+    aliases: [Cabet]
+    prior_weight: 0.02
+    blurb: "A peaceful communist colony run by elected committees, with everything owned and decided in common."
+    positions:
+      property_regime: [communal, core]
+      money_form: [abolished, core]
+      violence_legitimacy: [never, core]
+      scale_of_polity: [village_commune, core]
+      distribution_principle: [equal_share, core]
+      decision_procedure: [representative_election, core]
+      transition_method: [prefigurative, core]
+      family_form: [nuclear_traditional, typical]
+  - id: blanquism
+    name: "Blanquism"
+    prior_weight: 0.05
+    blurb: "A small conspiratorial band seizes power in a coup and holds a temporary dictatorship until society is remade."
+    positions:
+      transition_method: [coup_vanguard, core]
+      vanguard_role: [necessary, core]
+      organisation_form: [affinity_group, core]
+      violence_legitimacy: [insurrectionary, core]
+      electoral_participation: [boycott, core]
+      political_pluralism: [single_party, strong]
+      state_scope: [total, strong]
+      religion_in_public_life: [militantly_secular, strong]
+  - id: chartism
+    name: "Chartism"
+    prior_weight: 0.05
+    blurb: "Universal male suffrage, secret ballots and paid MPs — political democracy as the workers' first demand."
+    positions:
+      electoral_participation: [central, core]
+      decision_procedure: [representative_election, core]
+      transition_method: [general_strike, strong]
+      class_analysis: [central_marxist, typical]
+      constitutionalism: [parliamentary_supremacy, core]
+      organisation_form: [mass_party, core]
+      reform_vs_rupture: [reform, strong]
+      land_regime: [tenured_use, typical]
+  - id: proudhonian_federalism
+    name: "Proudhonian federalism"
+    prior_weight: 0.04
+    blurb: "Society built upward by contract between communes and workshops, never downward from a capital."
+    positions:
+      federalism: [confederal, core]
+      scale_of_polity: [village_commune, core]
+      property_regime: [mutualist_possession, core]
+      state_trajectory: [abolish_now, strong]
+      decision_procedure: [delegation_recallable, core]
+      money_form: [mutual_credit, strong]
+      secession_right: [universal_right, strong]
+      firm_form: [worker_cooperative, strong]
+  - id: shaker_communalism
+    name: "Shaker communalism"
+    prior_weight: 0.02
+    blurb: "Celibate communal villages holding all property in common, with women and men governing equally."
+    positions:
+      property_regime: [communal, core]
+      reproductive_politics: [antinatalist, core]
+      family_form: [abolish_family, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      gender_order: [formal_equality, core]
+      scale_of_polity: [village_commune, core]
+      violence_legitimacy: [never, core]
+      work_ethic: [work_is_virtue, core]
+      transition_method: [withdrawal, core]
+  - id: oneida_perfectionism
+    name: "Oneida perfectionism"
+    prior_weight: 0.02
+    blurb: "A community practising complex marriage and communal childrearing, holding that perfection is attainable now."
+    positions:
+      family_form: [communal_rearing, core]
+      sexuality_stance: [liberationist, core]
+      property_regime: [communal, core]
+      human_nature: [perfectible, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      scale_of_polity: [village_commune, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      gender_order: [formal_equality, strong]
+  - id: zemlya_i_volya
+    name: "Land and Freedom"
+    prior_weight: 0.02
+    blurb: "All land to the peasant communes and full political liberty, pursued by agitation and then by terror."
+    positions:
+      land_regime: [collectivised, core]
+      urban_rural: [agrarian_rural, core]
+      scale_of_polity: [village_commune, core]
+      violence_legitimacy: [revolutionary_terror, strong]
+      transition_method: [insurrection, core]
+      property_regime: [communal, core]
+      federalism: [confederal, strong]
+      electoral_participation: [boycott, strong]
+  - id: morrisite_socialism
+    name: "Morrisite socialism"
+    aliases: [News from Nowhere]
+    prior_weight: 0.04
+    blurb: "A society of craft, beauty and pleasurable work, with machines used only to spare drudgery."
+    positions:
+      work_ethic: [work_is_virtue, core]
+      firm_form: [household_artisan, core]
+      art_and_culture: [popular_folk, core]
+      technology_stance: [appropriate_scale, core]
+      money_form: [abolished, core]
+      urban_rural: [balanced, core]
+      scale_of_polity: [village_commune, strong]
+      state_trajectory: [abolish_now, strong]
+      utopian_horizon: [achievable_new_order, core]
+      growth_stance: [steady_state, strong]
+  - id: ruskinian_criticism
+    name: "Ruskinian social criticism"
+    prior_weight: 0.02
+    blurb: "There is no wealth but life; judge an economy by the quality of the lives and things it produces."
+    positions:
+      art_and_culture: [preserve_canon, core]
+      work_ethic: [work_is_virtue, core]
+      technology_stance: [appropriate_scale, core]
+      growth_stance: [steady_state, core]
+      market_role: [retained_bounded, strong]
+      education_aim: [individual_flourishing, core]
+      attitude_to_modernity: [reject_return, strong]
+      hierarchy_stance: [functional_necessary, typical]
+  - id: utopian_colony_socialism
+    name: "Utopian colony socialism"
+    prior_weight: 0.03
+    blurb: "Found the ideal settlement somewhere cheap and let its example convert the world."
+    positions:
+      transition_method: [prefigurative, core]
+      scale_of_polity: [village_commune, core]
+      property_regime: [communal, core]
+      utopian_horizon: [achievable_new_order, core]
+      violence_legitimacy: [never, core]
+      urban_rural: [back_to_land, core]
+      distribution_principle: [equal_share, strong]
+      electoral_participation: [boycott, typical]
+  - id: cabetist_communitarianism
+    name: "Peaceful communism"
+    prior_weight: 0.02
+    blurb: "Communism arriving by persuasion and example, with violence rejected as self-defeating."
+    positions:
+      violence_legitimacy: [never, core]
+      property_regime: [communal, core]
+      transition_method: [gradual_reform, core]
+      distribution_principle: [equal_share, core]
+      money_form: [abolished, strong]
+      human_nature: [cooperative_good, core]
+      education_aim: [civic_formation, strong]
+  - id: fourierist_georgist_hybrid
+    name: "Associationist land reform"
+    prior_weight: 0.02
+    blurb: "Cooperative associations settled on land held in common trust, combining two nineteenth-century reforms."
+    positions:
+      land_regime: [commons, core]
+      property_regime: [cooperative, core]
+      scale_of_polity: [village_commune, core]
+      transition_method: [prefigurative, core]
+      distribution_principle: [contribution_labour, strong]
+      firm_form: [worker_cooperative, core]
+      market_role: [retained_bounded, typical]

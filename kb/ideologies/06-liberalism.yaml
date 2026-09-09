@@ -1,0 +1,333 @@
+family: liberalism
+label: Classical liberalism & libertarianism
+family_defaults:
+  art_and_culture: [commercial_free, typical]
+  attitude_to_modernity: [embrace, typical]
+  borders: [open, typical]
+  class_analysis: [rejected, typical]
+  constitutionalism: [entrenched_rights, typical]
+  decision_procedure: [representative_election, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [individual_flourishing, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [popular_reason, typical]
+  family_form: [egalitarian_nuclear, typical]
+  federalism: [federal, typical]
+  firm_form: [investor_owned, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_essential, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  human_nature: [self_interested_rational, typical]
+  immigration: [welcome, typical]
+  internationalism: [cosmopolitan_universal, typical]
+  land_regime: [private_absolute, typical]
+  leadership_form: [collective, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [central, typical]
+  money_form: [conventional, typical]
+  nation_concept: [civic, typical]
+  nationalism_stance: [indifferent, typical]
+  organisation_form: [mass_party, typical]
+  policing: [professional, typical]
+  political_pluralism: [multiparty, typical]
+  property_in_person: [self_ownership_absolute, typical]
+  property_regime: [private_regulated, typical]
+  punishment: [deterrent_proportional, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  reproductive_politics: [reproductive_freedom, typical]
+  rights_basis: [natural_individual, typical]
+  sexuality_stance: [tolerant_private, typical]
+  speech_norms: [broadly_free, typical]
+  sphere_separation: [church_state_separate, typical]
+  state_scope: [limited, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [gradual_reform, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [gradual_improvement, typical]
+  wage_labour: [legitimate, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+
+  - id: classical_liberalism
+    name: Classical liberalism
+    prior_weight: 0.7
+    blurb: "Limited constitutional government, free trade and individual rights as the framework for everything else."
+    positions:
+      state_scope: [limited, core]
+      market_role: [central, core]
+      rights_basis: [natural_individual, core]
+      constitutionalism: [entrenched_rights, core]
+      property_regime: [private_regulated, core]
+      speech_norms: [broadly_free, core]
+      decision_procedure: [representative_election, core]
+      political_pluralism: [multiparty, core]
+      borders: [open, strong]
+      religion_in_public_life: [secular_neutral, strong]
+      transition_method: [gradual_reform, strong]
+      hierarchy_stance: [functional_necessary, typical]
+
+  - id: minarchism
+    name: Minarchism
+    aliases: [night-watchman state, Nozick]
+    prior_weight: 0.35
+    blurb: "A state limited strictly to courts, police and defence — legitimate, but nothing beyond that."
+    positions:
+      state_scope: [nightwatchman, core]
+      state_trajectory: [minimal, core]
+      legitimate_violence: [state_monopoly, core]
+      policing: [professional, core]
+      market_role: [central, core]
+      property_regime: [private_absolute, core]
+      rights_basis: [natural_individual, core]
+      welfare_provision: [charity_voluntary, core]
+      healthcare: [market, strong]
+      property_in_person: [self_ownership_absolute, core]
+      inheritance: [unrestricted, strong]
+      decision_procedure: [representative_election, strong]
+      constitutionalism: [entrenched_rights, core]
+
+  - id: objectivism
+    name: Objectivism
+    aliases: [Randianism]
+    prior_weight: 0.25
+    blurb: "Rational self-interest is a virtue and altruism a vice; laissez-faire capitalism follows from that ethics."
+    positions:
+      state_scope: [nightwatchman, core]
+      human_nature: [self_interested_rational, core]
+      epistemic_authority: [popular_reason, core]
+      religion_in_public_life: [militantly_secular, core]
+      market_role: [central, core]
+      property_regime: [private_absolute, core]
+      art_and_culture: [preserve_canon, strong]
+      welfare_provision: [charity_voluntary, core]
+      rights_basis: [natural_individual, core]
+      hierarchy_stance: [natural_good, strong]
+      distribution_principle: [desert_market, core]
+
+  - id: manchester_liberalism
+    name: Manchester liberalism
+    aliases: [Cobdenism, free trade radicalism]
+    prior_weight: 0.06
+    blurb: "Free trade between nations makes war unprofitable and empire pointless; peace follows commerce."
+    positions:
+      market_role: [central, core]
+      borders: [open, core]
+      internationalism: [cosmopolitan_universal, core]
+      colonialism_stance: [oppose, core]
+      violence_legitimacy: [never, strong]
+      state_scope: [nightwatchman, core]
+      land_regime: [private_taxed_rent, typical]
+      transition_method: [gradual_reform, core]
+      class_analysis: [producer_parasite, typical]
+
+  - id: philosophic_radicalism
+    name: Philosophic Radicalism
+    aliases: [Benthamite utilitarian radicalism]
+    prior_weight: 0.04
+    blurb: "Every institution judged only by whether it produces the greatest happiness, and reformed if it does not."
+    positions:
+      epistemic_authority: [scientific_expertise, core]
+      rights_basis: [positive_legal, core]
+      tradition_stance: [reject, core]
+      transition_method: [gradual_reform, core]
+      punishment: [rehabilitative, strong]
+      decision_procedure: [representative_election, strong]
+      religion_in_public_life: [secular_neutral, strong]
+      education_aim: [civic_formation, strong]
+      state_scope: [limited, typical]
+
+  - id: neoclassical_liberalism
+    name: Neoclassical liberalism
+    aliases: [bleeding-heart libertarianism]
+    prior_weight: 0.08
+    blurb: "Free markets justified precisely because they serve the worst off, with a floor beneath everyone."
+    positions:
+      market_role: [central, core]
+      basic_income: [support_ubi, core]
+      state_scope: [limited, strong]
+      rights_basis: [natural_individual, strong]
+      distribution_principle: [subsistence_guarantee, core]
+      immigration: [open_borders, core]
+      welfare_provision: [universal_public, typical]
+      property_regime: [private_regulated, strong]
+      transition_method: [gradual_reform, core]
+
+  - id: left_libertarianism
+    name: Left-libertarianism
+    aliases: [Otsuka, Vallentyne, Steiner]
+    prior_weight: 0.06
+    blurb: "Absolute self-ownership, but natural resources belong to everyone equally — so land rents must be shared out."
+    positions:
+      property_in_person: [self_ownership_absolute, core]
+      land_regime: [private_taxed_rent, core]
+      basic_income: [social_dividend, core]
+      market_role: [central, strong]
+      state_scope: [limited, strong]
+      rights_basis: [natural_individual, core]
+      inheritance: [taxed, strong]
+      distribution_principle: [equal_share, strong]
+      property_regime: [private_regulated, strong]
+
+  - id: libertarian_paternalism
+    name: Libertarian paternalism
+    aliases: [nudge, choice architecture]
+    prior_weight: 0.06
+    blurb: "Leave every option open but arrange the defaults so people tend to choose well."
+    positions:
+      epistemic_authority: [scientific_expertise, core]
+      state_scope: [limited, strong]
+      human_nature: [self_interested_rational, typical]
+      decision_procedure: [expert_rule, strong]
+      market_role: [retained_bounded, strong]
+      transition_method: [gradual_reform, core]
+      utopian_horizon: [gradual_improvement, core]
+      education_aim: [individual_flourishing, typical]
+
+  - id: neoliberalism
+    name: Neoliberalism
+    aliases: [Mont Pèlerin, market fundamentalism]
+    prior_weight: 0.5
+    blurb: "Markets need an active state to construct and defend them; competition should organise as much of life as possible."
+    positions:
+      market_role: [central, core]
+      economic_coordination: [free_market, core]
+      state_scope: [limited, core]
+      property_regime: [private_absolute, strong]
+      growth_stance: [growth_essential, core]
+      welfare_provision: [insurance_contributory, strong]
+      borders: [controlled, typical]
+      epistemic_authority: [market_aggregation, core]
+      firm_form: [investor_owned, core]
+      housing: [market_commodity, strong]
+      healthcare: [insurance_mandated, strong]
+      transition_method: [gradual_reform, strong]
+
+  - id: ordoliberalism
+    name: Ordoliberalism
+    aliases: [Freiburg School, social market economy]
+    prior_weight: 0.15
+    blurb: "A strong state must write and enforce the rules of competition, then never intervene in outcomes."
+    positions:
+      economic_coordination: [regulated_market, core]
+      state_scope: [limited, core]
+      constitutionalism: [entrenched_rights, core]
+      market_role: [central, strong]
+      money_form: [conventional, core]
+      welfare_provision: [insurance_contributory, strong]
+      decision_procedure: [expert_rule, strong]
+      firm_form: [investor_owned, strong]
+      growth_stance: [growth_managed, strong]
+      religion_in_public_life: [culturally_grounded, typical]
+
+  - id: social_liberalism
+    name: Social liberalism
+    aliases: [New Liberalism, Hobhouse]
+    prior_weight: 0.6
+    blurb: "Freedom means the actual capacity to act, so the state must provide the conditions for it."
+    positions:
+      state_scope: [welfare_broad, core]
+      welfare_provision: [universal_public, core]
+      market_role: [retained_bounded, strong]
+      economic_coordination: [mixed_economy, core]
+      rights_basis: [positive_legal, strong]
+      healthcare: [universal_public, strong]
+      education_aim: [individual_flourishing, core]
+      transition_method: [gradual_reform, core]
+      political_pluralism: [multiparty, core]
+      immigration: [welcome, strong]
+      gender_order: [formal_equality, strong]
+
+  - id: rawlsianism
+    name: Rawlsian liberalism
+    aliases: [justice as fairness]
+    prior_weight: 0.2
+    blurb: "Inequalities are permitted only where they improve the position of the least advantaged."
+    positions:
+      distribution_principle: [subsistence_guarantee, core]
+      constitutionalism: [entrenched_rights, core]
+      rights_basis: [positive_legal, strong]
+      state_scope: [welfare_broad, core]
+      economic_coordination: [mixed_economy, strong]
+      religion_in_public_life: [secular_neutral, core]
+      epistemic_authority: [popular_reason, strong]
+      transition_method: [gradual_reform, core]
+      welfare_provision: [universal_public, strong]
+
+  - id: luck_egalitarianism
+    name: Luck egalitarianism
+    aliases: [Dworkin, Cohen]
+    prior_weight: 0.05
+    blurb: "People may keep what follows from their choices but not what follows from their luck."
+    positions:
+      distribution_principle: [equal_share, core]
+      inheritance: [abolished, core]
+      basic_income: [social_dividend, strong]
+      state_scope: [welfare_broad, strong]
+      rights_basis: [positive_legal, strong]
+      healthcare: [universal_public, strong]
+      economic_coordination: [mixed_economy, typical]
+      human_nature: [self_interested_rational, typical]
+
+  - id: property_owning_democracy
+    name: Property-owning democracy
+    aliases: [Meade]
+    prior_weight: 0.05
+    blurb: "Spread capital ownership widely before markets act, rather than taxing and transferring afterwards."
+    positions:
+      property_regime: [distributed_wide, core]
+      inheritance: [abolished, strong]
+      basic_income: [social_dividend, strong]
+      firm_form: [worker_cooperative, typical]
+      economic_coordination: [regulated_market, core]
+      state_scope: [welfare_broad, strong]
+      distribution_principle: [desert_market, typical]
+      transition_method: [gradual_reform, core]
+
+  - id: civic_republicanism
+    name: Civic republicanism
+    aliases: [Pettit, non-domination]
+    prior_weight: 0.1
+    blurb: "Freedom is not being subject to anyone's arbitrary power, which requires active citizenship and contestable government."
+    positions:
+      sovereignty_locus: [community, core]
+      education_aim: [civic_formation, core]
+      constitutionalism: [entrenched_rights, strong]
+      decision_procedure: [representative_election, strong]
+      hierarchy_stance: [minimise, core]
+      political_pluralism: [multiparty, strong]
+      rights_basis: [collective_historical, typical]
+      religion_in_public_life: [secular_neutral, strong]
+      state_scope: [welfare_broad, typical]
+
+  - id: radical_democracy
+    name: Radical democracy
+    aliases: [Laclau, Mouffe, agonistic pluralism]
+    prior_weight: 0.1
+    blurb: "Conflict is permanent and healthy; democracy means keeping it open rather than dissolving it into consensus."
+    positions:
+      decision_procedure: [direct_democracy, core]
+      political_pluralism: [multiparty, core]
+      epistemic_authority: [popular_reason, core]
+      class_analysis: [elite_mass, strong]
+      speech_norms: [broadly_free, strong]
+      utopian_horizon: [none_pragmatic, strong]
+      hierarchy_stance: [minimise, strong]
+      transition_method: [electoral, strong]
+      constitutionalism: [parliamentary_supremacy, typical]
+
+  - id: deliberative_democracy
+    name: Deliberative democracy
+    aliases: [Habermas]
+    prior_weight: 0.1
+    blurb: "Legitimacy comes from reasoned public argument that anyone affected could in principle accept."
+    positions:
+      decision_procedure: [direct_democracy, strong]
+      epistemic_authority: [popular_reason, core]
+      speech_norms: [broadly_free, core]
+      education_aim: [civic_formation, core]
+      political_pluralism: [multiparty, strong]
+      constitutionalism: [entrenched_rights, strong]
+      religion_in_public_life: [secular_neutral, strong]
+      transition_method: [gradual_reform, strong]

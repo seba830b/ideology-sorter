@@ -1,0 +1,298 @@
+family: religious_social
+label: Religious social thought
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  class_analysis: [status_group, typical]
+  decision_procedure: [consensus, typical]
+  distribution_principle: [need, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [transmit_tradition, typical]
+  epistemic_authority: [revelation, typical]
+  family_form: [nuclear_traditional, typical]
+  firm_form: [household_artisan, typical]
+  gender_order: [traditional_complementary, typical]
+  growth_stance: [steady_state, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  human_nature: [fallen_needs_restraint, typical]
+  inheritance: [unrestricted, typical]
+  market_role: [retained_bounded, typical]
+  nonhuman_status: [welfare_regulated, typical]
+  organisation_form: [church_movement, typical]
+  political_pluralism: [multiparty, typical]
+  property_in_person: [divine_stewardship, typical]
+  property_regime: [distributed_wide, typical]
+  punishment: [restorative, typical]
+  religion_in_public_life: [culturally_grounded, typical]
+  rights_basis: [divine_law, typical]
+  scale_of_polity: [village_commune, typical]
+  sexuality_stance: [traditional_restrictive, typical]
+  sovereignty_locus: [divine, typical]
+  state_scope: [limited, typical]
+  technology_stance: [appropriate_scale, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [gradual_reform, typical]
+  urban_rural: [agrarian_rural, typical]
+  utopian_horizon: [transcendent_eschaton, typical]
+  violence_legitimacy: [never, typical]
+  wage_labour: [regulated, typical]
+  welfare_provision: [charity_voluntary, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+  - id: distributism
+    name: "Distributism"
+    aliases: [Chesterton, Belloc, three acres and a cow]
+    prior_weight: 0.2
+    blurb: "Neither capitalism nor socialism but the widest possible spread of small property — every family with its own workshop or plot."
+    positions:
+      property_regime: [distributed_wide, core]
+      firm_form: [household_artisan, core]
+      scale_of_polity: [village_commune, core]
+      religion_in_public_life: [culturally_grounded, core]
+      urban_rural: [agrarian_rural, strong]
+      market_role: [retained_bounded, strong]
+      family_form: [nuclear_traditional, core]
+      technology_stance: [appropriate_scale, strong]
+      state_scope: [limited, strong]
+      tradition_stance: [restore, strong]
+      wage_labour: [abolish_via_coops, strong]
+      inheritance: [unrestricted, typical]
+  - id: christian_democracy
+    name: "Christian democracy"
+    prior_weight: 0.4
+    blurb: "A social market economy guided by subsidiarity and Christian personalism, in ordinary parliamentary politics."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      economic_coordination: [regulated_market, core]
+      state_scope: [welfare_broad, strong]
+      family_form: [nuclear_traditional, core]
+      transition_method: [electoral, core]
+      political_pluralism: [multiparty, core]
+      welfare_provision: [insurance_contributory, strong]
+      federalism: [federal, typical]
+      tradition_stance: [conserve, strong]
+  - id: christian_socialism
+    name: "Christian socialism"
+    prior_weight: 0.15
+    blurb: "The Gospel demands common ownership and the end of competition; socialism is Christianity applied."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      property_regime: [cooperative, core]
+      rights_basis: [divine_law, strong]
+      welfare_provision: [universal_public, strong]
+      transition_method: [gradual_reform, strong]
+      class_analysis: [central_marxist, typical]
+      violence_legitimacy: [never, strong]
+      distribution_principle: [need, core]
+      firm_form: [worker_cooperative, strong]
+  - id: social_gospel
+    name: "Social Gospel"
+    prior_weight: 0.08
+    blurb: "Sin is social as well as personal; the Kingdom of God is built by reforming slums, factories and laws."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      transition_method: [gradual_reform, core]
+      welfare_provision: [universal_public, strong]
+      utopian_horizon: [transcendent_eschaton, strong]
+      state_scope: [welfare_broad, strong]
+      education_aim: [civic_formation, strong]
+      violence_legitimacy: [never, strong]
+      urban_rural: [urban_industrial, typical]
+  - id: liberation_theology
+    name: "Liberation theology"
+    prior_weight: 0.2
+    blurb: "God takes a preferential option for the poor, and base communities read scripture as a call to end their oppression."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      class_analysis: [central_marxist, core]
+      education_aim: [critical_consciousness, core]
+      imperialism_analysis: [central_frame, strong]
+      organisation_form: [church_movement, core]
+      distribution_principle: [need, core]
+      colonialism_stance: [reparative_decolonial, strong]
+      transition_method: [prefigurative, strong]
+      rights_basis: [divine_law, strong]
+      violence_legitimacy: [defensive_only, typical]
+  - id: minjung_theology
+    name: "Minjung theology"
+    prior_weight: 0.02
+    blurb: "The suffering common people of Korea are themselves the subject of history and of salvation."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      class_analysis: [elite_mass, core]
+      education_aim: [critical_consciousness, core]
+      nationalism_stance: [instrumental_for_liberation, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+      organisation_form: [church_movement, strong]
+      tradition_stance: [critically_inherit, strong]
+      epistemic_authority: [revelation, strong]
+  - id: dalit_theology
+    name: "Dalit theology"
+    prior_weight: 0.02
+    blurb: "Christian theology written from outside caste, treating untouchability itself as the central religious question."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      hierarchy_stance: [abolish, core]
+      race_politics: [antiracist_structural, core]
+      education_aim: [critical_consciousness, strong]
+      tradition_stance: [reject, strong]
+      organisation_form: [church_movement, strong]
+      rights_basis: [divine_law, strong]
+      class_analysis: [status_group, core]
+  - id: black_liberation_theology
+    name: "Black liberation theology"
+    aliases: [Cone]
+    prior_weight: 0.05
+    blurb: "God is identified with the oppressed; a theology that ignores Black suffering is not Christian."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      race_politics: [liberationist_nationalist, core]
+      education_aim: [critical_consciousness, strong]
+      organisation_form: [church_movement, core]
+      colonialism_stance: [reparative_decolonial, strong]
+      rights_basis: [divine_law, strong]
+      class_analysis: [status_group, strong]
+      violence_legitimacy: [defensive_only, typical]
+  - id: personalism
+    name: "Personalism"
+    aliases: [Mounier]
+    prior_weight: 0.06
+    blurb: "The person, never the individual or the collective, is the measure — against both liberal atomism and the mass state."
+    positions:
+      sovereignty_locus: [community, core]
+      religion_in_public_life: [culturally_grounded, strong]
+      human_nature: [perfectible, strong]
+      state_scope: [limited, strong]
+      education_aim: [individual_flourishing, core]
+      scale_of_polity: [village_commune, strong]
+      class_analysis: [rejected, typical]
+      attitude_to_modernity: [critical_engagement, core]
+  - id: catholic_worker
+    name: "Catholic Worker personalism"
+    aliases: [Dorothy Day, Peter Maurin]
+    prior_weight: 0.05
+    blurb: "Houses of hospitality, farming communes and refusal of war, practised directly rather than legislated."
+    positions:
+      violence_legitimacy: [never, core]
+      welfare_provision: [mutual_aid, core]
+      transition_method: [prefigurative, core]
+      urban_rural: [back_to_land, strong]
+      religion_in_public_life: [culturally_grounded, core]
+      state_trajectory: [abolish_now, strong]
+      property_regime: [communal, strong]
+      work_ethic: [work_is_virtue, core]
+      rights_basis: [divine_law, strong]
+  - id: solidarism
+    name: "Solidarism"
+    aliases: [Heinrich Pesch]
+    prior_weight: 0.03
+    blurb: "Society as an organic whole of interdependent estates, obliged to each other by a duty prior to any contract."
+    positions:
+      firm_form: [guild, core]
+      economic_coordination: [regulated_market, strong]
+      religion_in_public_life: [culturally_grounded, core]
+      hierarchy_stance: [functional_necessary, core]
+      class_analysis: [status_group, strong]
+      welfare_provision: [insurance_contributory, strong]
+      state_scope: [limited, strong]
+      rights_basis: [divine_law, strong]
+  - id: catholic_corporatism
+    name: "Catholic corporatism"
+    aliases: [Quadragesimo Anno, vocational order]
+    prior_weight: 0.05
+    blurb: "Employers and workers organised together by trade, mediating between the individual and the state."
+    positions:
+      firm_form: [guild, core]
+      political_pluralism: [no_parties_traditional, strong]
+      religion_in_public_life: [established_church, strong]
+      hierarchy_stance: [functional_necessary, core]
+      class_analysis: [status_group, core]
+      economic_coordination: [regulated_market, strong]
+      state_scope: [limited, typical]
+      family_form: [patriarchal_household, typical]
+      decision_procedure: [clerical_authority, typical]
+  - id: buddhist_socialism
+    name: "Buddhist socialism"
+    aliases: [Buddhadasa, U Nu]
+    prior_weight: 0.04
+    blurb: "Non-attachment applied to property: greed is the root of suffering, so common ownership is a spiritual necessity."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      property_regime: [communal, strong]
+      violence_legitimacy: [never, core]
+      distribution_principle: [need, strong]
+      growth_stance: [steady_state, strong]
+      nonhuman_status: [sacred, strong]
+      work_ethic: [work_reduced, typical]
+      human_nature: [perfectible, strong]
+  - id: buddhist_economics
+    name: "Buddhist economics"
+    aliases: [Schumacher, small is beautiful]
+    prior_weight: 0.06
+    blurb: "Maximise wellbeing per unit of consumption, not consumption itself; production should stay small and local."
+    positions:
+      growth_stance: [steady_state, core]
+      technology_stance: [appropriate_scale, core]
+      scale_of_polity: [village_commune, strong]
+      work_ethic: [work_is_virtue, strong]
+      ecology_priority: [central_constraint, core]
+      firm_form: [household_artisan, strong]
+      urban_rural: [balanced, strong]
+      religion_in_public_life: [spiritual_syncretic, typical]
+  - id: islamic_socialism
+    name: "Islamic socialism"
+    prior_weight: 0.08
+    blurb: "Zakat, the ban on usury and the common ownership of water and pasture read as a socialist programme."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      money_form: [mutual_credit, strong]
+      distribution_principle: [need, strong]
+      property_regime: [state_owned, typical]
+      welfare_provision: [communal_direct, strong]
+      rights_basis: [divine_law, core]
+      colonialism_stance: [reparative_decolonial, strong]
+      nationalism_stance: [instrumental_for_liberation, strong]
+      economic_coordination: [mixed_economy, strong]
+  - id: gandhian_sarvodaya
+    name: "Sarvodaya"
+    aliases: [Gandhism, uplift of all]
+    prior_weight: 0.15
+    blurb: "Village self-rule, hand production and truth-force; the means must be as pure as the end."
+    positions:
+      violence_legitimacy: [never, core]
+      scale_of_polity: [village_commune, core]
+      technology_stance: [appropriate_scale, core]
+      urban_rural: [agrarian_rural, core]
+      transition_method: [withdrawal, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      work_ethic: [work_is_virtue, core]
+      state_trajectory: [minimal, strong]
+      property_in_person: [divine_stewardship, strong]
+      welfare_provision: [mutual_aid, strong]
+      growth_stance: [steady_state, strong]
+  - id: bhoodan
+    name: "Bhoodan"
+    aliases: [Vinoba Bhave, land gift movement]
+    prior_weight: 0.02
+    blurb: "Landlords persuaded to give land away voluntarily, redistribution by moral appeal rather than law."
+    positions:
+      land_regime: [commons, core]
+      violence_legitimacy: [never, core]
+      transition_method: [withdrawal, core]
+      urban_rural: [agrarian_rural, core]
+      scale_of_polity: [village_commune, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      state_trajectory: [minimal, strong]
+      property_regime: [communal, strong]
+  - id: quaker_witness
+    name: "Quaker political witness"
+    prior_weight: 0.04
+    blurb: "Decisions by silent discernment and consensus, absolute refusal of war, and plain equality before the light."
+    positions:
+      decision_procedure: [consensus, core]
+      violence_legitimacy: [never, core]
+      hierarchy_stance: [abolish, strong]
+      religion_in_public_life: [spiritual_syncretic, core]
+      organisation_form: [church_movement, core]
+      punishment: [restorative, core]
+      gender_order: [formal_equality, strong]
+      speech_norms: [broadly_free, strong]

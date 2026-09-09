@@ -1,0 +1,299 @@
+family: feminism
+label: Feminist tendencies
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  class_analysis: [status_group, typical]
+  colonialism_stance: [oppose, typical]
+  decision_procedure: [consensus, typical]
+  domestic_labour: [waged_socialised, typical]
+  ecology_priority: [central_constraint, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [critical_consciousness, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [popular_reason, typical]
+  family_form: [egalitarian_nuclear, typical]
+  gender_order: [structural_liberation, typical]
+  healthcare: [universal_public, typical]
+  hierarchy_stance: [abolish, typical]
+  housing: [social_provision, typical]
+  human_nature: [historically_produced, typical]
+  immigration: [welcome, typical]
+  leadership_form: [collective, typical]
+  market_role: [retained_bounded, typical]
+  nonhuman_status: [rights_bearing, typical]
+  organisation_form: [affinity_group, typical]
+  policing: [community_controlled, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [cooperative, typical]
+  punishment: [restorative, typical]
+  race_politics: [antiracist_structural, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  reproductive_politics: [reproductive_freedom, typical]
+  rights_basis: [positive_legal, typical]
+  sexuality_stance: [liberationist, typical]
+  speech_norms: [restricted_for_harm, typical]
+  state_scope: [welfare_broad, typical]
+  tradition_stance: [reject, typical]
+  transition_method: [prefigurative, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+  - id: liberal_feminism
+    name: "Liberal feminism"
+    prior_weight: 0.3
+    blurb: "Equal rights, equal pay and equal access, pursued through law and institutional reform."
+    positions:
+      gender_order: [formal_equality, core]
+      transition_method: [gradual_reform, core]
+      rights_basis: [positive_legal, core]
+      electoral_participation: [central, core]
+      reproductive_politics: [reproductive_freedom, core]
+      market_role: [central, typical]
+      domestic_labour: [valued_privately, typical]
+      education_aim: [individual_flourishing, strong]
+  - id: radical_feminism
+    name: "Radical feminism"
+    prior_weight: 0.2
+    blurb: "Patriarchy is the primary system of oppression, prior to class, and requires its own revolution."
+    positions:
+      gender_order: [structural_liberation, core]
+      family_form: [abolish_family, strong]
+      class_analysis: [status_group, core]
+      sexuality_stance: [liberationist, typical]
+      hierarchy_stance: [abolish, core]
+      domestic_labour: [communised, strong]
+      reproductive_politics: [reproductive_freedom, core]
+      speech_norms: [restricted_for_harm, typical]
+  - id: socialist_feminism
+    name: "Socialist feminism"
+    prior_weight: 0.2
+    blurb: "Capitalism and patriarchy are one interlocked system; neither can be dismantled alone."
+    positions:
+      gender_order: [structural_liberation, core]
+      class_analysis: [central_marxist, core]
+      domestic_labour: [waged_socialised, core]
+      family_form: [communal_rearing, strong]
+      welfare_provision: [universal_public, strong]
+      property_regime: [communal, strong]
+      reproductive_politics: [reproductive_freedom, core]
+      organisation_form: [mass_party, typical]
+  - id: marxist_feminism
+    name: "Marxist feminism"
+    prior_weight: 0.1
+    blurb: "Women's oppression is rooted in the reproduction of labour power under capital."
+    positions:
+      class_analysis: [central_marxist, core]
+      domestic_labour: [waged_socialised, core]
+      gender_order: [structural_liberation, core]
+      family_form: [abolish_family, strong]
+      property_regime: [communal, strong]
+      economic_coordination: [central_planning, typical]
+      epistemic_authority: [dialectical_materialism, strong]
+  - id: materialist_feminism
+    name: "Materialist feminism"
+    aliases: [Delphy, Wittig]
+    prior_weight: 0.04
+    blurb: "Women form a class produced by the domestic mode of production, not a natural or biological group."
+    positions:
+      domestic_labour: [waged_socialised, core]
+      gender_order: [abolish_gender, core]
+      class_analysis: [status_group, core]
+      family_form: [abolish_family, core]
+      human_nature: [historically_produced, core]
+      sexuality_stance: [queer_abolitionist, strong]
+      hierarchy_stance: [abolish, strong]
+  - id: wages_for_housework
+    name: "Wages for Housework"
+    aliases: [Federici, Dalla Costa]
+    prior_weight: 0.05
+    blurb: "Unpaid domestic labour is what makes all other profit possible, and demanding a wage for it exposes that."
+    positions:
+      domestic_labour: [waged_socialised, core]
+      work_ethic: [work_abolished, core]
+      class_analysis: [central_marxist, core]
+      gender_order: [structural_liberation, core]
+      basic_income: [support_ubi, strong]
+      family_form: [communal_rearing, strong]
+      transition_method: [general_strike, strong]
+      welfare_provision: [universal_public, strong]
+  - id: intersectional_feminism
+    name: "Intersectional feminism"
+    aliases: [Crenshaw]
+    prior_weight: 0.25
+    blurb: "Oppressions compound rather than add; analysis must start from those standing at the intersections."
+    positions:
+      race_politics: [antiracist_structural, core]
+      gender_order: [structural_liberation, core]
+      class_analysis: [status_group, core]
+      sexuality_stance: [liberationist, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+      education_aim: [critical_consciousness, core]
+      speech_norms: [restricted_for_harm, strong]
+      punishment: [abolitionist, typical]
+  - id: black_feminism
+    name: "Black feminism"
+    aliases: [Combahee River Collective]
+    prior_weight: 0.12
+    blurb: "The freedom of Black women would require dismantling every major system of domination at once."
+    positions:
+      race_politics: [antiracist_structural, core]
+      gender_order: [structural_liberation, core]
+      class_analysis: [central_marxist, strong]
+      sexuality_stance: [liberationist, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+      organisation_form: [affinity_group, strong]
+      punishment: [abolitionist, strong]
+      education_aim: [critical_consciousness, core]
+  - id: womanism
+    name: "Womanism"
+    aliases: [Alice Walker]
+    prior_weight: 0.04
+    blurb: "A Black women's tradition committed to the wholeness of the entire people, men included."
+    positions:
+      race_politics: [liberationist_nationalist, core]
+      gender_order: [structural_liberation, core]
+      family_form: [communal_rearing, strong]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      tradition_stance: [critically_inherit, core]
+      welfare_provision: [communal_direct, strong]
+      education_aim: [critical_consciousness, strong]
+  - id: chicana_feminism
+    name: "Chicana feminism"
+    prior_weight: 0.03
+    blurb: "Borderlands consciousness — resisting both Anglo racism and the patriarchy of one's own community."
+    positions:
+      race_politics: [liberationist_nationalist, core]
+      gender_order: [structural_liberation, core]
+      colonialism_stance: [reparative_decolonial, core]
+      language_politics: [minority_protection, core]
+      indigenous_sovereignty: [recognise_cultural, strong]
+      nation_concept: [diasporic, strong]
+      education_aim: [critical_consciousness, strong]
+  - id: postcolonial_feminism
+    name: "Postcolonial feminism"
+    aliases: [Mohanty, Spivak]
+    prior_weight: 0.05
+    blurb: "Western feminism's universal woman is a colonial construct; liberation must be theorised from the global South."
+    positions:
+      colonialism_stance: [reparative_decolonial, core]
+      gender_order: [structural_liberation, core]
+      imperialism_analysis: [central_frame, core]
+      epistemic_authority: [popular_reason, strong]
+      internationalism: [anti_imperialist_nationalist, strong]
+      tradition_stance: [critically_inherit, strong]
+      education_aim: [critical_consciousness, core]
+  - id: islamic_feminism
+    name: "Islamic feminism"
+    prior_weight: 0.03
+    blurb: "Gender equality argued from within Islamic sources, rereading scripture against patriarchal interpretation."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      gender_order: [formal_equality, core]
+      tradition_stance: [critically_inherit, core]
+      rights_basis: [divine_law, strong]
+      epistemic_authority: [revelation, strong]
+      colonialism_stance: [oppose, strong]
+      transition_method: [gradual_reform, strong]
+  - id: jineoloji
+    name: "Jineolojî"
+    aliases: [women's science]
+    prior_weight: 0.03
+    blurb: "A women's social science replacing patriarchal knowledge, central to the Kurdish freedom movement."
+    positions:
+      gender_order: [structural_liberation, core]
+      epistemic_authority: [popular_reason, core]
+      scale_of_polity: [municipal_confederal, core]
+      education_aim: [critical_consciousness, core]
+      hierarchy_stance: [abolish, core]
+      state_trajectory: [replace_with_confederation, strong]
+      ecology_priority: [central_constraint, strong]
+      tradition_stance: [critically_inherit, strong]
+  - id: difference_feminism
+    name: "Difference feminism"
+    aliases: [Irigaray]
+    prior_weight: 0.03
+    blurb: "Women should not be assimilated to a male norm; sexual difference must be given its own symbolic order."
+    positions:
+      gender_order: [traditional_complementary, typical]
+      human_nature: [historically_produced, typical]
+      art_and_culture: [avant_garde_rupture, strong]
+      education_aim: [individual_flourishing, strong]
+      epistemic_authority: [popular_reason, strong]
+      rights_basis: [collective_historical, strong]
+  - id: cultural_feminism
+    name: "Cultural feminism"
+    prior_weight: 0.03
+    blurb: "Build women's own institutions and culture rather than seeking entry into men's."
+    positions:
+      gender_order: [structural_liberation, core]
+      transition_method: [prefigurative, core]
+      art_and_culture: [popular_folk, strong]
+      scale_of_polity: [village_commune, strong]
+      welfare_provision: [mutual_aid, strong]
+      religion_in_public_life: [spiritual_syncretic, typical]
+      nonhuman_status: [sacred, typical]
+  - id: separatist_feminism
+    name: "Separatist feminism"
+    aliases: [political lesbianism]
+    prior_weight: 0.03
+    blurb: "Withdraw energy and labour from men entirely; women's liberation requires separate institutions and lives."
+    positions:
+      gender_order: [structural_liberation, core]
+      family_form: [abolish_family, core]
+      transition_method: [withdrawal, core]
+      scale_of_polity: [village_commune, strong]
+      sexuality_stance: [liberationist, core]
+      hierarchy_stance: [abolish, strong]
+      domestic_labour: [communised, strong]
+  - id: gender_critical_feminism
+    name: "Gender-critical feminism"
+    prior_weight: 0.08
+    blurb: "Sex is a material reality and the basis of women's oppression; gender identity cannot replace it in law."
+    positions:
+      gender_order: [formal_equality, core]
+      human_nature: [fallen_needs_restraint, weak]
+      rights_basis: [positive_legal, core]
+      class_analysis: [status_group, strong]
+      transition_method: [electoral, strong]
+      speech_norms: [broadly_free, strong]
+      reproductive_politics: [reproductive_freedom, strong]
+      sexuality_stance: [tolerant_private, typical]
+  - id: transfeminism
+    name: "Transfeminism"
+    prior_weight: 0.1
+    blurb: "Trans women's liberation is inseparable from all women's; bodily autonomy is the shared principle."
+    positions:
+      gender_order: [abolish_gender, core]
+      sexuality_stance: [queer_abolitionist, strong]
+      property_in_person: [self_ownership_absolute, core]
+      reproductive_politics: [reproductive_freedom, core]
+      healthcare: [universal_public, strong]
+      human_nature: [historically_produced, strong]
+      hierarchy_stance: [abolish, strong]
+      speech_norms: [restricted_for_harm, typical]
+  - id: sex_positive_feminism
+    name: "Sex-positive feminism"
+    prior_weight: 0.06
+    blurb: "Sexual freedom, including sex work, is part of liberation rather than an obstacle to it."
+    positions:
+      sexuality_stance: [liberationist, core]
+      gender_order: [structural_liberation, strong]
+      speech_norms: [absolutist, strong]
+      property_in_person: [self_ownership_absolute, core]
+      reproductive_politics: [reproductive_freedom, core]
+      market_role: [retained_bounded, typical]
+      punishment: [abolitionist, typical]
+  - id: mens_liberation
+    name: "Men's liberation"
+    aliases: [mythopoetic men's movement]
+    prior_weight: 0.04
+    blurb: "Rigid masculinity harms men too; the answer is ritual, brotherhood and emotional recovery."
+    positions:
+      gender_order: [traditional_complementary, typical]
+      family_form: [nuclear_traditional, typical]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      education_aim: [individual_flourishing, core]
+      tradition_stance: [critically_inherit, strong]
+      transition_method: [withdrawal, strong]
+      class_analysis: [rejected, typical]

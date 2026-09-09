@@ -1,0 +1,213 @@
+family: localism
+label: Localism & communitarianism
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  class_analysis: [rejected, typical]
+  decision_procedure: [consensus, typical]
+  distribution_principle: [need, typical]
+  ecology_priority: [central_constraint, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [civic_formation, typical]
+  family_form: [nuclear_traditional, typical]
+  federalism: [confederal, typical]
+  firm_form: [household_artisan, typical]
+  growth_stance: [steady_state, typical]
+  hierarchy_stance: [minimise, typical]
+  housing: [decommodified_commons, typical]
+  human_nature: [cooperative_good, typical]
+  land_regime: [commons, typical]
+  leadership_form: [rotating_delegates, typical]
+  market_role: [retained_bounded, typical]
+  money_form: [mutual_credit, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_regime: [distributed_wide, typical]
+  punishment: [restorative, typical]
+  religion_in_public_life: [culturally_grounded, typical]
+  rights_basis: [collective_historical, typical]
+  scale_of_polity: [village_commune, typical]
+  sovereignty_locus: [community, typical]
+  state_scope: [limited, typical]
+  technology_stance: [appropriate_scale, typical]
+  tradition_stance: [conserve, typical]
+  transition_method: [prefigurative, typical]
+  urban_rural: [agrarian_rural, typical]
+  utopian_horizon: [none_pragmatic, typical]
+  violence_legitimacy: [never, typical]
+  welfare_provision: [mutual_aid, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+  - id: communitarianism
+    name: "Communitarianism"
+    aliases: [Etzioni, Sandel, MacIntyre]
+    prior_weight: 0.15
+    blurb: "The self is formed by community; rights make no sense without shared obligations and traditions."
+    positions:
+      sovereignty_locus: [community, core]
+      rights_basis: [collective_historical, core]
+      human_nature: [historically_produced, core]
+      education_aim: [civic_formation, core]
+      family_form: [nuclear_traditional, strong]
+      welfare_provision: [mutual_aid, strong]
+      tradition_stance: [critically_inherit, core]
+      scale_of_polity: [village_commune, strong]
+      market_role: [retained_bounded, strong]
+  - id: municipalism
+    name: "New municipalism"
+    aliases: [Fearless Cities]
+    prior_weight: 0.08
+    blurb: "Take the city first — remunicipalise utilities, house people, and network cities against the state."
+    positions:
+      scale_of_polity: [municipal_confederal, core]
+      electoral_participation: [central, core]
+      housing: [decommodified_commons, core]
+      property_regime: [state_owned, strong]
+      decision_procedure: [direct_democracy, core]
+      transition_method: [electoral, core]
+      urban_rural: [urban_industrial, strong]
+      federalism: [confederal, strong]
+      welfare_provision: [universal_public, strong]
+  - id: subsidiarity_politics
+    name: "Subsidiarity politics"
+    prior_weight: 0.06
+    blurb: "Nothing should be done at a higher level that can be done at a lower one."
+    positions:
+      federalism: [confederal, core]
+      scale_of_polity: [village_commune, core]
+      state_scope: [limited, core]
+      religion_in_public_life: [culturally_grounded, typical]
+      welfare_provision: [mutual_aid, strong]
+      sovereignty_locus: [community, core]
+      decision_procedure: [representative_election, typical]
+  - id: agrarianism
+    name: "Agrarianism"
+    prior_weight: 0.08
+    blurb: "Farming life as the moral foundation of a healthy society, against urban and industrial abstraction."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      property_regime: [distributed_wide, core]
+      work_ethic: [work_is_virtue, core]
+      technology_stance: [appropriate_scale, strong]
+      scale_of_polity: [village_commune, core]
+      tradition_stance: [conserve, strong]
+      family_form: [nuclear_traditional, strong]
+      growth_stance: [steady_state, strong]
+      religion_in_public_life: [culturally_grounded, typical]
+
+  - id: intentional_community_politics
+    name: "Intentional community politics"
+    prior_weight: 0.05
+    blurb: "Withdraw and build the alternative directly — a commune is the argument."
+    positions:
+      transition_method: [prefigurative, core]
+      scale_of_polity: [village_commune, core]
+      property_regime: [communal, core]
+      decision_procedure: [consensus, core]
+      welfare_provision: [communal_direct, core]
+      distribution_principle: [need, strong]
+      urban_rural: [back_to_land, strong]
+      electoral_participation: [boycott, typical]
+  - id: transition_towns
+    name: "Transition Towns"
+    prior_weight: 0.04
+    blurb: "Prepare your town for the end of cheap oil by rebuilding local food, energy and skills now."
+    positions:
+      scale_of_polity: [village_commune, core]
+      ecology_priority: [primary_frame, core]
+      technology_stance: [appropriate_scale, core]
+      growth_stance: [degrowth, core]
+      transition_method: [prefigurative, core]
+      welfare_provision: [mutual_aid, strong]
+      money_form: [mutual_credit, typical]
+      decision_procedure: [consensus, strong]
+  - id: parish_localism
+    name: "Parish localism"
+    prior_weight: 0.03
+    blurb: "The parish as the natural unit of belonging, with church, school and common land at its centre."
+    positions:
+      scale_of_polity: [village_commune, core]
+      religion_in_public_life: [established_church, core]
+      tradition_stance: [conserve, core]
+      welfare_provision: [charity_voluntary, core]
+      land_regime: [commons, typical]
+      sovereignty_locus: [community, core]
+      urban_rural: [agrarian_rural, strong]
+  - id: ubuntu_politics
+    name: "Ubuntu political philosophy"
+    prior_weight: 0.04
+    blurb: "A person is a person through other people; consensus, restoration and mutual obligation before individual claim."
+    positions:
+      sovereignty_locus: [community, core]
+      decision_procedure: [consensus, core]
+      punishment: [restorative, core]
+      rights_basis: [collective_historical, core]
+      welfare_provision: [communal_direct, core]
+      human_nature: [cooperative_good, core]
+      tradition_stance: [critically_inherit, core]
+      scale_of_polity: [village_commune, strong]
+  - id: doukhobor_communalism
+    name: "Doukhobor communalism"
+    prior_weight: 0.02
+    blurb: "Spirit wrestlers refusing the state, the army and private property, living communally on the land."
+    positions:
+      violence_legitimacy: [never, core]
+      property_regime: [communal, core]
+      state_trajectory: [abolish_now, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      urban_rural: [back_to_land, core]
+      scale_of_polity: [village_commune, core]
+      transition_method: [withdrawal, core]
+      nonhuman_status: [rights_bearing, strong]
+  - id: anabaptist_withdrawal
+    name: "Anabaptist withdrawal"
+    aliases: [Amish and Mennonite politics]
+    prior_weight: 0.03
+    blurb: "A separate community of the faithful, refusing oaths, arms and worldly office entirely."
+    positions:
+      transition_method: [withdrawal, core]
+      violence_legitimacy: [never, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      technology_stance: [appropriate_scale, core]
+      electoral_participation: [boycott, core]
+      scale_of_polity: [village_commune, core]
+      welfare_provision: [mutual_aid, core]
+      family_form: [patriarchal_household, strong]
+      urban_rural: [agrarian_rural, core]
+  - id: neo_tribalism
+    name: "Neo-tribalism"
+    prior_weight: 0.03
+    blurb: "Humans evolved for small bands; political life should be rebuilt at that scale."
+    positions:
+      scale_of_polity: [village_commune, core]
+      human_nature: [historically_produced, strong]
+      organisation_form: [affinity_group, core]
+      state_trajectory: [abolish_now, strong]
+      technology_stance: [appropriate_scale, strong]
+      tradition_stance: [restore, strong]
+      hierarchy_stance: [minimise, typical]
+      urban_rural: [back_to_land, strong]
+  - id: dunbar_politics
+    name: "Human-scale politics"
+    prior_weight: 0.02
+    blurb: "Institutions stop working past the number of people you can actually know; keep everything below it."
+    positions:
+      scale_of_polity: [village_commune, core]
+      hierarchy_stance: [minimise, core]
+      decision_procedure: [direct_democracy, core]
+      federalism: [confederal, core]
+      state_scope: [limited, strong]
+      organisation_form: [federation, strong]
+      epistemic_authority: [popular_reason, strong]
+  - id: sarvodaya_localism
+    name: "Village republic"
+    aliases: [gram swaraj]
+    prior_weight: 0.04
+    blurb: "Each village a self-sufficient republic, with the wider state existing only to serve it."
+    positions:
+      scale_of_polity: [village_commune, core]
+      federalism: [confederal, core]
+      state_scope: [nightwatchman, core]
+      technology_stance: [appropriate_scale, core]
+      urban_rural: [agrarian_rural, core]
+      decision_procedure: [consensus, strong]
+      welfare_provision: [communal_direct, strong]
+      violence_legitimacy: [never, strong]

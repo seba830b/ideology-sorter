@@ -1,0 +1,194 @@
+family: centrism
+label: Third Way & centrism
+family_defaults:
+  attitude_to_modernity: [embrace, typical]
+  class_analysis: [rejected, typical]
+  constitutionalism: [entrenched_rights, typical]
+  decision_procedure: [representative_election, typical]
+  ecology_priority: [managed_externality, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [technical_capacity, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [scientific_expertise, typical]
+  family_form: [egalitarian_nuclear, typical]
+  firm_form: [investor_owned, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_managed, typical]
+  healthcare: [insurance_mandated, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  housing: [market_commodity, typical]
+  human_nature: [self_interested_rational, typical]
+  immigration: [manage, typical]
+  inheritance: [taxed, typical]
+  internationalism: [cosmopolitan_universal, typical]
+  leadership_form: [technocratic_board, typical]
+  market_role: [central, typical]
+  nationalism_stance: [indifferent, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [private_regulated, typical]
+  punishment: [deterrent_proportional, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  rights_basis: [positive_legal, typical]
+  scale_of_polity: [national, typical]
+  sexuality_stance: [tolerant_private, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [welfare_broad, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [gradual_reform, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [gradual_improvement, typical]
+  wage_labour: [regulated, typical]
+  welfare_provision: [insurance_contributory, typical]
+  work_ethic: [work_is_duty, typical]
+ideologies:
+  - id: third_way
+    name: "Third Way"
+    aliases: [Giddens, Blairism]
+    prior_weight: 0.2
+    blurb: "Beyond left and right — market mechanisms delivering social goals, with rights matched by responsibilities."
+    positions:
+      economic_coordination: [regulated_market, core]
+      market_role: [central, core]
+      welfare_provision: [insurance_contributory, core]
+      transition_method: [gradual_reform, core]
+      utopian_horizon: [gradual_improvement, core]
+      class_analysis: [rejected, core]
+      state_scope: [welfare_broad, strong]
+      decision_procedure: [expert_rule, strong]
+      electoral_participation: [central, core]
+      work_ethic: [work_is_duty, strong]
+      punishment: [deterrent_proportional, strong]
+
+  - id: clintonism
+    name: "New Democrat centrism"
+    prior_weight: 0.1
+    blurb: "Fiscal discipline, welfare conditionality and free trade paired with social liberalism."
+    positions:
+      market_role: [central, core]
+      welfare_provision: [insurance_contributory, core]
+      work_ethic: [work_is_duty, core]
+      borders: [open, strong]
+      punishment: [deterrent_proportional, strong]
+      state_scope: [limited, strong]
+      transition_method: [gradual_reform, core]
+      class_analysis: [rejected, strong]
+  - id: radical_centrism
+    name: "Radical centrism"
+    prior_weight: 0.08
+    blurb: "Take the best ideas from both sides and implement them aggressively, unbound by tribal loyalty."
+    positions:
+      utopian_horizon: [gradual_improvement, core]
+      epistemic_authority: [scientific_expertise, core]
+      class_analysis: [rejected, core]
+      decision_procedure: [expert_rule, strong]
+      economic_coordination: [regulated_market, core]
+      political_pluralism: [multiparty, strong]
+      transition_method: [gradual_reform, core]
+      basic_income: [support_ubi, typical]
+  - id: liberal_corporatism
+    name: "Liberal corporatism"
+    aliases: [tripartism, neocorporatism]
+    prior_weight: 0.06
+    blurb: "Government, employers and unions bargaining national policy together at one table."
+    positions:
+      organisation_form: [union, core]
+      economic_coordination: [regulated_market, core]
+      class_analysis: [status_group, core]
+      decision_procedure: [expert_rule, strong]
+      welfare_provision: [insurance_contributory, core]
+      state_scope: [welfare_broad, strong]
+      firm_form: [investor_owned, strong]
+      transition_method: [gradual_reform, core]
+  - id: rhenish_capitalism
+    name: "Rhenish capitalism"
+    prior_weight: 0.04
+    blurb: "Patient bank finance, works councils and long-term ownership rather than shareholder pressure."
+    positions:
+      firm_form: [investor_owned, strong]
+      economic_coordination: [regulated_market, core]
+      welfare_provision: [insurance_contributory, core]
+      organisation_form: [union, strong]
+      growth_stance: [growth_managed, core]
+      market_role: [central, strong]
+      state_scope: [welfare_broad, strong]
+      hierarchy_stance: [functional_necessary, strong]
+  - id: neue_mitte
+    name: "Neue Mitte"
+    prior_weight: 0.03
+    blurb: "Social democracy modernised for a service economy — activate, retrain and reduce transfers."
+    positions:
+      welfare_provision: [insurance_contributory, core]
+      work_ethic: [work_is_duty, core]
+      market_role: [central, strong]
+      economic_coordination: [regulated_market, core]
+      transition_method: [gradual_reform, core]
+      class_analysis: [rejected, strong]
+      state_scope: [welfare_broad, typical]
+  - id: purple_politics
+    name: "Purple politics"
+    prior_weight: 0.03
+    blurb: "Liberal on the economy and liberal on culture, governing by coalition across the old divide."
+    positions:
+      market_role: [central, core]
+      sexuality_stance: [tolerant_private, core]
+      religion_in_public_life: [secular_neutral, core]
+      political_pluralism: [multiparty, core]
+      state_scope: [limited, strong]
+      transition_method: [gradual_reform, core]
+      class_analysis: [rejected, strong]
+      immigration: [manage, typical]
+  - id: syncretic_politics
+    name: "Syncretic politics"
+    prior_weight: 0.05
+    blurb: "Deliberately combine positions from opposed traditions, treating the left-right axis as obsolete."
+    positions:
+      class_analysis: [rejected, core]
+      utopian_horizon: [none_pragmatic, strong]
+      political_pluralism: [multiparty, typical]
+      economic_coordination: [mixed_economy, core]
+      nationalism_stance: [indifferent, typical]
+      transition_method: [electoral, typical]
+      epistemic_authority: [popular_reason, typical]
+  - id: technocratic_centrism
+    name: "Technocratic centrism"
+    prior_weight: 0.08
+    blurb: "Politics as competent administration; most questions have a correct answer that experts can find."
+    positions:
+      decision_procedure: [expert_rule, core]
+      epistemic_authority: [scientific_expertise, core]
+      class_analysis: [rejected, core]
+      utopian_horizon: [gradual_improvement, core]
+      economic_coordination: [regulated_market, core]
+      political_pluralism: [multiparty, typical]
+      leadership_form: [technocratic_board, strong]
+      state_scope: [welfare_broad, typical]
+      work_ethic: [work_reduced, weak]
+      welfare_provision: [universal_public, typical]
+
+  - id: big_tent_pragmatism
+    name: "Big-tent pragmatism"
+    prior_weight: 0.06
+    blurb: "Whatever works — no fixed doctrine, judged case by case on outcomes."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      class_analysis: [rejected, core]
+      epistemic_authority: [popular_reason, strong]
+      transition_method: [gradual_reform, core]
+      economic_coordination: [mixed_economy, core]
+      political_pluralism: [multiparty, strong]
+      tradition_stance: [critically_inherit, typical]
+  - id: christian_democratic_centrism
+    name: "Christian democratic centrism"
+    prior_weight: 0.06
+    blurb: "The social market anchored in personalism and subsidiarity, governing from the middle."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      economic_coordination: [regulated_market, core]
+      federalism: [federal, strong]
+      welfare_provision: [insurance_contributory, core]
+      family_form: [nuclear_traditional, strong]
+      transition_method: [gradual_reform, core]
+      political_pluralism: [multiparty, core]
+      sovereignty_locus: [community, strong]

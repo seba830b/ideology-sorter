@@ -1,0 +1,200 @@
+family: cooperativism
+label: Cooperativism & syndicalism
+family_defaults:
+  class_analysis: [central_marxist, typical]
+  decision_procedure: [direct_democracy, typical]
+  distribution_principle: [contribution_labour, typical]
+  ecology_priority: [central_constraint, typical]
+  economic_coordination: [market_socialism, typical]
+  education_aim: [technical_capacity, typical]
+  federalism: [confederal, typical]
+  firm_form: [worker_cooperative, typical]
+  gender_order: [formal_equality, typical]
+  hierarchy_stance: [minimise, typical]
+  housing: [decommodified_commons, typical]
+  human_nature: [cooperative_good, typical]
+  land_regime: [commons, typical]
+  leadership_form: [rotating_delegates, typical]
+  market_role: [retained_bounded, typical]
+  money_form: [mutual_credit, typical]
+  organisation_form: [union, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_regime: [cooperative, typical]
+  reform_vs_rupture: [reform_toward_rupture, typical]
+  scale_of_polity: [village_commune, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [limited, typical]
+  technology_stance: [appropriate_scale, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [prefigurative, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  wage_labour: [abolish_via_coops, typical]
+  welfare_provision: [mutual_aid, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+  - id: revolutionary_syndicalism
+    name: "Revolutionary syndicalism"
+    prior_weight: 0.15
+    blurb: "The union is the revolutionary organ and the general strike its weapon; politics is a distraction."
+    positions:
+      organisation_form: [union, core]
+      transition_method: [general_strike, core]
+      electoral_participation: [boycott, core]
+      firm_form: [worker_cooperative, strong]
+      class_analysis: [central_marxist, strong]
+      decision_procedure: [delegation_recallable, strong]
+      state_scope: [limited, typical]
+      work_ethic: [work_is_virtue, strong]
+  - id: mondragonism
+    name: "Mondragonism"
+    prior_weight: 0.08
+    blurb: "A federation of worker cooperatives with its own bank and university, competing in ordinary markets."
+    positions:
+      firm_form: [worker_cooperative, core]
+      property_regime: [cooperative, core]
+      market_role: [central, core]
+      education_aim: [technical_capacity, strong]
+      money_form: [mutual_credit, typical]
+      decision_procedure: [direct_democracy, strong]
+      transition_method: [prefigurative, core]
+      scale_of_polity: [regional, strong]
+      wage_labour: [abolish_via_coops, core]
+  - id: rochdale_cooperativism
+    name: "Rochdale cooperativism"
+    aliases: [consumer cooperation]
+    prior_weight: 0.08
+    blurb: "Consumers own the shops, one member one vote, with the surplus paid back as a dividend."
+    positions:
+      firm_form: [worker_cooperative, strong]
+      property_regime: [cooperative, core]
+      decision_procedure: [direct_democracy, core]
+      market_role: [central, strong]
+      transition_method: [prefigurative, core]
+      distribution_principle: [contribution_labour, strong]
+      welfare_provision: [mutual_aid, strong]
+      reform_vs_rupture: [reform, strong]
+  - id: worker_self_directed_enterprise
+    name: "Worker self-directed enterprise"
+    aliases: [Wolff]
+    prior_weight: 0.1
+    blurb: "Abolish the boardroom: those who produce the surplus should be the ones who decide what happens to it."
+    positions:
+      firm_form: [worker_cooperative, core]
+      wage_labour: [abolish_via_coops, core]
+      class_analysis: [central_marxist, core]
+      decision_procedure: [direct_democracy, core]
+      property_regime: [cooperative, core]
+      market_role: [retained_bounded, typical]
+      transition_method: [prefigurative, strong]
+      hierarchy_stance: [abolish, strong]
+      scale_of_polity: [national, typical]
+
+  - id: yugoslav_self_management
+    name: "Workers' self-management"
+    prior_weight: 0.08
+    blurb: "Every enterprise governed by its own workers' council within a socialist and market framework."
+    positions:
+      firm_form: [worker_cooperative, core]
+      economic_coordination: [market_socialism, core]
+      decision_procedure: [delegation_recallable, core]
+      property_regime: [cooperative, core]
+      federalism: [federal, typical]
+      hierarchy_stance: [minimise, strong]
+      state_scope: [welfare_broad, typical]
+  - id: kibbutz_socialism
+    name: "Kibbutz socialism"
+    prior_weight: 0.06
+    blurb: "Communal agricultural settlements holding everything in common, with collective childrearing and no wages."
+    positions:
+      scale_of_polity: [village_commune, core]
+      property_regime: [communal, core]
+      family_form: [communal_rearing, core]
+      urban_rural: [agrarian_rural, core]
+      distribution_principle: [need, core]
+      money_form: [abolished, strong]
+      work_ethic: [work_is_virtue, core]
+      decision_procedure: [direct_democracy, core]
+      transition_method: [prefigurative, core]
+      nationalism_stance: [core_value, typical]
+  - id: gordonia_religion_of_labour
+    name: "Religion of labour"
+    aliases: [A.D. Gordon, Gordonia]
+    prior_weight: 0.02
+    blurb: "Physical work on the soil is spiritually redemptive; a people renews itself by labouring on its own land."
+    positions:
+      work_ethic: [work_is_virtue, core]
+      urban_rural: [back_to_land, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      scale_of_polity: [village_commune, strong]
+      nationalism_stance: [core_value, strong]
+      property_regime: [communal, strong]
+      class_analysis: [rejected, strong]
+      violence_legitimacy: [never, strong]
+      technology_stance: [appropriate_scale, strong]
+  - id: industrial_unionism
+    name: "Industrial unionism"
+    aliases: [IWW, One Big Union]
+    prior_weight: 0.15
+    blurb: "One union for all workers in an industry, building the new society within the shell of the old."
+    positions:
+      organisation_form: [union, core]
+      transition_method: [general_strike, core]
+      electoral_participation: [boycott, strong]
+      class_analysis: [central_marxist, core]
+      firm_form: [worker_cooperative, strong]
+      immigration: [open_borders, strong]
+      race_politics: [antiracist_structural, strong]
+      hierarchy_stance: [abolish, strong]
+      decision_procedure: [direct_democracy, strong]
+  - id: solidarity_economy
+    name: "Solidarity economy"
+    prior_weight: 0.1
+    blurb: "A patchwork of cooperatives, mutuals and community finance built up alongside the market economy."
+    positions:
+      firm_form: [worker_cooperative, core]
+      welfare_provision: [mutual_aid, core]
+      transition_method: [prefigurative, core]
+      market_role: [retained_bounded, strong]
+      scale_of_polity: [municipal_confederal, strong]
+      money_form: [mutual_credit, typical]
+      ecology_priority: [central_constraint, typical]
+      property_regime: [cooperative, strong]
+  - id: platform_cooperativism
+    name: "Platform cooperativism"
+    prior_weight: 0.06
+    blurb: "The drivers and couriers should own the app, not be ranked by it."
+    positions:
+      firm_form: [worker_cooperative, core]
+      technology_stance: [industrial_neutral, strong]
+      property_regime: [cooperative, core]
+      market_role: [central, strong]
+      transition_method: [prefigurative, core]
+      wage_labour: [abolish_via_coops, core]
+      decision_procedure: [direct_democracy, strong]
+      organisation_form: [network, strong]
+  - id: sociocracy
+    name: "Sociocracy"
+    aliases: [holacracy, dynamic governance]
+    prior_weight: 0.04
+    blurb: "Nested circles making decisions by consent rather than majority, with no one holding a veto over their own domain."
+    positions:
+      decision_procedure: [consensus, core]
+      organisation_form: [federation, core]
+      hierarchy_stance: [functional_necessary, strong]
+      leadership_form: [rotating_delegates, core]
+      scale_of_polity: [village_commune, typical]
+      transition_method: [prefigurative, strong]
+      firm_form: [worker_cooperative, strong]
+  - id: distributive_workerism
+    name: "Distributive workerism"
+    prior_weight: 0.03
+    blurb: "Ownership of the tools spread as widely as possible so that most people work for themselves."
+    positions:
+      property_regime: [distributed_wide, core]
+      firm_form: [household_artisan, core]
+      market_role: [central, strong]
+      scale_of_polity: [village_commune, typical]
+      wage_labour: [abolish_via_coops, strong]
+      work_ethic: [work_is_virtue, strong]
+      urban_rural: [balanced, typical]

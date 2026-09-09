@@ -1,0 +1,318 @@
+family: accelerationism
+label: Accelerationism & futurism
+family_defaults:
+  art_and_culture: [avant_garde_rupture, typical]
+  attitude_to_modernity: [transcend_forward, typical]
+  borders: [open, typical]
+  class_analysis: [rejected, typical]
+  death_and_finitude: [defeat_technologically, typical]
+  ecology_priority: [managed_externality, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [technical_capacity, typical]
+  epistemic_authority: [scientific_expertise, typical]
+  family_form: [egalitarian_nuclear, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_essential, typical]
+  healthcare: [market, typical]
+  hierarchy_stance: [minimise, typical]
+  human_nature: [perfectible, typical]
+  market_role: [central, typical]
+  nationalism_stance: [hostile, typical]
+  nonhuman_status: [resource, typical]
+  political_pluralism: [multiparty, typical]
+  property_in_person: [self_ownership_absolute, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  reproductive_politics: [reproductive_freedom, typical]
+  scale_of_polity: [world_federal, typical]
+  sexuality_stance: [liberationist, typical]
+  space_expansion: [human_destiny, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [limited, typical]
+  technology_stance: [accelerate, typical]
+  tradition_stance: [reject, typical]
+  transition_method: [cultural_metapolitics, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  work_ethic: [work_abolished, typical]
+ideologies:
+  - id: left_accelerationism
+    name: "Left accelerationism"
+    aliases: [Srnicek, Williams, "#Accelerate"]
+    prior_weight: 0.08
+    blurb: "Repurpose capitalism's technologies rather than retreat from them; demand full automation and the end of work."
+    positions:
+      technology_stance: [accelerate, core]
+      work_ethic: [work_abolished, core]
+      basic_income: [support_ubi, core]
+      attitude_to_modernity: [transcend_forward, core]
+      class_analysis: [central_marxist, strong]
+      economic_coordination: [indicative_planning, strong]
+      scale_of_polity: [world_federal, strong]
+      growth_stance: [growth_essential, typical]
+      transition_method: [cultural_metapolitics, strong]
+  - id: unconditional_accelerationism
+    name: "Unconditional accelerationism"
+    aliases: [Land, u/acc]
+    prior_weight: 0.04
+    blurb: "Capital is an intelligence using humanity as a substrate; there is no steering it and no reason to try."
+    positions:
+      technology_stance: [transhuman, core]
+      utopian_horizon: [none_pragmatic, core]
+      human_nature: [historically_produced, core]
+      market_role: [central, core]
+      attitude_to_modernity: [transcend_forward, core]
+      rights_basis: [none_power, core]
+      state_trajectory: [replace_with_market, strong]
+      electoral_participation: [boycott, core]
+      growth_stance: [accelerate_maximally, core]
+  - id: effective_accelerationism
+    name: "Effective accelerationism"
+    aliases: [e/acc]
+    prior_weight: 0.07
+    blurb: "Maximise technological and energy growth without restriction; caution is the real existential risk."
+    positions:
+      growth_stance: [accelerate_maximally, core]
+      technology_stance: [accelerate, core]
+      state_scope: [nightwatchman, core]
+      market_role: [central, core]
+      attitude_to_modernity: [embrace, core]
+      ecology_priority: [dismissed, strong]
+      epistemic_authority: [market_aggregation, strong]
+      space_expansion: [human_destiny, strong]
+      utopian_horizon: [achievable_new_order, strong]
+  - id: gender_accelerationism
+    name: "Gender accelerationism"
+    aliases: [g/acc]
+    prior_weight: 0.02
+    blurb: "Capital and technology are already dissolving gender; push that dissolution to completion."
+    positions:
+      gender_order: [abolish_gender, core]
+      technology_stance: [transhuman, core]
+      family_form: [abolish_family, core]
+      attitude_to_modernity: [transcend_forward, core]
+      sexuality_stance: [queer_abolitionist, core]
+      human_nature: [historically_produced, core]
+      utopian_horizon: [none_pragmatic, typical]
+      reproductive_politics: [reproductive_freedom, strong]
+  - id: falc
+    name: "Fully Automated Luxury Communism"
+    aliases: [Bastani]
+    prior_weight: 0.08
+    blurb: "Automation, cheap energy and synthetic abundance make communism a matter of distribution, not scarcity."
+    positions:
+      technology_stance: [accelerate, core]
+      work_ethic: [work_abolished, core]
+      distribution_principle: [need, core]
+      market_role: [abolished, core]
+      growth_stance: [growth_essential, strong]
+      property_regime: [communal, strong]
+      space_expansion: [human_destiny, strong]
+      class_analysis: [central_marxist, strong]
+      utopian_horizon: [achievable_new_order, core]
+      basic_income: [support_services_not_cash, strong]
+  - id: transhumanism
+    name: "Transhumanism"
+    prior_weight: 0.15
+    blurb: "Use technology to transcend the limits of the human body and mind, ageing and death included."
+    positions:
+      technology_stance: [transhuman, core]
+      death_and_finitude: [defeat_technologically, core]
+      human_nature: [perfectible, core]
+      attitude_to_modernity: [transcend_forward, core]
+      property_in_person: [self_ownership_absolute, strong]
+      epistemic_authority: [scientific_expertise, core]
+      reproductive_politics: [reproductive_freedom, strong]
+      healthcare: [market, typical]
+      space_expansion: [irrelevant, weak]
+
+  - id: extropianism
+    name: "Extropianism"
+    aliases: [Max More]
+    prior_weight: 0.03
+    blurb: "Perpetual progress, self-transformation and spontaneous order, opposed to any authority slowing them down."
+    positions:
+      technology_stance: [transhuman, core]
+      death_and_finitude: [defeat_technologically, core]
+      state_scope: [nightwatchman, core]
+      market_role: [central, core]
+      human_nature: [perfectible, core]
+      epistemic_authority: [scientific_expertise, core]
+      growth_stance: [accelerate_maximally, strong]
+      space_expansion: [human_destiny, strong]
+      utopian_horizon: [gradual_improvement, typical]
+  - id: russian_cosmism
+    name: "Russian Cosmism"
+    aliases: [Fedorov, the common task]
+    prior_weight: 0.03
+    blurb: "The common task of humanity is to abolish death and resurrect every ancestor who ever lived, then settle space to house them."
+    positions:
+      death_and_finitude: [resurrect_all, core]
+      space_expansion: [human_destiny, core]
+      technology_stance: [transhuman, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      human_nature: [perfectible, core]
+      work_ethic: [work_is_duty, strong]
+      family_form: [nuclear_traditional, typical]
+      scale_of_polity: [world_federal, strong]
+  - id: biocosmism
+    name: "Biocosmism-Immortalism"
+    prior_weight: 0.02
+    blurb: "Immortality and freedom of movement through space declared as basic rights of the individual."
+    positions:
+      death_and_finitude: [defeat_technologically, core]
+      space_expansion: [human_destiny, core]
+      rights_basis: [natural_individual, core]
+      technology_stance: [transhuman, core]
+      sovereignty_locus: [individual, core]
+      borders: [abolished, strong]
+      utopian_horizon: [achievable_new_order, strong]
+      religion_in_public_life: [militantly_secular, typical]
+  - id: immortalism
+    name: "Immortalist politics"
+    prior_weight: 0.03
+    blurb: "Ageing is a disease and defeating it is the highest political priority there is."
+    positions:
+      death_and_finitude: [defeat_technologically, core]
+      healthcare: [market, typical]
+      technology_stance: [transhuman, core]
+      epistemic_authority: [scientific_expertise, core]
+      growth_stance: [growth_essential, strong]
+      human_nature: [perfectible, strong]
+      reproductive_politics: [neutral, typical]
+      space_expansion: [irrelevant, typical]
+
+  - id: transhumanist_party
+    name: "Transhumanist Party politics"
+    prior_weight: 0.02
+    blurb: "Electoral politics organised around life extension, morphological freedom and public science funding."
+    positions:
+      technology_stance: [transhuman, core]
+      death_and_finitude: [defeat_technologically, core]
+      electoral_participation: [central, core]
+      state_scope: [welfare_broad, typical]
+      epistemic_authority: [scientific_expertise, core]
+      property_in_person: [self_ownership_absolute, core]
+      healthcare: [universal_public, typical]
+      education_aim: [technical_capacity, strong]
+  - id: longtermism
+    name: "Longtermism"
+    prior_weight: 0.07
+    blurb: "The vast number of possible future people dominates moral calculation, so preserving the future comes first."
+    positions:
+      epistemic_authority: [scientific_expertise, core]
+      utopian_horizon: [achievable_new_order, strong]
+      space_expansion: [human_destiny, core]
+      decision_procedure: [expert_rule, strong]
+      reproductive_politics: [natalist_restrictive, typical]
+      technology_stance: [accelerate, typical]
+      growth_stance: [growth_essential, strong]
+      distribution_principle: [need, typical]
+  - id: effective_altruism
+    name: "Effective altruism"
+    prior_weight: 0.1
+    blurb: "Do the most good per unit of resource, following the evidence wherever it points."
+    positions:
+      epistemic_authority: [scientific_expertise, core]
+      welfare_provision: [charity_voluntary, core]
+      distribution_principle: [need, core]
+      nonhuman_status: [rights_bearing, strong]
+      immigration: [open_borders, strong]
+      market_role: [central, typical]
+      decision_procedure: [expert_rule, strong]
+      utopian_horizon: [gradual_improvement, strong]
+      internationalism: [cosmopolitan_universal, core]
+  - id: singularitarianism
+    name: "Singularitarianism"
+    prior_weight: 0.04
+    blurb: "An intelligence explosion is coming; everything else in politics is downstream of getting it right."
+    positions:
+      technology_stance: [transhuman, core]
+      epistemic_authority: [scientific_expertise, core]
+      attitude_to_modernity: [transcend_forward, core]
+      decision_procedure: [expert_rule, strong]
+      death_and_finitude: [defeat_technologically, strong]
+      utopian_horizon: [transcendent_eschaton, strong]
+      space_expansion: [human_destiny, typical]
+  - id: xenofeminism
+    name: "Xenofeminism"
+    aliases: [Laboria Cuboniks]
+    prior_weight: 0.03
+    blurb: "If nature is unjust, change nature — technology seized for gender abolition rather than left to capital."
+    positions:
+      gender_order: [abolish_gender, core]
+      technology_stance: [transhuman, core]
+      human_nature: [historically_produced, core]
+      family_form: [abolish_family, strong]
+      attitude_to_modernity: [transcend_forward, core]
+      reproductive_politics: [reproductive_freedom, core]
+      sexuality_stance: [queer_abolitionist, strong]
+      hierarchy_stance: [abolish, strong]
+  - id: cyberfeminism
+    name: "Cyberfeminism"
+    aliases: [VNS Matrix]
+    prior_weight: 0.02
+    blurb: "The network as a space where gender can be rewritten, seized through art and code rather than legislation."
+    positions:
+      gender_order: [abolish_gender, core]
+      technology_stance: [accelerate, core]
+      art_and_culture: [avant_garde_rupture, core]
+      organisation_form: [network, core]
+      sexuality_stance: [liberationist, strong]
+      transition_method: [cultural_metapolitics, core]
+      human_nature: [historically_produced, strong]
+  - id: futurism_marinetti
+    name: "Futurism"
+    aliases: [Marinetti]
+    prior_weight: 0.03
+    blurb: "Speed, machines and war glorified; museums and the past to be burned."
+    positions:
+      art_and_culture: [avant_garde_rupture, core]
+      tradition_stance: [reject, core]
+      technology_stance: [accelerate, core]
+      violence_legitimacy: [total_war, core]
+      attitude_to_modernity: [embrace, core]
+      urban_rural: [urban_industrial, core]
+      nationalism_stance: [core_value, strong]
+      utopian_horizon: [achievable_new_order, typical]
+  - id: technolibertarianism
+    name: "Technolibertarianism"
+    prior_weight: 0.08
+    blurb: "Software and networks route around government; innovation should be permissionless."
+    positions:
+      technology_stance: [accelerate, core]
+      state_scope: [nightwatchman, core]
+      speech_norms: [absolutist, core]
+      market_role: [central, core]
+      organisation_form: [network, core]
+      epistemic_authority: [market_aggregation, strong]
+      property_in_person: [self_ownership_absolute, strong]
+      growth_stance: [growth_essential, strong]
+  - id: post_scarcity_anarchism
+    name: "Post-scarcity anarchism"
+    prior_weight: 0.05
+    blurb: "Technology has already abolished material scarcity; only social relations keep it artificially alive."
+    positions:
+      technology_stance: [appropriate_scale, core]
+      state_trajectory: [abolish_now, core]
+      distribution_principle: [need, core]
+      work_ethic: [work_abolished, core]
+      market_role: [abolished, core]
+      hierarchy_stance: [abolish, core]
+      ecology_priority: [primary_frame, strong]
+      scale_of_polity: [municipal_confederal, strong]
+  - id: space_expansionism
+    name: "Space expansionism"
+    aliases: [O'Neill settlement politics]
+    prior_weight: 0.04
+    blurb: "Humanity's future is off-world; orbital settlement is the political project that matters most."
+    positions:
+      space_expansion: [human_destiny, core]
+      technology_stance: [accelerate, core]
+      growth_stance: [growth_essential, core]
+      ecology_priority: [managed_externality, strong]
+      epistemic_authority: [scientific_expertise, core]
+      scale_of_polity: [world_federal, typical]
+      utopian_horizon: [achievable_new_order, strong]
+      market_role: [central, typical]
+      death_and_finitude: [accept_natural, typical]

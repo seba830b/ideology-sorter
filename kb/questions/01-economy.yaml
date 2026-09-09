@@ -1,0 +1,246 @@
+questions:
+  - id: q_means_of_production
+    tenet: property_regime
+    tier: 1
+    prompt: "Private ownership of factories, land and major businesses should be abolished."
+    expected: {private_absolute: -2, private_regulated: -2, distributed_wide: -1, mutualist_possession: 1, cooperative: 1, communal: 2, state_owned: 2}
+  - id: q_wide_small_property
+    tenet: property_regime
+    tier: 2
+    prompt: "The ideal is not collective ownership but a society where almost everyone owns a small piece of productive property."
+    expected: {distributed_wide: 2, mutualist_possession: 1, private_absolute: -1, communal: -2, state_owned: -2, cooperative: 0}
+  - id: q_occupancy_and_use
+    tenet: property_regime
+    tier: 3
+    prompt: "You own something only while you are actually using it; absentee ownership is not ownership at all."
+    expected: {mutualist_possession: 2, communal: 1, private_absolute: -2, private_regulated: -2, state_owned: -1, distributed_wide: -1}
+  - id: q_state_owns
+    tenet: property_regime
+    tier: 2
+    prompt: "Major industry belongs in the hands of the state rather than in workers' cooperatives."
+    expected: {state_owned: 2, communal: -1, cooperative: -2, mutualist_possession: -2, private_absolute: -2}
+  - id: q_central_planning
+    tenet: economic_coordination
+    tier: 1
+    prompt: "The economy would work better if production were planned centrally rather than left to markets."
+    expected: {free_market: -2, regulated_market: -1, market_socialism: 0, mixed_economy: 0, indicative_planning: 1, central_planning: 2, moneyless_planning: 2}
+  - id: q_free_market_best
+    tenet: economic_coordination
+    tier: 1
+    prompt: "Free competitive markets allocate resources better than any authority could."
+    expected: {free_market: 2, regulated_market: 1, market_socialism: 0, mixed_economy: 0, indicative_planning: -1, central_planning: -2, moneyless_planning: -2}
+  - id: q_market_socialism_specific
+    tenet: economic_coordination
+    tier: 3
+    prompt: "Firms should compete in a real market, but every one of them should be owned by its own workers."
+    expected: {market_socialism: 2, mixed_economy: 0, free_market: -1, central_planning: -2, moneyless_planning: -2, indicative_planning: -1}
+  - id: q_planning_without_money
+    tenet: economic_coordination
+    tier: 3
+    prompt: "A planned economy should allocate goods in physical quantities, without using money or prices at all."
+    expected: {moneyless_planning: 2, central_planning: 1, indicative_planning: -1, market_socialism: -2, free_market: -2, mixed_economy: -2}
+  - id: q_mixed_economy
+    tenet: economic_coordination
+    tier: 1
+    prompt: "The best economy mixes private enterprise with substantial public ownership and regulation."
+    expected: {mixed_economy: 2, regulated_market: 1, market_socialism: 1, free_market: -2, central_planning: -1, moneyless_planning: -2}
+  - id: q_land_value_tax
+    tenet: land_regime
+    tier: 2
+    prompt: "The rental value of land should be collected by the community, even if the land itself stays in private hands."
+    expected: {private_taxed_rent: 2, commons: 1, private_absolute: -2, tenured_use: 0, collectivised: -1, state_owned: 0}
+  - id: q_land_as_commons
+    tenet: land_regime
+    tier: 2
+    prompt: "Land should be held in common by the community, not owned by anyone."
+    expected: {commons: 2, collectivised: 2, tenured_use: 1, private_taxed_rent: -1, private_absolute: -2, state_owned: 1}
+  - id: q_land_absolute_property
+    tenet: land_regime
+    tier: 1
+    prompt: "Land is property like any other and its owner owes the community nothing for holding it."
+    expected: {private_absolute: 2, private_taxed_rent: -2, commons: -2, collectivised: -2, tenured_use: -1, state_owned: -2}
+  - id: q_land_to_the_tiller
+    tenet: land_regime
+    tier: 3
+    prompt: "Land should belong to whoever actually works it, and to no one else."
+    expected: {tenured_use: 2, commons: 1, collectivised: 1, private_absolute: -2, private_taxed_rent: 0, state_owned: -1}
+  - id: q_demurrage
+    tenet: money_form
+    tier: 3
+    prompt: "Money should lose a little of its value every month, so that hoarding it becomes pointless."
+    expected: {demurrage: 2, mutual_credit: 1, conventional: -2, commodity_backed: -2, private_competing: -1, abolished: 0, sovereign_fiat_expansive: 0}
+  - id: q_abolish_money
+    tenet: money_form
+    tier: 2
+    prompt: "A good society would have no money in it at all."
+    expected: {abolished: 2, mutual_credit: -1, conventional: -2, commodity_backed: -2, private_competing: -2, demurrage: -2, sovereign_fiat_expansive: -2}
+  - id: q_competing_currencies
+    tenet: money_form
+    tier: 3
+    prompt: "Anyone should be free to issue currency and let people choose which to use."
+    expected: {private_competing: 2, mutual_credit: 1, commodity_backed: 1, conventional: -1, sovereign_fiat_expansive: -2, abolished: -1}
+  - id: q_money_creation_public
+    tenet: money_form
+    tier: 3
+    prompt: "A government that issues its own currency can always afford what its real resources allow."
+    expected: {sovereign_fiat_expansive: 2, conventional: 0, commodity_backed: -2, private_competing: -2, demurrage: 0, abolished: -1}
+  - id: q_interest_free_credit
+    tenet: money_form
+    tier: 3
+    prompt: "Credit should be issued by mutual associations at cost, with no interest charged."
+    expected: {mutual_credit: 2, demurrage: 1, private_competing: -1, conventional: -2, commodity_backed: -1}
+  - id: q_worker_owned_firms
+    tenet: firm_form
+    tier: 1
+    prompt: "Every workplace should be owned and run by the people who work in it."
+    expected: {worker_cooperative: 2, communal_unit: 1, guild: 1, investor_owned: -2, state_enterprise: -1, household_artisan: 0}
+  - id: q_shareholder_firm
+    tenet: firm_form
+    tier: 2
+    prompt: "Companies owned by shareholders and run by professional managers are a perfectly good way to organise production."
+    expected: {investor_owned: 2, state_enterprise: 0, worker_cooperative: -2, communal_unit: -2, guild: -1, household_artisan: -1}
+  - id: q_household_production
+    tenet: firm_form
+    tier: 3
+    prompt: "Most people should work for themselves, in a family workshop, farm or small trade."
+    expected: {household_artisan: 2, guild: 1, worker_cooperative: 0, investor_owned: -2, state_enterprise: -2, communal_unit: 0}
+  - id: q_guild_organisation
+    tenet: firm_form
+    tier: 3
+    prompt: "Each trade should govern itself through a guild that sets its own standards, wages and entry."
+    expected: {guild: 2, worker_cooperative: 1, household_artisan: 1, investor_owned: -2, state_enterprise: -1}
+  - id: q_abolish_wage_labour
+    tenet: wage_labour
+    tier: 1
+    prompt: "Working for a wage is a form of subordination that should be abolished, not merely regulated."
+    expected: {legitimate: -2, regulated: -1, abolish_via_coops: 1, abolish_entirely: 2}
+  - id: q_wages_fine_if_fair
+    tenet: wage_labour
+    tier: 2
+    prompt: "There is nothing wrong with wage employment as long as pay and conditions are decent."
+    expected: {legitimate: 2, regulated: 1, abolish_via_coops: -1, abolish_entirely: -2}
+  - id: q_markets_must_go
+    tenet: market_role
+    tier: 1
+    prompt: "Markets should eventually disappear entirely from economic life."
+    expected: {central: -2, retained_bounded: -1, transitional: 1, abolished: 2}
+  - id: q_markets_central
+    tenet: market_role
+    tier: 1
+    prompt: "Markets are the best thing humans have invented for coordinating a complex society."
+    expected: {central: 2, retained_bounded: 0, transitional: -1, abolished: -2}
+  - id: q_abolish_inheritance
+    tenet: inheritance
+    tier: 2
+    prompt: "Large inheritances should be abolished; nobody should start life with unearned wealth."
+    expected: {unrestricted: -2, taxed: 0, abolished: 2}
+  - id: q_inheritance_untouched
+    tenet: inheritance
+    tier: 2
+    prompt: "What you leave your children is nobody else's business, and should not be taxed."
+    expected: {unrestricted: 2, taxed: -1, abolished: -2}
+  - id: q_to_each_according_to_need
+    tenet: distribution_principle
+    tier: 1
+    prompt: "People should receive according to their needs, regardless of what they contribute."
+    expected: {need: 2, equal_share: 1, subsistence_guarantee: 0, contribution_labour: -1, desert_market: -2}
+  - id: q_reward_by_contribution
+    tenet: distribution_principle
+    tier: 2
+    prompt: "People should be rewarded in proportion to the work they actually put in."
+    expected: {contribution_labour: 2, desert_market: 1, equal_share: -1, need: -2, subsistence_guarantee: 0}
+  - id: q_market_deserts
+    tenet: distribution_principle
+    tier: 2
+    prompt: "What the market pays you is a fair measure of what you deserve."
+    expected: {desert_market: 2, contribution_labour: 0, subsistence_guarantee: -1, equal_share: -2, need: -2}
+  - id: q_strict_equality
+    tenet: distribution_principle
+    tier: 3
+    prompt: "Everyone should receive an equal share, full stop."
+    expected: {equal_share: 2, need: 1, contribution_labour: -1, desert_market: -2, subsistence_guarantee: 0}
+  - id: q_degrowth
+    tenet: growth_stance
+    tier: 1
+    prompt: "Rich countries should deliberately shrink their economies rather than keep growing."
+    expected: {degrowth: 2, steady_state: 1, growth_managed: -1, growth_essential: -2, accelerate_maximally: -2}
+  - id: q_growth_essential
+    tenet: growth_stance
+    tier: 1
+    prompt: "Economic growth is what lifts people out of poverty and we need much more of it."
+    expected: {growth_essential: 2, accelerate_maximally: 2, growth_managed: 0, steady_state: -2, degrowth: -2}
+  - id: q_accelerate_everything
+    tenet: growth_stance
+    tier: 3
+    prompt: "We should push technological and economic growth as hard and as fast as physically possible."
+    expected: {accelerate_maximally: 2, growth_essential: 1, growth_managed: -1, steady_state: -2, degrowth: -2}
+  - id: q_ubi
+    tenet: basic_income
+    tier: 2
+    prompt: "Everyone should receive an unconditional income, enough to live on, with no work requirement."
+    expected: {support_ubi: 2, social_dividend: 1, support_services_not_cash: -1, oppose: -2}
+  - id: q_services_not_cash
+    tenet: basic_income
+    tier: 3
+    prompt: "Better to provide free housing, transport and healthcare to everyone than to hand out cash."
+    expected: {support_services_not_cash: 2, support_ubi: -1, social_dividend: -1, oppose: 0}
+  - id: q_resource_dividend
+    tenet: basic_income
+    tier: 3
+    prompt: "Everyone should get an equal dividend from the rent of land and natural resources, because we own them jointly."
+    expected: {social_dividend: 2, support_ubi: 1, support_services_not_cash: -1, oppose: -2}
+  - id: q_work_is_virtue
+    tenet: work_ethic
+    tier: 2
+    prompt: "Hard work is good for a person's character, not merely a means to an income."
+    expected: {work_is_virtue: 2, work_is_duty: 1, work_reduced: -1, work_abolished: -2}
+  - id: q_abolish_work
+    tenet: work_ethic
+    tier: 1
+    prompt: "The goal should be to abolish work as we know it, not to create more jobs."
+    expected: {work_abolished: 2, work_reduced: 1, work_is_duty: -2, work_is_virtue: -2}
+  - id: q_universal_healthcare
+    tenet: healthcare
+    tier: 1
+    prompt: "Healthcare should be provided publicly and free at the point of use."
+    expected: {universal_public: 2, communal_mutual: 1, insurance_mandated: -1, market: -2}
+  - id: q_healthcare_market
+    tenet: healthcare
+    tier: 2
+    prompt: "Medical care is a service like any other and should be bought and sold."
+    expected: {market: 2, insurance_mandated: 0, universal_public: -2, communal_mutual: -2}
+  - id: q_housing_decommodified
+    tenet: housing
+    tier: 2
+    prompt: "Housing should be taken off the market entirely and treated as a common good."
+    expected: {decommodified_commons: 2, occupancy_use: 2, social_provision: 1, market_commodity: -2}
+  - id: q_housing_market
+    tenet: housing
+    tier: 2
+    prompt: "Property markets are the best way to get housing built and allocated."
+    expected: {market_commodity: 2, social_provision: -1, decommodified_commons: -2, occupancy_use: -2}
+  - id: q_welfare_mutual_aid
+    tenet: welfare_provision
+    tier: 2
+    prompt: "People in need should be helped by their own community and voluntary associations, not by a state bureaucracy."
+    expected: {mutual_aid: 2, communal_direct: 2, charity_voluntary: 1, insurance_contributory: -1, universal_public: -2}
+  - id: q_welfare_universal_state
+    tenet: welfare_provision
+    tier: 1
+    prompt: "A comprehensive public welfare state is the right way to meet people's needs."
+    expected: {universal_public: 2, insurance_contributory: 1, mutual_aid: -1, charity_voluntary: -2, communal_direct: -1}
+  - id: q_charity_not_state
+    tenet: welfare_provision
+    tier: 3
+    prompt: "Charity should be voluntary; forcing people to fund welfare through taxes is wrong."
+    expected: {charity_voluntary: 2, mutual_aid: 1, insurance_contributory: -1, universal_public: -2, communal_direct: -1}
+  - id: q_agrarian_life
+    tenet: urban_rural
+    tier: 2
+    prompt: "Life centred on farming and the countryside is healthier than urban industrial life."
+    expected: {back_to_land: 2, agrarian_rural: 2, balanced: 0, urban_industrial: -2}
+  - id: q_cities_are_good
+    tenet: urban_rural
+    tier: 2
+    prompt: "Dense cities are where human civilisation works best."
+    expected: {urban_industrial: 2, balanced: 0, agrarian_rural: -2, back_to_land: -2}

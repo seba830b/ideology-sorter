@@ -1,0 +1,363 @@
+# Controlled vocabulary. Changing an option invalidates every ideology that uses it.
+#
+# kind: ordered     -> adjacent options are near-misses; partial credit applies
+# kind: categorical -> options are unrelated; no partial credit, ever
+#
+# `state_trajectory` is categorical on purpose: abolish_now must never collect credit
+# from minimal. That confusion is the standard failure of axis-based political tests.
+
+# ---------------------------------------------------------------- economy & property
+property_regime:
+  label: Who may own productive property
+  kind: categorical
+  options: [private_absolute, private_regulated, distributed_wide, mutualist_possession, cooperative, communal, state_owned]
+
+economic_coordination:
+  label: How production is coordinated
+  kind: ordered
+  options: [free_market, regulated_market, market_socialism, mixed_economy, indicative_planning, central_planning, moneyless_planning]
+
+land_regime:
+  label: How land is held
+  kind: categorical
+  options: [private_absolute, private_taxed_rent, tenured_use, commons, collectivised, state_owned]
+
+money_form:
+  label: What money is
+  kind: categorical
+  options: [conventional, demurrage, commodity_backed, sovereign_fiat_expansive, mutual_credit, private_competing, abolished]
+
+firm_form:
+  label: How enterprises are constituted
+  kind: categorical
+  options: [investor_owned, worker_cooperative, guild, state_enterprise, household_artisan, communal_unit]
+
+wage_labour:
+  label: Status of wage labour
+  kind: ordered
+  options: [legitimate, regulated, abolish_via_coops, abolish_entirely]
+
+market_role:
+  label: Role of markets
+  kind: ordered
+  options: [central, retained_bounded, transitional, abolished]
+
+inheritance:
+  label: Inherited wealth
+  kind: ordered
+  options: [unrestricted, taxed, abolished]
+
+distribution_principle:
+  label: What determines what people get
+  kind: categorical
+  options: [desert_market, contribution_labour, need, equal_share, subsistence_guarantee]
+
+growth_stance:
+  label: Economic growth
+  kind: ordered
+  options: [accelerate_maximally, growth_essential, growth_managed, steady_state, degrowth]
+
+basic_income:
+  label: Unconditional provision
+  kind: categorical
+  options: [oppose, support_ubi, support_services_not_cash, social_dividend]
+
+# -------------------------------------------------------------------- state & power
+state_trajectory:
+  label: What becomes of the state
+  kind: categorical
+  options: [abolish_now, wither_away, minimal, permanent_strong, replace_with_market, replace_with_confederation]
+
+state_scope:
+  label: How much the state does
+  kind: ordered
+  options: [nightwatchman, limited, welfare_broad, developmental, total]
+
+sovereignty_locus:
+  label: Where legitimate authority ultimately rests
+  kind: categorical
+  options: [individual, community, nation, class, federation, humanity, divine]
+
+decision_procedure:
+  label: How binding decisions get made
+  kind: categorical
+  options: [representative_election, direct_democracy, consensus, sortition, delegation_recallable, vanguard_party, expert_rule, market_signal, prediction_market, monarch, clerical_authority]
+
+constitutionalism:
+  label: What binds government
+  kind: categorical
+  options: [entrenched_rights, parliamentary_supremacy, revolutionary_legality, divine_law, no_constitution]
+
+political_pluralism:
+  label: Party competition
+  kind: categorical
+  options: [multiparty, dominant_party, single_party, no_parties_councils, no_parties_traditional]
+
+legitimate_violence:
+  label: Who may legitimately use force
+  kind: categorical
+  options: [state_monopoly, competing_providers, communal_militia, none_pacifist, revolutionary_vanguard]
+
+policing:
+  label: Policing
+  kind: categorical
+  options: [professional, community_controlled, abolish, private]
+
+hierarchy_stance:
+  label: Social hierarchy
+  kind: ordered
+  options: [natural_good, functional_necessary, minimise, abolish]
+
+leadership_form:
+  label: Form of leadership
+  kind: categorical
+  options: [charismatic_leader, collective, technocratic_board, rotating_delegates, hereditary, none]
+
+# ---------------------------------------------------------------- strategy & change
+transition_method:
+  label: How change is achieved
+  kind: categorical
+  options: [electoral, gradual_reform, general_strike, insurrection, protracted_peoples_war, prefigurative, exit_secession, counter_economics, coup_vanguard, cultural_metapolitics, withdrawal]
+
+violence_legitimacy:
+  label: Political violence
+  kind: ordered
+  options: [never, defensive_only, insurrectionary, revolutionary_terror, total_war]
+
+reform_vs_rupture:
+  label: Reform or rupture
+  kind: ordered
+  options: [reform, reform_toward_rupture, rupture]
+
+organisation_form:
+  label: How to organise
+  kind: categorical
+  options: [vanguard_party, mass_party, union, affinity_group, federation, network, church_movement, movement_of_movements, none]
+
+vanguard_role:
+  label: A leading revolutionary party
+  kind: ordered
+  options: [necessary, useful, rejected]
+
+electoral_participation:
+  label: Elections
+  kind: ordered
+  options: [central, tactical, boycott]
+
+# --------------------------------------------------------------- scale & geography
+scale_of_polity:
+  label: The right size of a political unit
+  kind: categorical
+  options: [household, village_commune, municipal_confederal, bioregional, regional, national, imperial, continental_bloc, world_federal]
+
+federalism:
+  label: How units combine
+  kind: ordered
+  options: [unitary, federal, confederal, none_stateless]
+
+borders:
+  label: Borders
+  kind: ordered
+  options: [closed, controlled, open, abolished]
+
+secession_right:
+  label: Right to leave
+  kind: ordered
+  options: [none, national_only, universal_right, exit_by_individual]
+
+internationalism:
+  label: Orientation beyond one's own polity
+  kind: categorical
+  options: [proletarian_internationalist, anti_imperialist_nationalist, national_interest, isolationist, cosmopolitan_universal]
+
+# --------------------------------------------------------- nation, people, identity
+nation_concept:
+  label: What a nation is
+  kind: categorical
+  options: [civic, ethnic, cultural_linguistic, religious, class_based, post_national, diasporic]
+
+nationalism_stance:
+  label: Nationalism
+  kind: ordered
+  options: [core_value, instrumental_for_liberation, indifferent, hostile]
+
+colonialism_stance:
+  label: Colonialism
+  kind: ordered
+  options: [justified, ambivalent, oppose, reparative_decolonial]
+
+race_politics:
+  label: Race and political order
+  kind: categorical
+  options: [hierarchy_asserted, separatism, colourblind_universalist, antiracist_structural, liberationist_nationalist]
+
+immigration:
+  label: Immigration
+  kind: ordered
+  options: [restrict_sharply, manage, welcome, open_borders]
+
+indigenous_sovereignty:
+  label: Indigenous claims
+  kind: ordered
+  options: [reject, recognise_cultural, land_return, primary_frame]
+
+# --------------------------------------------------------- gender, family, sexuality
+gender_order:
+  label: Gender
+  kind: ordered
+  options: [traditional_complementary, formal_equality, structural_liberation, abolish_gender]
+
+family_form:
+  label: The family
+  kind: ordered
+  options: [patriarchal_household, nuclear_traditional, egalitarian_nuclear, communal_rearing, abolish_family]
+
+reproductive_politics:
+  label: Reproduction
+  kind: ordered
+  options: [natalist_restrictive, neutral, reproductive_freedom, antinatalist]
+
+sexuality_stance:
+  label: Sexuality
+  kind: ordered
+  options: [traditional_restrictive, tolerant_private, liberationist, queer_abolitionist]
+
+domestic_labour:
+  label: Housework and care
+  kind: categorical
+  options: [unremunerated_natural, valued_privately, waged_socialised, communised]
+
+# ------------------------------------------------------ culture, religion, knowledge
+religion_in_public_life:
+  label: Religion and the public order
+  kind: categorical
+  options: [theocratic, established_church, culturally_grounded, secular_neutral, militantly_secular, spiritual_syncretic]
+
+tradition_stance:
+  label: Inherited tradition
+  kind: categorical
+  options: [restore, conserve, critically_inherit, reject, transcend_esoteric]
+
+epistemic_authority:
+  label: What settles a disputed question
+  kind: categorical
+  options: [revelation, tradition, scientific_expertise, popular_reason, dialectical_materialism, market_aggregation, esoteric_initiation]
+
+education_aim:
+  label: What education is for
+  kind: categorical
+  options: [transmit_tradition, civic_formation, critical_consciousness, technical_capacity, individual_flourishing, ideological_formation]
+
+art_and_culture:
+  label: Art and culture
+  kind: categorical
+  options: [preserve_canon, popular_folk, avant_garde_rupture, propaganda_functional, commercial_free]
+
+language_politics:
+  label: Language
+  kind: categorical
+  options: [national_language, minority_protection, constructed_universal, multilingual_neutral]
+
+# ------------------------------------------------------------- technology & nature
+technology_stance:
+  label: Technology
+  kind: ordered
+  options: [primitivist_reject, appropriate_scale, industrial_neutral, accelerate, transhuman]
+
+ecology_priority:
+  label: Ecology
+  kind: ordered
+  options: [dismissed, managed_externality, central_constraint, primary_frame, misanthropic_deep]
+
+nonhuman_status:
+  label: Animals and nature
+  kind: ordered
+  options: [resource, welfare_regulated, rights_bearing, liberation_subject, sacred]
+
+human_nature:
+  label: What people are like
+  kind: categorical
+  options: [fallen_needs_restraint, self_interested_rational, historically_produced, cooperative_good, perfectible]
+
+death_and_finitude:
+  label: Death
+  kind: categorical
+  options: [accept_natural, religious_afterlife, defeat_technologically, resurrect_all, extinction_desirable]
+
+space_expansion:
+  label: Space
+  kind: categorical
+  options: [irrelevant, national_prestige, human_destiny, escape_hatch]
+
+sphere_separation:
+  label: How social spheres relate
+  kind: categorical
+  options: [unified_state, church_state_separate, threefold_cultural_political_economic, functional_pluralism]
+
+# ------------------------------------------------------------ welfare, work, living
+welfare_provision:
+  label: How need is met
+  kind: categorical
+  options: [charity_voluntary, mutual_aid, insurance_contributory, universal_public, communal_direct]
+
+work_ethic:
+  label: Work
+  kind: ordered
+  options: [work_is_virtue, work_is_duty, work_reduced, work_abolished]
+
+healthcare:
+  label: Healthcare
+  kind: ordered
+  options: [market, insurance_mandated, universal_public, communal_mutual]
+
+housing:
+  label: Housing
+  kind: ordered
+  options: [market_commodity, social_provision, decommodified_commons, occupancy_use]
+
+urban_rural:
+  label: Where life should be centred
+  kind: ordered
+  options: [urban_industrial, balanced, agrarian_rural, back_to_land]
+
+# ------------------------------------------------------------------ justice & rights
+punishment:
+  label: Crime and punishment
+  kind: ordered
+  options: [retributive_harsh, deterrent_proportional, rehabilitative, restorative, abolitionist]
+
+rights_basis:
+  label: Where rights come from
+  kind: categorical
+  options: [natural_individual, divine_law, positive_legal, collective_historical, none_power]
+
+speech_norms:
+  label: Speech
+  kind: categorical
+  options: [absolutist, broadly_free, restricted_for_harm, ideologically_policed, traditional_blasphemy_limits]
+
+property_in_person:
+  label: Your body and yourself
+  kind: categorical
+  options: [self_ownership_absolute, bodily_autonomy_qualified, community_claims, divine_stewardship]
+
+# ----------------------------------------------------------------------------- meta
+utopian_horizon:
+  label: What the goal looks like
+  kind: categorical
+  options: [none_pragmatic, gradual_improvement, achievable_new_order, restorationist_golden_age, transcendent_eschaton]
+
+attitude_to_modernity:
+  label: Modernity
+  kind: categorical
+  options: [embrace, critical_engagement, reject_return, transcend_forward]
+
+class_analysis:
+  label: How society divides
+  kind: categorical
+  options: [central_marxist, elite_mass, producer_parasite, status_group, rejected]
+
+imperialism_analysis:
+  label: Imperialism as an explanation
+  kind: ordered
+  options: [central_frame, secondary, rejected]

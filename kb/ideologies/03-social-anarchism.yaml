@@ -1,0 +1,360 @@
+family: social_anarchism
+label: Social anarchism
+family_defaults:
+  borders: [abolished, typical]
+  class_analysis: [central_marxist, typical]
+  constitutionalism: [no_constitution, typical]
+  decision_procedure: [direct_democracy, typical]
+  distribution_principle: [need, typical]
+  ecology_priority: [central_constraint, typical]
+  economic_coordination: [moneyless_planning, typical]
+  education_aim: [critical_consciousness, typical]
+  electoral_participation: [boycott, typical]
+  family_form: [egalitarian_nuclear, typical]
+  federalism: [none_stateless, typical]
+  firm_form: [communal_unit, typical]
+  gender_order: [structural_liberation, typical]
+  healthcare: [communal_mutual, typical]
+  hierarchy_stance: [abolish, typical]
+  housing: [occupancy_use, typical]
+  human_nature: [cooperative_good, typical]
+  immigration: [open_borders, typical]
+  imperialism_analysis: [central_frame, typical]
+  inheritance: [abolished, typical]
+  internationalism: [proletarian_internationalist, typical]
+  land_regime: [commons, typical]
+  leadership_form: [none, typical]
+  legitimate_violence: [communal_militia, typical]
+  market_role: [abolished, typical]
+  money_form: [abolished, typical]
+  nationalism_stance: [hostile, typical]
+  organisation_form: [federation, typical]
+  policing: [abolish, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_in_person: [self_ownership_absolute, typical]
+  property_regime: [communal, typical]
+  punishment: [abolitionist, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  reproductive_politics: [reproductive_freedom, typical]
+  rights_basis: [natural_individual, typical]
+  scale_of_polity: [village_commune, typical]
+  sexuality_stance: [liberationist, typical]
+  speech_norms: [absolutist, typical]
+  state_scope: [nightwatchman, typical]
+  state_trajectory: [abolish_now, typical]
+  technology_stance: [appropriate_scale, typical]
+  tradition_stance: [reject, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  vanguard_role: [rejected, typical]
+  wage_labour: [abolish_entirely, typical]
+  welfare_provision: [mutual_aid, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+
+  - id: anarcho_communism
+    name: Anarcho-communism
+    aliases: [libertarian communism, Kropotkin]
+    prior_weight: 0.9
+    blurb: "No state, no wages, no money — free federations taking from a common store according to need."
+    positions:
+      state_trajectory: [abolish_now, core]
+      property_regime: [communal, core]
+      market_role: [abolished, core]
+      money_form: [abolished, core]
+      wage_labour: [abolish_entirely, core]
+      distribution_principle: [need, core]
+      hierarchy_stance: [abolish, core]
+      decision_procedure: [direct_democracy, core]
+      organisation_form: [federation, core]
+      policing: [abolish, core]
+      electoral_participation: [boycott, core]
+      human_nature: [cooperative_good, core]
+      welfare_provision: [mutual_aid, core]
+      punishment: [abolitionist, strong]
+      scale_of_polity: [village_commune, strong]
+      transition_method: [insurrection, strong]
+
+  - id: anarcho_syndicalism
+    name: Anarcho-syndicalism
+    aliases: [CNT, revolutionary unionism]
+    prior_weight: 0.7
+    blurb: "Revolutionary unions both fight capital now and become the structure that runs production afterwards."
+    positions:
+      organisation_form: [union, core]
+      transition_method: [general_strike, core]
+      firm_form: [worker_cooperative, core]
+      state_trajectory: [abolish_now, core]
+      decision_procedure: [delegation_recallable, core]
+      hierarchy_stance: [abolish, core]
+      electoral_participation: [boycott, core]
+      property_regime: [communal, strong]
+      wage_labour: [abolish_entirely, strong]
+      class_analysis: [central_marxist, typical]
+      policing: [community_controlled, strong]
+      federalism: [confederal, core]
+
+  - id: collectivist_anarchism
+    name: Collectivist anarchism
+    aliases: [Bakuninism]
+    prior_weight: 0.25
+    blurb: "Collective ownership of the means of production, but people are still paid for the labour they contribute."
+    positions:
+      property_regime: [communal, core]
+      distribution_principle: [contribution_labour, core]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      transition_method: [insurrection, strong]
+      organisation_form: [federation, core]
+      decision_procedure: [direct_democracy, strong]
+      money_form: [mutual_credit, typical]
+      electoral_participation: [boycott, core]
+      religion_in_public_life: [militantly_secular, strong]
+
+  - id: platformism
+    name: Platformism
+    aliases: [Dielo Truda, especifist organisation]
+    prior_weight: 0.15
+    blurb: "Anarchists need a disciplined organisation with a common line — theoretical unity and collective responsibility."
+    positions:
+      organisation_form: [federation, core]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      decision_procedure: [delegation_recallable, core]
+      transition_method: [insurrection, strong]
+      property_regime: [communal, strong]
+      vanguard_role: [useful, typical]
+      class_analysis: [central_marxist, strong]
+      electoral_participation: [boycott, core]
+
+  - id: especifismo
+    name: Especifismo
+    aliases: [FARJ, social insertion]
+    prior_weight: 0.08
+    blurb: "A specifically anarchist organisation works inside broader popular movements without trying to lead them."
+    positions:
+      organisation_form: [federation, core]
+      transition_method: [prefigurative, core]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      decision_procedure: [direct_democracy, core]
+      class_analysis: [central_marxist, strong]
+      colonialism_stance: [reparative_decolonial, strong]
+      electoral_participation: [boycott, core]
+      education_aim: [critical_consciousness, strong]
+
+  - id: synthesis_anarchism
+    name: Synthesis anarchism
+    aliases: [Voline, Faure, anarchism without adjectives]
+    prior_weight: 0.1
+    blurb: "Communists, syndicalists and individualists should share one organisation rather than split over the future."
+    positions:
+      organisation_form: [federation, core]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      decision_procedure: [consensus, core]
+      property_regime: [mutualist_possession, typical]
+      speech_norms: [absolutist, strong]
+      electoral_participation: [boycott, core]
+      utopian_horizon: [none_pragmatic, typical]
+
+  - id: makhnovism
+    name: Makhnovism
+    aliases: [Revolutionary Insurrectionary Army of Ukraine]
+    prior_weight: 0.1
+    blurb: "Armed peasant self-defence holding free territory against every state that claimed it."
+    positions:
+      state_trajectory: [abolish_now, core]
+      legitimate_violence: [communal_militia, core]
+      urban_rural: [agrarian_rural, core]
+      land_regime: [commons, core]
+      transition_method: [insurrection, core]
+      decision_procedure: [direct_democracy, strong]
+      hierarchy_stance: [abolish, strong]
+      federalism: [confederal, strong]
+      scale_of_polity: [village_commune, strong]
+
+  - id: magonism
+    name: Magonism
+    aliases: [Mexican Liberal Party, Flores Magón]
+    prior_weight: 0.05
+    blurb: "Land and liberty — indigenous communal landholding as the base of an anarchist revolution."
+    positions:
+      land_regime: [commons, core]
+      indigenous_sovereignty: [land_return, core]
+      state_trajectory: [abolish_now, core]
+      urban_rural: [agrarian_rural, strong]
+      transition_method: [insurrection, strong]
+      hierarchy_stance: [abolish, core]
+      colonialism_stance: [reparative_decolonial, strong]
+      scale_of_polity: [village_commune, strong]
+      property_regime: [communal, strong]
+
+  - id: bookchinist_communalism
+    name: Communalism
+    aliases: [libertarian municipalism, social ecology, Bookchin]
+    prior_weight: 0.35
+    blurb: "Face-to-face citizen assemblies in each municipality, confederated upward, with ecology as the organising insight."
+    positions:
+      scale_of_polity: [municipal_confederal, core]
+      state_trajectory: [replace_with_confederation, core]
+      ecology_priority: [primary_frame, core]
+      decision_procedure: [direct_democracy, core]
+      transition_method: [electoral, strong]
+      electoral_participation: [central, strong]
+      federalism: [confederal, core]
+      hierarchy_stance: [abolish, core]
+      land_regime: [commons, strong]
+      technology_stance: [appropriate_scale, strong]
+      market_role: [abolished, strong]
+      education_aim: [civic_formation, strong]
+      human_nature: [perfectible, typical]
+
+  - id: democratic_confederalism
+    name: Democratic confederalism
+    aliases: [Öcalan, Rojava, Apoism]
+    prior_weight: 0.3
+    blurb: "Stateless self-administration through councils, with women's liberation and ecology written into its foundations."
+    positions:
+      scale_of_polity: [municipal_confederal, core]
+      state_trajectory: [replace_with_confederation, core]
+      gender_order: [structural_liberation, core]
+      ecology_priority: [central_constraint, strong]
+      decision_procedure: [direct_democracy, core]
+      federalism: [confederal, core]
+      nation_concept: [post_national, strong]
+      legitimate_violence: [communal_militia, core]
+      hierarchy_stance: [abolish, strong]
+      nationalism_stance: [hostile, strong]
+      policing: [community_controlled, strong]
+      firm_form: [worker_cooperative, strong]
+
+  - id: zapatismo
+    name: Zapatismo
+    aliases: [EZLN, neozapatismo, mandar obedeciendo]
+    prior_weight: 0.25
+    blurb: "Indigenous autonomy governed by assemblies whose delegates lead by obeying, refusing to take state power."
+    positions:
+      indigenous_sovereignty: [primary_frame, core]
+      decision_procedure: [consensus, core]
+      leadership_form: [rotating_delegates, core]
+      state_trajectory: [abolish_now, strong]
+      scale_of_polity: [village_commune, core]
+      land_regime: [commons, core]
+      electoral_participation: [boycott, core]
+      transition_method: [prefigurative, core]
+      colonialism_stance: [reparative_decolonial, core]
+      hierarchy_stance: [abolish, strong]
+      gender_order: [structural_liberation, strong]
+
+  - id: anarcho_pacifism
+    name: Anarcho-pacifism
+    prior_weight: 0.12
+    blurb: "The state rests on violence, so it must be dissolved by refusal and non-cooperation rather than by force."
+    positions:
+      violence_legitimacy: [never, core]
+      legitimate_violence: [none_pacifist, core]
+      state_trajectory: [abolish_now, core]
+      transition_method: [withdrawal, core]
+      hierarchy_stance: [abolish, core]
+      punishment: [abolitionist, strong]
+      policing: [abolish, strong]
+      human_nature: [cooperative_good, strong]
+      welfare_provision: [mutual_aid, strong]
+
+  - id: christian_anarchism
+    name: Christian anarchism
+    aliases: [Tolstoyan, Catholic Worker]
+    prior_weight: 0.1
+    blurb: "No one may rule another because only God is sovereign; the Sermon on the Mount forbids the state's violence."
+    positions:
+      sovereignty_locus: [divine, core]
+      violence_legitimacy: [never, core]
+      state_trajectory: [abolish_now, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      rights_basis: [divine_law, core]
+      welfare_provision: [mutual_aid, core]
+      property_in_person: [divine_stewardship, strong]
+      property_regime: [communal, strong]
+      urban_rural: [agrarian_rural, strong]
+      hierarchy_stance: [abolish, core]
+      work_ethic: [work_is_virtue, strong]
+
+  - id: anarcho_naturism
+    name: Anarcho-naturism
+    aliases: [naturismo libertario]
+    prior_weight: 0.03
+    blurb: "Liberation from the state and from civilisation's habits together — nudism, vegetarianism and rural communes as anarchist practice."
+    positions:
+      technology_stance: [appropriate_scale, core]
+      urban_rural: [back_to_land, core]
+      nonhuman_status: [rights_bearing, core]
+      state_trajectory: [abolish_now, core]
+      ecology_priority: [primary_frame, strong]
+      sexuality_stance: [liberationist, strong]
+      hierarchy_stance: [abolish, core]
+      scale_of_polity: [village_commune, strong]
+      attitude_to_modernity: [reject_return, strong]
+      healthcare: [communal_mutual, typical]
+
+  - id: veganarchism
+    name: Veganarchism
+    prior_weight: 0.05
+    blurb: "Human and animal liberation are one struggle against domination; anarchism that eats animals is incomplete."
+    positions:
+      nonhuman_status: [liberation_subject, core]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      ecology_priority: [primary_frame, strong]
+      violence_legitimacy: [insurrectionary, typical]
+      organisation_form: [affinity_group, strong]
+      policing: [abolish, strong]
+      property_regime: [communal, strong]
+
+  - id: anarcho_transhumanism
+    name: Anarcho-transhumanism
+    prior_weight: 0.05
+    blurb: "Technology should be seized and distributed to abolish every biological and social constraint on freedom."
+    positions:
+      technology_stance: [transhuman, core]
+      state_trajectory: [abolish_now, core]
+      death_and_finitude: [defeat_technologically, core]
+      gender_order: [abolish_gender, strong]
+      hierarchy_stance: [abolish, core]
+      attitude_to_modernity: [transcend_forward, core]
+      property_in_person: [self_ownership_absolute, strong]
+      organisation_form: [network, strong]
+      reproductive_politics: [reproductive_freedom, strong]
+
+  - id: queer_anarchism
+    name: Queer anarchism
+    aliases: [anarcha-queer]
+    prior_weight: 0.15
+    blurb: "The state, the family and gender itself are linked systems of domination to be abolished together."
+    positions:
+      sexuality_stance: [queer_abolitionist, core]
+      gender_order: [abolish_gender, core]
+      family_form: [abolish_family, strong]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      organisation_form: [affinity_group, strong]
+      policing: [abolish, core]
+      punishment: [abolitionist, strong]
+      decision_procedure: [consensus, strong]
+
+  - id: anarcha_feminism
+    name: Anarcha-feminism
+    aliases: [Goldman, de Cleyre]
+    prior_weight: 0.2
+    blurb: "Patriarchy is the oldest hierarchy; no revolution that leaves the household untouched is a revolution."
+    positions:
+      gender_order: [structural_liberation, core]
+      family_form: [communal_rearing, strong]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      domestic_labour: [communised, core]
+      reproductive_politics: [reproductive_freedom, core]
+      sexuality_stance: [liberationist, strong]
+      decision_procedure: [direct_democracy, strong]
+      organisation_form: [affinity_group, strong]
+      policing: [abolish, strong]

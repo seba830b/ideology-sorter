@@ -1,0 +1,213 @@
+# Added after the family-defaults sweep raised coverage on these tenets far beyond
+# what two or three questions each could exploit.
+questions:
+  - id: q_market_bounded
+    tenet: market_role
+    tier: 2
+    prompt: "Markets are useful for some things but must be kept firmly within limits."
+    expected: {retained_bounded: 2, transitional: 1, central: -2, abolished: -1}
+  - id: q_market_transitional
+    tenet: market_role
+    tier: 3
+    prompt: "Markets are a stage we must pass through and then leave behind."
+    expected: {transitional: 2, abolished: 1, retained_bounded: 0, central: -2}
+  - id: q_hierarchy_minimise
+    tenet: hierarchy_stance
+    tier: 2
+    prompt: "Some coordination roles are unavoidable, but every hierarchy should be flattened as far as possible."
+    expected: {minimise: 2, abolish: 1, functional_necessary: -1, natural_good: -2}
+  - id: q_hierarchy_functional
+    tenet: hierarchy_stance
+    tier: 2
+    prompt: "Organisations need someone in charge; that is a practical necessity, not an injustice."
+    expected: {functional_necessary: 2, natural_good: 1, minimise: -1, abolish: -2}
+  - id: q_work_duty
+    tenet: work_ethic
+    tier: 2
+    prompt: "Everyone who can work owes society their labour."
+    expected: {work_is_duty: 2, work_is_virtue: 1, work_reduced: -2, work_abolished: -2}
+  - id: q_shorter_hours
+    tenet: work_ethic
+    tier: 2
+    prompt: "The working week should be drastically shortened."
+    expected: {work_reduced: 2, work_abolished: 2, work_is_duty: -2, work_is_virtue: -1}
+  - id: q_elections_tactical
+    tenet: electoral_participation
+    tier: 2
+    prompt: "Elections are worth contesting as a platform, but no one should expect to win power that way."
+    expected: {tactical: 2, boycott: 0, central: -1}
+  - id: q_voting_matters
+    tenet: electoral_participation
+    tier: 2
+    prompt: "Voting is one of the most important things a citizen does."
+    expected: {central: 2, tactical: -1, boycott: -2}
+  - id: q_back_to_the_land
+    tenet: urban_rural
+    tier: 2
+    prompt: "People should leave the cities and go back to living on the land."
+    expected: {back_to_land: 2, agrarian_rural: 1, balanced: -1, urban_industrial: -2}
+  - id: q_town_and_country_balance
+    tenet: urban_rural
+    tier: 3
+    prompt: "The right arrangement balances town and country rather than favouring either."
+    expected: {balanced: 2, agrarian_rural: 0, urban_industrial: 0, back_to_land: -2}
+  - id: q_reform_toward_rupture
+    tenet: reform_vs_rupture
+    tier: 3
+    prompt: "Reforms are worth fighting for, but only as steps toward a break with the whole system."
+    expected: {reform_toward_rupture: 2, rupture: 1, reform: -1}
+  - id: q_welfare_communal
+    tenet: welfare_provision
+    tier: 3
+    prompt: "Need should be met directly by the community that knows the person, not by an office."
+    expected: {communal_direct: 2, mutual_aid: 2, charity_voluntary: 1, universal_public: -2, insurance_contributory: -2}
+  - id: q_welfare_insurance
+    tenet: welfare_provision
+    tier: 3
+    prompt: "Welfare should be an insurance system funded by contributions from those who work."
+    expected: {insurance_contributory: 2, universal_public: 0, charity_voluntary: -1, communal_direct: -2, mutual_aid: -2}
+  - id: q_state_welfare_scope
+    tenet: state_scope
+    tier: 2
+    prompt: "The state should guarantee healthcare, education and income security, but not run industry."
+    expected: {welfare_broad: 2, limited: 0, developmental: 0, total: -2, nightwatchman: -2}
+  - id: q_state_limited_scope
+    tenet: state_scope
+    tier: 2
+    prompt: "Government should stick to a short list of core functions and stay out of everything else."
+    expected: {limited: 2, nightwatchman: 1, welfare_broad: -1, developmental: -2, total: -2}
+  - id: q_modernity_needs_criticism
+    tenet: attitude_to_modernity
+    tier: 2
+    prompt: "Modern life has real achievements but also deep sicknesses that need naming."
+    expected: {critical_engagement: 2, reject_return: 1, transcend_forward: 0, embrace: -1}
+  - id: q_speech_policed_for_the_cause
+    tenet: speech_norms
+    tier: 3
+    prompt: "Views that undermine the movement's goals should not be given a platform within it."
+    expected: {ideologically_policed: 2, restricted_for_harm: 1, broadly_free: -2, absolutist: -2}
+  - id: q_speech_broadly_free
+    tenet: speech_norms
+    tier: 2
+    prompt: "Speech should be free apart from a few narrow exceptions like incitement."
+    expected: {broadly_free: 2, absolutist: 1, restricted_for_harm: -1, ideologically_policed: -2, traditional_blasphemy_limits: -1}
+  - id: q_gender_liberation_structural
+    tenet: gender_order
+    tier: 2
+    prompt: "Equal rights are not enough; the whole social structure that produces gender inequality must change."
+    expected: {structural_liberation: 2, abolish_gender: 1, formal_equality: -1, traditional_complementary: -2}
+  - id: q_sexuality_private
+    tenet: sexuality_stance
+    tier: 2
+    prompt: "What people do in private is their own business, but it is not a political matter."
+    expected: {tolerant_private: 2, traditional_restrictive: 0, liberationist: -1, queer_abolitionist: -2}
+  - id: q_immigration_managed
+    tenet: immigration
+    tier: 2
+    prompt: "Immigration is fine in principle but the numbers need managing."
+    expected: {manage: 2, welcome: 0, restrict_sharply: -1, open_borders: -2}
+  - id: q_tradition_critically
+    tenet: tradition_stance
+    tier: 2
+    prompt: "We should take what is valuable from tradition and discard the rest."
+    expected: {critically_inherit: 2, conserve: 0, reject: -1, restore: -2, transcend_esoteric: -1}
+  - id: q_education_citizens
+    tenet: education_aim
+    tier: 2
+    prompt: "Schools exist above all to make people into good citizens."
+    expected: {civic_formation: 2, transmit_tradition: 1, ideological_formation: 1, individual_flourishing: -1, technical_capacity: -1}
+  - id: q_education_flourishing
+    tenet: education_aim
+    tier: 2
+    prompt: "Education should serve the development of the individual, not society's requirements."
+    expected: {individual_flourishing: 2, critical_consciousness: 0, civic_formation: -2, ideological_formation: -2, technical_capacity: -1}
+  - id: q_dominant_party
+    tenet: political_pluralism
+    tier: 3
+    prompt: "Other parties may exist, but one movement should clearly remain in charge."
+    expected: {dominant_party: 2, single_party: 1, multiparty: -2, no_parties_councils: -2, no_parties_traditional: 0}
+  - id: q_housing_social
+    tenet: housing
+    tier: 3
+    prompt: "The state should build and let housing at cost."
+    expected: {social_provision: 2, decommodified_commons: 1, market_commodity: -2, occupancy_use: 0}
+  - id: q_wage_regulation
+    tenet: wage_labour
+    tier: 2
+    prompt: "Wage work is acceptable but needs strong legal protection for the worker."
+    expected: {regulated: 2, legitimate: 0, abolish_via_coops: -1, abolish_entirely: -2}
+  - id: q_healthcare_mutual
+    tenet: healthcare
+    tier: 3
+    prompt: "Health provision should be run by mutual societies and communities rather than the state or the market."
+    expected: {communal_mutual: 2, universal_public: 0, insurance_mandated: -1, market: -2}
+  - id: q_family_communal_rearing
+    tenet: family_form
+    tier: 3
+    prompt: "Children should be raised collectively rather than only by their own parents."
+    expected: {communal_rearing: 2, abolish_family: 2, egalitarian_nuclear: -1, nuclear_traditional: -2, patriarchal_household: -2}
+  - id: q_family_equal_partners
+    tenet: family_form
+    tier: 3
+    prompt: "The family is a good institution, provided the partners in it are equals."
+    expected: {egalitarian_nuclear: 2, nuclear_traditional: 1, patriarchal_household: -2, communal_rearing: -1, abolish_family: -2}
+  - id: q_technology_neutral
+    tenet: technology_stance
+    tier: 2
+    prompt: "Technology is neither good nor bad; what matters is who controls it."
+    expected: {industrial_neutral: 2, accelerate: 0, appropriate_scale: -1, primitivist_reject: -2, transhuman: 0}
+  - id: q_property_private_but_regulated
+    tenet: property_regime
+    tier: 2
+    prompt: "Private ownership of business is fine as long as it is properly regulated."
+    expected: {private_regulated: 2, private_absolute: 0, distributed_wide: 0, cooperative: -1, communal: -2, state_owned: -2}
+  - id: q_property_cooperative
+    tenet: property_regime
+    tier: 3
+    prompt: "Productive property should be owned collectively by those who use it, but not by the state."
+    expected: {cooperative: 2, mutualist_possession: 1, communal: 1, state_owned: -2, private_absolute: -2, private_regulated: -2}
+  - id: q_growth_managed
+    tenet: growth_stance
+    tier: 2
+    prompt: "Growth is fine as long as it is steered and kept within environmental limits."
+    expected: {growth_managed: 2, steady_state: 1, growth_essential: -1, degrowth: -1, accelerate_maximally: -2}
+  - id: q_leaders_collective
+    tenet: leadership_form
+    tier: 3
+    prompt: "Leadership should be exercised by a committee rather than by any individual."
+    expected: {collective: 2, rotating_delegates: 1, technocratic_board: 1, charismatic_leader: -2, hereditary: -2, none: 0}
+  - id: q_national_scale_federal
+    tenet: federalism
+    tier: 3
+    prompt: "Power should be divided between a national government and strong regional ones."
+    expected: {federal: 2, confederal: 1, unitary: -2, none_stateless: -2}
+  - id: q_organisation_network
+    tenet: organisation_form
+    tier: 3
+    prompt: "Loose networks work better than formal organisations with membership and officers."
+    expected: {network: 2, affinity_group: 1, movement_of_movements: 1, mass_party: -2, vanguard_party: -2, union: -1}
+  - id: q_utopia_restoration_vs_new
+    tenet: utopian_horizon
+    tier: 3
+    prompt: "What we should aim at has never existed before."
+    expected: {achievable_new_order: 2, transcendent_eschaton: 1, gradual_improvement: 0, restorationist_golden_age: -2, none_pragmatic: -1}
+  - id: q_secular_state_strict
+    tenet: religion_in_public_life
+    tier: 2
+    prompt: "Religious institutions should have no formal role in the state whatsoever."
+    expected: {secular_neutral: 2, militantly_secular: 2, culturally_grounded: -1, established_church: -2, theocratic: -2}
+  - id: q_money_ban_interest
+    tenet: money_form
+    tier: 3
+    prompt: "Charging interest on a loan is fundamentally illegitimate."
+    expected: {mutual_credit: 2, demurrage: 2, abolished: 1, conventional: -2, private_competing: -1, commodity_backed: -1}
+  - id: q_scale_imperial
+    tenet: scale_of_polity
+    tier: 3
+    prompt: "A great civilisation should govern a wide territory of many peoples."
+    expected: {imperial: 2, continental_bloc: 1, national: -1, village_commune: -2, municipal_confederal: -2, bioregional: -2}
+  - id: q_ecology_managed_cost
+    tenet: ecology_priority
+    tier: 2
+    prompt: "Environmental damage is a cost to be priced and managed, like any other."
+    expected: {managed_externality: 2, dismissed: 1, central_constraint: -1, primary_frame: -2, misanthropic_deep: -2}

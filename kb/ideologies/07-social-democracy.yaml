@@ -1,0 +1,296 @@
+family: social_democracy
+label: Social democracy & democratic socialism
+family_defaults:
+  attitude_to_modernity: [embrace, typical]
+  class_analysis: [central_marxist, typical]
+  constitutionalism: [entrenched_rights, typical]
+  decision_procedure: [representative_election, typical]
+  distribution_principle: [subsistence_guarantee, typical]
+  ecology_priority: [central_constraint, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [civic_formation, typical]
+  electoral_participation: [central, typical]
+  family_form: [egalitarian_nuclear, typical]
+  firm_form: [investor_owned, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_managed, typical]
+  healthcare: [universal_public, typical]
+  hierarchy_stance: [minimise, typical]
+  housing: [social_provision, typical]
+  human_nature: [cooperative_good, typical]
+  immigration: [welcome, typical]
+  inheritance: [taxed, typical]
+  internationalism: [cosmopolitan_universal, typical]
+  leadership_form: [collective, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [retained_bounded, typical]
+  money_form: [conventional, typical]
+  nationalism_stance: [indifferent, typical]
+  organisation_form: [mass_party, typical]
+  policing: [professional, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [private_regulated, typical]
+  punishment: [rehabilitative, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  rights_basis: [positive_legal, typical]
+  scale_of_polity: [national, typical]
+  sexuality_stance: [tolerant_private, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [welfare_broad, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [electoral, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [gradual_improvement, typical]
+  vanguard_role: [rejected, typical]
+  violence_legitimacy: [never, typical]
+  wage_labour: [regulated, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_is_duty, typical]
+ideologies:
+
+  - id: social_democracy
+    name: Social democracy
+    prior_weight: 1.3
+    blurb: "Capitalism kept but tamed — strong unions, universal welfare and redistribution through parliament."
+    positions:
+      economic_coordination: [mixed_economy, core]
+      welfare_provision: [universal_public, core]
+      state_scope: [welfare_broad, core]
+      transition_method: [electoral, core]
+      electoral_participation: [central, core]
+      political_pluralism: [multiparty, core]
+      market_role: [retained_bounded, core]
+      healthcare: [universal_public, core]
+      housing: [social_provision, strong]
+      reform_vs_rupture: [reform, core]
+      organisation_form: [mass_party, core]
+      inheritance: [taxed, strong]
+      firm_form: [investor_owned, typical]
+      class_analysis: [central_marxist, weak]
+
+  - id: democratic_socialism
+    name: Democratic socialism
+    prior_weight: 1.0
+    blurb: "Socialism, not a softer capitalism — public ownership of the commanding heights, won democratically."
+    positions:
+      property_regime: [state_owned, strong]
+      economic_coordination: [indicative_planning, strong]
+      transition_method: [electoral, core]
+      political_pluralism: [multiparty, core]
+      reform_vs_rupture: [reform_toward_rupture, core]
+      welfare_provision: [universal_public, core]
+      firm_form: [worker_cooperative, strong]
+      market_role: [retained_bounded, typical]
+      class_analysis: [central_marxist, strong]
+      healthcare: [universal_public, core]
+      wage_labour: [abolish_via_coops, typical]
+      state_scope: [welfare_broad, core]
+
+  - id: fabianism
+    name: Fabianism
+    aliases: [gradualism, permeation]
+    prior_weight: 0.2
+    blurb: "Socialism arrives by inevitable gradualness, through expert administration and patient permeation of institutions."
+    positions:
+      transition_method: [gradual_reform, core]
+      decision_procedure: [expert_rule, core]
+      reform_vs_rupture: [reform, core]
+      epistemic_authority: [scientific_expertise, core]
+      state_scope: [welfare_broad, core]
+      economic_coordination: [indicative_planning, strong]
+      organisation_form: [network, strong]
+      violence_legitimacy: [never, strong]
+      education_aim: [technical_capacity, strong]
+      utopian_horizon: [gradual_improvement, core]
+
+  - id: bernsteinian_revisionism
+    name: Bernsteinian revisionism
+    aliases: [evolutionary socialism]
+    prior_weight: 0.1
+    blurb: "Capitalism is not collapsing, so the movement is everything and the final goal nothing."
+    positions:
+      reform_vs_rupture: [reform, core]
+      transition_method: [gradual_reform, core]
+      utopian_horizon: [gradual_improvement, core]
+      class_analysis: [central_marxist, typical]
+      electoral_participation: [central, core]
+      economic_coordination: [mixed_economy, strong]
+      firm_form: [worker_cooperative, strong]
+      violence_legitimacy: [never, strong]
+      political_pluralism: [multiparty, core]
+
+  - id: nordic_model
+    name: Nordic model
+    aliases: [Scandinavian social democracy]
+    prior_weight: 0.5
+    blurb: "Open competitive markets plus very high taxes, universal services and centrally bargained wages."
+    positions:
+      economic_coordination: [regulated_market, core]
+      welfare_provision: [universal_public, core]
+      state_scope: [welfare_broad, core]
+      market_role: [central, strong]
+      healthcare: [universal_public, core]
+      organisation_form: [union, strong]
+      gender_order: [formal_equality, core]
+      domestic_labour: [waged_socialised, strong]
+      transition_method: [gradual_reform, core]
+      immigration: [manage, typical]
+      firm_form: [investor_owned, strong]
+
+  - id: labourism
+    name: Labourism
+    prior_weight: 0.2
+    blurb: "The trade unions in parliament, defending members' wages and conditions without a theory of society."
+    positions:
+      organisation_form: [union, core]
+      transition_method: [electoral, core]
+      reform_vs_rupture: [reform, core]
+      utopian_horizon: [none_pragmatic, core]
+      economic_coordination: [mixed_economy, strong]
+      welfare_provision: [universal_public, strong]
+      class_analysis: [central_marxist, weak]
+      immigration: [manage, typical]
+      state_scope: [welfare_broad, strong]
+
+  - id: austromarxism
+    name: Austromarxism
+    aliases: [Bauer, Adler]
+    prior_weight: 0.06
+    blurb: "Neither reform nor putsch — win a real majority, and solve the national question by personal cultural autonomy."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      transition_method: [electoral, core]
+      reform_vs_rupture: [reform_toward_rupture, core]
+      federalism: [federal, strong]
+      language_politics: [minority_protection, core]
+      class_analysis: [central_marxist, core]
+      political_pluralism: [multiparty, strong]
+      education_aim: [critical_consciousness, strong]
+      economic_coordination: [indicative_planning, strong]
+
+  - id: market_socialism
+    name: Market socialism
+    prior_weight: 0.3
+    blurb: "Social ownership of capital with prices and competition retained to allocate it."
+    positions:
+      economic_coordination: [market_socialism, core]
+      property_regime: [cooperative, core]
+      firm_form: [worker_cooperative, core]
+      market_role: [central, core]
+      wage_labour: [abolish_via_coops, core]
+      state_scope: [limited, typical]
+      distribution_principle: [contribution_labour, strong]
+      money_form: [conventional, strong]
+      transition_method: [gradual_reform, typical]
+
+  - id: lange_model
+    name: Lange model
+    aliases: [market socialism by computation]
+    prior_weight: 0.05
+    blurb: "A central board sets prices by trial and error, reproducing the market's efficiency without private owners."
+    positions:
+      economic_coordination: [indicative_planning, core]
+      decision_procedure: [expert_rule, core]
+      property_regime: [state_owned, core]
+      epistemic_authority: [scientific_expertise, core]
+      market_role: [transitional, strong]
+      firm_form: [state_enterprise, core]
+      distribution_principle: [contribution_labour, strong]
+      leadership_form: [technocratic_board, strong]
+
+  - id: liberal_socialism
+    name: Liberal socialism
+    aliases: [Rosselli]
+    prior_weight: 0.08
+    blurb: "Socialism as the fulfilment of liberalism's promise, never as a reason to suspend its liberties."
+    positions:
+      speech_norms: [broadly_free, core]
+      constitutionalism: [entrenched_rights, core]
+      political_pluralism: [multiparty, core]
+      economic_coordination: [mixed_economy, strong]
+      state_scope: [welfare_broad, strong]
+      transition_method: [electoral, core]
+      rights_basis: [natural_individual, strong]
+      firm_form: [worker_cooperative, strong]
+      reform_vs_rupture: [reform, strong]
+
+  - id: ethical_socialism
+    name: Ethical socialism
+    prior_weight: 0.07
+    blurb: "Socialism is a moral claim about fellowship and dignity, not a conclusion drawn from economic laws."
+    positions:
+      epistemic_authority: [popular_reason, strong]
+      class_analysis: [rejected, typical]
+      religion_in_public_life: [culturally_grounded, typical]
+      transition_method: [gradual_reform, strong]
+      education_aim: [individual_flourishing, strong]
+      welfare_provision: [universal_public, strong]
+      human_nature: [cooperative_good, core]
+      work_ethic: [work_is_virtue, typical]
+      utopian_horizon: [gradual_improvement, strong]
+
+  - id: guild_socialism
+    name: Guild socialism
+    aliases: [Cole, Penty]
+    prior_weight: 0.08
+    blurb: "Industry run by national guilds of its own workers, with the state representing consumers alongside them."
+    positions:
+      firm_form: [guild, core]
+      property_regime: [cooperative, core]
+      decision_procedure: [delegation_recallable, core]
+      state_scope: [limited, strong]
+      organisation_form: [union, core]
+      economic_coordination: [indicative_planning, strong]
+      wage_labour: [abolish_via_coops, core]
+      federalism: [federal, strong]
+      work_ethic: [work_is_virtue, strong]
+      art_and_culture: [popular_folk, typical]
+
+  - id: economic_democracy
+    name: Economic democracy
+    aliases: [Schweickart, workplace democracy]
+    prior_weight: 0.15
+    blurb: "Extend the vote into the firm: workers control the workplace and society controls investment."
+    positions:
+      firm_form: [worker_cooperative, core]
+      property_regime: [cooperative, core]
+      economic_coordination: [market_socialism, core]
+      decision_procedure: [direct_democracy, strong]
+      wage_labour: [abolish_via_coops, core]
+      market_role: [retained_bounded, strong]
+      transition_method: [gradual_reform, strong]
+      state_scope: [welfare_broad, typical]
+
+  - id: meidner_plan
+    name: Wage-earner funds
+    aliases: [Meidner plan]
+    prior_weight: 0.04
+    blurb: "Company profits gradually transferred into union-controlled funds until the workers own the economy outright."
+    positions:
+      property_regime: [cooperative, core]
+      transition_method: [gradual_reform, core]
+      organisation_form: [union, core]
+      firm_form: [worker_cooperative, strong]
+      reform_vs_rupture: [reform_toward_rupture, core]
+      economic_coordination: [mixed_economy, strong]
+      inheritance: [taxed, typical]
+      electoral_participation: [central, strong]
+
+  - id: chavismo
+    name: Chavismo
+    aliases: [Bolivarianism, socialism of the 21st century]
+    prior_weight: 0.15
+    blurb: "Oil revenue redistributed through communal councils, with a charismatic leader against the old elite."
+    positions:
+      leadership_form: [charismatic_leader, core]
+      class_analysis: [elite_mass, core]
+      internationalism: [anti_imperialist_nationalist, core]
+      welfare_provision: [universal_public, strong]
+      decision_procedure: [direct_democracy, strong]
+      scale_of_polity: [municipal_confederal, typical]
+      economic_coordination: [mixed_economy, strong]
+      property_regime: [state_owned, strong]
+      electoral_participation: [central, core]
+      nationalism_stance: [instrumental_for_liberation, strong]

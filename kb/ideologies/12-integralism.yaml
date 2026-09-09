@@ -1,0 +1,387 @@
+family: integralism
+label: Religious traditionalism & integralism
+family_defaults:
+  art_and_culture: [preserve_canon, typical]
+  attitude_to_modernity: [reject_return, typical]
+  borders: [closed, typical]
+  class_analysis: [status_group, typical]
+  constitutionalism: [divine_law, typical]
+  decision_procedure: [clerical_authority, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [transmit_tradition, typical]
+  epistemic_authority: [revelation, typical]
+  family_form: [patriarchal_household, typical]
+  gender_order: [traditional_complementary, typical]
+  hierarchy_stance: [natural_good, typical]
+  human_nature: [fallen_needs_restraint, typical]
+  immigration: [restrict_sharply, typical]
+  inheritance: [unrestricted, typical]
+  leadership_form: [charismatic_leader, typical]
+  market_role: [retained_bounded, typical]
+  nation_concept: [religious, typical]
+  organisation_form: [church_movement, typical]
+  political_pluralism: [no_parties_traditional, typical]
+  property_in_person: [divine_stewardship, typical]
+  property_regime: [private_regulated, typical]
+  punishment: [retributive_harsh, typical]
+  religion_in_public_life: [theocratic, typical]
+  reproductive_politics: [natalist_restrictive, typical]
+  rights_basis: [divine_law, typical]
+  sexuality_stance: [traditional_restrictive, typical]
+  sovereignty_locus: [divine, typical]
+  speech_norms: [traditional_blasphemy_limits, typical]
+  sphere_separation: [unified_state, typical]
+  state_scope: [developmental, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [restore, typical]
+  transition_method: [cultural_metapolitics, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [restorationist_golden_age, typical]
+  welfare_provision: [charity_voluntary, typical]
+  work_ethic: [work_is_duty, typical]
+ideologies:
+  - id: catholic_integralism
+    name: "Catholic integralism"
+    prior_weight: 0.12
+    blurb: "The state should be subordinate to the Church in matters of the soul and confessionally Catholic in law."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      decision_procedure: [clerical_authority, core]
+      rights_basis: [divine_law, core]
+      sovereignty_locus: [divine, core]
+      sphere_separation: [unified_state, core]
+      family_form: [patriarchal_household, strong]
+      sexuality_stance: [traditional_restrictive, core]
+      speech_norms: [traditional_blasphemy_limits, core]
+      tradition_stance: [restore, core]
+      political_pluralism: [no_parties_traditional, strong]
+      hierarchy_stance: [natural_good, core]
+      attitude_to_modernity: [reject_return, core]
+      scale_of_polity: [national, strong]
+      art_and_culture: [preserve_canon, core]
+      money_form: [conventional, typical]
+
+  - id: common_good_constitutionalism
+    name: "Common good constitutionalism"
+    aliases: [Vermeule]
+    prior_weight: 0.06
+    blurb: "Judges should read law toward substantive moral ends rather than pretend neutrality about the good."
+    positions:
+      constitutionalism: [revolutionary_legality, core]
+      rights_basis: [divine_law, strong]
+      religion_in_public_life: [culturally_grounded, core]
+      state_scope: [developmental, strong]
+      decision_procedure: [expert_rule, strong]
+      tradition_stance: [restore, strong]
+      speech_norms: [restricted_for_harm, strong]
+      family_form: [nuclear_traditional, core]
+      hierarchy_stance: [functional_necessary, strong]
+  - id: christian_reconstructionism
+    name: "Christian reconstructionism"
+    aliases: [theonomy, Rushdoony]
+    prior_weight: 0.05
+    blurb: "The civil law of the Old Testament remains binding; modern states should adopt biblical case law directly."
+    positions:
+      rights_basis: [divine_law, core]
+      religion_in_public_life: [theocratic, core]
+      punishment: [retributive_harsh, core]
+      education_aim: [transmit_tradition, core]
+      family_form: [patriarchal_household, core]
+      state_scope: [nightwatchman, strong]
+      decision_procedure: [clerical_authority, strong]
+      epistemic_authority: [revelation, core]
+      sexuality_stance: [traditional_restrictive, core]
+      market_role: [central, strong]
+  - id: dominionism
+    name: "Dominionism"
+    aliases: [Seven Mountain Mandate]
+    prior_weight: 0.06
+    blurb: "Believers are called to take command of every sphere of culture — media, business, government, family."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      transition_method: [cultural_metapolitics, core]
+      epistemic_authority: [revelation, core]
+      organisation_form: [church_movement, core]
+      education_aim: [ideological_formation, strong]
+      utopian_horizon: [transcendent_eschaton, core]
+      family_form: [patriarchal_household, strong]
+      sexuality_stance: [traditional_restrictive, core]
+      art_and_culture: [propaganda_functional, typical]
+  - id: kingdom_now
+    name: "Kingdom Now theology"
+    prior_weight: 0.02
+    blurb: "The Church must establish God's kingdom on earth before Christ returns, not wait for him to do it."
+    positions:
+      utopian_horizon: [transcendent_eschaton, core]
+      religion_in_public_life: [theocratic, core]
+      epistemic_authority: [revelation, core]
+      organisation_form: [church_movement, core]
+      transition_method: [cultural_metapolitics, strong]
+      rights_basis: [divine_law, core]
+      sovereignty_locus: [divine, core]
+  - id: islamism
+    name: "Islamism"
+    aliases: [political Islam]
+    prior_weight: 0.3
+    blurb: "Islam is a complete system of life, so the state's law should be derived from the sharia."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      rights_basis: [divine_law, core]
+      sovereignty_locus: [divine, core]
+      nation_concept: [religious, core]
+      family_form: [patriarchal_household, strong]
+      sexuality_stance: [traditional_restrictive, core]
+      education_aim: [transmit_tradition, core]
+      speech_norms: [traditional_blasphemy_limits, core]
+      colonialism_stance: [oppose, strong]
+      sphere_separation: [unified_state, core]
+      economic_coordination: [regulated_market, typical]
+      money_form: [mutual_credit, core]
+      scale_of_polity: [imperial, strong]
+
+  - id: qutbism
+    name: "Qutbism"
+    prior_weight: 0.06
+    blurb: "Modern society has reverted to pagan ignorance, so a vanguard must fight it rather than reform it."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      violence_legitimacy: [revolutionary_terror, core]
+      vanguard_role: [necessary, core]
+      transition_method: [insurrection, core]
+      attitude_to_modernity: [reject_return, core]
+      rights_basis: [divine_law, core]
+      electoral_participation: [boycott, core]
+      sovereignty_locus: [divine, core]
+      epistemic_authority: [revelation, core]
+  - id: khomeinism
+    name: "Wilayat al-Faqih"
+    aliases: [Khomeinism, guardianship of the jurist]
+    prior_weight: 0.08
+    blurb: "In the absence of the Imam, supreme political authority belongs to the most qualified religious jurist."
+    positions:
+      decision_procedure: [clerical_authority, core]
+      religion_in_public_life: [theocratic, core]
+      sovereignty_locus: [divine, core]
+      leadership_form: [charismatic_leader, strong]
+      political_pluralism: [dominant_party, strong]
+      internationalism: [anti_imperialist_nationalist, core]
+      imperialism_analysis: [central_frame, strong]
+      welfare_provision: [communal_direct, strong]
+      rights_basis: [divine_law, core]
+      state_scope: [total, strong]
+  - id: muslim_brotherhood_gradualism
+    name: "Muslim Brotherhood gradualism"
+    prior_weight: 0.08
+    blurb: "Islamise society from below through preaching, charity and elections before touching the state."
+    positions:
+      transition_method: [gradual_reform, core]
+      electoral_participation: [central, core]
+      organisation_form: [church_movement, core]
+      religion_in_public_life: [theocratic, strong]
+      welfare_provision: [charity_voluntary, strong]
+      education_aim: [transmit_tradition, core]
+      rights_basis: [divine_law, core]
+      violence_legitimacy: [defensive_only, typical]
+      family_form: [patriarchal_household, strong]
+  - id: hizb_ut_tahrir
+    name: "Caliphate restorationism"
+    aliases: [Hizb ut-Tahrir]
+    prior_weight: 0.03
+    blurb: "Restore a single global caliphate by intellectual and political struggle; nation-states are an imposed fiction."
+    positions:
+      scale_of_polity: [imperial, core]
+      nation_concept: [religious, core]
+      religion_in_public_life: [theocratic, core]
+      nationalism_stance: [hostile, core]
+      transition_method: [cultural_metapolitics, core]
+      electoral_participation: [boycott, core]
+      borders: [abolished, strong]
+      rights_basis: [divine_law, core]
+      political_pluralism: [single_party, strong]
+      violence_legitimacy: [defensive_only, typical]
+  - id: salafi_jihadism
+    name: "Salafi-jihadism"
+    prior_weight: 0.06
+    blurb: "Armed struggle as an individual religious obligation, aimed at restoring a purified early Islamic order."
+    positions:
+      violence_legitimacy: [total_war, core]
+      religion_in_public_life: [theocratic, core]
+      tradition_stance: [restore, core]
+      transition_method: [insurrection, core]
+      punishment: [retributive_harsh, core]
+      attitude_to_modernity: [reject_return, core]
+      electoral_participation: [boycott, core]
+      epistemic_authority: [revelation, core]
+      rights_basis: [divine_law, core]
+      art_and_culture: [preserve_canon, typical]
+  - id: islamic_modernism
+    name: "Islamic modernism"
+    prior_weight: 0.06
+    blurb: "Reason and revelation are compatible; Islamic law can be reinterpreted for constitutional and scientific modernity."
+    positions:
+      attitude_to_modernity: [critical_engagement, core]
+      epistemic_authority: [popular_reason, strong]
+      religion_in_public_life: [culturally_grounded, core]
+      education_aim: [technical_capacity, strong]
+      constitutionalism: [entrenched_rights, strong]
+      gender_order: [formal_equality, typical]
+      transition_method: [gradual_reform, core]
+      rights_basis: [divine_law, typical]
+  - id: deobandi_politics
+    name: "Deobandi political thought"
+    prior_weight: 0.03
+    blurb: "Scholarly religious authority and seminary networks guiding society, wary of the state and of Western forms."
+    positions:
+      decision_procedure: [clerical_authority, core]
+      education_aim: [transmit_tradition, core]
+      tradition_stance: [restore, core]
+      religion_in_public_life: [theocratic, strong]
+      attitude_to_modernity: [reject_return, strong]
+      family_form: [patriarchal_household, strong]
+      organisation_form: [church_movement, core]
+      epistemic_authority: [tradition, core]
+  - id: barelvi_politics
+    name: "Barelvi political thought"
+    prior_weight: 0.02
+    blurb: "Devotional, saint-venerating Islam defending its practices politically against puritan reformers."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      tradition_stance: [conserve, core]
+      epistemic_authority: [tradition, core]
+      speech_norms: [traditional_blasphemy_limits, core]
+      organisation_form: [church_movement, strong]
+      decision_procedure: [clerical_authority, strong]
+      attitude_to_modernity: [critical_engagement, typical]
+  - id: hindutva
+    name: "Hindutva"
+    prior_weight: 0.2
+    blurb: "India defined as a Hindu civilisation, with national belonging measured by cultural and religious descent."
+    positions:
+      nation_concept: [religious, core]
+      nationalism_stance: [core_value, core]
+      religion_in_public_life: [culturally_grounded, core]
+      tradition_stance: [restore, core]
+      race_politics: [hierarchy_asserted, typical]
+      immigration: [restrict_sharply, strong]
+      education_aim: [transmit_tradition, core]
+      organisation_form: [mass_party, strong]
+      state_scope: [developmental, strong]
+      transition_method: [cultural_metapolitics, core]
+      family_form: [patriarchal_household, strong]
+  - id: integral_humanism
+    name: "Integral Humanism"
+    aliases: [Deendayal Upadhyaya]
+    prior_weight: 0.04
+    blurb: "An indigenous Indian third way beyond capitalism and communism, organised around dharma and decentralised production."
+    positions:
+      economic_coordination: [mixed_economy, core]
+      technology_stance: [appropriate_scale, core]
+      scale_of_polity: [village_commune, strong]
+      religion_in_public_life: [culturally_grounded, core]
+      tradition_stance: [restore, core]
+      nationalism_stance: [core_value, strong]
+      class_analysis: [rejected, core]
+      human_nature: [perfectible, strong]
+      welfare_provision: [communal_direct, strong]
+  - id: political_buddhism
+    name: "Political Buddhism"
+    aliases: [969 movement, Buddhist nationalism]
+    prior_weight: 0.04
+    blurb: "The Buddhist religion and the nation defended together, often against a religious minority cast as a threat."
+    positions:
+      nation_concept: [religious, core]
+      nationalism_stance: [core_value, core]
+      religion_in_public_life: [established_church, core]
+      immigration: [restrict_sharply, core]
+      tradition_stance: [restore, strong]
+      organisation_form: [church_movement, strong]
+      race_politics: [hierarchy_asserted, typical]
+      speech_norms: [traditional_blasphemy_limits, strong]
+  - id: sinhalese_buddhist_nationalism
+    name: "Sinhalese Buddhist nationalism"
+    prior_weight: 0.03
+    blurb: "Sri Lanka as the island appointed to preserve Buddhism, with the Sinhala people as its guardians."
+    positions:
+      nation_concept: [religious, core]
+      nationalism_stance: [core_value, core]
+      religion_in_public_life: [established_church, core]
+      language_politics: [national_language, core]
+      federalism: [unitary, core]
+      tradition_stance: [restore, strong]
+      race_politics: [hierarchy_asserted, strong]
+      secession_right: [none, core]
+  - id: political_confucianism
+    name: "Political Confucianism"
+    aliases: [Jiang Qing, Confucian constitutionalism]
+    prior_weight: 0.03
+    blurb: "A tricameral legislature with houses for the people, for cultural continuity, and for Confucian scholars."
+    positions:
+      decision_procedure: [expert_rule, core]
+      epistemic_authority: [tradition, core]
+      tradition_stance: [restore, core]
+      hierarchy_stance: [natural_good, core]
+      education_aim: [transmit_tradition, core]
+      political_pluralism: [no_parties_traditional, core]
+      family_form: [patriarchal_household, strong]
+      religion_in_public_life: [established_church, strong]
+      leadership_form: [hereditary, typical]
+      sovereignty_locus: [divine, typical]
+  - id: kokutai
+    name: "Kokutai"
+    aliases: [State Shinto, national polity]
+    prior_weight: 0.03
+    blurb: "The nation as one family headed by a divine emperor, in an unbroken line since the founding of the world."
+    positions:
+      leadership_form: [hereditary, core]
+      sovereignty_locus: [divine, core]
+      religion_in_public_life: [established_church, core]
+      nation_concept: [ethnic, core]
+      nationalism_stance: [core_value, core]
+      hierarchy_stance: [natural_good, core]
+      education_aim: [ideological_formation, core]
+      decision_procedure: [monarch, core]
+      tradition_stance: [restore, core]
+      political_pluralism: [no_parties_traditional, strong]
+  - id: mormon_theodemocracy
+    name: "Theodemocracy"
+    aliases: [Mormon political kingdom of God]
+    prior_weight: 0.02
+    blurb: "God's law revealed through a prophet, ratified by the vote of the people — theocracy and democracy at once."
+    positions:
+      decision_procedure: [clerical_authority, core]
+      sovereignty_locus: [divine, core]
+      religion_in_public_life: [theocratic, core]
+      epistemic_authority: [revelation, core]
+      scale_of_polity: [regional, strong]
+      property_regime: [communal, typical]
+      family_form: [patriarchal_household, core]
+      welfare_provision: [communal_direct, strong]
+      political_pluralism: [no_parties_traditional, strong]
+  - id: religious_zionism
+    name: "Religious Zionism"
+    prior_weight: 0.08
+    blurb: "The return to the land is a stage of redemption, so settlement is a religious commandment."
+    positions:
+      nation_concept: [religious, core]
+      religion_in_public_life: [theocratic, strong]
+      land_regime: [collectivised, typical]
+      nationalism_stance: [core_value, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      rights_basis: [divine_law, core]
+      tradition_stance: [restore, strong]
+      borders: [closed, strong]
+      sovereignty_locus: [divine, core]
+  - id: kahanism
+    name: "Kahanism"
+    prior_weight: 0.03
+    blurb: "A Jewish state governed by halakha with no place for non-Jews in its citizenry."
+    positions:
+      nation_concept: [religious, core]
+      race_politics: [separatism, core]
+      religion_in_public_life: [theocratic, core]
+      immigration: [restrict_sharply, core]
+      violence_legitimacy: [insurrectionary, strong]
+      rights_basis: [divine_law, core]
+      political_pluralism: [no_parties_traditional, strong]
+      borders: [closed, core]
+      nationalism_stance: [core_value, core]

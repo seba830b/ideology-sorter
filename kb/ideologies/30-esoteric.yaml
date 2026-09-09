@@ -1,0 +1,303 @@
+family: esoteric_fringe
+label: Esoteric & syncretic fringe
+family_defaults:
+  attitude_to_modernity: [reject_return, typical]
+  education_aim: [ideological_formation, typical]
+  electoral_participation: [boycott, typical]
+  epistemic_authority: [esoteric_initiation, typical]
+  hierarchy_stance: [natural_good, typical]
+  human_nature: [perfectible, typical]
+  leadership_form: [charismatic_leader, typical]
+  organisation_form: [church_movement, typical]
+  religion_in_public_life: [spiritual_syncretic, typical]
+  scale_of_polity: [village_commune, typical]
+  tradition_stance: [restore, typical]
+  transition_method: [withdrawal, typical]
+  utopian_horizon: [transcendent_eschaton, typical]
+ideologies:
+  - id: larouchism
+    name: "LaRouchism"
+    prior_weight: 0.03
+    blurb: "Physical-economic development by great infrastructure projects, wrapped in a conspiratorial history of civilisation."
+    positions:
+      economic_coordination: [indicative_planning, core]
+      technology_stance: [accelerate, core]
+      money_form: [sovereign_fiat_expansive, core]
+      class_analysis: [elite_mass, core]
+      epistemic_authority: [esoteric_initiation, core]
+      space_expansion: [human_destiny, strong]
+      state_scope: [developmental, core]
+      leadership_form: [charismatic_leader, core]
+      growth_stance: [growth_essential, core]
+  - id: theosophical_politics
+    name: "Theosophical politics"
+    aliases: [Besant]
+    prior_weight: 0.02
+    blurb: "Spiritual evolution guiding social reform — universal brotherhood, home rule and esoteric hierarchy together."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      epistemic_authority: [esoteric_initiation, core]
+      colonialism_stance: [oppose, strong]
+      internationalism: [cosmopolitan_universal, core]
+      hierarchy_stance: [natural_good, strong]
+      human_nature: [perfectible, core]
+      education_aim: [individual_flourishing, strong]
+      gender_order: [formal_equality, strong]
+  - id: anthroposophy_threefold
+    name: "Threefold Social Order"
+    aliases: [Steiner, anthroposophy]
+    prior_weight: 0.03
+    blurb: "Split society into three independent spheres — liberty in culture, equality in law, fraternity in the economy."
+    positions:
+      sphere_separation: [threefold_cultural_political_economic, core]
+      education_aim: [individual_flourishing, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      epistemic_authority: [esoteric_initiation, core]
+      economic_coordination: [regulated_market, strong]
+      state_scope: [limited, core]
+      firm_form: [worker_cooperative, strong]
+      money_form: [demurrage, strong]
+      technology_stance: [appropriate_scale, strong]
+      human_nature: [perfectible, strong]
+  - id: rastafari_politics
+    name: "Rastafari politics"
+    aliases: [Ethiopianism]
+    prior_weight: 0.04
+    blurb: "Repatriation to Africa, rejection of Babylon's institutions, and a divine African monarch."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      race_politics: [liberationist_nationalist, core]
+      nation_concept: [diasporic, core]
+      transition_method: [withdrawal, core]
+      leadership_form: [hereditary, strong]
+      colonialism_stance: [reparative_decolonial, core]
+      urban_rural: [back_to_land, strong]
+      state_trajectory: [abolish_now, typical]
+      nonhuman_status: [sacred, strong]
+  - id: cargo_cult_politics
+    name: "Cargo cult movements"
+    aliases: [John Frum]
+    prior_weight: 0.02
+    blurb: "Ritual and prophecy organised to bring back the goods and dignity that colonisation took away."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      colonialism_stance: [oppose, core]
+      epistemic_authority: [revelation, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      scale_of_polity: [village_commune, core]
+      leadership_form: [charismatic_leader, core]
+      tradition_stance: [restore, strong]
+      transition_method: [withdrawal, strong]
+  - id: taiping_ideology
+    name: "Taiping ideology"
+    prior_weight: 0.02
+    blurb: "A Christian-inflected heavenly kingdom with land held in common and the sexes strictly separated."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      land_regime: [collectivised, core]
+      property_regime: [communal, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      leadership_form: [charismatic_leader, core]
+      gender_order: [traditional_complementary, strong]
+      epistemic_authority: [revelation, core]
+      violence_legitimacy: [total_war, strong]
+      distribution_principle: [equal_share, core]
+  - id: sovereign_citizen
+    name: "Sovereign citizen ideology"
+    prior_weight: 0.03
+    blurb: "Claim that government authority rests on a contract you can unilaterally revoke through the right paperwork."
+    positions:
+      sovereignty_locus: [individual, core]
+      rights_basis: [natural_individual, core]
+      constitutionalism: [no_constitution, core]
+      secession_right: [exit_by_individual, core]
+      electoral_participation: [boycott, core]
+      epistemic_authority: [esoteric_initiation, strong]
+      state_trajectory: [minimal, strong]
+      legitimate_violence: [communal_militia, typical]
+  - id: freeman_on_the_land
+    name: "Freeman on the land"
+    prior_weight: 0.02
+    blurb: "A legal-fiction theory holding that statutes bind only those who consent to be bound by them."
+    positions:
+      rights_basis: [natural_individual, core]
+      sovereignty_locus: [individual, core]
+      constitutionalism: [no_constitution, core]
+      secession_right: [exit_by_individual, core]
+      epistemic_authority: [esoteric_initiation, strong]
+      electoral_participation: [boycott, core]
+      policing: [private, typical]
+      religion_in_public_life: [secular_neutral, typical]
+
+  - id: patriot_constitutionalism
+    name: "Patriot constitutionalism"
+    prior_weight: 0.04
+    blurb: "The original constitution as sacred text, defended by an armed citizenry against a lawless federal government."
+    positions:
+      constitutionalism: [entrenched_rights, core]
+      legitimate_violence: [communal_militia, core]
+      state_scope: [nightwatchman, core]
+      federalism: [confederal, core]
+      tradition_stance: [restore, core]
+      rights_basis: [natural_individual, core]
+      religion_in_public_life: [culturally_grounded, strong]
+      immigration: [restrict_sharply, strong]
+      internationalism: [isolationist, core]
+  - id: survivalist_politics
+    name: "Survivalist politics"
+    prior_weight: 0.04
+    blurb: "Collapse is coming; the political unit that matters is the household that can feed and defend itself."
+    positions:
+      scale_of_polity: [household, core]
+      welfare_provision: [mutual_aid, core]
+      legitimate_violence: [communal_militia, core]
+      transition_method: [withdrawal, core]
+      urban_rural: [back_to_land, core]
+      utopian_horizon: [none_pragmatic, core]
+      technology_stance: [appropriate_scale, strong]
+      state_trajectory: [minimal, strong]
+      human_nature: [self_interested_rational, strong]
+  - id: neopagan_politics
+    name: "Neo-pagan politics"
+    prior_weight: 0.03
+    blurb: "Pre-Christian religion revived as a political identity of land, ancestry and seasonal cycle."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      tradition_stance: [restore, core]
+      nonhuman_status: [sacred, core]
+      ecology_priority: [primary_frame, strong]
+      scale_of_polity: [village_commune, strong]
+      epistemic_authority: [esoteric_initiation, strong]
+      urban_rural: [back_to_land, strong]
+      art_and_culture: [popular_folk, strong]
+  - id: wiccan_political_theology
+    name: "Wiccan political theology"
+    prior_weight: 0.02
+    blurb: "Harm none, and a politics of consent, ecology and the divine feminine following from it."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      gender_order: [structural_liberation, core]
+      violence_legitimacy: [never, core]
+      nonhuman_status: [sacred, core]
+      ecology_priority: [primary_frame, core]
+      decision_procedure: [consensus, strong]
+      sexuality_stance: [liberationist, strong]
+      hierarchy_stance: [abolish, strong]
+  - id: millenarian_revolutionism
+    name: "Millenarian revolutionism"
+    prior_weight: 0.03
+    blurb: "The old world is about to end in judgement, and the elect must act now to bring the new one in."
+    positions:
+      utopian_horizon: [transcendent_eschaton, core]
+      epistemic_authority: [revelation, core]
+      violence_legitimacy: [revolutionary_terror, strong]
+      leadership_form: [charismatic_leader, core]
+      reform_vs_rupture: [rupture, core]
+      religion_in_public_life: [theocratic, core]
+      transition_method: [insurrection, strong]
+      organisation_form: [church_movement, core]
+  - id: ranterism
+    name: "Ranterism"
+    prior_weight: 0.02
+    blurb: "God is in everything and so nothing is sin; property, clergy and law are all abolished at once."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      property_regime: [communal, core]
+      rights_basis: [none_power, strong]
+      sexuality_stance: [liberationist, core]
+      state_trajectory: [abolish_now, core]
+      hierarchy_stance: [abolish, core]
+      epistemic_authority: [revelation, core]
+      speech_norms: [absolutist, strong]
+  - id: technocratic_ufo_politics
+    name: "Contactee politics"
+    prior_weight: 0.02
+    blurb: "Advanced extraterrestrials as the model and the coming solution to earthly government."
+    positions:
+      epistemic_authority: [esoteric_initiation, core]
+      technology_stance: [transhuman, core]
+      space_expansion: [human_destiny, core]
+      scale_of_polity: [world_federal, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      decision_procedure: [expert_rule, strong]
+      religion_in_public_life: [spiritual_syncretic, core]
+      violence_legitimacy: [never, typical]
+  - id: georgist_gesellian_hybrid
+    name: "Land and money reform"
+    prior_weight: 0.02
+    blurb: "Tax land rent and let money decay — the two monopolies attacked together."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      money_form: [demurrage, core]
+      market_role: [central, core]
+      class_analysis: [producer_parasite, core]
+      basic_income: [social_dividend, strong]
+      state_scope: [limited, strong]
+      growth_stance: [steady_state, strong]
+      transition_method: [electoral, strong]
+  - id: distributive_monarchism
+    name: "Distributive monarchism"
+    prior_weight: 0.02
+    blurb: "A king above, small property below, and nothing much in between."
+    positions:
+      leadership_form: [hereditary, core]
+      property_regime: [distributed_wide, core]
+      decision_procedure: [monarch, core]
+      firm_form: [household_artisan, core]
+      religion_in_public_life: [established_church, core]
+      state_scope: [limited, core]
+      scale_of_polity: [village_commune, strong]
+      tradition_stance: [restore, core]
+  - id: syncretic_esoteric_nationalism
+    name: "Esoteric nationalism"
+    prior_weight: 0.02
+    blurb: "The nation as a spiritual entity with a hidden destiny, accessible through myth and initiation."
+    positions:
+      nationalism_stance: [core_value, core]
+      epistemic_authority: [esoteric_initiation, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      tradition_stance: [transcend_esoteric, core]
+      utopian_horizon: [restorationist_golden_age, core]
+      nation_concept: [ethnic, strong]
+      transition_method: [cultural_metapolitics, strong]
+      art_and_culture: [popular_folk, strong]
+  - id: monastic_politics
+    name: "Monastic politics"
+    prior_weight: 0.02
+    blurb: "Withdraw into a disciplined religious community and let it outlast the collapsing world outside."
+    positions:
+      transition_method: [withdrawal, core]
+      scale_of_polity: [village_commune, core]
+      property_regime: [communal, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      work_ethic: [work_is_duty, core]
+      electoral_participation: [boycott, core]
+      tradition_stance: [conserve, core]
+      hierarchy_stance: [functional_necessary, strong]
+      family_form: [abolish_family, typical]
+  - id: pirate_politics
+    name: "Pirate politics"
+    prior_weight: 0.05
+    blurb: "Copyright reform, privacy and transparency as the organising axis of politics."
+    positions:
+      speech_norms: [absolutist, core]
+      technology_stance: [accelerate, core]
+      organisation_form: [network, core]
+      decision_procedure: [delegation_recallable, typical]
+      property_regime: [private_regulated, weak]
+      electoral_participation: [central, core]
+      state_scope: [limited, strong]
+      epistemic_authority: [popular_reason, strong]
+  - id: cyberdelic_politics
+    name: "Cyberdelic politics"
+    prior_weight: 0.02
+    blurb: "Psychedelics and computer networks as twin technologies of consciousness and liberation."
+    positions:
+      technology_stance: [transhuman, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      property_in_person: [self_ownership_absolute, core]
+      epistemic_authority: [esoteric_initiation, core]
+      state_trajectory: [abolish_now, strong]
+      art_and_culture: [avant_garde_rupture, core]
+      organisation_form: [network, strong]
+      human_nature: [perfectible, strong]

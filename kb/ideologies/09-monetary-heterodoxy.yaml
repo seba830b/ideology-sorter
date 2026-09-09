@@ -1,0 +1,213 @@
+family: monetary_heterodoxy
+label: Monetary & distributive heterodoxy
+family_defaults:
+  attitude_to_modernity: [embrace, typical]
+  class_analysis: [producer_parasite, typical]
+  decision_procedure: [representative_election, typical]
+  distribution_principle: [subsistence_guarantee, typical]
+  economic_coordination: [regulated_market, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [scientific_expertise, typical]
+  firm_form: [household_artisan, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_managed, typical]
+  hierarchy_stance: [minimise, typical]
+  human_nature: [self_interested_rational, typical]
+  land_regime: [private_absolute, typical]
+  market_role: [central, typical]
+  nationalism_stance: [indifferent, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [private_regulated, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  scale_of_polity: [national, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [limited, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [electoral, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  wage_labour: [regulated, typical]
+  welfare_provision: [universal_public, typical]
+ideologies:
+
+  - id: freiwirtschaft
+    name: "Freiwirtschaft"
+    aliases: [Gesell, Freigeld, demurrage money]
+    prior_weight: 0.05
+    blurb: "Money that loses value if hoarded, so it circulates like goods and interest falls to zero."
+    positions:
+      money_form: [demurrage, core]
+      land_regime: [private_taxed_rent, core]
+      market_role: [central, core]
+      class_analysis: [producer_parasite, strong]
+      state_scope: [limited, strong]
+      property_regime: [private_regulated, strong]
+      growth_stance: [steady_state, strong]
+      transition_method: [gradual_reform, strong]
+      basic_income: [social_dividend, typical]
+      firm_form: [household_artisan, typical]
+
+  - id: local_scrip
+    name: "Local scrip currency"
+    aliases: [Wörgl model, complementary currency]
+    prior_weight: 0.03
+    blurb: "Towns issue their own circulating money so that local trade never stops for lack of national currency."
+    positions:
+      money_form: [demurrage, core]
+      scale_of_polity: [municipal_confederal, core]
+      market_role: [central, strong]
+      transition_method: [prefigurative, core]
+      welfare_provision: [mutual_aid, strong]
+      urban_rural: [balanced, typical]
+      state_scope: [limited, typical]
+
+  - id: social_credit
+    name: "Social Credit"
+    aliases: [C.H. Douglas, national dividend]
+    prior_weight: 0.06
+    blurb: "Wages never suffice to buy what industry makes, so the state must issue a dividend to close the gap."
+    positions:
+      money_form: [sovereign_fiat_expansive, core]
+      basic_income: [social_dividend, core]
+      market_role: [central, strong]
+      property_regime: [private_regulated, strong]
+      class_analysis: [producer_parasite, strong]
+      state_scope: [limited, typical]
+      transition_method: [electoral, strong]
+      epistemic_authority: [scientific_expertise, typical]
+      firm_form: [investor_owned, typical]
+
+  - id: alberta_social_credit
+    name: "Alberta Social Credit"
+    prior_weight: 0.03
+    blurb: "Social Credit as a governing prairie party — dividends, monetary heresy and evangelical Protestantism together."
+    positions:
+      money_form: [sovereign_fiat_expansive, core]
+      basic_income: [social_dividend, core]
+      religion_in_public_life: [culturally_grounded, core]
+      urban_rural: [agrarian_rural, strong]
+      transition_method: [electoral, core]
+      tradition_stance: [conserve, strong]
+      federalism: [federal, strong]
+      market_role: [central, strong]
+
+  - id: binary_economics
+    name: "Binary economics"
+    aliases: [Kelso, ESOP theory]
+    prior_weight: 0.03
+    blurb: "Capital, not labour, produces most output — so finance must be arranged to make every citizen an owner of it."
+    positions:
+      property_regime: [distributed_wide, core]
+      firm_form: [worker_cooperative, strong]
+      money_form: [sovereign_fiat_expansive, strong]
+      market_role: [central, core]
+      distribution_principle: [desert_market, strong]
+      basic_income: [social_dividend, typical]
+      transition_method: [gradual_reform, core]
+      inheritance: [taxed, typical]
+
+  - id: share_our_wealth
+    name: "Share Our Wealth"
+    aliases: [Huey Long]
+    prior_weight: 0.03
+    blurb: "Cap great fortunes outright and hand every family a homestead and a guaranteed income."
+    positions:
+      distribution_principle: [equal_share, core]
+      inheritance: [abolished, core]
+      basic_income: [support_ubi, core]
+      class_analysis: [elite_mass, core]
+      leadership_form: [charismatic_leader, strong]
+      transition_method: [electoral, core]
+      property_regime: [distributed_wide, strong]
+      state_scope: [welfare_broad, strong]
+      urban_rural: [agrarian_rural, typical]
+
+  - id: townsend_plan
+    name: "Townsend Plan"
+    prior_weight: 0.02
+    blurb: "A generous pension for everyone over sixty, on condition it is spent within the month."
+    positions:
+      basic_income: [support_ubi, core]
+      welfare_provision: [universal_public, core]
+      money_form: [sovereign_fiat_expansive, strong]
+      transition_method: [electoral, core]
+      growth_stance: [growth_essential, strong]
+      state_scope: [welfare_broad, strong]
+      class_analysis: [rejected, typical]
+
+  - id: bellamyite_nationalism
+    name: "Bellamyite Nationalism"
+    aliases: [Looking Backward, the industrial army]
+    prior_weight: 0.04
+    blurb: "The whole economy as one national trust, everyone serving a term in an industrial army for an equal share."
+    positions:
+      property_regime: [state_owned, core]
+      economic_coordination: [central_planning, core]
+      distribution_principle: [equal_share, core]
+      work_ethic: [work_is_duty, core]
+      money_form: [abolished, strong]
+      state_scope: [total, strong]
+      technology_stance: [industrial_neutral, strong]
+      utopian_horizon: [achievable_new_order, core]
+      transition_method: [electoral, strong]
+      urban_rural: [urban_industrial, strong]
+
+  - id: modern_monetary_politics
+    name: "Modern monetary politics"
+    aliases: [MMT politics, job guarantee]
+    prior_weight: 0.12
+    blurb: "A currency-issuing state is limited by real resources, not by revenue, so full employment is always affordable."
+    positions:
+      money_form: [sovereign_fiat_expansive, core]
+      state_scope: [welfare_broad, core]
+      work_ethic: [work_is_duty, strong]
+      welfare_provision: [universal_public, strong]
+      economic_coordination: [mixed_economy, strong]
+      transition_method: [electoral, strong]
+      epistemic_authority: [scientific_expertise, strong]
+      growth_stance: [growth_managed, typical]
+      ecology_priority: [central_constraint, typical]
+
+  - id: ubi_maximalism
+    name: "Basic income maximalism"
+    prior_weight: 0.15
+    blurb: "One unconditional payment large enough to live on, replacing the conditional welfare apparatus entirely."
+    positions:
+      basic_income: [support_ubi, core]
+      welfare_provision: [universal_public, strong]
+      work_ethic: [work_abolished, strong]
+      distribution_principle: [subsistence_guarantee, core]
+      market_role: [central, typical]
+      state_scope: [welfare_broad, strong]
+      transition_method: [electoral, strong]
+
+  - id: positive_money
+    name: "Full-reserve banking"
+    aliases: [positive money, sovereign money]
+    prior_weight: 0.04
+    blurb: "Strip private banks of the power to create money and give it back to a public authority."
+    positions:
+      money_form: [sovereign_fiat_expansive, core]
+      state_scope: [limited, typical]
+      market_role: [retained_bounded, strong]
+      class_analysis: [producer_parasite, strong]
+      transition_method: [electoral, core]
+      epistemic_authority: [scientific_expertise, typical]
+      growth_stance: [steady_state, typical]
+
+  - id: mutual_credit_lets
+    name: "Mutual credit systems"
+    aliases: [LETS, timebanking]
+    prior_weight: 0.04
+    blurb: "Communities keep their own ledger of favours and goods, with no interest and no national money involved."
+    positions:
+      money_form: [mutual_credit, core]
+      scale_of_polity: [village_commune, core]
+      welfare_provision: [mutual_aid, core]
+      transition_method: [prefigurative, core]
+      market_role: [retained_bounded, strong]
+      state_trajectory: [minimal, typical]
+      work_ethic: [work_reduced, typical]
+      distribution_principle: [contribution_labour, strong]

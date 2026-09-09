@@ -1,0 +1,449 @@
+family: liberation
+label: Liberation movements
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  class_analysis: [status_group, typical]
+  colonialism_stance: [reparative_decolonial, typical]
+  decision_procedure: [direct_democracy, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [critical_consciousness, typical]
+  electoral_participation: [tactical, typical]
+  epistemic_authority: [popular_reason, typical]
+  gender_order: [structural_liberation, typical]
+  healthcare: [universal_public, typical]
+  hierarchy_stance: [abolish, typical]
+  housing: [decommodified_commons, typical]
+  human_nature: [historically_produced, typical]
+  immigration: [welcome, typical]
+  imperialism_analysis: [central_frame, typical]
+  land_regime: [commons, typical]
+  leadership_form: [collective, typical]
+  market_role: [retained_bounded, typical]
+  nonhuman_status: [rights_bearing, typical]
+  organisation_form: [movement_of_movements, typical]
+  policing: [community_controlled, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [cooperative, typical]
+  punishment: [abolitionist, typical]
+  race_politics: [antiracist_structural, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [spiritual_syncretic, typical]
+  rights_basis: [collective_historical, typical]
+  scale_of_polity: [municipal_confederal, typical]
+  sexuality_stance: [liberationist, typical]
+  speech_norms: [restricted_for_harm, typical]
+  state_scope: [welfare_broad, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [prefigurative, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  welfare_provision: [communal_direct, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+  - id: garveyism
+    name: "Garveyism"
+    aliases: [UNIA, Back-to-Africa]
+    prior_weight: 0.06
+    blurb: "Black economic self-reliance, racial pride and an independent African homeland."
+    positions:
+      race_politics: [separatism, core]
+      nation_concept: [diasporic, core]
+      scale_of_polity: [continental_bloc, core]
+      firm_form: [worker_cooperative, strong]
+      colonialism_stance: [reparative_decolonial, core]
+      market_role: [central, strong]
+      leadership_form: [charismatic_leader, core]
+      organisation_form: [mass_party, strong]
+      religion_in_public_life: [culturally_grounded, strong]
+  - id: black_nationalism
+    name: "Black nationalism"
+    prior_weight: 0.12
+    blurb: "Black people constitute a nation entitled to self-determination and separate institutions."
+    positions:
+      race_politics: [liberationist_nationalist, core]
+      nation_concept: [diasporic, core]
+      colonialism_stance: [reparative_decolonial, core]
+      welfare_provision: [communal_direct, strong]
+      education_aim: [critical_consciousness, core]
+      secession_right: [national_only, typical]
+      legitimate_violence: [communal_militia, strong]
+      nationalism_stance: [instrumental_for_liberation, core]
+  - id: revolutionary_intercommunalism
+    name: "Revolutionary intercommunalism"
+    aliases: [Huey Newton]
+    prior_weight: 0.03
+    blurb: "Empire has dissolved every nation into dispersed communities, so liberation must be intercommunal, not national."
+    positions:
+      nation_concept: [post_national, core]
+      imperialism_analysis: [central_frame, core]
+      scale_of_polity: [municipal_confederal, core]
+      welfare_provision: [communal_direct, core]
+      class_analysis: [central_marxist, strong]
+      nationalism_stance: [hostile, strong]
+      race_politics: [liberationist_nationalist, strong]
+      internationalism: [proletarian_internationalist, core]
+      legitimate_violence: [communal_militia, strong]
+  - id: black_panther_marxism
+    name: "Black Panther Marxism-Leninism"
+    prior_weight: 0.06
+    blurb: "Armed community defence and survival programmes, organised on Marxist-Leninist lines."
+    positions:
+      race_politics: [liberationist_nationalist, core]
+      class_analysis: [central_marxist, core]
+      legitimate_violence: [communal_militia, core]
+      welfare_provision: [communal_direct, core]
+      policing: [community_controlled, core]
+      vanguard_role: [necessary, strong]
+      imperialism_analysis: [central_frame, core]
+      organisation_form: [vanguard_party, strong]
+      education_aim: [critical_consciousness, core]
+  - id: new_afrikan_independence
+    name: "New Afrikan independence"
+    prior_weight: 0.02
+    blurb: "A sovereign Black republic in the American South, with land and reparations as the claim."
+    positions:
+      secession_right: [national_only, core]
+      race_politics: [separatism, core]
+      nation_concept: [diasporic, core]
+      scale_of_polity: [regional, core]
+      colonialism_stance: [reparative_decolonial, core]
+      land_regime: [collectivised, strong]
+      legitimate_violence: [communal_militia, strong]
+      class_analysis: [central_marxist, strong]
+  - id: nation_of_islam_economics
+    name: "Black economic nationalism"
+    aliases: [Nation of Islam programme]
+    prior_weight: 0.04
+    blurb: "Separate Black businesses, land and schools, with religious discipline as the organising force."
+    positions:
+      race_politics: [separatism, core]
+      religion_in_public_life: [theocratic, strong]
+      firm_form: [household_artisan, strong]
+      family_form: [patriarchal_household, core]
+      market_role: [central, strong]
+      welfare_provision: [communal_direct, core]
+      education_aim: [ideological_formation, strong]
+      organisation_form: [church_movement, core]
+  - id: black_hebrew_israelite_politics
+    name: "Black Hebrew Israelite politics"
+    prior_weight: 0.02
+    blurb: "A claim of descent from ancient Israel supporting separatist religious and political community."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      race_politics: [separatism, core]
+      nation_concept: [religious, core]
+      epistemic_authority: [revelation, core]
+      tradition_stance: [restore, core]
+      family_form: [patriarchal_household, strong]
+      organisation_form: [church_movement, core]
+  - id: moorish_science_politics
+    name: "Moorish Science politics"
+    prior_weight: 0.02
+    blurb: "A reclaimed Moorish national identity conferring separate legal and civic standing."
+    positions:
+      nation_concept: [religious, core]
+      race_politics: [separatism, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      rights_basis: [collective_historical, core]
+      epistemic_authority: [esoteric_initiation, strong]
+      organisation_form: [church_movement, core]
+      secession_right: [exit_by_individual, typical]
+  - id: negritude
+    name: "Negritude"
+    aliases: [Césaire, Senghor]
+    prior_weight: 0.04
+    blurb: "Affirm a shared Black cultural and aesthetic personality against the assimilation demanded by empire."
+    positions:
+      race_politics: [liberationist_nationalist, core]
+      art_and_culture: [popular_folk, core]
+      colonialism_stance: [reparative_decolonial, core]
+      tradition_stance: [critically_inherit, core]
+      nation_concept: [diasporic, core]
+      education_aim: [critical_consciousness, strong]
+      language_politics: [minority_protection, typical]
+      transition_method: [cultural_metapolitics, core]
+
+  - id: afropessimism
+    name: "Afropessimism"
+    aliases: [Wilderson]
+    prior_weight: 0.03
+    blurb: "Anti-Blackness is the structuring condition of the modern world, not a remediable defect within it."
+    positions:
+      race_politics: [antiracist_structural, core]
+      utopian_horizon: [none_pragmatic, core]
+      class_analysis: [status_group, core]
+      colonialism_stance: [reparative_decolonial, core]
+      reform_vs_rupture: [rupture, core]
+      punishment: [abolitionist, strong]
+      education_aim: [critical_consciousness, strong]
+      human_nature: [historically_produced, strong]
+  - id: afrofuturism_politics
+    name: "Afrofuturist politics"
+    prior_weight: 0.03
+    blurb: "Imagining Black futures in space and technology as a way of contesting the present."
+    positions:
+      race_politics: [liberationist_nationalist, core]
+      art_and_culture: [avant_garde_rupture, core]
+      space_expansion: [human_destiny, strong]
+      technology_stance: [accelerate, strong]
+      utopian_horizon: [achievable_new_order, core]
+      nation_concept: [diasporic, strong]
+      tradition_stance: [critically_inherit, strong]
+  - id: third_worldism
+    name: "Third Worldism"
+    prior_weight: 0.08
+    blurb: "The decisive struggle is between imperial core and exploited periphery, not between classes within nations."
+    positions:
+      imperialism_analysis: [central_frame, core]
+      internationalism: [anti_imperialist_nationalist, core]
+      colonialism_stance: [reparative_decolonial, core]
+      class_analysis: [central_marxist, strong]
+      nationalism_stance: [instrumental_for_liberation, core]
+      scale_of_polity: [continental_bloc, typical]
+      state_scope: [developmental, strong]
+  - id: maoist_third_worldism
+    name: "Maoist Third Worldism"
+    prior_weight: 0.03
+    blurb: "First World workers are bought off by imperial superprofits, so revolution can only come from the periphery."
+    positions:
+      imperialism_analysis: [central_frame, core]
+      class_analysis: [central_marxist, core]
+      internationalism: [anti_imperialist_nationalist, core]
+      transition_method: [protracted_peoples_war, core]
+      electoral_participation: [boycott, core]
+      vanguard_role: [necessary, core]
+      urban_rural: [agrarian_rural, strong]
+      colonialism_stance: [reparative_decolonial, core]
+  - id: indianismo
+    name: "Indianismo"
+    aliases: [Fausto Reinaga]
+    prior_weight: 0.02
+    blurb: "Indigenous thought as its own philosophy and politics, rejecting both European liberalism and Marxism."
+    positions:
+      indigenous_sovereignty: [primary_frame, core]
+      colonialism_stance: [reparative_decolonial, core]
+      class_analysis: [rejected, core]
+      tradition_stance: [restore, core]
+      epistemic_authority: [tradition, core]
+      race_politics: [liberationist_nationalist, core]
+      education_aim: [critical_consciousness, strong]
+      nation_concept: [ethnic, strong]
+  - id: katarismo
+    name: "Katarismo"
+    prior_weight: 0.02
+    blurb: "Aymara indigenous politics joined to peasant unionism, naming Bolivia as an internally colonised state."
+    positions:
+      indigenous_sovereignty: [primary_frame, core]
+      organisation_form: [union, core]
+      colonialism_stance: [reparative_decolonial, core]
+      class_analysis: [status_group, strong]
+      scale_of_polity: [village_commune, strong]
+      land_regime: [commons, core]
+      language_politics: [minority_protection, core]
+      electoral_participation: [central, typical]
+  - id: pachamamism
+    name: "Pachamamism"
+    prior_weight: 0.02
+    blurb: "The earth as a rights-bearing mother in law and constitution, drawn from Andean cosmology."
+    positions:
+      nonhuman_status: [sacred, core]
+      indigenous_sovereignty: [primary_frame, core]
+      ecology_priority: [primary_frame, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      rights_basis: [collective_historical, strong]
+      growth_stance: [degrowth, strong]
+      land_regime: [commons, strong]
+  - id: landback
+    name: "Landback"
+    aliases: [Indigenous sovereignty]
+    prior_weight: 0.1
+    blurb: "Return jurisdiction and title over stolen land to the nations it was taken from."
+    positions:
+      indigenous_sovereignty: [land_return, core]
+      land_regime: [commons, core]
+      colonialism_stance: [reparative_decolonial, core]
+      secession_right: [national_only, strong]
+      ecology_priority: [primary_frame, strong]
+      rights_basis: [collective_historical, core]
+      federalism: [confederal, strong]
+      nation_concept: [ethnic, typical]
+  - id: red_power
+    name: "Red Power"
+    aliases: [American Indian Movement]
+    prior_weight: 0.04
+    blurb: "Treaty rights enforced by occupation and confrontation, and urban Native self-organisation."
+    positions:
+      indigenous_sovereignty: [land_return, core]
+      colonialism_stance: [reparative_decolonial, core]
+      legitimate_violence: [communal_militia, strong]
+      transition_method: [insurrection, typical]
+      policing: [community_controlled, strong]
+      rights_basis: [collective_historical, core]
+      education_aim: [critical_consciousness, core]
+      tradition_stance: [restore, strong]
+  - id: sami_politics
+    name: "Sámi political nationalism"
+    prior_weight: 0.02
+    blurb: "Reindeer herding rights, language and a parliament for a people divided across four states."
+    positions:
+      indigenous_sovereignty: [land_return, core]
+      language_politics: [minority_protection, core]
+      scale_of_polity: [bioregional, core]
+      ecology_priority: [central_constraint, core]
+      federalism: [confederal, strong]
+      rights_basis: [collective_historical, core]
+      electoral_participation: [central, strong]
+      land_regime: [commons, strong]
+  - id: gay_liberation
+    name: "Gay liberation"
+    aliases: [Gay Liberation Front]
+    prior_weight: 0.06
+    blurb: "Not tolerance but liberation — overturning the family, gender roles and the state that police them."
+    positions:
+      sexuality_stance: [queer_abolitionist, core]
+      family_form: [abolish_family, core]
+      gender_order: [structural_liberation, core]
+      policing: [abolish, core]
+      transition_method: [prefigurative, strong]
+      class_analysis: [central_marxist, strong]
+      hierarchy_stance: [abolish, strong]
+      organisation_form: [affinity_group, strong]
+  - id: queer_nationalism
+    name: "Queer nationalism"
+    prior_weight: 0.03
+    blurb: "Queer people as a nation with their own culture, spaces and militant self-defence."
+    positions:
+      sexuality_stance: [queer_abolitionist, core]
+      nation_concept: [post_national, core]
+      race_politics: [separatism, weak]
+      scale_of_polity: [village_commune, typical]
+      art_and_culture: [avant_garde_rupture, strong]
+      legitimate_violence: [communal_militia, strong]
+      welfare_provision: [mutual_aid, strong]
+  - id: queer_negativity
+    name: "Queer antisocial thesis"
+    prior_weight: 0.02
+    blurb: "Refuse the demand for a reproductive future; queerness names the negation of social order, not inclusion in it."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      reproductive_politics: [antinatalist, strong]
+      family_form: [abolish_family, core]
+      sexuality_stance: [queer_abolitionist, core]
+      transition_method: [withdrawal, strong]
+      human_nature: [historically_produced, strong]
+      art_and_culture: [avant_garde_rupture, strong]
+  - id: disability_justice
+    name: "Disability justice"
+    aliases: [crip theory]
+    prior_weight: 0.06
+    blurb: "Disability is produced by a world built for some bodies; interdependence, not cure, is the horizon."
+    positions:
+      welfare_provision: [universal_public, core]
+      healthcare: [universal_public, core]
+      hierarchy_stance: [abolish, core]
+      work_ethic: [work_reduced, core]
+      basic_income: [support_ubi, strong]
+      class_analysis: [status_group, core]
+      human_nature: [historically_produced, strong]
+      punishment: [abolitionist, strong]
+  - id: neurodiversity_politics
+    name: "Neurodiversity politics"
+    prior_weight: 0.05
+    blurb: "Cognitive variation is a difference to be accommodated, not a disorder to be corrected."
+    positions:
+      healthcare: [universal_public, strong]
+      education_aim: [individual_flourishing, core]
+      hierarchy_stance: [abolish, strong]
+      human_nature: [historically_produced, core]
+      work_ethic: [work_reduced, strong]
+      rights_basis: [positive_legal, strong]
+      punishment: [rehabilitative, strong]
+  - id: mad_pride
+    name: "Mad Pride"
+    aliases: [anti-psychiatry, Basaglia]
+    prior_weight: 0.04
+    blurb: "Psychiatric authority is a form of social control; close the asylums and end coercive treatment."
+    positions:
+      healthcare: [communal_mutual, core]
+      punishment: [abolitionist, core]
+      policing: [abolish, strong]
+      epistemic_authority: [popular_reason, core]
+      hierarchy_stance: [abolish, core]
+      welfare_provision: [mutual_aid, strong]
+      human_nature: [historically_produced, strong]
+      rights_basis: [natural_individual, strong]
+  - id: deafhood_politics
+    name: "Deafhood politics"
+    prior_weight: 0.02
+    blurb: "Deaf people as a linguistic and cultural minority, not a medical population awaiting repair."
+    positions:
+      language_politics: [minority_protection, core]
+      nation_concept: [cultural_linguistic, strong]
+      education_aim: [transmit_tradition, strong]
+      healthcare: [universal_public, typical]
+      rights_basis: [collective_historical, core]
+      class_analysis: [status_group, strong]
+      hierarchy_stance: [minimise, strong]
+  - id: fat_liberation
+    name: "Fat liberation"
+    prior_weight: 0.03
+    blurb: "Body size is a site of discrimination, not a health failing to be corrected by policy."
+    positions:
+      healthcare: [universal_public, strong]
+      hierarchy_stance: [abolish, strong]
+      rights_basis: [positive_legal, strong]
+      class_analysis: [status_group, core]
+      epistemic_authority: [popular_reason, strong]
+      human_nature: [historically_produced, strong]
+      property_in_person: [bodily_autonomy_qualified, core]
+  - id: animal_liberation
+    name: "Animal liberation"
+    aliases: [Singer]
+    prior_weight: 0.08
+    blurb: "Equal consideration of interests regardless of species; factory farming is the great moral atrocity."
+    positions:
+      nonhuman_status: [liberation_subject, core]
+      distribution_principle: [need, strong]
+      epistemic_authority: [popular_reason, strong]
+      ecology_priority: [central_constraint, strong]
+      transition_method: [gradual_reform, strong]
+      rights_basis: [natural_individual, strong]
+      market_role: [retained_bounded, typical]
+  - id: abolitionist_veganism
+    name: "Abolitionist veganism"
+    aliases: [Francione]
+    prior_weight: 0.03
+    blurb: "Animals are property and no welfare reform can fix that; only abolishing their property status will."
+    positions:
+      nonhuman_status: [liberation_subject, core]
+      property_regime: [private_regulated, weak]
+      violence_legitimacy: [never, core]
+      reform_vs_rupture: [rupture, core]
+      transition_method: [cultural_metapolitics, core]
+      rights_basis: [natural_individual, core]
+      ecology_priority: [central_constraint, typical]
+  - id: prison_abolitionism
+    name: "Prison abolitionism"
+    prior_weight: 0.12
+    blurb: "Prisons and police cannot be reformed into justice; build the institutions that make them unnecessary."
+    positions:
+      punishment: [abolitionist, core]
+      policing: [abolish, core]
+      welfare_provision: [universal_public, core]
+      race_politics: [antiracist_structural, core]
+      class_analysis: [status_group, strong]
+      healthcare: [universal_public, strong]
+      housing: [decommodified_commons, strong]
+      hierarchy_stance: [abolish, strong]
+  - id: sex_workers_rights
+    name: "Sex workers' rights"
+    prior_weight: 0.05
+    blurb: "Full decriminalisation and labour rights, on the view that sex work is work."
+    positions:
+      sexuality_stance: [liberationist, core]
+      property_in_person: [self_ownership_absolute, core]
+      policing: [abolish, strong]
+      organisation_form: [union, core]
+      punishment: [abolitionist, strong]
+      market_role: [retained_bounded, strong]
+      gender_order: [structural_liberation, strong]
+      healthcare: [universal_public, strong]

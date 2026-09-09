@@ -1,0 +1,261 @@
+questions:
+  - id: q_change_by_elections
+    tenet: transition_method
+    tier: 1
+    prompt: "Real change comes through winning elections and passing laws."
+    expected: {electoral: 2, gradual_reform: 1, insurrection: -2, protracted_peoples_war: -2, general_strike: -1, prefigurative: -1, exit_secession: -2, counter_economics: -2, coup_vanguard: -2, withdrawal: -2, cultural_metapolitics: -1}
+  - id: q_change_by_insurrection
+    tenet: transition_method
+    tier: 1
+    prompt: "The existing order will only be removed by an armed uprising."
+    expected: {insurrection: 2, protracted_peoples_war: 2, coup_vanguard: 1, general_strike: 0, electoral: -2, gradual_reform: -2, withdrawal: -2, prefigurative: -1}
+  - id: q_general_strike
+    tenet: transition_method
+    tier: 2
+    prompt: "A general strike by organised workers is the decisive weapon."
+    expected: {general_strike: 2, insurrection: 1, prefigurative: 0, electoral: -1, coup_vanguard: -1, cultural_metapolitics: -1, withdrawal: -2}
+  - id: q_prefigurative
+    tenet: transition_method
+    tier: 2
+    prompt: "Build the institutions of the new society now, inside the old one, rather than waiting to seize power."
+    expected: {prefigurative: 2, counter_economics: 1, withdrawal: 1, exit_secession: 1, coup_vanguard: -2, insurrection: -1, electoral: -1}
+  - id: q_peoples_war
+    tenet: transition_method
+    tier: 3
+    prompt: "Revolution should begin in the countryside and encircle the cities over many years."
+    expected: {protracted_peoples_war: 2, insurrection: 1, general_strike: -1, electoral: -2, prefigurative: -2, counter_economics: -2}
+  - id: q_counter_economics
+    tenet: transition_method
+    tier: 3
+    prompt: "Starve the state by trading outside its reach, in untaxed and unregulated markets."
+    expected: {counter_economics: 2, exit_secession: 1, prefigurative: 1, electoral: -2, insurrection: -1, gradual_reform: -2}
+  - id: q_exit_and_found
+    tenet: transition_method
+    tier: 3
+    prompt: "Rather than fix an existing country, go and found a new political community somewhere else."
+    expected: {exit_secession: 2, counter_economics: 1, withdrawal: 1, electoral: -2, insurrection: -2, gradual_reform: -2}
+  - id: q_win_the_culture_first
+    tenet: transition_method
+    tier: 2
+    prompt: "Political power follows cultural power; the battle of ideas has to be won long before any election."
+    expected: {cultural_metapolitics: 2, prefigurative: 0, electoral: -1, insurrection: -1, coup_vanguard: -1, counter_economics: -1}
+  - id: q_withdraw_entirely
+    tenet: transition_method
+    tier: 3
+    prompt: "The right response to a corrupt political order is to withdraw from it and live differently."
+    expected: {withdrawal: 2, prefigurative: 1, exit_secession: 1, electoral: -2, insurrection: -2, general_strike: -2}
+  - id: q_seizure_by_small_group
+    tenet: transition_method
+    tier: 3
+    prompt: "A small determined group should seize power and hold it until society has been transformed."
+    expected: {coup_vanguard: 2, insurrection: 1, protracted_peoples_war: 0, electoral: -2, prefigurative: -2, general_strike: -1}
+  - id: q_violence_never
+    tenet: violence_legitimacy
+    tier: 1
+    prompt: "Political violence is never justified, under any circumstances."
+    expected: {never: 2, defensive_only: 0, insurrectionary: -2, revolutionary_terror: -2, total_war: -2}
+  - id: q_revolutionary_terror
+    tenet: violence_legitimacy
+    tier: 2
+    prompt: "Terror against the enemies of the revolution is sometimes necessary and justified."
+    expected: {revolutionary_terror: 2, total_war: 2, insurrectionary: 1, defensive_only: -2, never: -2}
+  - id: q_violence_defensive
+    tenet: violence_legitimacy
+    tier: 2
+    prompt: "Force is legitimate only in direct defence against attack."
+    expected: {defensive_only: 2, never: 1, insurrectionary: -1, revolutionary_terror: -2, total_war: -2}
+  - id: q_reform_not_revolution
+    tenet: reform_vs_rupture
+    tier: 1
+    prompt: "Society should be improved step by step, not overturned."
+    expected: {reform: 2, reform_toward_rupture: 0, rupture: -2}
+  - id: q_total_break
+    tenet: reform_vs_rupture
+    tier: 1
+    prompt: "Nothing short of a complete break with the present system will do."
+    expected: {rupture: 2, reform_toward_rupture: 1, reform: -2}
+  - id: q_vanguard_needed
+    tenet: vanguard_role
+    tier: 2
+    prompt: "A revolution needs a disciplined leading party or it will fail."
+    expected: {necessary: 2, useful: 0, rejected: -2}
+  - id: q_no_vanguard
+    tenet: vanguard_role
+    tier: 2
+    prompt: "Any party claiming to lead the working class will end up ruling over it."
+    expected: {rejected: 2, useful: -1, necessary: -2}
+  - id: q_boycott_elections
+    tenet: electoral_participation
+    tier: 1
+    prompt: "Voting legitimises a system that should not be legitimised; refuse to take part."
+    expected: {boycott: 2, tactical: -1, central: -2}
+  - id: q_elections_central
+    tenet: electoral_participation
+    tier: 1
+    prompt: "Contesting elections should be the main political activity."
+    expected: {central: 2, tactical: 0, boycott: -2}
+  - id: q_union_organising
+    tenet: organisation_form
+    tier: 2
+    prompt: "The trade union is the basic organisation through which people should act politically."
+    expected: {union: 2, mass_party: 0, vanguard_party: -1, affinity_group: -1, church_movement: -2, none: -2, network: -1}
+  - id: q_affinity_groups
+    tenet: organisation_form
+    tier: 2
+    prompt: "Small autonomous groups of people who trust each other are the right way to organise."
+    expected: {affinity_group: 2, network: 1, federation: 0, mass_party: -2, vanguard_party: -2, union: -1}
+  - id: q_mass_party
+    tenet: organisation_form
+    tier: 2
+    prompt: "A large membership party is the right vehicle for political change."
+    expected: {mass_party: 2, vanguard_party: 1, union: 0, affinity_group: -2, none: -2, network: -1}
+  - id: q_no_organisation
+    tenet: organisation_form
+    tier: 3
+    prompt: "Formal organisation always corrupts; it is better to have none at all."
+    expected: {none: 2, affinity_group: 1, network: 0, mass_party: -2, vanguard_party: -2, union: -2, church_movement: -2}
+  - id: q_religious_movement
+    tenet: organisation_form
+    tier: 3
+    prompt: "A religious community is the right basis for political organisation."
+    expected: {church_movement: 2, none: -1, vanguard_party: -2, union: -1, network: -1}
+  - id: q_federation_of_groups
+    tenet: organisation_form
+    tier: 3
+    prompt: "Autonomous groups should federate together while keeping their independence."
+    expected: {federation: 2, network: 1, affinity_group: 1, vanguard_party: -2, mass_party: -1}
+  - id: q_movement_of_movements
+    tenet: organisation_form
+    tier: 3
+    prompt: "There should be no single movement — a coalition of many different struggles is the point."
+    expected: {movement_of_movements: 2, network: 1, federation: 1, vanguard_party: -2, mass_party: -1}
+  - id: q_village_scale
+    tenet: scale_of_polity
+    tier: 1
+    prompt: "The right size for a political community is the village or neighbourhood."
+    expected: {village_commune: 2, municipal_confederal: 1, household: 1, bioregional: 0, national: -2, imperial: -2, world_federal: -2, continental_bloc: -2}
+  - id: q_world_government
+    tenet: scale_of_polity
+    tier: 1
+    prompt: "Humanity needs a single world government."
+    expected: {world_federal: 2, continental_bloc: 0, national: -2, village_commune: -2, municipal_confederal: -2, household: -2, imperial: 0}
+  - id: q_nation_is_right_scale
+    tenet: scale_of_polity
+    tier: 1
+    prompt: "The nation-state is the right unit of political life."
+    expected: {national: 2, regional: 0, continental_bloc: -1, world_federal: -2, village_commune: -2, municipal_confederal: -2, household: -2}
+  - id: q_municipal_confederation
+    tenet: scale_of_polity
+    tier: 3
+    prompt: "Cities and towns governing themselves and confederating together should replace the nation-state."
+    expected: {municipal_confederal: 2, village_commune: 1, bioregional: 1, national: -2, world_federal: -1, imperial: -2}
+  - id: q_bioregion
+    tenet: scale_of_polity
+    tier: 3
+    prompt: "Political boundaries should follow watersheds and ecosystems rather than history or treaty."
+    expected: {bioregional: 2, village_commune: 1, municipal_confederal: 1, national: -2, world_federal: -1, imperial: -2}
+  - id: q_civilisational_bloc
+    tenet: scale_of_polity
+    tier: 3
+    prompt: "The world should be organised into a few large civilisational blocs."
+    expected: {continental_bloc: 2, imperial: 1, national: -1, village_commune: -2, world_federal: -1, municipal_confederal: -2}
+  - id: q_confederal_not_federal
+    tenet: federalism
+    tier: 2
+    prompt: "Any union should be a loose confederation that members can leave, not a binding federal state."
+    expected: {confederal: 2, none_stateless: 1, federal: -1, unitary: -2}
+  - id: q_unitary_state
+    tenet: federalism
+    tier: 2
+    prompt: "A country should be governed as one unit, without regional governments holding real power."
+    expected: {unitary: 2, federal: -1, confederal: -2, none_stateless: -2}
+  - id: q_open_borders
+    tenet: borders
+    tier: 1
+    prompt: "Borders should be abolished and people free to live anywhere."
+    expected: {abolished: 2, open: 1, controlled: -1, closed: -2}
+  - id: q_closed_borders
+    tenet: borders
+    tier: 1
+    prompt: "A country should tightly control who enters and largely keep outsiders out."
+    expected: {closed: 2, controlled: 1, open: -2, abolished: -2}
+  - id: q_immigration_welcome
+    tenet: immigration
+    tier: 1
+    prompt: "Immigration is good and should be encouraged."
+    expected: {open_borders: 2, welcome: 2, manage: 0, restrict_sharply: -2}
+  - id: q_immigration_restrict
+    tenet: immigration
+    tier: 1
+    prompt: "Immigration should be cut sharply to preserve the existing character of the country."
+    expected: {restrict_sharply: 2, manage: 0, welcome: -2, open_borders: -2}
+  - id: q_right_to_secede
+    tenet: secession_right
+    tier: 2
+    prompt: "Any region that wants to leave a country should be allowed to."
+    expected: {universal_right: 2, exit_by_individual: 2, national_only: 1, none: -2}
+  - id: q_individual_exit
+    tenet: secession_right
+    tier: 3
+    prompt: "An individual should be able to opt out of their government the way they might leave a club."
+    expected: {exit_by_individual: 2, universal_right: 1, national_only: -1, none: -2}
+  - id: q_no_secession
+    tenet: secession_right
+    tier: 2
+    prompt: "The territorial integrity of a state must be maintained against separatist movements."
+    expected: {none: 2, national_only: -1, universal_right: -2, exit_by_individual: -2}
+  - id: q_workers_of_the_world
+    tenet: internationalism
+    tier: 1
+    prompt: "Workers everywhere have more in common with each other than with their own rulers."
+    expected: {proletarian_internationalist: 2, cosmopolitan_universal: 1, anti_imperialist_nationalist: 0, national_interest: -2, isolationist: -2}
+  - id: q_national_interest_first
+    tenet: internationalism
+    tier: 1
+    prompt: "Foreign policy should pursue the national interest and nothing else."
+    expected: {national_interest: 2, isolationist: 1, anti_imperialist_nationalist: 0, proletarian_internationalist: -2, cosmopolitan_universal: -2}
+  - id: q_isolationism
+    tenet: internationalism
+    tier: 2
+    prompt: "A country should keep out of foreign affairs entirely and rely on itself."
+    expected: {isolationist: 2, national_interest: 1, anti_imperialist_nationalist: 0, proletarian_internationalist: -2, cosmopolitan_universal: -2}
+  - id: q_anti_imperialist_national
+    tenet: internationalism
+    tier: 3
+    prompt: "National liberation from foreign domination is the primary struggle of our time."
+    expected: {anti_imperialist_nationalist: 2, proletarian_internationalist: 1, isolationist: 0, cosmopolitan_universal: -2, national_interest: -1}
+  - id: q_imperialism_central
+    tenet: imperialism_analysis
+    tier: 2
+    prompt: "Imperialism is the key to understanding world politics."
+    expected: {central_frame: 2, secondary: 0, rejected: -2}
+  - id: q_imperialism_overstated
+    tenet: imperialism_analysis
+    tier: 2
+    prompt: "Talk of imperialism explains very little about the modern world."
+    expected: {rejected: 2, secondary: 0, central_frame: -2}
+  - id: q_class_is_key
+    tenet: class_analysis
+    tier: 1
+    prompt: "Society is fundamentally divided between those who own capital and those who must work for them."
+    expected: {central_marxist: 2, producer_parasite: 1, elite_mass: 1, status_group: 0, rejected: -2}
+  - id: q_elite_vs_people
+    tenet: class_analysis
+    tier: 1
+    prompt: "The real division is between a self-serving elite and ordinary people."
+    expected: {elite_mass: 2, producer_parasite: 1, central_marxist: 0, status_group: 0, rejected: -2}
+  - id: q_producers_vs_parasites
+    tenet: class_analysis
+    tier: 3
+    prompt: "The division that matters is between those who produce real things and those who live off finance and rent."
+    expected: {producer_parasite: 2, elite_mass: 1, central_marxist: 0, rejected: -2, status_group: -1}
+  - id: q_no_class_division
+    tenet: class_analysis
+    tier: 2
+    prompt: "Talking about society in terms of classes is misleading and divisive."
+    expected: {rejected: 2, status_group: 0, elite_mass: -2, central_marxist: -2, producer_parasite: -1}
+  - id: q_status_groups
+    tenet: class_analysis
+    tier: 3
+    prompt: "Society divides along lines of status, caste and group identity more than along economic class."
+    expected: {status_group: 2, rejected: 0, central_marxist: -2, producer_parasite: -1, elite_mass: 0}

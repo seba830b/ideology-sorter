@@ -1,0 +1,215 @@
+family: post_left
+label: Post-left & antipolitical
+family_defaults:
+  art_and_culture: [avant_garde_rupture, typical]
+  attitude_to_modernity: [critical_engagement, typical]
+  class_analysis: [rejected, typical]
+  decision_procedure: [consensus, typical]
+  education_aim: [individual_flourishing, typical]
+  electoral_participation: [boycott, typical]
+  epistemic_authority: [popular_reason, typical]
+  family_form: [abolish_family, typical]
+  hierarchy_stance: [abolish, typical]
+  human_nature: [historically_produced, typical]
+  leadership_form: [none, typical]
+  market_role: [abolished, typical]
+  money_form: [abolished, typical]
+  nationalism_stance: [hostile, typical]
+  organisation_form: [none, typical]
+  policing: [abolish, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_regime: [communal, typical]
+  punishment: [abolitionist, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  rights_basis: [none_power, typical]
+  scale_of_polity: [village_commune, typical]
+  sexuality_stance: [liberationist, typical]
+  sovereignty_locus: [individual, typical]
+  speech_norms: [absolutist, typical]
+  state_trajectory: [abolish_now, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [reject, typical]
+  transition_method: [withdrawal, typical]
+  utopian_horizon: [none_pragmatic, typical]
+  vanguard_role: [rejected, typical]
+  welfare_provision: [mutual_aid, typical]
+  work_ethic: [work_abolished, typical]
+ideologies:
+  - id: post_left_anarchy
+    name: "Post-left anarchy"
+    aliases: [Bob Black, McQuinn]
+    prior_weight: 0.06
+    blurb: "Drop the leftist baggage — morality, organisation, work and the workers' movement — and keep the anarchy."
+    positions:
+      organisation_form: [none, core]
+      work_ethic: [work_abolished, core]
+      class_analysis: [rejected, core]
+      utopian_horizon: [none_pragmatic, core]
+      state_trajectory: [abolish_now, core]
+      rights_basis: [none_power, strong]
+      electoral_participation: [boycott, core]
+      hierarchy_stance: [abolish, core]
+      tradition_stance: [reject, strong]
+  - id: individualist_nihilism
+    name: "Individualist nihilism"
+    prior_weight: 0.04
+    blurb: "No values survive scrutiny, so act from your own will and expect nothing to follow."
+    positions:
+      rights_basis: [none_power, core]
+      utopian_horizon: [none_pragmatic, core]
+      sovereignty_locus: [individual, core]
+      organisation_form: [none, core]
+      electoral_participation: [boycott, core]
+      human_nature: [self_interested_rational, typical]
+      tradition_stance: [reject, core]
+      transition_method: [withdrawal, strong]
+
+  - id: refusal_of_work
+    name: "Refusal of work"
+    aliases: [Lafargue, the right to be lazy]
+    prior_weight: 0.06
+    blurb: "The work ethic is the ruling class's best invention; the demand should be less work, not more jobs."
+    positions:
+      work_ethic: [work_abolished, core]
+      basic_income: [support_ubi, strong]
+      class_analysis: [central_marxist, strong]
+      transition_method: [general_strike, strong]
+      distribution_principle: [need, strong]
+      technology_stance: [accelerate, typical]
+      utopian_horizon: [achievable_new_order, typical]
+  - id: zerowork
+    name: "Zerowork"
+    prior_weight: 0.02
+    blurb: "Sabotage, absenteeism and go-slows read as the real content of class struggle."
+    positions:
+      work_ethic: [work_abolished, core]
+      class_analysis: [central_marxist, core]
+      organisation_form: [affinity_group, core]
+      transition_method: [prefigurative, strong]
+      vanguard_role: [rejected, core]
+      electoral_participation: [boycott, core]
+      hierarchy_stance: [abolish, strong]
+  - id: anti_work_politics
+    name: "Anti-work politics"
+    prior_weight: 0.08
+    blurb: "Most jobs are pointless and coercive; the goal is to need far fewer of them."
+    positions:
+      work_ethic: [work_abolished, core]
+      basic_income: [support_ubi, core]
+      technology_stance: [accelerate, strong]
+      distribution_principle: [need, strong]
+      hierarchy_stance: [abolish, strong]
+      welfare_provision: [universal_public, strong]
+      class_analysis: [central_marxist, typical]
+  - id: apoliticism
+    name: "Conscious apoliticism"
+    prior_weight: 0.08
+    blurb: "Politics corrupts whatever it touches; the honest response is to refuse participation entirely."
+    positions:
+      electoral_participation: [boycott, core]
+      organisation_form: [none, core]
+      utopian_horizon: [none_pragmatic, core]
+      transition_method: [withdrawal, core]
+      class_analysis: [rejected, strong]
+      epistemic_authority: [popular_reason, typical]
+      state_trajectory: [minimal, weak]
+  - id: discordianism
+    name: "Discordianism"
+    aliases: [Operation Mindfuck]
+    prior_weight: 0.03
+    blurb: "Treat all order as a joke and all belief as provisional; disrupt certainty wherever you find it."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      epistemic_authority: [esoteric_initiation, core]
+      art_and_culture: [avant_garde_rupture, core]
+      organisation_form: [network, core]
+      speech_norms: [absolutist, core]
+      tradition_stance: [reject, strong]
+      electoral_participation: [boycott, strong]
+  - id: luther_blissett
+    name: "Multiple-name politics"
+    aliases: [Luther Blissett, Wu Ming]
+    prior_weight: 0.02
+    blurb: "Everyone adopts the same pseudonym so that authorship, celebrity and identity stop functioning."
+    positions:
+      art_and_culture: [avant_garde_rupture, core]
+      organisation_form: [network, core]
+      rights_basis: [none_power, strong]
+      utopian_horizon: [none_pragmatic, strong]
+      transition_method: [cultural_metapolitics, core]
+      hierarchy_stance: [abolish, strong]
+      speech_norms: [absolutist, strong]
+  - id: absurdist_politics
+    name: "Absurdist politics"
+    prior_weight: 0.03
+    blurb: "Run the joke campaign; the absurdity is the critique."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      art_and_culture: [avant_garde_rupture, core]
+      electoral_participation: [tactical, core]
+      class_analysis: [rejected, strong]
+      epistemic_authority: [popular_reason, typical]
+      speech_norms: [absolutist, strong]
+      tradition_stance: [reject, strong]
+  - id: accelerationist_nihilism
+    name: "Accelerationist nihilism"
+    prior_weight: 0.02
+    blurb: "There is nothing to save and nothing to build; watch it burn faster."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      technology_stance: [accelerate, core]
+      growth_stance: [accelerate_maximally, core]
+      rights_basis: [none_power, core]
+      electoral_participation: [boycott, core]
+      human_nature: [historically_produced, strong]
+      organisation_form: [none, strong]
+  - id: quietism
+    name: "Political quietism"
+    prior_weight: 0.04
+    blurb: "Cultivate your own garden; public life is beyond repair and beneath attention."
+    positions:
+      transition_method: [withdrawal, core]
+      electoral_participation: [boycott, core]
+      utopian_horizon: [none_pragmatic, core]
+      scale_of_polity: [household, core]
+      organisation_form: [none, core]
+      education_aim: [individual_flourishing, strong]
+      tradition_stance: [conserve, typical]
+  - id: union_of_egoists
+    name: "Union of egoists"
+    prior_weight: 0.03
+    blurb: "Association only for as long as it serves each party, dissolved the moment it does not."
+    positions:
+      organisation_form: [affinity_group, core]
+      rights_basis: [none_power, core]
+      sovereignty_locus: [individual, core]
+      state_trajectory: [abolish_now, core]
+      utopian_horizon: [none_pragmatic, core]
+      hierarchy_stance: [abolish, strong]
+      secession_right: [exit_by_individual, core]
+  - id: informal_organisation
+    name: "Informal organisation"
+    prior_weight: 0.03
+    blurb: "Permanent structures breed bureaucrats; act in temporary informal groupings and dissolve them."
+    positions:
+      organisation_form: [affinity_group, core]
+      vanguard_role: [rejected, core]
+      leadership_form: [none, core]
+      transition_method: [insurrection, strong]
+      hierarchy_stance: [abolish, core]
+      electoral_participation: [boycott, core]
+      state_trajectory: [abolish_now, strong]
+  - id: situationist_detournement
+    name: "Détournement politics"
+    prior_weight: 0.03
+    blurb: "Hijack the culture's own images and turn them against it."
+    positions:
+      art_and_culture: [avant_garde_rupture, core]
+      transition_method: [cultural_metapolitics, core]
+      class_analysis: [central_marxist, typical]
+      organisation_form: [affinity_group, strong]
+      electoral_participation: [boycott, core]
+      utopian_horizon: [none_pragmatic, typical]
+      speech_norms: [absolutist, strong]

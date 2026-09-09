@@ -1,0 +1,5 @@
+node_modules/
+dist/
+public/kb.json
+.DS_Store
+*.log

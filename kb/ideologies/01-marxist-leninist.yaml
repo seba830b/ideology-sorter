@@ -1,0 +1,561 @@
+family: marxist_leninist
+label: Marxist-Leninist tendencies
+family_defaults:
+  art_and_culture: [propaganda_functional, typical]
+  attitude_to_modernity: [embrace, typical]
+  class_analysis: [central_marxist, typical]
+  decision_procedure: [vanguard_party, typical]
+  distribution_principle: [contribution_labour, typical]
+  ecology_priority: [managed_externality, typical]
+  economic_coordination: [central_planning, typical]
+  education_aim: [ideological_formation, typical]
+  electoral_participation: [tactical, typical]
+  epistemic_authority: [dialectical_materialism, typical]
+  family_form: [egalitarian_nuclear, typical]
+  federalism: [unitary, typical]
+  firm_form: [state_enterprise, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_essential, typical]
+  healthcare: [universal_public, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  housing: [social_provision, typical]
+  human_nature: [historically_produced, typical]
+  imperialism_analysis: [central_frame, typical]
+  inheritance: [abolished, typical]
+  internationalism: [proletarian_internationalist, typical]
+  land_regime: [collectivised, typical]
+  leadership_form: [collective, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [abolished, typical]
+  money_form: [conventional, typical]
+  nation_concept: [class_based, typical]
+  organisation_form: [vanguard_party, typical]
+  political_pluralism: [single_party, typical]
+  property_regime: [state_owned, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  rights_basis: [collective_historical, typical]
+  scale_of_polity: [national, typical]
+  speech_norms: [ideologically_policed, typical]
+  state_scope: [total, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [reject, typical]
+  transition_method: [insurrection, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  vanguard_role: [necessary, typical]
+  violence_legitimacy: [insurrectionary, typical]
+  wage_labour: [regulated, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_is_duty, typical]
+ideologies:
+
+  - id: marxism_leninism
+    name: Marxism-Leninism
+    aliases: [ML]
+    prior_weight: 1.2
+    blurb: "A vanguard party seizes state power and uses it to build socialism through central planning."
+    positions:
+      property_regime: [state_owned, core]
+      economic_coordination: [central_planning, core]
+      state_trajectory: [wither_away, core]
+      state_scope: [total, strong]
+      decision_procedure: [vanguard_party, core]
+      political_pluralism: [single_party, core]
+      vanguard_role: [necessary, core]
+      organisation_form: [vanguard_party, core]
+      transition_method: [insurrection, strong]
+      reform_vs_rupture: [rupture, core]
+      class_analysis: [central_marxist, core]
+      imperialism_analysis: [central_frame, strong]
+      internationalism: [proletarian_internationalist, strong]
+      epistemic_authority: [dialectical_materialism, core]
+      religion_in_public_life: [militantly_secular, strong]
+      market_role: [abolished, strong]
+      technology_stance: [industrial_neutral, strong]
+      electoral_participation: [tactical, strong]
+      distribution_principle: [contribution_labour, strong]
+
+  - id: stalinism
+    name: Stalinism
+    aliases: [socialism in one country]
+    prior_weight: 0.7
+    blurb: "Marxism-Leninism concentrated in a single leader, industrialised at speed and defended by terror."
+    positions:
+      property_regime: [state_owned, core]
+      economic_coordination: [central_planning, core]
+      state_scope: [total, core]
+      state_trajectory: [permanent_strong, strong]
+      decision_procedure: [vanguard_party, core]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, core]
+      violence_legitimacy: [revolutionary_terror, core]
+      internationalism: [national_interest, strong]
+      speech_norms: [ideologically_policed, core]
+      art_and_culture: [propaganda_functional, core]
+      punishment: [retributive_harsh, strong]
+      vanguard_role: [necessary, core]
+      class_analysis: [central_marxist, core]
+      epistemic_authority: [dialectical_materialism, core]
+      religion_in_public_life: [militantly_secular, core]
+
+  - id: maoism
+    name: Maoism
+    aliases: [Mao Zedong Thought]
+    prior_weight: 0.7
+    blurb: "Revolution carried by the peasantry from the countryside, with continuous struggle against new bureaucratic elites."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      transition_method: [protracted_peoples_war, core]
+      class_analysis: [central_marxist, core]
+      imperialism_analysis: [central_frame, core]
+      decision_procedure: [vanguard_party, core]
+      vanguard_role: [necessary, core]
+      education_aim: [ideological_formation, core]
+      leadership_form: [charismatic_leader, strong]
+      property_regime: [communal, strong]
+      economic_coordination: [central_planning, strong]
+      violence_legitimacy: [revolutionary_terror, strong]
+      political_pluralism: [single_party, core]
+      art_and_culture: [propaganda_functional, strong]
+      internationalism: [anti_imperialist_nationalist, strong]
+      epistemic_authority: [dialectical_materialism, core]
+      reform_vs_rupture: [rupture, core]
+
+  - id: marxism_leninism_maoism
+    name: Marxism-Leninism-Maoism
+    aliases: [MLM]
+    prior_weight: 0.35
+    blurb: "Maoism codified as a universal third stage of revolutionary science rather than a Chinese application."
+    positions:
+      transition_method: [protracted_peoples_war, core]
+      vanguard_role: [necessary, core]
+      electoral_participation: [boycott, core]
+      violence_legitimacy: [revolutionary_terror, strong]
+      internationalism: [proletarian_internationalist, core]
+      class_analysis: [central_marxist, core]
+      imperialism_analysis: [central_frame, core]
+      decision_procedure: [vanguard_party, core]
+      reform_vs_rupture: [rupture, core]
+      epistemic_authority: [dialectical_materialism, core]
+      organisation_form: [vanguard_party, core]
+      urban_rural: [agrarian_rural, typical]
+
+  - id: hoxhaism
+    name: Hoxhaism
+    aliases: [anti-revisionism, Albanian socialism]
+    prior_weight: 0.2
+    blurb: "Every other socialist state betrayed Marxism-Leninism; the correct response is doctrinal purity and national isolation."
+    positions:
+      internationalism: [isolationist, core]
+      religion_in_public_life: [militantly_secular, core]
+      property_regime: [state_owned, core]
+      economic_coordination: [central_planning, core]
+      political_pluralism: [single_party, core]
+      decision_procedure: [vanguard_party, core]
+      borders: [closed, core]
+      leadership_form: [charismatic_leader, strong]
+      epistemic_authority: [dialectical_materialism, core]
+      state_scope: [total, core]
+      vanguard_role: [necessary, core]
+      tradition_stance: [reject, strong]
+
+  - id: dengism
+    name: Dengism
+    aliases: [socialism with Chinese characteristics, reform and opening]
+    prior_weight: 0.5
+    blurb: "Markets and private enterprise are tools a communist party may use to develop the productive forces."
+    positions:
+      economic_coordination: [mixed_economy, core]
+      market_role: [retained_bounded, core]
+      property_regime: [private_regulated, strong]
+      political_pluralism: [single_party, core]
+      state_scope: [developmental, core]
+      growth_stance: [growth_essential, core]
+      decision_procedure: [vanguard_party, core]
+      technology_stance: [industrial_neutral, strong]
+      internationalism: [national_interest, strong]
+      reform_vs_rupture: [reform, strong]
+      transition_method: [gradual_reform, strong]
+      class_analysis: [central_marxist, typical]
+
+  - id: xi_jinping_thought
+    name: Xi Jinping Thought
+    aliases: [new era socialism]
+    prior_weight: 0.4
+    blurb: "Party discipline, national rejuvenation and state-directed technology, tightening what Dengism loosened."
+    positions:
+      state_scope: [developmental, core]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, strong]
+      nationalism_stance: [core_value, strong]
+      speech_norms: [ideologically_policed, strong]
+      economic_coordination: [indicative_planning, strong]
+      technology_stance: [accelerate, typical]
+      internationalism: [national_interest, core]
+      decision_procedure: [vanguard_party, core]
+      ecology_priority: [managed_externality, typical]
+      tradition_stance: [critically_inherit, strong]
+      growth_stance: [growth_managed, strong]
+
+  - id: titoism
+    name: Titoism
+    aliases: [socialist self-management, Yugoslav socialism]
+    prior_weight: 0.3
+    blurb: "Enterprises run by their own workers' councils, in a federal socialist state aligned with neither bloc."
+    positions:
+      firm_form: [worker_cooperative, core]
+      property_regime: [cooperative, core]
+      economic_coordination: [market_socialism, core]
+      federalism: [federal, core]
+      political_pluralism: [single_party, strong]
+      internationalism: [proletarian_internationalist, typical]
+      decision_procedure: [delegation_recallable, strong]
+      market_role: [retained_bounded, strong]
+      wage_labour: [abolish_via_coops, strong]
+      leadership_form: [charismatic_leader, typical]
+      hierarchy_stance: [minimise, typical]
+      class_analysis: [central_marxist, strong]
+
+  - id: castroism
+    name: Castroism
+    aliases: [Cuban socialism, Fidelismo]
+    prior_weight: 0.3
+    blurb: "Anti-imperialist national liberation fused with a one-party socialist state and universal welfare."
+    positions:
+      internationalism: [anti_imperialist_nationalist, core]
+      imperialism_analysis: [central_frame, core]
+      healthcare: [universal_public, core]
+      education_aim: [ideological_formation, strong]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, core]
+      property_regime: [state_owned, strong]
+      economic_coordination: [central_planning, strong]
+      transition_method: [insurrection, strong]
+      welfare_provision: [universal_public, core]
+      class_analysis: [central_marxist, strong]
+      nationalism_stance: [instrumental_for_liberation, strong]
+
+  - id: guevarism
+    name: Guevarism
+    aliases: [foquismo, foco theory]
+    prior_weight: 0.35
+    blurb: "A small armed vanguard in the countryside can create the conditions for revolution rather than wait for them."
+    positions:
+      transition_method: [insurrection, core]
+      violence_legitimacy: [insurrectionary, core]
+      organisation_form: [affinity_group, strong]
+      internationalism: [proletarian_internationalist, core]
+      human_nature: [perfectible, strong]
+      work_ethic: [work_is_virtue, strong]
+      distribution_principle: [need, strong]
+      imperialism_analysis: [central_frame, core]
+      electoral_participation: [boycott, strong]
+      reform_vs_rupture: [rupture, core]
+      market_role: [abolished, strong]
+      class_analysis: [central_marxist, strong]
+
+  - id: sandinismo
+    name: Sandinismo
+    aliases: [FSLN, Nicaraguan revolution]
+    prior_weight: 0.2
+    blurb: "National liberation, mixed economy and Christian base communities in one revolutionary front."
+    positions:
+      internationalism: [anti_imperialist_nationalist, core]
+      economic_coordination: [mixed_economy, strong]
+      religion_in_public_life: [culturally_grounded, typical]
+      political_pluralism: [multiparty, typical]
+      nationalism_stance: [instrumental_for_liberation, core]
+      imperialism_analysis: [central_frame, core]
+      welfare_provision: [universal_public, strong]
+      transition_method: [insurrection, strong]
+      education_aim: [critical_consciousness, strong]
+      urban_rural: [balanced, typical]
+
+  - id: ho_chi_minh_thought
+    name: Ho Chi Minh Thought
+    aliases: [Vietnamese national communism]
+    prior_weight: 0.2
+    blurb: "National independence first, socialism through it, with communist organisation serving the anti-colonial war."
+    positions:
+      nationalism_stance: [instrumental_for_liberation, core]
+      colonialism_stance: [reparative_decolonial, core]
+      internationalism: [anti_imperialist_nationalist, core]
+      transition_method: [protracted_peoples_war, strong]
+      decision_procedure: [vanguard_party, core]
+      political_pluralism: [single_party, core]
+      property_regime: [state_owned, strong]
+      leadership_form: [charismatic_leader, strong]
+      class_analysis: [central_marxist, strong]
+      imperialism_analysis: [central_frame, core]
+
+  - id: juche
+    name: Juche
+    aliases: [self-reliance]
+    prior_weight: 0.3
+    blurb: "A nation must be entirely self-reliant in politics, economy and defence, answerable to nothing outside itself."
+    positions:
+      internationalism: [isolationist, core]
+      sovereignty_locus: [nation, core]
+      nationalism_stance: [core_value, core]
+      borders: [closed, core]
+      state_scope: [total, core]
+      human_nature: [perfectible, strong]
+      property_regime: [state_owned, strong]
+      economic_coordination: [central_planning, strong]
+      political_pluralism: [single_party, core]
+      technology_stance: [industrial_neutral, typical]
+      education_aim: [ideological_formation, core]
+      epistemic_authority: [revelation, weak]
+
+  - id: kimilsungism_kimjongilism
+    name: Kimilsungism-Kimjongilism
+    aliases: [songun, military-first politics]
+    prior_weight: 0.12
+    blurb: "Juche codified around a hereditary leader and an army-first ordering of society."
+    positions:
+      leadership_form: [hereditary, core]
+      legitimate_violence: [state_monopoly, core]
+      epistemic_authority: [revelation, strong]
+      work_ethic: [work_is_duty, core]
+      state_scope: [total, core]
+      internationalism: [isolationist, strong]
+      political_pluralism: [single_party, core]
+      speech_norms: [ideologically_policed, core]
+      art_and_culture: [propaganda_functional, core]
+      rights_basis: [collective_historical, strong]
+      sovereignty_locus: [divine, weak]
+      borders: [closed, core]
+
+  - id: eurocommunism
+    name: Eurocommunism
+    aliases: [historic compromise]
+    prior_weight: 0.3
+    blurb: "Communist parties accepting parliamentary democracy, civil liberties and a road to socialism through the ballot."
+    positions:
+      electoral_participation: [central, core]
+      political_pluralism: [multiparty, core]
+      transition_method: [electoral, core]
+      reform_vs_rupture: [reform_toward_rupture, core]
+      state_trajectory: [permanent_strong, typical]
+      economic_coordination: [mixed_economy, strong]
+      speech_norms: [broadly_free, strong]
+      vanguard_role: [useful, strong]
+      class_analysis: [central_marxist, strong]
+      organisation_form: [mass_party, strong]
+      constitutionalism: [entrenched_rights, strong]
+
+  - id: kadarism
+    name: Kádárism
+    aliases: [goulash communism]
+    prior_weight: 0.1
+    blurb: "Political obedience traded for consumer comfort and a quiet private life inside a one-party state."
+    positions:
+      political_pluralism: [single_party, core]
+      market_role: [retained_bounded, strong]
+      economic_coordination: [mixed_economy, strong]
+      speech_norms: [restricted_for_harm, typical]
+      state_scope: [welfare_broad, strong]
+      work_ethic: [work_is_duty, typical]
+      reform_vs_rupture: [reform, strong]
+      welfare_provision: [universal_public, strong]
+      utopian_horizon: [none_pragmatic, strong]
+      leadership_form: [collective, typical]
+
+  - id: ceausescu_national_communism
+    name: Ceaușescu's national communism
+    aliases: [Romanian national communism]
+    prior_weight: 0.08
+    blurb: "Stalinist central planning turned nationalist and pronatalist, independent of Moscow and closed to everyone."
+    positions:
+      nationalism_stance: [core_value, core]
+      internationalism: [isolationist, core]
+      reproductive_politics: [natalist_restrictive, core]
+      leadership_form: [charismatic_leader, core]
+      state_scope: [total, core]
+      borders: [closed, core]
+      economic_coordination: [central_planning, core]
+      speech_norms: [ideologically_policed, core]
+      political_pluralism: [single_party, core]
+      family_form: [nuclear_traditional, strong]
+
+  - id: khrushchevism
+    name: Khrushchevism
+    aliases: [de-Stalinisation, peaceful coexistence]
+    prior_weight: 0.1
+    blurb: "Socialism competes with capitalism by out-producing it, not by war, and without the terror."
+    positions:
+      violence_legitimacy: [defensive_only, strong]
+      internationalism: [proletarian_internationalist, strong]
+      state_trajectory: [wither_away, strong]
+      growth_stance: [growth_essential, core]
+      technology_stance: [industrial_neutral, strong]
+      space_expansion: [national_prestige, strong]
+      political_pluralism: [single_party, core]
+      punishment: [rehabilitative, typical]
+      economic_coordination: [central_planning, strong]
+      leadership_form: [collective, strong]
+
+  - id: bukharinism
+    name: Bukharinism
+    aliases: [Right Opposition, NEP socialism]
+    prior_weight: 0.1
+    blurb: "Socialism reached at a peasant's pace, through the market and voluntary cooperation rather than forced collectivisation."
+    positions:
+      economic_coordination: [mixed_economy, core]
+      market_role: [retained_bounded, core]
+      urban_rural: [agrarian_rural, strong]
+      transition_method: [gradual_reform, core]
+      reform_vs_rupture: [reform_toward_rupture, strong]
+      firm_form: [worker_cooperative, strong]
+      violence_legitimacy: [defensive_only, strong]
+      property_regime: [cooperative, strong]
+      class_analysis: [central_marxist, strong]
+      vanguard_role: [necessary, typical]
+
+  - id: browderism
+    name: Browderism
+    aliases: [Communist Political Association]
+    prior_weight: 0.05
+    blurb: "Communists should dissolve into a broad national coalition and pursue socialism as loyal citizens."
+    positions:
+      political_pluralism: [multiparty, core]
+      organisation_form: [network, strong]
+      transition_method: [electoral, core]
+      internationalism: [national_interest, strong]
+      vanguard_role: [rejected, strong]
+      reform_vs_rupture: [reform, core]
+      class_analysis: [central_marxist, typical]
+      nationalism_stance: [indifferent, typical]
+      economic_coordination: [mixed_economy, strong]
+
+  - id: lovestoneism
+    name: Lovestoneism
+    aliases: [American exceptionalism (communist)]
+    prior_weight: 0.05
+    blurb: "American capitalism is strong enough that revolutionary strategy must be built for its conditions, not Russia's."
+    positions:
+      internationalism: [national_interest, core]
+      reform_vs_rupture: [reform_toward_rupture, strong]
+      vanguard_role: [necessary, typical]
+      transition_method: [gradual_reform, strong]
+      organisation_form: [mass_party, strong]
+      class_analysis: [central_marxist, strong]
+      electoral_participation: [central, strong]
+      epistemic_authority: [dialectical_materialism, typical]
+
+  - id: sultan_galievism
+    name: Sultan-Galievism
+    aliases: [Muslim national communism, proletarian nations]
+    prior_weight: 0.05
+    blurb: "Whole colonised nations, not just workers, are the proletariat — so Muslim national liberation is the revolution."
+    positions:
+      nationalism_stance: [instrumental_for_liberation, core]
+      colonialism_stance: [reparative_decolonial, core]
+      imperialism_analysis: [central_frame, core]
+      religion_in_public_life: [culturally_grounded, strong]
+      race_politics: [liberationist_nationalist, strong]
+      nation_concept: [religious, strong]
+      class_analysis: [central_marxist, typical]
+      internationalism: [anti_imperialist_nationalist, core]
+      federalism: [confederal, typical]
+
+  - id: gonzalo_thought
+    name: Gonzalo Thought
+    aliases: [Shining Path, Sendero Luminoso]
+    prior_weight: 0.06
+    blurb: "Protracted people's war led by an infallible guiding thought, with terror as a deliberate instrument."
+    positions:
+      transition_method: [protracted_peoples_war, core]
+      violence_legitimacy: [revolutionary_terror, core]
+      leadership_form: [charismatic_leader, core]
+      electoral_participation: [boycott, core]
+      urban_rural: [agrarian_rural, strong]
+      epistemic_authority: [dialectical_materialism, core]
+      vanguard_role: [necessary, core]
+      reform_vs_rupture: [rupture, core]
+      indigenous_sovereignty: [recognise_cultural, weak]
+      political_pluralism: [single_party, core]
+
+  - id: prachanda_path
+    name: Prachanda Path
+    aliases: [Nepalese Maoism]
+    prior_weight: 0.05
+    blurb: "People's war in the countryside followed by entry into parliament, in a federal republic."
+    positions:
+      transition_method: [protracted_peoples_war, strong]
+      electoral_participation: [tactical, core]
+      federalism: [federal, core]
+      urban_rural: [agrarian_rural, strong]
+      vanguard_role: [necessary, strong]
+      reform_vs_rupture: [reform_toward_rupture, strong]
+      indigenous_sovereignty: [recognise_cultural, strong]
+      class_analysis: [central_marxist, strong]
+      political_pluralism: [multiparty, typical]
+
+  - id: naxalism
+    name: Naxalism
+    aliases: [Naxalbari line, CPI-Maoist]
+    prior_weight: 0.1
+    blurb: "Armed agrarian revolution in India's forest belt, rejecting the parliamentary road entirely."
+    positions:
+      transition_method: [protracted_peoples_war, core]
+      urban_rural: [agrarian_rural, core]
+      electoral_participation: [boycott, core]
+      indigenous_sovereignty: [land_return, strong]
+      land_regime: [collectivised, strong]
+      violence_legitimacy: [insurrectionary, core]
+      class_analysis: [central_marxist, strong]
+      vanguard_role: [necessary, core]
+      imperialism_analysis: [central_frame, strong]
+
+  - id: nkrumaism
+    name: Nkrumaism
+    aliases: [consciencism, African socialism]
+    prior_weight: 0.1
+    blurb: "Africa can only be free if it unites continentally; socialism and pan-African political union are one project."
+    positions:
+      scale_of_polity: [continental_bloc, core]
+      nationalism_stance: [instrumental_for_liberation, core]
+      colonialism_stance: [reparative_decolonial, core]
+      race_politics: [liberationist_nationalist, strong]
+      federalism: [federal, strong]
+      economic_coordination: [indicative_planning, strong]
+      state_scope: [developmental, core]
+      imperialism_analysis: [central_frame, core]
+      tradition_stance: [critically_inherit, strong]
+      education_aim: [civic_formation, strong]
+
+  - id: ujamaa
+    name: Ujamaa
+    aliases: [Tanzanian African socialism, familyhood]
+    prior_weight: 0.1
+    blurb: "Socialism grown from the traditional extended family and the village, not from industrial class struggle."
+    positions:
+      scale_of_polity: [village_commune, core]
+      urban_rural: [agrarian_rural, core]
+      property_regime: [communal, core]
+      welfare_provision: [communal_direct, strong]
+      tradition_stance: [critically_inherit, core]
+      family_form: [communal_rearing, typical]
+      class_analysis: [rejected, strong]
+      education_aim: [civic_formation, strong]
+      technology_stance: [appropriate_scale, strong]
+      distribution_principle: [need, strong]
+
+  - id: sankarism
+    name: Sankarism
+    aliases: [Burkinabè revolution]
+    prior_weight: 0.08
+    blurb: "Anti-imperialist self-reliance with women's emancipation and desert reforestation as revolutionary tasks."
+    positions:
+      internationalism: [anti_imperialist_nationalist, core]
+      gender_order: [structural_liberation, core]
+      ecology_priority: [central_constraint, strong]
+      work_ethic: [work_is_virtue, strong]
+      growth_stance: [growth_managed, typical]
+      colonialism_stance: [reparative_decolonial, core]
+      welfare_provision: [universal_public, strong]
+      technology_stance: [appropriate_scale, strong]
+      urban_rural: [agrarian_rural, strong]
+      leadership_form: [charismatic_leader, typical]

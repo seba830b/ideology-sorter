@@ -1,0 +1,276 @@
+questions:
+  - id: q_nation_is_ethnic
+    tenet: nation_concept
+    tier: 1
+    prompt: "A nation is a people bound by common ancestry, not merely by shared citizenship."
+    expected: {ethnic: 2, cultural_linguistic: 1, religious: 1, civic: -2, post_national: -2, class_based: -2, diasporic: 0}
+  - id: q_nation_is_civic
+    tenet: nation_concept
+    tier: 1
+    prompt: "Anyone who accepts a country's laws and joins its life is fully part of the nation."
+    expected: {civic: 2, cultural_linguistic: 0, post_national: 1, ethnic: -2, religious: -2, diasporic: -1}
+  - id: q_nation_is_religious
+    tenet: nation_concept
+    tier: 2
+    prompt: "A nation is defined above all by its religion."
+    expected: {religious: 2, ethnic: 1, cultural_linguistic: 0, civic: -2, post_national: -2, class_based: -2}
+  - id: q_post_national
+    tenet: nation_concept
+    tier: 2
+    prompt: "Nations are an outdated way of organising people and should be left behind."
+    expected: {post_national: 2, class_based: 1, civic: -1, ethnic: -2, religious: -2, cultural_linguistic: -2}
+  - id: q_diaspora_nation
+    tenet: nation_concept
+    tier: 3
+    prompt: "A people scattered across many countries can still be one nation."
+    expected: {diasporic: 2, ethnic: 1, religious: 1, civic: -2, post_national: -1, cultural_linguistic: 1}
+  - id: q_nationalism_good
+    tenet: nationalism_stance
+    tier: 1
+    prompt: "Love of one's own nation is a virtue and a proper basis for politics."
+    expected: {core_value: 2, instrumental_for_liberation: 0, indifferent: -1, hostile: -2}
+  - id: q_nationalism_poison
+    tenet: nationalism_stance
+    tier: 1
+    prompt: "Nationalism is a destructive force that has caused enormous harm."
+    expected: {hostile: 2, indifferent: 1, instrumental_for_liberation: -1, core_value: -2}
+  - id: q_nationalism_for_the_oppressed
+    tenet: nationalism_stance
+    tier: 3
+    prompt: "Nationalism is wrong for powerful countries but legitimate for oppressed peoples fighting for freedom."
+    expected: {instrumental_for_liberation: 2, hostile: 0, core_value: -1, indifferent: -1}
+  - id: q_colonialism_wrong
+    tenet: colonialism_stance
+    tier: 1
+    prompt: "Colonial empires were crimes, and their consequences still require repair today."
+    expected: {reparative_decolonial: 2, oppose: 1, ambivalent: -1, justified: -2}
+  - id: q_colonialism_mixed
+    tenet: colonialism_stance
+    tier: 2
+    prompt: "Colonial rule brought real benefits alongside its harms."
+    expected: {justified: 2, ambivalent: 1, oppose: -2, reparative_decolonial: -2}
+  - id: q_structural_racism
+    tenet: race_politics
+    tier: 1
+    prompt: "Racism is built into institutions, not just a matter of individual prejudice."
+    expected: {antiracist_structural: 2, liberationist_nationalist: 1, colourblind_universalist: -1, separatism: 0, hierarchy_asserted: -2}
+  - id: q_colourblind
+    tenet: race_politics
+    tier: 1
+    prompt: "The state should treat everyone identically and take no notice of race at all."
+    expected: {colourblind_universalist: 2, antiracist_structural: -2, separatism: -2, liberationist_nationalist: -2, hierarchy_asserted: 0}
+  - id: q_racial_separatism
+    tenet: race_politics
+    tier: 2
+    prompt: "Different peoples are better off living in separate communities of their own."
+    expected: {separatism: 2, hierarchy_asserted: 1, liberationist_nationalist: 1, colourblind_universalist: -2, antiracist_structural: -2}
+  - id: q_racial_hierarchy
+    tenet: race_politics
+    tier: 2
+    prompt: "Some peoples are naturally suited to rule others."
+    expected: {hierarchy_asserted: 2, separatism: 0, colourblind_universalist: -2, antiracist_structural: -2, liberationist_nationalist: -2}
+  - id: q_indigenous_land_back
+    tenet: indigenous_sovereignty
+    tier: 2
+    prompt: "Land taken from indigenous peoples should be returned to them, with real jurisdiction over it."
+    expected: {land_return: 2, primary_frame: 2, recognise_cultural: 0, reject: -2}
+  - id: q_indigenous_claims_overstated
+    tenet: indigenous_sovereignty
+    tier: 3
+    prompt: "Historic indigenous claims should not override present arrangements."
+    expected: {reject: 2, recognise_cultural: 0, land_return: -2, primary_frame: -2}
+  - id: q_gender_traditional
+    tenet: gender_order
+    tier: 1
+    prompt: "Men and women have naturally different roles that society should reflect."
+    expected: {traditional_complementary: 2, formal_equality: -1, structural_liberation: -2, abolish_gender: -2}
+  - id: q_abolish_gender
+    tenet: gender_order
+    tier: 2
+    prompt: "Gender itself should be abolished, not merely made more equal."
+    expected: {abolish_gender: 2, structural_liberation: 1, formal_equality: -1, traditional_complementary: -2}
+  - id: q_formal_equality_enough
+    tenet: gender_order
+    tier: 2
+    prompt: "Equal legal rights are enough; deeper social restructuring is not needed."
+    expected: {formal_equality: 2, traditional_complementary: 0, structural_liberation: -2, abolish_gender: -2}
+  - id: q_abolish_family
+    tenet: family_form
+    tier: 2
+    prompt: "The private family should be abolished and childrearing shared by the community."
+    expected: {abolish_family: 2, communal_rearing: 2, egalitarian_nuclear: -1, nuclear_traditional: -2, patriarchal_household: -2}
+  - id: q_traditional_family
+    tenet: family_form
+    tier: 1
+    prompt: "The married family with children is the foundation of society and should be privileged in law."
+    expected: {nuclear_traditional: 2, patriarchal_household: 2, egalitarian_nuclear: 0, communal_rearing: -2, abolish_family: -2}
+  - id: q_father_heads_household
+    tenet: family_form
+    tier: 3
+    prompt: "The father should be the head of the household."
+    expected: {patriarchal_household: 2, nuclear_traditional: 0, egalitarian_nuclear: -2, communal_rearing: -2, abolish_family: -2}
+  - id: q_reproductive_freedom
+    tenet: reproductive_politics
+    tier: 1
+    prompt: "Decisions about having children belong entirely to the individual."
+    expected: {reproductive_freedom: 2, neutral: 1, antinatalist: 0, natalist_restrictive: -2}
+  - id: q_encourage_births
+    tenet: reproductive_politics
+    tier: 2
+    prompt: "The state should actively encourage people to have more children."
+    expected: {natalist_restrictive: 2, neutral: -1, reproductive_freedom: -1, antinatalist: -2}
+  - id: q_fewer_people
+    tenet: reproductive_politics
+    tier: 2
+    prompt: "There would be less suffering in the world if far fewer people were born."
+    expected: {antinatalist: 2, neutral: -1, reproductive_freedom: 0, natalist_restrictive: -2}
+  - id: q_sexual_liberation
+    tenet: sexuality_stance
+    tier: 1
+    prompt: "Sexual freedom is part of political liberation, not just a private matter."
+    expected: {liberationist: 2, queer_abolitionist: 2, tolerant_private: 0, traditional_restrictive: -2}
+  - id: q_sexual_traditionalism
+    tenet: sexuality_stance
+    tier: 1
+    prompt: "Sexual behaviour should be governed by traditional moral rules."
+    expected: {traditional_restrictive: 2, tolerant_private: -1, liberationist: -2, queer_abolitionist: -2}
+  - id: q_housework_wages
+    tenet: domestic_labour
+    tier: 3
+    prompt: "Housework and childcare are real labour that should be socially paid for."
+    expected: {waged_socialised: 2, communised: 1, valued_privately: -1, unremunerated_natural: -2}
+  - id: q_housework_natural
+    tenet: domestic_labour
+    tier: 3
+    prompt: "Caring for one's own family is not work in the economic sense and should not be paid."
+    expected: {unremunerated_natural: 2, valued_privately: 1, waged_socialised: -2, communised: -2}
+  - id: q_theocracy
+    tenet: religion_in_public_life
+    tier: 1
+    prompt: "The law of the land should be derived from religious law."
+    expected: {theocratic: 2, established_church: 1, culturally_grounded: 0, secular_neutral: -2, militantly_secular: -2, spiritual_syncretic: -1}
+  - id: q_militant_secularism
+    tenet: religion_in_public_life
+    tier: 1
+    prompt: "Religion should be actively pushed out of public life."
+    expected: {militantly_secular: 2, secular_neutral: 1, culturally_grounded: -2, established_church: -2, theocratic: -2, spiritual_syncretic: -1}
+  - id: q_state_neutral_religion
+    tenet: religion_in_public_life
+    tier: 2
+    prompt: "The state should be neutral between religions and between belief and unbelief."
+    expected: {secular_neutral: 2, militantly_secular: 0, culturally_grounded: -1, established_church: -2, theocratic: -2}
+  - id: q_cultural_christianity
+    tenet: religion_in_public_life
+    tier: 2
+    prompt: "A country's religious heritage should shape its public culture, whether or not people still believe."
+    expected: {culturally_grounded: 2, established_church: 1, theocratic: 0, secular_neutral: -2, militantly_secular: -2}
+  - id: q_spiritual_not_religious
+    tenet: religion_in_public_life
+    tier: 3
+    prompt: "Politics needs a spiritual dimension, though not any established church."
+    expected: {spiritual_syncretic: 2, culturally_grounded: 0, established_church: -1, militantly_secular: -2, secular_neutral: -1}
+  - id: q_restore_the_past
+    tenet: tradition_stance
+    tier: 1
+    prompt: "We should restore an older order that has been lost."
+    expected: {restore: 2, conserve: 1, transcend_esoteric: 1, critically_inherit: -1, reject: -2}
+  - id: q_reject_tradition
+    tenet: tradition_stance
+    tier: 1
+    prompt: "Inherited tradition is mostly an obstacle and should be swept away."
+    expected: {reject: 2, critically_inherit: -1, conserve: -2, restore: -2, transcend_esoteric: 0}
+  - id: q_conserve_what_works
+    tenet: tradition_stance
+    tier: 2
+    prompt: "Existing institutions carry accumulated wisdom and should be changed only cautiously."
+    expected: {conserve: 2, restore: 1, critically_inherit: 0, reject: -2, transcend_esoteric: -1}
+  - id: q_esoteric_tradition
+    tenet: tradition_stance
+    tier: 3
+    prompt: "Beneath the surface of the great traditions lies a single hidden truth that modernity has lost."
+    expected: {transcend_esoteric: 2, restore: 1, conserve: 0, reject: -2, critically_inherit: -1}
+  - id: q_revelation_settles_it
+    tenet: epistemic_authority
+    tier: 1
+    prompt: "Where reason and revealed scripture disagree, scripture is right."
+    expected: {revelation: 2, tradition: 1, esoteric_initiation: 0, scientific_expertise: -2, popular_reason: -2, dialectical_materialism: -2, market_aggregation: -2}
+  - id: q_science_settles_it
+    tenet: epistemic_authority
+    tier: 1
+    prompt: "Scientific expertise should settle disputed public questions."
+    expected: {scientific_expertise: 2, dialectical_materialism: 0, popular_reason: -1, revelation: -2, tradition: -2, esoteric_initiation: -2}
+  - id: q_ordinary_people_know
+    tenet: epistemic_authority
+    tier: 2
+    prompt: "Ordinary people's judgement is at least as reliable as that of credentialled experts."
+    expected: {popular_reason: 2, tradition: 1, scientific_expertise: -2, esoteric_initiation: 0, market_aggregation: 1}
+  - id: q_markets_know_best
+    tenet: epistemic_authority
+    tier: 3
+    prompt: "Prices and markets aggregate knowledge better than any expert or committee can."
+    expected: {market_aggregation: 2, popular_reason: 1, scientific_expertise: -1, dialectical_materialism: -2, revelation: -2}
+  - id: q_historical_materialism
+    tenet: epistemic_authority
+    tier: 3
+    prompt: "History moves according to material and economic laws that can be understood scientifically."
+    expected: {dialectical_materialism: 2, scientific_expertise: 1, revelation: -2, tradition: -2, esoteric_initiation: -1}
+  - id: q_hidden_knowledge
+    tenet: epistemic_authority
+    tier: 3
+    prompt: "Some truths are available only to those who have been properly initiated."
+    expected: {esoteric_initiation: 2, revelation: 1, tradition: 0, scientific_expertise: -2, popular_reason: -2}
+  - id: q_education_tradition
+    tenet: education_aim
+    tier: 2
+    prompt: "The main job of schooling is to pass on a cultural inheritance."
+    expected: {transmit_tradition: 2, civic_formation: 1, individual_flourishing: -1, critical_consciousness: -2, technical_capacity: -1}
+  - id: q_education_critical
+    tenet: education_aim
+    tier: 2
+    prompt: "Education should teach people to recognise and challenge their own oppression."
+    expected: {critical_consciousness: 2, individual_flourishing: 0, ideological_formation: 1, transmit_tradition: -2, technical_capacity: -1}
+  - id: q_education_skills
+    tenet: education_aim
+    tier: 3
+    prompt: "Schools exist mainly to give people useful skills for the economy."
+    expected: {technical_capacity: 2, civic_formation: 0, individual_flourishing: -1, critical_consciousness: -2, transmit_tradition: -1}
+  - id: q_education_ideological
+    tenet: education_aim
+    tier: 3
+    prompt: "Schools should form citizens in the movement's political outlook."
+    expected: {ideological_formation: 2, civic_formation: 1, transmit_tradition: 0, individual_flourishing: -2, technical_capacity: -1}
+  - id: q_art_preserve_canon
+    tenet: art_and_culture
+    tier: 3
+    prompt: "The great works of the past should be preserved and taught as a standard."
+    expected: {preserve_canon: 2, popular_folk: 0, avant_garde_rupture: -2, propaganda_functional: -1, commercial_free: -1}
+  - id: q_art_should_disrupt
+    tenet: art_and_culture
+    tier: 3
+    prompt: "Art's job is to break with what came before and unsettle people."
+    expected: {avant_garde_rupture: 2, commercial_free: 0, preserve_canon: -2, propaganda_functional: -1, popular_folk: -1}
+  - id: q_art_serves_the_cause
+    tenet: art_and_culture
+    tier: 3
+    prompt: "Art should serve the political cause; art for its own sake is a luxury."
+    expected: {propaganda_functional: 2, popular_folk: 0, avant_garde_rupture: -1, commercial_free: -2, preserve_canon: -1}
+  - id: q_folk_culture
+    tenet: art_and_culture
+    tier: 3
+    prompt: "The culture that matters is the ordinary folk culture of a people, not elite or commercial production."
+    expected: {popular_folk: 2, preserve_canon: 0, commercial_free: -2, avant_garde_rupture: -1, propaganda_functional: 0}
+  - id: q_one_national_language
+    tenet: language_politics
+    tier: 2
+    prompt: "A country should have one official language that everyone is expected to use."
+    expected: {national_language: 2, multilingual_neutral: -1, minority_protection: -2, constructed_universal: -2}
+  - id: q_protect_minority_languages
+    tenet: language_politics
+    tier: 2
+    prompt: "Minority languages deserve active legal protection and public support."
+    expected: {minority_protection: 2, multilingual_neutral: 1, national_language: -2, constructed_universal: -1}
+  - id: q_constructed_world_language
+    tenet: language_politics
+    tier: 3
+    prompt: "The world should adopt a neutral constructed language so that no people's tongue dominates."
+    expected: {constructed_universal: 2, multilingual_neutral: 1, national_language: -2, minority_protection: 0}

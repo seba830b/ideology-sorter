@@ -1,0 +1,199 @@
+family: primitivism
+label: Primitivism & anti-civilisation
+family_defaults:
+  attitude_to_modernity: [reject_return, typical]
+  class_analysis: [rejected, typical]
+  decision_procedure: [consensus, typical]
+  distribution_principle: [need, typical]
+  ecology_priority: [primary_frame, typical]
+  economic_coordination: [moneyless_planning, typical]
+  education_aim: [individual_flourishing, typical]
+  electoral_participation: [boycott, typical]
+  epistemic_authority: [popular_reason, typical]
+  family_form: [communal_rearing, typical]
+  firm_form: [household_artisan, typical]
+  growth_stance: [degrowth, typical]
+  healthcare: [communal_mutual, typical]
+  hierarchy_stance: [abolish, typical]
+  human_nature: [cooperative_good, typical]
+  land_regime: [commons, typical]
+  leadership_form: [none, typical]
+  market_role: [abolished, typical]
+  money_form: [abolished, typical]
+  nonhuman_status: [sacred, typical]
+  organisation_form: [affinity_group, typical]
+  policing: [abolish, typical]
+  property_regime: [communal, typical]
+  punishment: [abolitionist, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [spiritual_syncretic, typical]
+  scale_of_polity: [village_commune, typical]
+  speech_norms: [absolutist, typical]
+  state_trajectory: [abolish_now, typical]
+  technology_stance: [primitivist_reject, typical]
+  urban_rural: [back_to_land, typical]
+  utopian_horizon: [restorationist_golden_age, typical]
+  vanguard_role: [rejected, typical]
+  welfare_provision: [mutual_aid, typical]
+  work_ethic: [work_abolished, typical]
+ideologies:
+  - id: anarcho_primitivism
+    name: "Anarcho-primitivism"
+    aliases: [Zerzan]
+    prior_weight: 0.1
+    blurb: "Domestication, agriculture and symbolic culture were the original catastrophe; the goal is to undo civilisation itself."
+    positions:
+      technology_stance: [primitivist_reject, core]
+      attitude_to_modernity: [reject_return, core]
+      urban_rural: [back_to_land, core]
+      scale_of_polity: [village_commune, core]
+      state_trajectory: [abolish_now, core]
+      utopian_horizon: [restorationist_golden_age, core]
+      hierarchy_stance: [abolish, core]
+      ecology_priority: [primary_frame, core]
+      work_ethic: [work_abolished, strong]
+      growth_stance: [degrowth, core]
+      human_nature: [cooperative_good, strong]
+  - id: green_anarchism
+    name: "Green anarchism"
+    prior_weight: 0.1
+    blurb: "Anarchism with ecology at its centre, hostile to industrial scale but not necessarily to all technology."
+    positions:
+      ecology_priority: [primary_frame, core]
+      state_trajectory: [abolish_now, core]
+      technology_stance: [appropriate_scale, core]
+      scale_of_polity: [bioregional, strong]
+      hierarchy_stance: [abolish, core]
+      growth_stance: [degrowth, core]
+      nonhuman_status: [liberation_subject, strong]
+      urban_rural: [back_to_land, strong]
+      organisation_form: [affinity_group, strong]
+  - id: neo_luddism
+    name: "Neo-Luddism"
+    prior_weight: 0.06
+    blurb: "Technologies should be judged and refused on their social effects, not adopted because they exist."
+    positions:
+      technology_stance: [primitivist_reject, core]
+      attitude_to_modernity: [reject_return, core]
+      work_ethic: [work_is_virtue, typical]
+      growth_stance: [degrowth, strong]
+      epistemic_authority: [popular_reason, strong]
+      scale_of_polity: [village_commune, strong]
+      urban_rural: [agrarian_rural, strong]
+  - id: anti_tech_radicalism
+    name: "Anti-tech radicalism"
+    aliases: [Kaczynski]
+    prior_weight: 0.05
+    blurb: "The technological system cannot be reformed and must be brought down entirely, whatever follows."
+    positions:
+      technology_stance: [primitivist_reject, core]
+      attitude_to_modernity: [reject_return, core]
+      violence_legitimacy: [insurrectionary, core]
+      transition_method: [insurrection, core]
+      utopian_horizon: [none_pragmatic, strong]
+      organisation_form: [affinity_group, strong]
+      human_nature: [historically_produced, strong]
+      state_trajectory: [abolish_now, strong]
+      urban_rural: [back_to_land, core]
+  - id: eco_extremism
+    name: "Eco-extremism"
+    aliases: [ITS]
+    prior_weight: 0.02
+    blurb: "Indiscriminate attack on civilisation in the name of wild nature, with no programme and no future to build."
+    positions:
+      violence_legitimacy: [total_war, core]
+      utopian_horizon: [none_pragmatic, core]
+      technology_stance: [primitivist_reject, core]
+      ecology_priority: [misanthropic_deep, core]
+      organisation_form: [affinity_group, core]
+      transition_method: [insurrection, core]
+      human_nature: [fallen_needs_restraint, strong]
+      hierarchy_stance: [abolish, typical]
+  - id: rewilding_politics
+    name: "Rewilding politics"
+    prior_weight: 0.04
+    blurb: "Give large areas back to self-willed nature and reintroduce what was driven out."
+    positions:
+      ecology_priority: [primary_frame, core]
+      nonhuman_status: [rights_bearing, core]
+      land_regime: [commons, core]
+      urban_rural: [urban_industrial, typical]
+      growth_stance: [steady_state, strong]
+      scale_of_polity: [bioregional, strong]
+      technology_stance: [appropriate_scale, typical]
+  - id: nihilist_anarchism
+    name: "Nihilist anarchism"
+    prior_weight: 0.04
+    blurb: "No future to build and no programme to defend — only refusal, here, now, without hope."
+    positions:
+      utopian_horizon: [none_pragmatic, core]
+      rights_basis: [none_power, core]
+      organisation_form: [none, core]
+      state_trajectory: [abolish_now, core]
+      electoral_participation: [boycott, core]
+      transition_method: [insurrection, strong]
+      human_nature: [historically_produced, typical]
+      hierarchy_stance: [abolish, strong]
+      work_ethic: [work_abolished, strong]
+  - id: anticiv_insurrectionism
+    name: "Anti-civ insurrectionism"
+    prior_weight: 0.02
+    blurb: "Attack infrastructure directly; civilisation is a machine to be jammed rather than argued with."
+    positions:
+      transition_method: [insurrection, core]
+      technology_stance: [primitivist_reject, core]
+      violence_legitimacy: [insurrectionary, core]
+      organisation_form: [affinity_group, core]
+      utopian_horizon: [none_pragmatic, strong]
+      state_trajectory: [abolish_now, core]
+      ecology_priority: [primary_frame, strong]
+  - id: antinatalism
+    name: "Antinatalism"
+    aliases: [Benatar]
+    prior_weight: 0.06
+    blurb: "Coming into existence is always a harm, so procreation cannot be justified."
+    positions:
+      reproductive_politics: [antinatalist, core]
+      human_nature: [fallen_needs_restraint, strong]
+      death_and_finitude: [accept_natural, strong]
+      family_form: [abolish_family, typical]
+      utopian_horizon: [none_pragmatic, core]
+      growth_stance: [degrowth, strong]
+      nonhuman_status: [rights_bearing, strong]
+  - id: efilism
+    name: "Efilism"
+    prior_weight: 0.02
+    blurb: "All sentient life entails more suffering than good, so life itself — not only human life — should end."
+    positions:
+      reproductive_politics: [antinatalist, core]
+      death_and_finitude: [extinction_desirable, core]
+      nonhuman_status: [liberation_subject, core]
+      ecology_priority: [dismissed, strong]
+      utopian_horizon: [none_pragmatic, core]
+      human_nature: [fallen_needs_restraint, strong]
+      technology_stance: [industrial_neutral, typical]
+  - id: vhemt
+    name: "Voluntary Human Extinction"
+    aliases: [VHEMT]
+    prior_weight: 0.02
+    blurb: "Humanity should stop reproducing and let itself gently die out, for the sake of everything else alive."
+    positions:
+      reproductive_politics: [antinatalist, core]
+      death_and_finitude: [extinction_desirable, core]
+      ecology_priority: [misanthropic_deep, core]
+      violence_legitimacy: [never, core]
+      nonhuman_status: [sacred, strong]
+      growth_stance: [degrowth, core]
+      transition_method: [withdrawal, core]
+  - id: negative_utilitarian_politics
+    name: "Negative utilitarian politics"
+    prior_weight: 0.03
+    blurb: "Reducing suffering outranks creating happiness, which reshapes every other political priority."
+    positions:
+      distribution_principle: [need, core]
+      nonhuman_status: [liberation_subject, core]
+      reproductive_politics: [antinatalist, strong]
+      epistemic_authority: [scientific_expertise, strong]
+      punishment: [rehabilitative, strong]
+      growth_stance: [growth_managed, typical]
+      death_and_finitude: [accept_natural, typical]

@@ -1,0 +1,159 @@
+family: georgism
+label: Georgism
+family_defaults:
+  attitude_to_modernity: [embrace, typical]
+  basic_income: [social_dividend, typical]
+  borders: [open, typical]
+  class_analysis: [producer_parasite, typical]
+  decision_procedure: [representative_election, typical]
+  distribution_principle: [desert_market, typical]
+  economic_coordination: [regulated_market, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [popular_reason, typical]
+  firm_form: [investor_owned, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_managed, typical]
+  hierarchy_stance: [minimise, typical]
+  housing: [market_commodity, typical]
+  human_nature: [self_interested_rational, typical]
+  immigration: [open_borders, typical]
+  internationalism: [cosmopolitan_universal, typical]
+  land_regime: [private_taxed_rent, typical]
+  market_role: [central, typical]
+  money_form: [conventional, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [private_regulated, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  rights_basis: [natural_individual, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [limited, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [electoral, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  wage_labour: [legitimate, typical]
+  welfare_provision: [insurance_contributory, typical]
+ideologies:
+
+  - id: georgism
+    name: "Georgism"
+    aliases: [single tax, geoism]
+    prior_weight: 0.3
+    blurb: "Tax the unimproved value of land and nothing else; land rent belongs to everyone, what you build belongs to you."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      market_role: [central, core]
+      property_regime: [private_regulated, strong]
+      state_scope: [limited, strong]
+      transition_method: [electoral, core]
+      basic_income: [social_dividend, strong]
+      class_analysis: [producer_parasite, core]
+      distribution_principle: [desert_market, strong]
+      housing: [market_commodity, typical]
+      borders: [open, strong]
+      inheritance: [unrestricted, typical]
+      growth_stance: [growth_essential, typical]
+
+  - id: geolibertarianism
+    name: "Geolibertarianism"
+    prior_weight: 0.12
+    blurb: "Full libertarian self-ownership joined to the claim that no one may privately pocket the rent of the earth."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      property_in_person: [self_ownership_absolute, core]
+      state_scope: [nightwatchman, core]
+      market_role: [central, core]
+      basic_income: [social_dividend, core]
+      rights_basis: [natural_individual, core]
+      welfare_provision: [charity_voluntary, strong]
+      healthcare: [market, typical]
+      property_regime: [private_absolute, strong]
+
+  - id: geoanarchism
+    name: "Geoanarchism"
+    prior_weight: 0.05
+    blurb: "Land rent collected and shared by voluntary communities with no state to collect it."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      state_trajectory: [abolish_now, core]
+      basic_income: [social_dividend, core]
+      scale_of_polity: [village_commune, strong]
+      market_role: [central, strong]
+      welfare_provision: [mutual_aid, strong]
+      hierarchy_stance: [abolish, strong]
+      decision_procedure: [direct_democracy, strong]
+
+  - id: single_tax_movement
+    name: "Single-tax movement"
+    prior_weight: 0.05
+    blurb: "One tax on land replaces every other levy — on wages, buildings, trade and industry alike."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      state_scope: [limited, core]
+      transition_method: [electoral, core]
+      market_role: [central, strong]
+      borders: [open, strong]
+      class_analysis: [producer_parasite, strong]
+      utopian_horizon: [achievable_new_order, strong]
+      reform_vs_rupture: [reform, core]
+
+  - id: georgist_environmentalism
+    name: "Georgist environmentalism"
+    prior_weight: 0.04
+    blurb: "Extend land rent to every natural resource and sink, so pollution and sprawl carry their true price."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      ecology_priority: [central_constraint, core]
+      basic_income: [social_dividend, strong]
+      urban_rural: [urban_industrial, strong]
+      growth_stance: [growth_managed, strong]
+      market_role: [central, strong]
+      housing: [market_commodity, typical]
+      technology_stance: [industrial_neutral, typical]
+
+  - id: physiocracy
+    name: "Physiocracy"
+    aliases: [Quesnay, rule of nature]
+    prior_weight: 0.03
+    blurb: "Only land produces genuine surplus, so tax it alone and leave commerce entirely free."
+    positions:
+      land_regime: [private_taxed_rent, core]
+      urban_rural: [agrarian_rural, core]
+      market_role: [central, core]
+      state_scope: [limited, strong]
+      decision_procedure: [monarch, typical]
+      epistemic_authority: [scientific_expertise, strong]
+      class_analysis: [producer_parasite, strong]
+      attitude_to_modernity: [embrace, typical]
+
+  - id: ricardian_socialism
+    name: "Ricardian socialism"
+    aliases: [Hodgskin, labour's right to the whole produce]
+    prior_weight: 0.04
+    blurb: "Labour creates all value, so rent and profit are simply deductions from what the worker is owed."
+    positions:
+      distribution_principle: [contribution_labour, core]
+      class_analysis: [producer_parasite, core]
+      property_regime: [mutualist_possession, strong]
+      market_role: [central, strong]
+      state_scope: [nightwatchman, strong]
+      firm_form: [worker_cooperative, strong]
+      land_regime: [tenured_use, strong]
+      money_form: [mutual_credit, typical]
+
+  - id: commons_trusteeship
+    name: "Commons trusteeship"
+    aliases: [Alaska model, citizen's dividend from resources]
+    prior_weight: 0.05
+    blurb: "Natural wealth held in trust for everyone, paying an equal dividend out of what it earns."
+    positions:
+      land_regime: [commons, core]
+      basic_income: [social_dividend, core]
+      distribution_principle: [equal_share, core]
+      ecology_priority: [central_constraint, strong]
+      market_role: [retained_bounded, strong]
+      state_scope: [limited, typical]
+      property_regime: [private_regulated, typical]
+      transition_method: [electoral, strong]

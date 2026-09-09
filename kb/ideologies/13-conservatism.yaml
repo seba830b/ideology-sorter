@@ -1,0 +1,376 @@
+family: conservatism
+label: Conservatism & traditionalism
+family_defaults:
+  art_and_culture: [preserve_canon, typical]
+  attitude_to_modernity: [critical_engagement, typical]
+  borders: [closed, typical]
+  class_analysis: [status_group, typical]
+  constitutionalism: [parliamentary_supremacy, typical]
+  decision_procedure: [representative_election, typical]
+  ecology_priority: [managed_externality, typical]
+  economic_coordination: [regulated_market, typical]
+  education_aim: [transmit_tradition, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [tradition, typical]
+  family_form: [nuclear_traditional, typical]
+  firm_form: [investor_owned, typical]
+  gender_order: [traditional_complementary, typical]
+  growth_stance: [growth_managed, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  human_nature: [fallen_needs_restraint, typical]
+  immigration: [restrict_sharply, typical]
+  inheritance: [unrestricted, typical]
+  internationalism: [national_interest, typical]
+  land_regime: [private_absolute, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [central, typical]
+  nation_concept: [cultural_linguistic, typical]
+  nationalism_stance: [core_value, typical]
+  policing: [professional, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [private_regulated, typical]
+  punishment: [retributive_harsh, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [established_church, typical]
+  rights_basis: [collective_historical, typical]
+  scale_of_polity: [national, typical]
+  sexuality_stance: [traditional_restrictive, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [limited, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [conserve, typical]
+  transition_method: [gradual_reform, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [none_pragmatic, typical]
+  wage_labour: [legitimate, typical]
+  welfare_provision: [charity_voluntary, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+  - id: burkean_conservatism
+    name: "Burkean conservatism"
+    prior_weight: 0.6
+    blurb: "Society is an inheritance too complex to redesign; reform slowly, in the grain of what already works."
+    positions:
+      tradition_stance: [conserve, core]
+      transition_method: [gradual_reform, core]
+      epistemic_authority: [tradition, core]
+      human_nature: [fallen_needs_restraint, core]
+      hierarchy_stance: [functional_necessary, core]
+      utopian_horizon: [none_pragmatic, core]
+      constitutionalism: [parliamentary_supremacy, strong]
+      family_form: [nuclear_traditional, strong]
+      religion_in_public_life: [established_church, strong]
+      property_regime: [private_regulated, strong]
+      reform_vs_rupture: [reform, core]
+  - id: traditionalist_conservatism
+    name: "Traditionalist conservatism"
+    aliases: [Kirk, Weaver]
+    prior_weight: 0.2
+    blurb: "A permanent moral order exists; culture, custom and religion matter more than markets or constitutions."
+    positions:
+      tradition_stance: [conserve, core]
+      religion_in_public_life: [culturally_grounded, core]
+      epistemic_authority: [tradition, core]
+      art_and_culture: [preserve_canon, core]
+      education_aim: [transmit_tradition, core]
+      human_nature: [fallen_needs_restraint, core]
+      attitude_to_modernity: [reject_return, strong]
+      family_form: [nuclear_traditional, core]
+      urban_rural: [agrarian_rural, typical]
+      hierarchy_stance: [natural_good, strong]
+  - id: paleoconservatism
+    name: "Paleoconservatism"
+    aliases: [Buchanan, Old Right]
+    prior_weight: 0.15
+    blurb: "Nation, faith and neighbourhood against globalism, mass immigration and foreign wars."
+    positions:
+      immigration: [restrict_sharply, core]
+      internationalism: [isolationist, core]
+      nation_concept: [cultural_linguistic, core]
+      religion_in_public_life: [culturally_grounded, core]
+      borders: [closed, core]
+      market_role: [retained_bounded, typical]
+      tradition_stance: [restore, strong]
+      colonialism_stance: [oppose, typical]
+      family_form: [nuclear_traditional, core]
+      class_analysis: [elite_mass, strong]
+  - id: neoconservatism
+    name: "Neoconservatism"
+    prior_weight: 0.25
+    blurb: "American power used actively to spread democratic capitalism, with a moralised view of foreign policy."
+    positions:
+      internationalism: [national_interest, core]
+      violence_legitimacy: [total_war, strong]
+      colonialism_stance: [ambivalent, strong]
+      market_role: [central, core]
+      state_scope: [limited, strong]
+      political_pluralism: [multiparty, core]
+      religion_in_public_life: [culturally_grounded, typical]
+      immigration: [manage, typical]
+      imperialism_analysis: [rejected, strong]
+      utopian_horizon: [gradual_improvement, strong]
+  - id: straussianism
+    name: "Straussianism"
+    prior_weight: 0.05
+    blurb: "Classical political philosophy read esoterically, against relativism and in defence of the regime's noble myths."
+    positions:
+      epistemic_authority: [esoteric_initiation, core]
+      education_aim: [transmit_tradition, core]
+      art_and_culture: [preserve_canon, core]
+      tradition_stance: [conserve, core]
+      hierarchy_stance: [natural_good, strong]
+      religion_in_public_life: [culturally_grounded, strong]
+      decision_procedure: [expert_rule, typical]
+      human_nature: [fallen_needs_restraint, strong]
+  - id: one_nation_conservatism
+    name: "One Nation conservatism"
+    prior_weight: 0.15
+    blurb: "The privileged owe obligations to the poor; the nation must not be allowed to split into two."
+    positions:
+      welfare_provision: [universal_public, strong]
+      state_scope: [welfare_broad, strong]
+      hierarchy_stance: [functional_necessary, core]
+      tradition_stance: [conserve, core]
+      class_analysis: [status_group, strong]
+      transition_method: [gradual_reform, core]
+      economic_coordination: [mixed_economy, strong]
+      nation_concept: [civic, strong]
+      political_pluralism: [multiparty, core]
+  - id: high_toryism
+    name: "High Toryism"
+    prior_weight: 0.06
+    blurb: "Church, Crown and land as the settled order, sceptical of commerce and of democracy alike."
+    positions:
+      religion_in_public_life: [established_church, core]
+      leadership_form: [hereditary, core]
+      hierarchy_stance: [natural_good, core]
+      land_regime: [private_absolute, strong]
+      urban_rural: [agrarian_rural, core]
+      tradition_stance: [restore, core]
+      market_role: [retained_bounded, typical]
+      decision_procedure: [monarch, strong]
+      attitude_to_modernity: [reject_return, strong]
+  - id: red_toryism
+    name: "Red Toryism"
+    aliases: [Blond, civic conservatism]
+    prior_weight: 0.05
+    blurb: "Against both the market state and the welfare state — rebuild associations, guilds and local ownership."
+    positions:
+      property_regime: [distributed_wide, core]
+      scale_of_polity: [municipal_confederal, strong]
+      welfare_provision: [mutual_aid, core]
+      tradition_stance: [conserve, core]
+      firm_form: [worker_cooperative, strong]
+      state_scope: [limited, strong]
+      market_role: [retained_bounded, strong]
+      religion_in_public_life: [culturally_grounded, strong]
+      class_analysis: [elite_mass, typical]
+  - id: compassionate_conservatism
+    name: "Compassionate conservatism"
+    prior_weight: 0.05
+    blurb: "Deliver welfare through churches and charities rather than the state, without abandoning the poor."
+    positions:
+      welfare_provision: [charity_voluntary, core]
+      religion_in_public_life: [culturally_grounded, core]
+      state_scope: [limited, strong]
+      market_role: [central, strong]
+      family_form: [nuclear_traditional, strong]
+      transition_method: [gradual_reform, core]
+      education_aim: [civic_formation, typical]
+  - id: gaullism
+    name: "Gaullism"
+    prior_weight: 0.08
+    blurb: "A strong executive and an independent nation, above party and outside every bloc."
+    positions:
+      leadership_form: [charismatic_leader, core]
+      internationalism: [national_interest, core]
+      federalism: [unitary, core]
+      state_scope: [developmental, strong]
+      nation_concept: [civic, core]
+      economic_coordination: [indicative_planning, strong]
+      political_pluralism: [dominant_party, typical]
+      constitutionalism: [entrenched_rights, strong]
+      nationalism_stance: [core_value, strong]
+  - id: national_conservatism
+    name: "National conservatism"
+    aliases: [Hazony]
+    prior_weight: 0.15
+    blurb: "A world of independent nations, each with its own religious tradition, against transnational governance."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      nationalism_stance: [core_value, core]
+      internationalism: [national_interest, core]
+      religion_in_public_life: [culturally_grounded, core]
+      immigration: [restrict_sharply, core]
+      family_form: [nuclear_traditional, core]
+      tradition_stance: [restore, strong]
+      borders: [closed, strong]
+      state_scope: [welfare_broad, typical]
+      transition_method: [electoral, core]
+  - id: postliberalism
+    name: "Postliberalism"
+    aliases: [Deneen]
+    prior_weight: 0.08
+    blurb: "Liberalism failed because it succeeded — its individualism dissolved the communities people actually need."
+    positions:
+      attitude_to_modernity: [reject_return, core]
+      scale_of_polity: [village_commune, strong]
+      religion_in_public_life: [culturally_grounded, core]
+      market_role: [retained_bounded, strong]
+      family_form: [nuclear_traditional, core]
+      tradition_stance: [restore, core]
+      education_aim: [transmit_tradition, core]
+      human_nature: [fallen_needs_restraint, core]
+      technology_stance: [appropriate_scale, strong]
+      sovereignty_locus: [community, core]
+  - id: legitimism
+    name: "Legitimism"
+    prior_weight: 0.03
+    blurb: "The rightful dynasty was deposed unlawfully and its restoration is the only legitimate order."
+    positions:
+      leadership_form: [hereditary, core]
+      decision_procedure: [monarch, core]
+      tradition_stance: [restore, core]
+      sovereignty_locus: [divine, core]
+      political_pluralism: [no_parties_traditional, core]
+      constitutionalism: [no_constitution, strong]
+      religion_in_public_life: [established_church, core]
+      hierarchy_stance: [natural_good, core]
+      attitude_to_modernity: [reject_return, core]
+  - id: carlism
+    name: "Carlism"
+    prior_weight: 0.03
+    blurb: "God, fatherland, local charters and king — a traditionalist monarchism defending regional liberties."
+    positions:
+      leadership_form: [hereditary, core]
+      federalism: [confederal, core]
+      religion_in_public_life: [theocratic, strong]
+      tradition_stance: [restore, core]
+      scale_of_polity: [regional, core]
+      decision_procedure: [monarch, core]
+      violence_legitimacy: [insurrectionary, strong]
+      secession_right: [national_only, typical]
+      hierarchy_stance: [natural_good, core]
+  - id: jacobitism
+    name: "Jacobitism"
+    prior_weight: 0.02
+    blurb: "The Stuart line remains the true sovereign; every subsequent settlement is usurpation."
+    positions:
+      leadership_form: [hereditary, core]
+      decision_procedure: [monarch, core]
+      sovereignty_locus: [divine, core]
+      tradition_stance: [restore, core]
+      religion_in_public_life: [established_church, core]
+      constitutionalism: [no_constitution, strong]
+      violence_legitimacy: [insurrectionary, typical]
+      political_pluralism: [no_parties_traditional, core]
+  - id: absolute_monarchism
+    name: "Absolute monarchism"
+    prior_weight: 0.06
+    blurb: "Sovereignty undivided in one person, answerable to God alone and to no assembly."
+    positions:
+      decision_procedure: [monarch, core]
+      leadership_form: [hereditary, core]
+      sovereignty_locus: [divine, core]
+      constitutionalism: [no_constitution, core]
+      political_pluralism: [no_parties_traditional, core]
+      hierarchy_stance: [natural_good, core]
+      state_scope: [developmental, typical]
+      religion_in_public_life: [established_church, strong]
+      federalism: [unitary, strong]
+  - id: constitutional_monarchism
+    name: "Constitutional monarchism"
+    prior_weight: 0.15
+    blurb: "A hereditary head of state as continuity and symbol, with real power in an elected parliament."
+    positions:
+      leadership_form: [hereditary, core]
+      constitutionalism: [parliamentary_supremacy, core]
+      decision_procedure: [representative_election, core]
+      political_pluralism: [multiparty, core]
+      tradition_stance: [conserve, core]
+      religion_in_public_life: [established_church, typical]
+      hierarchy_stance: [functional_necessary, strong]
+      transition_method: [gradual_reform, strong]
+  - id: neofeudalism
+    name: "Neofeudalism"
+    prior_weight: 0.03
+    blurb: "Layered personal loyalties and local lordship in place of the uniform bureaucratic state."
+    positions:
+      federalism: [confederal, core]
+      hierarchy_stance: [natural_good, core]
+      leadership_form: [hereditary, core]
+      land_regime: [tenured_use, core]
+      scale_of_polity: [regional, core]
+      state_trajectory: [minimal, strong]
+      rights_basis: [collective_historical, strong]
+      tradition_stance: [restore, core]
+      attitude_to_modernity: [reject_return, core]
+  - id: southern_agrarianism
+    name: "Southern Agrarianism"
+    aliases: [I'll Take My Stand]
+    prior_weight: 0.03
+    blurb: "The industrial order destroys a humane life rooted in land, leisure and regional culture."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      technology_stance: [appropriate_scale, core]
+      attitude_to_modernity: [reject_return, core]
+      art_and_culture: [preserve_canon, core]
+      tradition_stance: [restore, core]
+      scale_of_polity: [regional, core]
+      growth_stance: [steady_state, strong]
+      religion_in_public_life: [culturally_grounded, strong]
+      hierarchy_stance: [natural_good, strong]
+  - id: jeffersonian_republicanism
+    name: "Jeffersonian republicanism"
+    prior_weight: 0.06
+    blurb: "A republic of independent smallholders, suspicious of banks, cities and central power."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      property_regime: [distributed_wide, core]
+      federalism: [confederal, core]
+      state_scope: [nightwatchman, core]
+      land_regime: [private_absolute, strong]
+      decision_procedure: [representative_election, strong]
+      religion_in_public_life: [secular_neutral, strong]
+      education_aim: [civic_formation, core]
+      money_form: [commodity_backed, typical]
+  - id: front_porch_localism
+    name: "Front Porch localism"
+    prior_weight: 0.03
+    blurb: "Place, limits and membership — a conservatism of the small town rather than the market or the nation."
+    positions:
+      scale_of_polity: [village_commune, core]
+      sovereignty_locus: [community, core]
+      technology_stance: [appropriate_scale, core]
+      growth_stance: [steady_state, strong]
+      tradition_stance: [conserve, core]
+      urban_rural: [balanced, strong]
+      religion_in_public_life: [culturally_grounded, strong]
+      attitude_to_modernity: [reject_return, strong]
+  - id: bonapartism
+    name: "Bonapartism"
+    prior_weight: 0.05
+    blurb: "A strongman above the classes, ruling by plebiscite in the name of order and the nation."
+    positions:
+      leadership_form: [charismatic_leader, core]
+      decision_procedure: [direct_democracy, strong]
+      political_pluralism: [dominant_party, core]
+      class_analysis: [elite_mass, core]
+      nationalism_stance: [core_value, core]
+      state_scope: [developmental, strong]
+      constitutionalism: [revolutionary_legality, strong]
+      federalism: [unitary, core]
+      transition_method: [coup_vanguard, strong]
+  - id: ultramontanism
+    name: "Ultramontanism"
+    prior_weight: 0.02
+    blurb: "Papal authority over every national church and, in the last resort, over princes as well."
+    positions:
+      decision_procedure: [clerical_authority, core]
+      religion_in_public_life: [theocratic, core]
+      sovereignty_locus: [divine, core]
+      scale_of_polity: [imperial, strong]
+      tradition_stance: [restore, core]
+      federalism: [unitary, strong]
+      epistemic_authority: [revelation, core]
+      nationalism_stance: [hostile, strong]

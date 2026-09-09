@@ -1,0 +1,371 @@
+family: left_communism
+label: Trotskyism & left communism
+family_defaults:
+  attitude_to_modernity: [critical_engagement, typical]
+  borders: [abolished, typical]
+  class_analysis: [central_marxist, typical]
+  decision_procedure: [delegation_recallable, typical]
+  distribution_principle: [need, typical]
+  economic_coordination: [central_planning, typical]
+  education_aim: [critical_consciousness, typical]
+  epistemic_authority: [dialectical_materialism, typical]
+  family_form: [egalitarian_nuclear, typical]
+  firm_form: [communal_unit, typical]
+  gender_order: [formal_equality, typical]
+  hierarchy_stance: [abolish, typical]
+  human_nature: [historically_produced, typical]
+  imperialism_analysis: [central_frame, typical]
+  inheritance: [abolished, typical]
+  internationalism: [proletarian_internationalist, typical]
+  land_regime: [collectivised, typical]
+  leadership_form: [collective, typical]
+  market_role: [abolished, typical]
+  money_form: [abolished, typical]
+  nation_concept: [class_based, typical]
+  nationalism_stance: [hostile, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_regime: [communal, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  rights_basis: [collective_historical, typical]
+  scale_of_polity: [world_federal, typical]
+  speech_norms: [broadly_free, typical]
+  state_trajectory: [wither_away, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [reject, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  violence_legitimacy: [insurrectionary, typical]
+  wage_labour: [abolish_entirely, typical]
+  welfare_provision: [communal_direct, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+
+  - id: trotskyism
+    name: Trotskyism
+    aliases: [Fourth Internationalism, permanent revolution]
+    prior_weight: 0.6
+    blurb: "Revolution must spread internationally at once; the USSR was a workers' state deformed by a bureaucratic caste."
+    positions:
+      internationalism: [proletarian_internationalist, core]
+      reform_vs_rupture: [rupture, core]
+      vanguard_role: [necessary, core]
+      political_pluralism: [no_parties_councils, strong]
+      decision_procedure: [delegation_recallable, strong]
+      class_analysis: [central_marxist, core]
+      economic_coordination: [central_planning, strong]
+      organisation_form: [vanguard_party, core]
+      hierarchy_stance: [minimise, strong]
+      electoral_participation: [tactical, strong]
+      speech_norms: [broadly_free, typical]
+      epistemic_authority: [dialectical_materialism, core]
+
+  - id: pabloism
+    name: Pabloism
+    aliases: [deep entryism, sui generis entrism]
+    prior_weight: 0.05
+    blurb: "Revolutionaries should bury themselves inside mass reformist parties for a whole historical period."
+    positions:
+      organisation_form: [mass_party, core]
+      transition_method: [gradual_reform, strong]
+      internationalism: [proletarian_internationalist, core]
+      vanguard_role: [necessary, strong]
+      electoral_participation: [tactical, core]
+      reform_vs_rupture: [reform_toward_rupture, core]
+      class_analysis: [central_marxist, strong]
+
+  - id: posadism
+    name: Posadism
+    aliases: [Posadist Fourth International]
+    prior_weight: 0.06
+    blurb: "Nuclear war would destroy capitalism and clear the way for socialism, and advanced extraterrestrials would be socialists too."
+    positions:
+      violence_legitimacy: [total_war, core]
+      space_expansion: [human_destiny, core]
+      internationalism: [proletarian_internationalist, core]
+      technology_stance: [accelerate, strong]
+      utopian_horizon: [transcendent_eschaton, strong]
+      nonhuman_status: [rights_bearing, weak]
+      class_analysis: [central_marxist, strong]
+      epistemic_authority: [dialectical_materialism, strong]
+      reform_vs_rupture: [rupture, core]
+
+  - id: third_camp
+    name: Third Camp socialism
+    aliases: [Shachtmanism, neither Washington nor Moscow]
+    prior_weight: 0.12
+    blurb: "Both superpowers were class enemies; the Soviet bureaucracy was a new exploiting class, not a degenerated workers' state."
+    positions:
+      internationalism: [proletarian_internationalist, core]
+      class_analysis: [central_marxist, core]
+      political_pluralism: [multiparty, strong]
+      speech_norms: [broadly_free, core]
+      decision_procedure: [direct_democracy, strong]
+      vanguard_role: [useful, strong]
+      state_trajectory: [wither_away, strong]
+      hierarchy_stance: [abolish, strong]
+      imperialism_analysis: [secondary, typical]
+      property_regime: [state_owned, typical]
+
+  - id: bureaucratic_collectivism
+    name: Bureaucratic collectivism
+    prior_weight: 0.05
+    blurb: "The Soviet bureaucracy owned the means of production collectively and was therefore a genuine ruling class."
+    positions:
+      class_analysis: [central_marxist, core]
+      property_regime: [state_owned, core]
+      hierarchy_stance: [abolish, strong]
+      political_pluralism: [no_parties_councils, strong]
+      epistemic_authority: [dialectical_materialism, strong]
+      state_trajectory: [wither_away, strong]
+      vanguard_role: [rejected, typical]
+
+  - id: state_capitalism_cliff
+    name: State capitalism theory
+    aliases: [Cliffism, IS tradition]
+    prior_weight: 0.15
+    blurb: "The Eastern bloc was capitalism run by the state, competing militarily on the world market like any firm."
+    positions:
+      class_analysis: [central_marxist, core]
+      property_regime: [state_owned, strong]
+      organisation_form: [vanguard_party, strong]
+      decision_procedure: [direct_democracy, strong]
+      political_pluralism: [no_parties_councils, strong]
+      internationalism: [proletarian_internationalist, core]
+      electoral_participation: [tactical, strong]
+      imperialism_analysis: [central_frame, strong]
+      hierarchy_stance: [abolish, strong]
+
+  - id: council_communism
+    name: Council communism
+    aliases: [Pannekoek, Gorter, Rätekommunismus]
+    prior_weight: 0.3
+    blurb: "Workers' councils are the form of the revolution; parties and unions can only substitute themselves for the class."
+    positions:
+      political_pluralism: [no_parties_councils, core]
+      vanguard_role: [rejected, core]
+      organisation_form: [federation, core]
+      decision_procedure: [delegation_recallable, core]
+      transition_method: [general_strike, strong]
+      hierarchy_stance: [abolish, core]
+      electoral_participation: [boycott, core]
+      state_trajectory: [abolish_now, strong]
+      class_analysis: [central_marxist, core]
+      market_role: [abolished, strong]
+      firm_form: [communal_unit, strong]
+
+  - id: bordigism
+    name: Bordigism
+    aliases: [Italian Left, communist left]
+    prior_weight: 0.08
+    blurb: "The party holds the invariant programme regardless of what workers currently believe; democracy is no measure of truth."
+    positions:
+      vanguard_role: [necessary, core]
+      decision_procedure: [vanguard_party, core]
+      electoral_participation: [boycott, core]
+      political_pluralism: [single_party, strong]
+      epistemic_authority: [dialectical_materialism, core]
+      market_role: [abolished, core]
+      money_form: [abolished, core]
+      reform_vs_rupture: [rupture, core]
+      organisation_form: [vanguard_party, core]
+      class_analysis: [central_marxist, core]
+      nationalism_stance: [hostile, strong]
+
+  - id: luxemburgism
+    name: Luxemburgism
+    prior_weight: 0.2
+    blurb: "The mass strike teaches the class what no party can; revolution without democracy becomes bureaucratic rule."
+    positions:
+      transition_method: [general_strike, core]
+      speech_norms: [broadly_free, core]
+      decision_procedure: [direct_democracy, strong]
+      vanguard_role: [useful, strong]
+      political_pluralism: [no_parties_councils, strong]
+      internationalism: [proletarian_internationalist, core]
+      nationalism_stance: [hostile, strong]
+      class_analysis: [central_marxist, core]
+      reform_vs_rupture: [rupture, strong]
+      hierarchy_stance: [minimise, strong]
+
+  - id: communisation
+    name: Communisation theory
+    aliases: [Théorie Communiste, Endnotes]
+    prior_weight: 0.07
+    blurb: "Communism is not a society built after the revolution but the immediate abolition of value, work and class in the act itself."
+    positions:
+      market_role: [abolished, core]
+      money_form: [abolished, core]
+      wage_labour: [abolish_entirely, core]
+      transition_method: [insurrection, strong]
+      reform_vs_rupture: [rupture, core]
+      organisation_form: [none, strong]
+      vanguard_role: [rejected, core]
+      work_ethic: [work_abolished, core]
+      state_trajectory: [abolish_now, core]
+      class_analysis: [central_marxist, strong]
+      utopian_horizon: [achievable_new_order, typical]
+
+  - id: situationism
+    name: Situationism
+    aliases: [Situationist International, Debord]
+    prior_weight: 0.15
+    blurb: "Capitalism has become a spectacle of images; the task is to destroy separation and construct lived situations."
+    positions:
+      art_and_culture: [avant_garde_rupture, core]
+      work_ethic: [work_abolished, core]
+      organisation_form: [affinity_group, strong]
+      decision_procedure: [direct_democracy, strong]
+      political_pluralism: [no_parties_councils, strong]
+      vanguard_role: [rejected, strong]
+      market_role: [abolished, strong]
+      urban_rural: [urban_industrial, strong]
+      attitude_to_modernity: [critical_engagement, strong]
+      class_analysis: [central_marxist, strong]
+      education_aim: [critical_consciousness, strong]
+
+  - id: autonomism
+    name: Autonomism
+    aliases: [operaismo, workerism, Negri]
+    prior_weight: 0.2
+    blurb: "Workers' own refusal drives capitalist development; struggle needs no party and increasingly no factory either."
+    positions:
+      organisation_form: [network, core]
+      vanguard_role: [rejected, core]
+      work_ethic: [work_abolished, strong]
+      transition_method: [prefigurative, strong]
+      class_analysis: [central_marxist, strong]
+      decision_procedure: [direct_democracy, strong]
+      technology_stance: [industrial_neutral, typical]
+      basic_income: [support_ubi, strong]
+      hierarchy_stance: [abolish, strong]
+      electoral_participation: [boycott, strong]
+      scale_of_polity: [regional, weak]
+
+  - id: johnson_forest
+    name: Johnson-Forest Tendency
+    aliases: [CLR James, Dunayevskaya, state-capitalist Marxism]
+    prior_weight: 0.05
+    blurb: "Ordinary workers and Black Americans are already theorising their own liberation; the intellectuals should record it."
+    positions:
+      class_analysis: [central_marxist, core]
+      race_politics: [liberationist_nationalist, strong]
+      vanguard_role: [rejected, strong]
+      epistemic_authority: [popular_reason, core]
+      decision_procedure: [direct_democracy, strong]
+      political_pluralism: [no_parties_councils, strong]
+      property_regime: [state_owned, weak]
+      education_aim: [critical_consciousness, strong]
+      hierarchy_stance: [abolish, strong]
+
+  - id: marxist_humanism
+    name: Marxist humanism
+    prior_weight: 0.12
+    blurb: "Marx's core is alienation and human self-realisation, not economic laws or party discipline."
+    positions:
+      human_nature: [historically_produced, core]
+      epistemic_authority: [dialectical_materialism, typical]
+      education_aim: [individual_flourishing, strong]
+      work_ethic: [work_reduced, strong]
+      hierarchy_stance: [abolish, strong]
+      speech_norms: [broadly_free, strong]
+      vanguard_role: [rejected, typical]
+      class_analysis: [central_marxist, strong]
+      art_and_culture: [avant_garde_rupture, typical]
+
+  - id: bogdanovism
+    name: Bogdanovism
+    aliases: [Tectology, Proletkult]
+    prior_weight: 0.04
+    blurb: "A universal science of organisation, and a proletarian culture built by workers before any seizure of power."
+    positions:
+      epistemic_authority: [scientific_expertise, core]
+      art_and_culture: [avant_garde_rupture, core]
+      education_aim: [critical_consciousness, core]
+      transition_method: [prefigurative, core]
+      technology_stance: [accelerate, strong]
+      class_analysis: [central_marxist, strong]
+      organisation_form: [federation, strong]
+      space_expansion: [human_destiny, weak]
+      vanguard_role: [rejected, typical]
+
+  - id: god_building
+    name: God-Building
+    aliases: [bogostroitelstvo]
+    prior_weight: 0.03
+    blurb: "Socialism needs the emotional force of religion, with humanity itself as the deity being constructed."
+    positions:
+      religion_in_public_life: [spiritual_syncretic, core]
+      human_nature: [perfectible, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      art_and_culture: [avant_garde_rupture, strong]
+      epistemic_authority: [dialectical_materialism, typical]
+      education_aim: [ideological_formation, strong]
+      class_analysis: [central_marxist, strong]
+      death_and_finitude: [defeat_technologically, weak]
+
+  - id: de_leonism
+    name: De Leonism
+    aliases: [Socialist Industrial Unionism]
+    prior_weight: 0.06
+    blurb: "Workers organise industrially to take over production, and use the ballot only to dissolve the political state."
+    positions:
+      organisation_form: [union, core]
+      transition_method: [general_strike, core]
+      electoral_participation: [tactical, core]
+      firm_form: [worker_cooperative, strong]
+      decision_procedure: [delegation_recallable, core]
+      state_trajectory: [abolish_now, strong]
+      political_pluralism: [no_parties_councils, strong]
+      violence_legitimacy: [defensive_only, strong]
+      class_analysis: [central_marxist, core]
+      market_role: [abolished, strong]
+
+  - id: impossibilism
+    name: Impossibilism
+    aliases: [SPGB, world socialism]
+    prior_weight: 0.05
+    blurb: "No reform is worth supporting; socialism arrives only when a majority understands and votes for it, worldwide and at once."
+    positions:
+      reform_vs_rupture: [rupture, core]
+      electoral_participation: [central, core]
+      violence_legitimacy: [never, core]
+      scale_of_polity: [world_federal, core]
+      money_form: [abolished, core]
+      market_role: [abolished, core]
+      vanguard_role: [rejected, core]
+      leadership_form: [none, core]
+      education_aim: [critical_consciousness, strong]
+      class_analysis: [central_marxist, core]
+      distribution_principle: [need, core]
+
+  - id: sorelianism
+    name: Sorelianism
+    aliases: [revolutionary syndicalism, myth of the general strike]
+    prior_weight: 0.07
+    blurb: "The general strike works as a mobilising myth; heroic violence by producers renews a decadent society."
+    positions:
+      transition_method: [general_strike, core]
+      organisation_form: [union, core]
+      violence_legitimacy: [insurrectionary, core]
+      epistemic_authority: [popular_reason, strong]
+      electoral_participation: [boycott, core]
+      class_analysis: [producer_parasite, strong]
+      attitude_to_modernity: [critical_engagement, strong]
+      utopian_horizon: [achievable_new_order, typical]
+      work_ethic: [work_is_virtue, strong]
+
+  - id: left_opposition
+    name: Left Opposition
+    aliases: [United Opposition]
+    prior_weight: 0.06
+    blurb: "Rapid industrialisation and party democracy against the rising bureaucracy, before it consolidated."
+    positions:
+      economic_coordination: [central_planning, core]
+      speech_norms: [broadly_free, strong]
+      internationalism: [proletarian_internationalist, core]
+      political_pluralism: [single_party, typical]
+      hierarchy_stance: [minimise, strong]
+      vanguard_role: [necessary, core]
+      urban_rural: [urban_industrial, strong]
+      class_analysis: [central_marxist, core]

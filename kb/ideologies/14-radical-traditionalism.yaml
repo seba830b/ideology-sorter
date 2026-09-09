@@ -1,0 +1,290 @@
+family: radical_traditionalism
+label: Radical traditionalism & far right
+family_defaults:
+  art_and_culture: [preserve_canon, typical]
+  attitude_to_modernity: [reject_return, typical]
+  borders: [closed, typical]
+  class_analysis: [elite_mass, typical]
+  ecology_priority: [central_constraint, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [transmit_tradition, typical]
+  electoral_participation: [boycott, typical]
+  epistemic_authority: [esoteric_initiation, typical]
+  family_form: [patriarchal_household, typical]
+  gender_order: [traditional_complementary, typical]
+  hierarchy_stance: [natural_good, typical]
+  human_nature: [fallen_needs_restraint, typical]
+  immigration: [restrict_sharply, typical]
+  internationalism: [isolationist, typical]
+  leadership_form: [charismatic_leader, typical]
+  market_role: [retained_bounded, typical]
+  nation_concept: [ethnic, typical]
+  nationalism_stance: [core_value, typical]
+  organisation_form: [network, typical]
+  political_pluralism: [no_parties_traditional, typical]
+  property_regime: [distributed_wide, typical]
+  punishment: [retributive_harsh, typical]
+  race_politics: [separatism, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [spiritual_syncretic, typical]
+  reproductive_politics: [natalist_restrictive, typical]
+  rights_basis: [collective_historical, typical]
+  scale_of_polity: [regional, typical]
+  sexuality_stance: [traditional_restrictive, typical]
+  speech_norms: [restricted_for_harm, typical]
+  state_scope: [developmental, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [restore, typical]
+  transition_method: [cultural_metapolitics, typical]
+  urban_rural: [agrarian_rural, typical]
+  utopian_horizon: [restorationist_golden_age, typical]
+  welfare_provision: [communal_direct, typical]
+ideologies:
+  - id: evolian_traditionalism
+    name: "Evolian Traditionalism"
+    prior_weight: 0.06
+    blurb: "History as decline from a sacred golden age; the task is inner aristocratic resistance, not mass politics."
+    positions:
+      tradition_stance: [transcend_esoteric, core]
+      epistemic_authority: [esoteric_initiation, core]
+      hierarchy_stance: [natural_good, core]
+      attitude_to_modernity: [reject_return, core]
+      utopian_horizon: [restorationist_golden_age, core]
+      transition_method: [withdrawal, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      gender_order: [traditional_complementary, core]
+      class_analysis: [status_group, strong]
+      electoral_participation: [boycott, core]
+      leadership_form: [hereditary, typical]
+  - id: guenonian_perennialism
+    name: "Perennialism"
+    aliases: [Guénon, Traditionalist School]
+    prior_weight: 0.03
+    blurb: "One primordial truth underlies all orthodox religions; modernity is its inversion."
+    positions:
+      epistemic_authority: [esoteric_initiation, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      tradition_stance: [transcend_esoteric, core]
+      attitude_to_modernity: [reject_return, core]
+      utopian_horizon: [restorationist_golden_age, core]
+      transition_method: [withdrawal, core]
+      hierarchy_stance: [natural_good, strong]
+      art_and_culture: [preserve_canon, strong]
+  - id: archeofuturism
+    name: "Archeofuturism"
+    aliases: [Faye]
+    prior_weight: 0.03
+    blurb: "Archaic values joined to advanced technology, skipping over the liberal modern interval entirely."
+    positions:
+      attitude_to_modernity: [transcend_forward, core]
+      technology_stance: [accelerate, core]
+      tradition_stance: [restore, core]
+      hierarchy_stance: [natural_good, core]
+      nation_concept: [ethnic, core]
+      gender_order: [traditional_complementary, strong]
+      transition_method: [cultural_metapolitics, strong]
+      scale_of_polity: [continental_bloc, strong]
+      immigration: [restrict_sharply, core]
+  - id: nouvelle_droite
+    name: "Nouvelle Droite"
+    aliases: [de Benoist, GRECE, ethnopluralism]
+    prior_weight: 0.06
+    blurb: "Win the culture before the state; defend every people's difference against a homogenising liberal world."
+    positions:
+      transition_method: [cultural_metapolitics, core]
+      nation_concept: [ethnic, core]
+      immigration: [restrict_sharply, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      tradition_stance: [restore, core]
+      scale_of_polity: [regional, strong]
+      internationalism: [isolationist, strong]
+      market_role: [retained_bounded, typical]
+      art_and_culture: [preserve_canon, strong]
+      attitude_to_modernity: [reject_return, strong]
+      federalism: [confederal, strong]
+  - id: identitarianism
+    name: "Identitarianism"
+    prior_weight: 0.08
+    blurb: "European peoples as distinct identities under demographic threat, defended by metapolitics and street activism."
+    positions:
+      nation_concept: [ethnic, core]
+      immigration: [restrict_sharply, core]
+      borders: [closed, core]
+      transition_method: [cultural_metapolitics, core]
+      race_politics: [separatism, strong]
+      nationalism_stance: [core_value, core]
+      organisation_form: [network, strong]
+      tradition_stance: [restore, strong]
+      scale_of_polity: [continental_bloc, typical]
+  - id: third_positionism
+    name: "Third Positionism"
+    prior_weight: 0.05
+    blurb: "Neither capitalism nor communism — nationalism fused with anti-capitalist and anti-imperialist economics."
+    positions:
+      nation_concept: [ethnic, core]
+      economic_coordination: [mixed_economy, core]
+      class_analysis: [producer_parasite, core]
+      market_role: [retained_bounded, strong]
+      imperialism_analysis: [central_frame, strong]
+      internationalism: [isolationist, strong]
+      firm_form: [guild, strong]
+      nationalism_stance: [core_value, core]
+      property_regime: [distributed_wide, strong]
+  - id: national_bolshevism
+    name: "National Bolshevism"
+    aliases: [Niekisch, Limonov]
+    prior_weight: 0.05
+    blurb: "Communist economics and radical nationalism in one package, against the liberal West above all."
+    positions:
+      nation_concept: [ethnic, core]
+      economic_coordination: [central_planning, core]
+      state_scope: [total, core]
+      nationalism_stance: [core_value, core]
+      internationalism: [isolationist, core]
+      property_regime: [state_owned, strong]
+      transition_method: [insurrection, strong]
+      leadership_form: [charismatic_leader, strong]
+      attitude_to_modernity: [critical_engagement, typical]
+      class_analysis: [producer_parasite, strong]
+  - id: eurasianism
+    name: "Eurasianism"
+    aliases: [Dugin, neo-Eurasianism]
+    prior_weight: 0.06
+    blurb: "A multipolar world of civilisational blocs, with Eurasia as a land power against Atlantic liberalism."
+    positions:
+      scale_of_polity: [continental_bloc, core]
+      internationalism: [isolationist, core]
+      tradition_stance: [transcend_esoteric, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      nation_concept: [cultural_linguistic, strong]
+      epistemic_authority: [esoteric_initiation, strong]
+      attitude_to_modernity: [reject_return, core]
+      hierarchy_stance: [natural_good, strong]
+      imperialism_analysis: [central_frame, strong]
+      federalism: [federal, typical]
+  - id: neoreaction
+    name: "Neoreaction"
+    aliases: [Dark Enlightenment, NRx]
+    prior_weight: 0.06
+    blurb: "Democracy is a failure mode; competent sovereign authority and exit rights would govern better."
+    positions:
+      decision_procedure: [expert_rule, core]
+      political_pluralism: [no_parties_traditional, core]
+      hierarchy_stance: [natural_good, core]
+      leadership_form: [technocratic_board, strong]
+      attitude_to_modernity: [critical_engagement, strong]
+      secession_right: [universal_right, strong]
+      epistemic_authority: [market_aggregation, strong]
+      electoral_participation: [boycott, core]
+      transition_method: [cultural_metapolitics, strong]
+      state_scope: [limited, typical]
+  - id: far_right_accelerationism
+    name: "Far-right accelerationism"
+    prior_weight: 0.03
+    blurb: "Hasten the collapse of the existing order because only ruins allow the desired one to be built."
+    positions:
+      transition_method: [insurrection, core]
+      violence_legitimacy: [total_war, core]
+      utopian_horizon: [restorationist_golden_age, strong]
+      organisation_form: [network, core]
+      electoral_participation: [boycott, core]
+      attitude_to_modernity: [reject_return, strong]
+      nation_concept: [ethnic, strong]
+      leadership_form: [none, typical]
+  - id: autonomous_nationalism
+    name: "Autonomous nationalism"
+    prior_weight: 0.02
+    blurb: "Far-right politics borrowing the black bloc's tactics, aesthetics and decentralised structure."
+    positions:
+      organisation_form: [affinity_group, core]
+      nation_concept: [ethnic, core]
+      violence_legitimacy: [insurrectionary, core]
+      electoral_participation: [boycott, core]
+      transition_method: [insurrection, strong]
+      art_and_culture: [avant_garde_rupture, typical]
+      leadership_form: [none, strong]
+      nationalism_stance: [core_value, core]
+  - id: national_anarchism
+    name: "National anarchism"
+    prior_weight: 0.03
+    blurb: "Stateless village communities separated by ethnicity, each governing itself and mixing with none."
+    positions:
+      state_trajectory: [abolish_now, core]
+      race_politics: [separatism, core]
+      scale_of_polity: [village_commune, core]
+      nation_concept: [ethnic, core]
+      technology_stance: [appropriate_scale, strong]
+      urban_rural: [back_to_land, strong]
+      federalism: [none_stateless, core]
+      hierarchy_stance: [natural_good, typical]
+      borders: [closed, strong]
+      tradition_stance: [restore, strong]
+  - id: esoteric_hitlerism
+    name: "Esoteric Hitlerism"
+    aliases: [Savitri Devi, Serrano]
+    prior_weight: 0.02
+    blurb: "National socialism read as a cosmic religious mythology of cycles, avatars and a coming golden age."
+    positions:
+      epistemic_authority: [esoteric_initiation, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      utopian_horizon: [restorationist_golden_age, core]
+      race_politics: [hierarchy_asserted, core]
+      tradition_stance: [transcend_esoteric, core]
+      nonhuman_status: [sacred, strong]
+      attitude_to_modernity: [reject_return, core]
+      leadership_form: [charismatic_leader, core]
+      ecology_priority: [misanthropic_deep, strong]
+  - id: ariosophy
+    name: "Ariosophy"
+    prior_weight: 0.02
+    blurb: "Occult racial mysticism claiming a lost Aryan wisdom recoverable through runes and initiation."
+    positions:
+      epistemic_authority: [esoteric_initiation, core]
+      race_politics: [hierarchy_asserted, core]
+      religion_in_public_life: [spiritual_syncretic, core]
+      tradition_stance: [transcend_esoteric, core]
+      utopian_horizon: [restorationist_golden_age, core]
+      nation_concept: [ethnic, core]
+      hierarchy_stance: [natural_good, core]
+      attitude_to_modernity: [reject_return, strong]
+  - id: turanism
+    name: "Turanism"
+    aliases: [Pan-Turkism]
+    prior_weight: 0.03
+    blurb: "The Turkic and related peoples of Eurasia belong in one political community stretching from the Balkans to Siberia."
+    positions:
+      scale_of_polity: [continental_bloc, core]
+      nation_concept: [ethnic, core]
+      nationalism_stance: [core_value, core]
+      language_politics: [national_language, core]
+      tradition_stance: [restore, strong]
+      borders: [controlled, typical]
+      internationalism: [national_interest, strong]
+      federalism: [federal, typical]
+  - id: strasserite_revival
+    name: "Strasserite revival"
+    prior_weight: 0.02
+    blurb: "The anti-capitalist wing of national socialism revived — nationalisation, worker councils and racial nationalism together."
+    positions:
+      nation_concept: [ethnic, core]
+      property_regime: [state_owned, core]
+      firm_form: [worker_cooperative, strong]
+      class_analysis: [producer_parasite, core]
+      economic_coordination: [central_planning, strong]
+      nationalism_stance: [core_value, core]
+      leadership_form: [collective, typical]
+      transition_method: [insurrection, strong]
+      internationalism: [isolationist, strong]
+  - id: distributist_radical_traditionalism
+    name: "Radical traditionalist distributism"
+    prior_weight: 0.02
+    blurb: "Small property and guilds pursued not as reform but as restoration of a pre-modern sacred order."
+    positions:
+      property_regime: [distributed_wide, core]
+      firm_form: [guild, core]
+      tradition_stance: [restore, core]
+      religion_in_public_life: [theocratic, strong]
+      attitude_to_modernity: [reject_return, core]
+      technology_stance: [primitivist_reject, typical]
+      urban_rural: [agrarian_rural, core]
+      hierarchy_stance: [natural_good, core]

@@ -1,0 +1,227 @@
+family: populism
+label: Populism
+family_defaults:
+  class_analysis: [elite_mass, typical]
+  constitutionalism: [parliamentary_supremacy, typical]
+  decision_procedure: [direct_democracy, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [civic_formation, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [popular_reason, typical]
+  firm_form: [household_artisan, typical]
+  hierarchy_stance: [minimise, typical]
+  human_nature: [cooperative_good, typical]
+  leadership_form: [charismatic_leader, typical]
+  market_role: [retained_bounded, typical]
+  money_form: [sovereign_fiat_expansive, typical]
+  organisation_form: [mass_party, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [distributed_wide, typical]
+  reform_vs_rupture: [reform, typical]
+  sovereignty_locus: [community, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [welfare_broad, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [conserve, typical]
+  transition_method: [electoral, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_is_virtue, typical]
+ideologies:
+  - id: left_populism
+    name: "Left populism"
+    aliases: [Laclau, Mouffe]
+    prior_weight: 0.25
+    blurb: "Build a people against an oligarchy by linking unmet demands into one shared front."
+    positions:
+      class_analysis: [elite_mass, core]
+      decision_procedure: [direct_democracy, strong]
+      leadership_form: [charismatic_leader, strong]
+      electoral_participation: [central, core]
+      welfare_provision: [universal_public, strong]
+      economic_coordination: [mixed_economy, strong]
+      nationalism_stance: [indifferent, typical]
+      transition_method: [electoral, core]
+      epistemic_authority: [popular_reason, core]
+      immigration: [welcome, strong]
+      nation_concept: [civic, typical]
+
+  - id: right_populism
+    name: "Right populism"
+    prior_weight: 0.3
+    blurb: "A native people betrayed by a cosmopolitan elite, restored by a leader who speaks for them directly."
+    positions:
+      class_analysis: [elite_mass, core]
+      immigration: [restrict_sharply, core]
+      leadership_form: [charismatic_leader, core]
+      nationalism_stance: [core_value, core]
+      decision_procedure: [direct_democracy, strong]
+      epistemic_authority: [popular_reason, core]
+      internationalism: [isolationist, strong]
+      tradition_stance: [restore, strong]
+      welfare_provision: [universal_public, typical]
+      electoral_participation: [central, core]
+      nation_concept: [ethnic, strong]
+
+  - id: peronism
+    name: "Peronism"
+    aliases: [Justicialism]
+    prior_weight: 0.15
+    blurb: "Social justice, economic independence and political sovereignty delivered by a movement around one leader."
+    positions:
+      leadership_form: [charismatic_leader, core]
+      class_analysis: [elite_mass, core]
+      organisation_form: [union, core]
+      economic_coordination: [mixed_economy, core]
+      nationalism_stance: [core_value, core]
+      welfare_provision: [universal_public, strong]
+      internationalism: [anti_imperialist_nationalist, strong]
+      political_pluralism: [dominant_party, strong]
+      firm_form: [guild, typical]
+  - id: varguismo
+    name: "Varguismo"
+    prior_weight: 0.03
+    blurb: "State-led industrialisation with labour rights granted from above and unions bound to the state."
+    positions:
+      state_scope: [developmental, core]
+      organisation_form: [union, core]
+      leadership_form: [charismatic_leader, core]
+      economic_coordination: [indicative_planning, core]
+      welfare_provision: [insurance_contributory, strong]
+      nationalism_stance: [core_value, strong]
+      political_pluralism: [dominant_party, strong]
+      firm_form: [state_enterprise, strong]
+  - id: narodnichestvo
+    name: "Narodnichestvo"
+    aliases: [Russian Populism, going to the people]
+    prior_weight: 0.05
+    blurb: "The peasant commune can reach socialism without passing through capitalism, if the intelligentsia awakens it."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      scale_of_polity: [village_commune, core]
+      property_regime: [communal, core]
+      land_regime: [commons, core]
+      class_analysis: [producer_parasite, strong]
+      attitude_to_modernity: [reject_return, strong]
+      education_aim: [critical_consciousness, core]
+      transition_method: [insurrection, typical]
+      technology_stance: [appropriate_scale, strong]
+  - id: socialist_revolutionaries
+    name: "Socialist Revolutionaries"
+    aliases: [SR Party, land socialisation]
+    prior_weight: 0.04
+    blurb: "Land to those who till it, socialism led by peasants as much as workers, and terror against officials."
+    positions:
+      land_regime: [collectivised, core]
+      urban_rural: [agrarian_rural, core]
+      violence_legitimacy: [revolutionary_terror, strong]
+      scale_of_polity: [village_commune, strong]
+      political_pluralism: [multiparty, strong]
+      class_analysis: [producer_parasite, strong]
+      federalism: [federal, typical]
+      electoral_participation: [central, strong]
+  - id: agrarian_populism
+    name: "Agrarian populism"
+    prior_weight: 0.08
+    blurb: "Farmers and small producers against banks, railroads and middlemen."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      class_analysis: [producer_parasite, core]
+      money_form: [sovereign_fiat_expansive, strong]
+      property_regime: [distributed_wide, strong]
+      market_role: [retained_bounded, strong]
+      electoral_participation: [central, core]
+      firm_form: [worker_cooperative, strong]
+      state_scope: [limited, typical]
+  - id: stamboliyski_agrarianism
+    name: "Agrarian Union"
+    aliases: [Stamboliyski, the peasant state]
+    prior_weight: 0.02
+    blurb: "The peasantry as the true nation, governing directly with land caps and compulsory labour service."
+    positions:
+      urban_rural: [agrarian_rural, core]
+      class_analysis: [producer_parasite, core]
+      land_regime: [tenured_use, core]
+      property_regime: [distributed_wide, core]
+      work_ethic: [work_is_duty, core]
+      political_pluralism: [dominant_party, strong]
+      internationalism: [cosmopolitan_universal, strong]
+      violence_legitimacy: [never, strong]
+      education_aim: [technical_capacity, strong]
+  - id: chayanovism
+    name: "Chayanovism"
+    prior_weight: 0.02
+    blurb: "The peasant household follows its own logic of need and drudgery, not profit — so it neither disappears nor scales."
+    positions:
+      firm_form: [household_artisan, core]
+      urban_rural: [agrarian_rural, core]
+      scale_of_polity: [village_commune, core]
+      class_analysis: [rejected, strong]
+      economic_coordination: [market_socialism, typical]
+      growth_stance: [steady_state, core]
+      property_regime: [cooperative, strong]
+      work_ethic: [work_reduced, typical]
+  - id: us_peoples_party
+    name: "People's Party populism"
+    prior_weight: 0.03
+    blurb: "Free silver, public railroads and a direct income tax against the money power."
+    positions:
+      money_form: [sovereign_fiat_expansive, core]
+      class_analysis: [producer_parasite, core]
+      urban_rural: [agrarian_rural, core]
+      property_regime: [state_owned, typical]
+      decision_procedure: [direct_democracy, strong]
+      electoral_participation: [central, core]
+      market_role: [retained_bounded, strong]
+  - id: poujadism
+    name: "Poujadism"
+    prior_weight: 0.02
+    blurb: "Shopkeepers and artisans in revolt against the tax inspector, the chain store and the metropolitan elite."
+    positions:
+      class_analysis: [producer_parasite, core]
+      firm_form: [household_artisan, core]
+      state_scope: [nightwatchman, core]
+      nationalism_stance: [core_value, strong]
+      market_role: [retained_bounded, strong]
+      internationalism: [isolationist, strong]
+      leadership_form: [charismatic_leader, strong]
+      attitude_to_modernity: [reject_return, strong]
+  - id: producerism
+    name: "Producerism"
+    prior_weight: 0.04
+    blurb: "The honest producing middle squeezed between parasitic elites above and dependents below."
+    positions:
+      class_analysis: [producer_parasite, core]
+      work_ethic: [work_is_virtue, core]
+      welfare_provision: [insurance_contributory, strong]
+      market_role: [retained_bounded, strong]
+      immigration: [restrict_sharply, typical]
+      firm_form: [household_artisan, strong]
+      distribution_principle: [desert_market, core]
+  - id: technopopulism
+    name: "Technopopulism"
+    prior_weight: 0.03
+    blurb: "Direct online participation combined with technical competence, against parties and ideology alike."
+    positions:
+      decision_procedure: [direct_democracy, core]
+      organisation_form: [network, core]
+      political_pluralism: [multiparty, typical]
+      class_analysis: [elite_mass, core]
+      epistemic_authority: [scientific_expertise, strong]
+      technology_stance: [industrial_neutral, strong]
+      leadership_form: [none, typical]
+      utopian_horizon: [none_pragmatic, strong]
+  - id: national_populism
+    name: "National populism"
+    prior_weight: 0.15
+    blurb: "Sovereignty, borders and cultural continuity as the core demands of a majority that feels displaced."
+    positions:
+      nationalism_stance: [core_value, core]
+      immigration: [restrict_sharply, core]
+      internationalism: [national_interest, core]
+      class_analysis: [elite_mass, core]
+      welfare_provision: [universal_public, typical]
+      decision_procedure: [direct_democracy, strong]
+      tradition_stance: [conserve, strong]
+      electoral_participation: [central, core]

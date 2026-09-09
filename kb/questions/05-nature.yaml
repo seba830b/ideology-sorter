@@ -1,0 +1,161 @@
+questions:
+  - id: q_reject_technology
+    tenet: technology_stance
+    tier: 1
+    prompt: "Industrial technology has done more harm than good and much of it should be dismantled."
+    expected: {primitivist_reject: 2, appropriate_scale: 1, industrial_neutral: -1, accelerate: -2, transhuman: -2}
+  - id: q_accelerate_technology
+    tenet: technology_stance
+    tier: 1
+    prompt: "We should develop technology as fast as possible and worry about the consequences later."
+    expected: {accelerate: 2, transhuman: 2, industrial_neutral: 0, appropriate_scale: -2, primitivist_reject: -2}
+  - id: q_small_scale_technology
+    tenet: technology_stance
+    tier: 2
+    prompt: "Technology should be kept at a human scale that communities can understand and control."
+    expected: {appropriate_scale: 2, primitivist_reject: 1, industrial_neutral: -1, accelerate: -2, transhuman: -2}
+  - id: q_transcend_biology
+    tenet: technology_stance
+    tier: 2
+    prompt: "We should use technology to change what human beings physically are."
+    expected: {transhuman: 2, accelerate: 1, industrial_neutral: -1, appropriate_scale: -2, primitivist_reject: -2}
+  - id: q_ecology_is_everything
+    tenet: ecology_priority
+    tier: 1
+    prompt: "The ecological crisis is the central political question of our time."
+    expected: {primary_frame: 2, misanthropic_deep: 2, central_constraint: 1, managed_externality: -1, dismissed: -2}
+  - id: q_ecology_overstated
+    tenet: ecology_priority
+    tier: 1
+    prompt: "Environmental concerns are overstated and get in the way of more important goals."
+    expected: {dismissed: 2, managed_externality: 1, central_constraint: -1, primary_frame: -2, misanthropic_deep: -2}
+  - id: q_humans_are_the_problem
+    tenet: ecology_priority
+    tier: 3
+    prompt: "Humanity as such is a burden on the natural world."
+    expected: {misanthropic_deep: 2, primary_frame: 0, central_constraint: -1, managed_externality: -2, dismissed: -2}
+  - id: q_animals_have_rights
+    tenet: nonhuman_status
+    tier: 1
+    prompt: "Animals have interests that count morally, comparable to our own."
+    expected: {liberation_subject: 2, rights_bearing: 2, sacred: 1, welfare_regulated: 0, resource: -2}
+  - id: q_animals_are_resources
+    tenet: nonhuman_status
+    tier: 2
+    prompt: "Animals and nature exist for human use."
+    expected: {resource: 2, welfare_regulated: 0, rights_bearing: -2, liberation_subject: -2, sacred: -2}
+  - id: q_nature_is_sacred
+    tenet: nonhuman_status
+    tier: 3
+    prompt: "The natural world is sacred and owed reverence, not merely protection."
+    expected: {sacred: 2, liberation_subject: 1, rights_bearing: 1, welfare_regulated: -1, resource: -2}
+  - id: q_people_are_cooperative
+    tenet: human_nature
+    tier: 1
+    prompt: "People are naturally cooperative, and it is bad institutions that make them selfish."
+    expected: {cooperative_good: 2, historically_produced: 1, perfectible: 1, self_interested_rational: -2, fallen_needs_restraint: -2}
+  - id: q_people_need_restraint
+    tenet: human_nature
+    tier: 1
+    prompt: "Human beings are flawed and need firm institutions to restrain them."
+    expected: {fallen_needs_restraint: 2, self_interested_rational: 1, historically_produced: -1, cooperative_good: -2, perfectible: -2}
+  - id: q_people_are_self_interested
+    tenet: human_nature
+    tier: 2
+    prompt: "People act mainly on rational self-interest, and good systems work with that rather than against it."
+    expected: {self_interested_rational: 2, fallen_needs_restraint: 1, cooperative_good: -2, perfectible: -2, historically_produced: -1}
+  - id: q_people_are_perfectible
+    tenet: human_nature
+    tier: 2
+    prompt: "A new and better kind of human being can be created."
+    expected: {perfectible: 2, cooperative_good: 1, historically_produced: 1, fallen_needs_restraint: -2, self_interested_rational: -2}
+  - id: q_human_nature_is_made
+    tenet: human_nature
+    tier: 3
+    prompt: "There is no fixed human nature; people are products of their historical conditions."
+    expected: {historically_produced: 2, perfectible: 1, cooperative_good: 0, fallen_needs_restraint: -2, self_interested_rational: -2}
+  - id: q_defeat_death
+    tenet: death_and_finitude
+    tier: 2
+    prompt: "Ageing and death are technical problems that we should be working to solve."
+    expected: {defeat_technologically: 2, resurrect_all: 2, accept_natural: -2, religious_afterlife: -1, extinction_desirable: -2}
+  - id: q_resurrect_the_dead
+    tenet: death_and_finitude
+    tier: 3
+    prompt: "Humanity's highest task is to bring back everyone who has ever died."
+    expected: {resurrect_all: 2, defeat_technologically: 1, religious_afterlife: 0, accept_natural: -2, extinction_desirable: -2}
+  - id: q_accept_mortality
+    tenet: death_and_finitude
+    tier: 2
+    prompt: "Death is a natural part of life and should be accepted rather than fought."
+    expected: {accept_natural: 2, religious_afterlife: 1, defeat_technologically: -2, resurrect_all: -2, extinction_desirable: 0}
+  - id: q_extinction_would_be_good
+    tenet: death_and_finitude
+    tier: 3
+    prompt: "It would be better if sentient life came to an end."
+    expected: {extinction_desirable: 2, accept_natural: -1, religious_afterlife: -2, defeat_technologically: -2, resurrect_all: -2}
+  - id: q_space_is_our_destiny
+    tenet: space_expansion
+    tier: 2
+    prompt: "Settling space is humanity's real long-term purpose."
+    expected: {human_destiny: 2, escape_hatch: 1, national_prestige: 0, irrelevant: -2}
+  - id: q_space_is_a_distraction
+    tenet: space_expansion
+    tier: 2
+    prompt: "Space exploration is a distraction from problems here on earth."
+    expected: {irrelevant: 2, national_prestige: 0, escape_hatch: -1, human_destiny: -2}
+  - id: q_threefold_spheres
+    tenet: sphere_separation
+    tier: 3
+    prompt: "Cultural life, political life and economic life should each be governed by entirely separate independent bodies."
+    expected: {threefold_cultural_political_economic: 2, functional_pluralism: 1, church_state_separate: 0, unified_state: -2}
+  - id: q_church_and_state_separate
+    tenet: sphere_separation
+    tier: 2
+    prompt: "Religion and government must be kept strictly apart."
+    expected: {church_state_separate: 2, functional_pluralism: 0, threefold_cultural_political_economic: 1, unified_state: -2}
+  - id: q_one_unified_order
+    tenet: sphere_separation
+    tier: 3
+    prompt: "Religion, politics and economy should form one unified order under a single authority."
+    expected: {unified_state: 2, church_state_separate: -2, threefold_cultural_political_economic: -2, functional_pluralism: -2}
+  - id: q_embrace_modernity
+    tenet: attitude_to_modernity
+    tier: 1
+    prompt: "The modern world is broadly an improvement on what came before."
+    expected: {embrace: 2, critical_engagement: 0, transcend_forward: 1, reject_return: -2}
+  - id: q_modernity_was_a_wrong_turn
+    tenet: attitude_to_modernity
+    tier: 1
+    prompt: "Modernity was a wrong turn, and we should go back to something older."
+    expected: {reject_return: 2, critical_engagement: -1, embrace: -2, transcend_forward: -1}
+  - id: q_go_through_and_beyond
+    tenet: attitude_to_modernity
+    tier: 2
+    prompt: "The answer is not to reverse modernity but to push through it into something entirely new."
+    expected: {transcend_forward: 2, embrace: 1, critical_engagement: 0, reject_return: -2}
+  - id: q_no_utopia
+    tenet: utopian_horizon
+    tier: 1
+    prompt: "There is no ideal society to aim at; politics is just managing problems as they come."
+    expected: {none_pragmatic: 2, gradual_improvement: 0, achievable_new_order: -2, restorationist_golden_age: -2, transcendent_eschaton: -2}
+  - id: q_new_order_possible
+    tenet: utopian_horizon
+    tier: 1
+    prompt: "A fundamentally better kind of society is achievable and we should aim directly at it."
+    expected: {achievable_new_order: 2, transcendent_eschaton: 1, gradual_improvement: 0, none_pragmatic: -2, restorationist_golden_age: 0}
+  - id: q_golden_age_behind_us
+    tenet: utopian_horizon
+    tier: 2
+    prompt: "The best society already existed once, and the goal is to get back to it."
+    expected: {restorationist_golden_age: 2, none_pragmatic: -1, achievable_new_order: -1, gradual_improvement: -2, transcendent_eschaton: 0}
+  - id: q_eschatological
+    tenet: utopian_horizon
+    tier: 3
+    prompt: "History is heading toward a final transformation of a kind beyond ordinary politics."
+    expected: {transcendent_eschaton: 2, achievable_new_order: 1, restorationist_golden_age: 0, none_pragmatic: -2, gradual_improvement: -2}
+  - id: q_steady_improvement
+    tenet: utopian_horizon
+    tier: 2
+    prompt: "Things get better slowly through accumulated small reforms, and that is the most we should expect."
+    expected: {gradual_improvement: 2, none_pragmatic: 1, achievable_new_order: -2, transcendent_eschaton: -2, restorationist_golden_age: -2}

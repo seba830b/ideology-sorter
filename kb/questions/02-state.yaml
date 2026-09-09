@@ -1,0 +1,271 @@
+questions:
+  - id: q_abolish_state
+    tenet: state_trajectory
+    tier: 1
+    prompt: "The state should be abolished outright, not reduced or reformed."
+    expected: {abolish_now: 2, replace_with_confederation: 2, replace_with_market: 1, wither_away: 1, minimal: -1, permanent_strong: -2}
+  - id: q_minimal_state_legitimate
+    tenet: state_trajectory
+    tier: 2
+    prompt: "A state limited to courts, police and defence is legitimate and should be kept."
+    expected: {minimal: 2, permanent_strong: 0, abolish_now: -2, replace_with_market: -2, replace_with_confederation: -2, wither_away: -1}
+  - id: q_private_defence_agencies
+    tenet: state_trajectory
+    tier: 3
+    prompt: "Even courts, police and defence should be provided by competing private firms rather than a government."
+    expected: {replace_with_market: 2, abolish_now: 1, minimal: -2, permanent_strong: -2, replace_with_confederation: -1, wither_away: -1}
+  - id: q_state_withers
+    tenet: state_trajectory
+    tier: 3
+    prompt: "A revolutionary state is necessary first, and will gradually become unnecessary later."
+    expected: {wither_away: 2, permanent_strong: 0, abolish_now: -2, minimal: -1, replace_with_market: -2, replace_with_confederation: -1}
+  - id: q_confederation_of_communes
+    tenet: state_trajectory
+    tier: 3
+    prompt: "The state should be replaced by a confederation of self-governing communities, not simply removed."
+    expected: {replace_with_confederation: 2, abolish_now: 1, wither_away: 0, minimal: -2, permanent_strong: -2, replace_with_market: -1}
+  - id: q_strong_permanent_state
+    tenet: state_trajectory
+    tier: 2
+    prompt: "A strong state is a permanent good, not a stage to be passed through."
+    expected: {permanent_strong: 2, minimal: -1, wither_away: -2, abolish_now: -2, replace_with_market: -2, replace_with_confederation: -2}
+  - id: q_state_does_everything
+    tenet: state_scope
+    tier: 1
+    prompt: "The state should direct the whole of national life, not just a few areas of it."
+    expected: {total: 2, developmental: 1, welfare_broad: 0, limited: -2, nightwatchman: -2}
+  - id: q_nightwatchman
+    tenet: state_scope
+    tier: 1
+    prompt: "Government should do almost nothing beyond protecting people from force and fraud."
+    expected: {nightwatchman: 2, limited: 1, welfare_broad: -2, developmental: -2, total: -2}
+  - id: q_developmental_state
+    tenet: state_scope
+    tier: 3
+    prompt: "The state should actively pick industries and drive national economic development."
+    expected: {developmental: 2, total: 1, welfare_broad: 0, limited: -2, nightwatchman: -2}
+  - id: q_sovereignty_individual
+    tenet: sovereignty_locus
+    tier: 2
+    prompt: "Ultimate authority rests with the individual, and no collective can override it."
+    expected: {individual: 2, community: -1, nation: -2, class: -2, divine: -2, humanity: 0, federation: 0}
+  - id: q_sovereignty_nation
+    tenet: sovereignty_locus
+    tier: 2
+    prompt: "The nation is the highest political community and its interests come first."
+    expected: {nation: 2, community: 0, individual: -2, humanity: -2, class: -2, divine: -1, federation: -1}
+  - id: q_sovereignty_divine
+    tenet: sovereignty_locus
+    tier: 2
+    prompt: "Political authority ultimately comes from God, not from the people."
+    expected: {divine: 2, nation: -1, individual: -2, class: -2, humanity: -2, community: -1}
+  - id: q_sovereignty_humanity
+    tenet: sovereignty_locus
+    tier: 3
+    prompt: "Our first political loyalty is to humanity as a whole, not to any nation or community."
+    expected: {humanity: 2, federation: 1, individual: 0, nation: -2, divine: -2, community: -1}
+  - id: q_sovereignty_class
+    tenet: sovereignty_locus
+    tier: 3
+    prompt: "Legitimate authority belongs to the working class as a class."
+    expected: {class: 2, community: 0, nation: -2, divine: -2, individual: -2, humanity: 0}
+  - id: q_direct_democracy
+    tenet: decision_procedure
+    tier: 1
+    prompt: "Important decisions should be made by everyone affected, meeting and voting directly."
+    expected: {direct_democracy: 2, consensus: 1, delegation_recallable: 1, sortition: 1, representative_election: -1, expert_rule: -2, monarch: -2, vanguard_party: -2, clerical_authority: -2, market_signal: -1, prediction_market: -1}
+  - id: q_experts_should_decide
+    tenet: decision_procedure
+    tier: 1
+    prompt: "Most political questions have technically correct answers, and qualified experts should decide them."
+    expected: {expert_rule: 2, prediction_market: 1, representative_election: -1, direct_democracy: -2, consensus: -2, sortition: -2, clerical_authority: 0, monarch: 0}
+  - id: q_sortition_specific
+    tenet: decision_procedure
+    tier: 3
+    prompt: "Public offices should be filled by lottery from among ordinary citizens rather than by election."
+    expected: {sortition: 2, direct_democracy: 1, representative_election: -2, expert_rule: -2, vanguard_party: -2, monarch: -2}
+  - id: q_prediction_markets
+    tenet: decision_procedure
+    tier: 3
+    prompt: "We should vote on what we want, then let betting markets determine which policy achieves it."
+    expected: {prediction_market: 2, market_signal: 1, expert_rule: 0, direct_democracy: -2, consensus: -2, clerical_authority: -2, monarch: -2}
+  - id: q_vanguard_party_rule
+    tenet: decision_procedure
+    tier: 2
+    prompt: "A disciplined revolutionary party should hold political power on behalf of the working class."
+    expected: {vanguard_party: 2, expert_rule: 0, representative_election: -2, direct_democracy: -2, delegation_recallable: -1, consensus: -2, monarch: -2}
+  - id: q_clerical_rule
+    tenet: decision_procedure
+    tier: 2
+    prompt: "Religious authorities should have the final word on the laws of the land."
+    expected: {clerical_authority: 2, monarch: 0, representative_election: -2, direct_democracy: -2, expert_rule: -2, market_signal: -2}
+  - id: q_monarch_decides
+    tenet: decision_procedure
+    tier: 2
+    prompt: "A hereditary ruler with real authority is a better arrangement than any assembly."
+    expected: {monarch: 2, clerical_authority: 1, representative_election: -2, direct_democracy: -2, sortition: -2, vanguard_party: -2}
+  - id: q_recallable_delegates
+    tenet: decision_procedure
+    tier: 3
+    prompt: "Delegates should carry binding mandates and be recallable at any moment, not exercise independent judgement."
+    expected: {delegation_recallable: 2, direct_democracy: 1, sortition: 0, representative_election: -2, expert_rule: -2, monarch: -2}
+  - id: q_consensus_process
+    tenet: decision_procedure
+    tier: 3
+    prompt: "Groups should decide by consensus, not by majority vote."
+    expected: {consensus: 2, direct_democracy: 0, representative_election: -1, expert_rule: -2, monarch: -2, vanguard_party: -2}
+  - id: q_multiparty_essential
+    tenet: political_pluralism
+    tier: 1
+    prompt: "Competing political parties and free elections are essential to any decent society."
+    expected: {multiparty: 2, dominant_party: 0, single_party: -2, no_parties_councils: -1, no_parties_traditional: -2}
+  - id: q_one_party
+    tenet: political_pluralism
+    tier: 2
+    prompt: "A single party should hold power, since competing parties only divide the people."
+    expected: {single_party: 2, dominant_party: 1, multiparty: -2, no_parties_councils: -1, no_parties_traditional: 0}
+  - id: q_councils_not_parties
+    tenet: political_pluralism
+    tier: 3
+    prompt: "Power should rest with workers' or citizens' councils, and political parties should have no role at all."
+    expected: {no_parties_councils: 2, no_parties_traditional: 0, single_party: -2, multiparty: -2, dominant_party: -2}
+  - id: q_parties_are_modern_disease
+    tenet: political_pluralism
+    tier: 3
+    prompt: "Party politics is a modern corruption; authority should rest on tradition and office instead."
+    expected: {no_parties_traditional: 2, single_party: 0, multiparty: -2, no_parties_councils: -1, dominant_party: 0}
+  - id: q_state_monopoly_force
+    tenet: legitimate_violence
+    tier: 2
+    prompt: "Only the state should be allowed to use force."
+    expected: {state_monopoly: 2, revolutionary_vanguard: 0, competing_providers: -2, communal_militia: -2, none_pacifist: -1}
+  - id: q_community_militia
+    tenet: legitimate_violence
+    tier: 3
+    prompt: "Communities should defend themselves through their own armed militias rather than rely on a state army."
+    expected: {communal_militia: 2, competing_providers: 0, state_monopoly: -2, none_pacifist: -2, revolutionary_vanguard: 1}
+  - id: q_no_one_may_use_force
+    tenet: legitimate_violence
+    tier: 2
+    prompt: "Organised violence is never legitimate, for anyone, including the state."
+    expected: {none_pacifist: 2, communal_militia: -2, state_monopoly: -2, competing_providers: -1, revolutionary_vanguard: -2}
+  - id: q_abolish_police
+    tenet: policing
+    tier: 1
+    prompt: "The police should be abolished, not reformed."
+    expected: {abolish: 2, community_controlled: 1, professional: -2, private: -1}
+  - id: q_community_policing
+    tenet: policing
+    tier: 3
+    prompt: "Policing should be carried out by the community itself, under its direct control."
+    expected: {community_controlled: 2, abolish: 1, professional: -2, private: -1}
+  - id: q_private_security
+    tenet: policing
+    tier: 3
+    prompt: "Protection should be bought from competing private firms."
+    expected: {private: 2, professional: -1, community_controlled: -2, abolish: -1}
+  - id: q_abolish_hierarchy
+    tenet: hierarchy_stance
+    tier: 1
+    prompt: "All relationships of command and obedience between people should be abolished."
+    expected: {abolish: 2, minimise: 1, functional_necessary: -1, natural_good: -2}
+  - id: q_hierarchy_natural
+    tenet: hierarchy_stance
+    tier: 1
+    prompt: "Hierarchy is natural and good; some people are fit to lead and others to follow."
+    expected: {natural_good: 2, functional_necessary: 1, minimise: -2, abolish: -2}
+  - id: q_charismatic_leader
+    tenet: leadership_form
+    tier: 2
+    prompt: "A nation is best served by one strong leader who embodies its will."
+    expected: {charismatic_leader: 2, hereditary: 1, collective: -2, rotating_delegates: -2, none: -2, technocratic_board: -1}
+  - id: q_no_leaders
+    tenet: leadership_form
+    tier: 2
+    prompt: "There should be no leaders of any kind."
+    expected: {none: 2, rotating_delegates: 1, collective: 0, charismatic_leader: -2, hereditary: -2, technocratic_board: -2}
+  - id: q_hereditary_leadership
+    tenet: leadership_form
+    tier: 3
+    prompt: "Leadership passing down within a family gives a country continuity that elections cannot."
+    expected: {hereditary: 2, charismatic_leader: 0, collective: -2, rotating_delegates: -2, none: -2, technocratic_board: -2}
+  - id: q_technocratic_board
+    tenet: leadership_form
+    tier: 3
+    prompt: "A country should be run by a board of qualified specialists, like a well-managed organisation."
+    expected: {technocratic_board: 2, collective: 0, charismatic_leader: -1, hereditary: -2, none: -2, rotating_delegates: -1}
+  - id: q_rotating_delegates
+    tenet: leadership_form
+    tier: 3
+    prompt: "Whoever holds office should rotate frequently, so that nobody becomes a permanent leader."
+    expected: {rotating_delegates: 2, none: 1, collective: 1, charismatic_leader: -2, hereditary: -2, technocratic_board: -2}
+  - id: q_entrenched_rights
+    tenet: constitutionalism
+    tier: 2
+    prompt: "Certain individual rights should be written into a constitution and placed beyond the reach of any majority."
+    expected: {entrenched_rights: 2, parliamentary_supremacy: -1, revolutionary_legality: -2, divine_law: 0, no_constitution: -2}
+  - id: q_no_written_constitution
+    tenet: constitutionalism
+    tier: 3
+    prompt: "A society does not need a written constitution; custom and tradition are enough."
+    expected: {no_constitution: 2, parliamentary_supremacy: 1, entrenched_rights: -2, revolutionary_legality: -1, divine_law: 0}
+  - id: q_law_from_god
+    tenet: rights_basis
+    tier: 1
+    prompt: "Rights and laws come from divine command, not from human agreement."
+    expected: {divine_law: 2, natural_individual: 0, collective_historical: -1, positive_legal: -2, none_power: -2}
+  - id: q_natural_rights
+    tenet: rights_basis
+    tier: 2
+    prompt: "People have natural rights that exist prior to any government."
+    expected: {natural_individual: 2, divine_law: 1, positive_legal: -1, collective_historical: -1, none_power: -2}
+  - id: q_rights_are_fictions
+    tenet: rights_basis
+    tier: 2
+    prompt: "Rights are useful fictions; in the end only power decides anything."
+    expected: {none_power: 2, positive_legal: 0, natural_individual: -2, divine_law: -2, collective_historical: -1}
+  - id: q_collective_rights
+    tenet: rights_basis
+    tier: 3
+    prompt: "Rights belong to peoples and communities with a shared history, not only to individuals."
+    expected: {collective_historical: 2, divine_law: 0, positive_legal: 0, natural_individual: -2, none_power: -1}
+  - id: q_free_speech_absolute
+    tenet: speech_norms
+    tier: 1
+    prompt: "There should be no legal limit whatsoever on what people may say."
+    expected: {absolutist: 2, broadly_free: 1, restricted_for_harm: -2, ideologically_policed: -2, traditional_blasphemy_limits: -2}
+  - id: q_speech_harm_limits
+    tenet: speech_norms
+    tier: 2
+    prompt: "Speech that degrades or endangers vulnerable groups should be legally restricted."
+    expected: {restricted_for_harm: 2, ideologically_policed: 1, broadly_free: -1, absolutist: -2, traditional_blasphemy_limits: 0}
+  - id: q_blasphemy_limits
+    tenet: speech_norms
+    tier: 3
+    prompt: "Insulting what a community holds sacred should not be permitted."
+    expected: {traditional_blasphemy_limits: 2, ideologically_policed: 1, restricted_for_harm: 0, broadly_free: -2, absolutist: -2}
+  - id: q_prisons_abolished
+    tenet: punishment
+    tier: 1
+    prompt: "Prisons should be abolished and replaced with something else entirely."
+    expected: {abolitionist: 2, restorative: 1, rehabilitative: 0, deterrent_proportional: -2, retributive_harsh: -2}
+  - id: q_harsh_punishment
+    tenet: punishment
+    tier: 2
+    prompt: "Serious crimes deserve severe punishment, whatever its effect on the offender."
+    expected: {retributive_harsh: 2, deterrent_proportional: 1, rehabilitative: -2, restorative: -2, abolitionist: -2}
+  - id: q_restorative_justice
+    tenet: punishment
+    tier: 3
+    prompt: "Justice should focus on repairing the harm done and reconciling the parties, not on punishing."
+    expected: {restorative: 2, abolitionist: 1, rehabilitative: 1, deterrent_proportional: -1, retributive_harsh: -2}
+  - id: q_self_ownership
+    tenet: property_in_person
+    tier: 2
+    prompt: "You own yourself absolutely and may do anything you like with your own body."
+    expected: {self_ownership_absolute: 2, bodily_autonomy_qualified: 1, community_claims: -2, divine_stewardship: -2}
+  - id: q_body_belongs_to_god
+    tenet: property_in_person
+    tier: 3
+    prompt: "Your body is not yours to dispose of as you please; it is held in trust."
+    expected: {divine_stewardship: 2, community_claims: 1, bodily_autonomy_qualified: -1, self_ownership_absolute: -2}

@@ -1,0 +1,303 @@
+family: market_anarchism
+label: Individualist & market anarchism
+family_defaults:
+  borders: [abolished, typical]
+  class_analysis: [producer_parasite, typical]
+  constitutionalism: [no_constitution, typical]
+  decision_procedure: [direct_democracy, typical]
+  distribution_principle: [contribution_labour, typical]
+  economic_coordination: [market_socialism, typical]
+  education_aim: [critical_consciousness, typical]
+  electoral_participation: [boycott, typical]
+  epistemic_authority: [popular_reason, typical]
+  family_form: [egalitarian_nuclear, typical]
+  federalism: [none_stateless, typical]
+  firm_form: [household_artisan, typical]
+  gender_order: [structural_liberation, typical]
+  healthcare: [communal_mutual, typical]
+  hierarchy_stance: [abolish, typical]
+  housing: [occupancy_use, typical]
+  human_nature: [cooperative_good, typical]
+  immigration: [open_borders, typical]
+  inheritance: [abolished, typical]
+  internationalism: [proletarian_internationalist, typical]
+  land_regime: [tenured_use, typical]
+  leadership_form: [none, typical]
+  legitimate_violence: [communal_militia, typical]
+  market_role: [central, typical]
+  money_form: [mutual_credit, typical]
+  nationalism_stance: [hostile, typical]
+  organisation_form: [affinity_group, typical]
+  policing: [abolish, typical]
+  political_pluralism: [no_parties_councils, typical]
+  property_in_person: [self_ownership_absolute, typical]
+  property_regime: [mutualist_possession, typical]
+  punishment: [abolitionist, typical]
+  reform_vs_rupture: [rupture, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  reproductive_politics: [reproductive_freedom, typical]
+  rights_basis: [natural_individual, typical]
+  scale_of_polity: [village_commune, typical]
+  secession_right: [exit_by_individual, typical]
+  sexuality_stance: [liberationist, typical]
+  sovereignty_locus: [individual, typical]
+  speech_norms: [absolutist, typical]
+  state_scope: [nightwatchman, typical]
+  state_trajectory: [abolish_now, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [reject, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  vanguard_role: [rejected, typical]
+  welfare_provision: [mutual_aid, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+
+  - id: mutualism
+    name: Mutualism
+    aliases: [Proudhonism]
+    prior_weight: 0.3
+    blurb: "Property is legitimate only where you occupy and use it; free credit and worker associations replace capitalism without a state."
+    positions:
+      property_regime: [mutualist_possession, core]
+      money_form: [mutual_credit, core]
+      land_regime: [tenured_use, core]
+      housing: [occupancy_use, core]
+      market_role: [retained_bounded, core]
+      state_trajectory: [abolish_now, core]
+      firm_form: [worker_cooperative, core]
+      distribution_principle: [contribution_labour, core]
+      federalism: [confederal, strong]
+      transition_method: [prefigurative, strong]
+      hierarchy_stance: [abolish, strong]
+      inheritance: [taxed, typical]
+      wage_labour: [abolish_via_coops, core]
+
+  - id: individualist_anarchism
+    name: Individualist anarchism
+    aliases: [Tuckerite, Boston anarchism]
+    prior_weight: 0.2
+    blurb: "The sovereign individual in a free market stripped of the four monopolies the state grants to capital."
+    positions:
+      sovereignty_locus: [individual, core]
+      property_in_person: [self_ownership_absolute, core]
+      property_regime: [mutualist_possession, strong]
+      money_form: [private_competing, core]
+      market_role: [central, core]
+      state_trajectory: [abolish_now, core]
+      firm_form: [household_artisan, strong]
+      distribution_principle: [contribution_labour, strong]
+      organisation_form: [none, strong]
+      speech_norms: [absolutist, core]
+      welfare_provision: [mutual_aid, strong]
+      hierarchy_stance: [minimise, typical]
+
+  - id: egoism
+    name: Egoism
+    aliases: [Stirnerism, union of egoists]
+    prior_weight: 0.2
+    blurb: "Every cause above you — state, God, humanity, morality — is a spook; only your own interest is real."
+    positions:
+      sovereignty_locus: [individual, core]
+      rights_basis: [none_power, core]
+      state_trajectory: [abolish_now, core]
+      organisation_form: [affinity_group, core]
+      utopian_horizon: [none_pragmatic, core]
+      religion_in_public_life: [militantly_secular, strong]
+      hierarchy_stance: [abolish, strong]
+      property_in_person: [self_ownership_absolute, core]
+      speech_norms: [absolutist, core]
+      human_nature: [self_interested_rational, strong]
+      tradition_stance: [reject, strong]
+
+  - id: egoist_communism
+    name: Egoist communism
+    aliases: [Novatore, anarcho-nihilist communism]
+    prior_weight: 0.05
+    blurb: "Communism chosen selfishly — the union of egoists finds abundance more satisfying than property."
+    positions:
+      rights_basis: [none_power, core]
+      property_regime: [communal, core]
+      market_role: [abolished, core]
+      sovereignty_locus: [individual, core]
+      organisation_form: [affinity_group, core]
+      state_trajectory: [abolish_now, core]
+      utopian_horizon: [none_pragmatic, strong]
+      distribution_principle: [need, strong]
+      violence_legitimacy: [insurrectionary, strong]
+
+  - id: illegalism
+    name: Illegalism
+    aliases: [Bonnot Gang, propaganda by the deed]
+    prior_weight: 0.06
+    blurb: "Theft and expropriation are not merely tolerable but the honest response of an individual at war with society."
+    positions:
+      violence_legitimacy: [insurrectionary, core]
+      rights_basis: [none_power, core]
+      punishment: [abolitionist, strong]
+      state_trajectory: [abolish_now, core]
+      organisation_form: [affinity_group, core]
+      transition_method: [insurrection, core]
+      sovereignty_locus: [individual, core]
+      work_ethic: [work_abolished, strong]
+      utopian_horizon: [none_pragmatic, strong]
+
+  - id: insurrectionary_anarchism
+    name: Insurrectionary anarchism
+    aliases: [Bonanno, informal organisation]
+    prior_weight: 0.1
+    blurb: "Permanent attack by small informal groups, refusing to wait for mass organisations that never arrive."
+    positions:
+      organisation_form: [affinity_group, core]
+      violence_legitimacy: [insurrectionary, core]
+      transition_method: [insurrection, core]
+      state_trajectory: [abolish_now, core]
+      electoral_participation: [boycott, core]
+      hierarchy_stance: [abolish, core]
+      utopian_horizon: [none_pragmatic, strong]
+      vanguard_role: [rejected, core]
+      policing: [abolish, core]
+
+  - id: agorism
+    name: Agorism
+    aliases: [counter-economics, Konkin]
+    prior_weight: 0.12
+    blurb: "Build the black market until it starves the state — revolution by untaxed trade rather than by ballot or bullet."
+    positions:
+      transition_method: [counter_economics, core]
+      market_role: [central, core]
+      state_trajectory: [replace_with_market, core]
+      money_form: [private_competing, core]
+      property_in_person: [self_ownership_absolute, core]
+      electoral_participation: [boycott, core]
+      violence_legitimacy: [defensive_only, core]
+      property_regime: [private_absolute, strong]
+      organisation_form: [network, strong]
+      welfare_provision: [mutual_aid, strong]
+      sovereignty_locus: [individual, core]
+
+  - id: left_market_anarchism
+    name: Left-wing market anarchism
+    aliases: [C4SS, Carson, freed markets]
+    prior_weight: 0.1
+    blurb: "Genuinely free markets would dissolve corporations and bosses; capitalism survives only on state privilege."
+    positions:
+      market_role: [central, core]
+      property_regime: [mutualist_possession, core]
+      firm_form: [worker_cooperative, core]
+      state_trajectory: [abolish_now, core]
+      land_regime: [tenured_use, strong]
+      class_analysis: [producer_parasite, strong]
+      wage_labour: [abolish_via_coops, core]
+      gender_order: [structural_liberation, strong]
+      hierarchy_stance: [abolish, strong]
+      welfare_provision: [mutual_aid, core]
+      money_form: [mutual_credit, strong]
+
+  - id: voluntaryism
+    name: Voluntaryism
+    prior_weight: 0.12
+    blurb: "Every human relationship must rest on consent; no one may be governed, taxed or conscripted without agreeing."
+    positions:
+      state_trajectory: [replace_with_market, core]
+      electoral_participation: [boycott, core]
+      violence_legitimacy: [never, strong]
+      property_in_person: [self_ownership_absolute, core]
+      rights_basis: [natural_individual, core]
+      transition_method: [withdrawal, core]
+      welfare_provision: [charity_voluntary, core]
+      market_role: [central, strong]
+      sovereignty_locus: [individual, core]
+
+  - id: panarchism
+    name: Panarchism
+    aliases: [de Puydt, political non-territorialism]
+    prior_weight: 0.05
+    blurb: "Choose your government the way you choose a religion — many regimes on the same territory, each with its own subscribers."
+    positions:
+      secession_right: [exit_by_individual, core]
+      scale_of_polity: [household, core]
+      sovereignty_locus: [individual, core]
+      federalism: [confederal, strong]
+      borders: [abolished, core]
+      political_pluralism: [multiparty, typical]
+      state_trajectory: [replace_with_market, strong]
+      decision_procedure: [market_signal, strong]
+      constitutionalism: [entrenched_rights, weak]
+
+  - id: ontological_anarchism
+    name: Ontological anarchism
+    aliases: [Hakim Bey, temporary autonomous zone]
+    prior_weight: 0.05
+    blurb: "Don't seize the state — open temporary zones of freedom that dissolve before power can find them."
+    positions:
+      transition_method: [withdrawal, core]
+      organisation_form: [affinity_group, core]
+      state_trajectory: [abolish_now, strong]
+      utopian_horizon: [none_pragmatic, core]
+      art_and_culture: [avant_garde_rupture, core]
+      religion_in_public_life: [spiritual_syncretic, strong]
+      sexuality_stance: [liberationist, strong]
+      epistemic_authority: [esoteric_initiation, strong]
+      electoral_participation: [boycott, core]
+
+  - id: mutual_banking
+    name: Mutual banking
+    aliases: [Greene, free banking for labour]
+    prior_weight: 0.03
+    blurb: "The single reform that matters is credit at cost; interest is the tax that makes capitalism possible."
+    positions:
+      money_form: [mutual_credit, core]
+      market_role: [central, core]
+      firm_form: [household_artisan, strong]
+      property_regime: [mutualist_possession, strong]
+      transition_method: [prefigurative, core]
+      state_trajectory: [minimal, typical]
+      distribution_principle: [contribution_labour, strong]
+      class_analysis: [producer_parasite, strong]
+
+  - id: anarcho_monarchism
+    name: Anarcho-monarchism
+    prior_weight: 0.04
+    blurb: "A powerless ceremonial king above, and no state at all below — hierarchy as symbol rather than as administration."
+    positions:
+      leadership_form: [hereditary, core]
+      state_scope: [nightwatchman, core]
+      state_trajectory: [minimal, strong]
+      tradition_stance: [restore, core]
+      scale_of_polity: [village_commune, strong]
+      religion_in_public_life: [established_church, strong]
+      hierarchy_stance: [natural_good, strong]
+      attitude_to_modernity: [reject_return, core]
+      urban_rural: [agrarian_rural, strong]
+      decision_procedure: [monarch, strong]
+
+  - id: bolo_bolo
+    name: Bolo'bolo
+    prior_weight: 0.03
+    blurb: "The planet reorganised into several hundred autonomous communities of about five hundred people, each with its own way of life."
+    positions:
+      scale_of_polity: [village_commune, core]
+      state_trajectory: [abolish_now, core]
+      federalism: [confederal, core]
+      money_form: [abolished, core]
+      technology_stance: [appropriate_scale, core]
+      work_ethic: [work_reduced, core]
+      welfare_provision: [communal_direct, core]
+      borders: [abolished, strong]
+      ecology_priority: [primary_frame, strong]
+      housing: [decommodified_commons, strong]
+      family_form: [communal_rearing, strong]
+
+  - id: neoism
+    name: Neoism
+    prior_weight: 0.02
+    blurb: "An anti-movement of shared pseudonyms and deliberate contradiction, refusing identity as a political act."
+    positions:
+      art_and_culture: [avant_garde_rupture, core]
+      utopian_horizon: [none_pragmatic, core]
+      organisation_form: [network, core]
+      rights_basis: [none_power, strong]
+      electoral_participation: [boycott, core]
+      epistemic_authority: [esoteric_initiation, typical]
+      tradition_stance: [reject, core]
+      state_trajectory: [abolish_now, typical]

@@ -1,0 +1,331 @@
+family: fascism
+label: Fascism & national socialism
+family_defaults:
+  art_and_culture: [propaganda_functional, typical]
+  attitude_to_modernity: [transcend_forward, typical]
+  borders: [closed, typical]
+  class_analysis: [rejected, typical]
+  colonialism_stance: [justified, typical]
+  constitutionalism: [revolutionary_legality, typical]
+  decision_procedure: [vanguard_party, typical]
+  economic_coordination: [indicative_planning, typical]
+  education_aim: [ideological_formation, typical]
+  electoral_participation: [tactical, typical]
+  epistemic_authority: [tradition, typical]
+  family_form: [patriarchal_household, typical]
+  federalism: [unitary, typical]
+  firm_form: [guild, typical]
+  gender_order: [traditional_complementary, typical]
+  growth_stance: [growth_essential, typical]
+  hierarchy_stance: [natural_good, typical]
+  human_nature: [fallen_needs_restraint, typical]
+  immigration: [restrict_sharply, typical]
+  internationalism: [national_interest, typical]
+  leadership_form: [charismatic_leader, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [retained_bounded, typical]
+  nation_concept: [ethnic, typical]
+  nationalism_stance: [core_value, typical]
+  organisation_form: [mass_party, typical]
+  policing: [professional, typical]
+  political_pluralism: [single_party, typical]
+  property_regime: [private_regulated, typical]
+  punishment: [retributive_harsh, typical]
+  race_politics: [hierarchy_asserted, typical]
+  religion_in_public_life: [culturally_grounded, typical]
+  reproductive_politics: [natalist_restrictive, typical]
+  rights_basis: [none_power, typical]
+  scale_of_polity: [national, typical]
+  secession_right: [none, typical]
+  sexuality_stance: [traditional_restrictive, typical]
+  sovereignty_locus: [nation, typical]
+  speech_norms: [ideologically_policed, typical]
+  state_scope: [total, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [restore, typical]
+  transition_method: [coup_vanguard, typical]
+  urban_rural: [balanced, typical]
+  utopian_horizon: [restorationist_golden_age, typical]
+  violence_legitimacy: [total_war, typical]
+  wage_labour: [regulated, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_is_duty, typical]
+ideologies:
+  - id: italian_fascism
+    name: "Italian Fascism"
+    prior_weight: 0.35
+    blurb: "The nation as a total organism above every class and individual, organised in corporations under one leader."
+    positions:
+      state_scope: [total, core]
+      leadership_form: [charismatic_leader, core]
+      political_pluralism: [single_party, core]
+      firm_form: [guild, core]
+      nationalism_stance: [core_value, core]
+      class_analysis: [rejected, core]
+      violence_legitimacy: [total_war, core]
+      hierarchy_stance: [natural_good, core]
+      sovereignty_locus: [nation, core]
+      speech_norms: [ideologically_policed, core]
+      art_and_culture: [propaganda_functional, strong]
+      tradition_stance: [restore, strong]
+      attitude_to_modernity: [transcend_forward, strong]
+      gender_order: [traditional_complementary, core]
+      transition_method: [coup_vanguard, strong]
+  - id: nazism
+    name: "National Socialism"
+    aliases: [Nazism, Hitlerism]
+    prior_weight: 0.35
+    blurb: "A racial state pursuing living space and biological hierarchy, with the leader's will as law."
+    positions:
+      race_politics: [hierarchy_asserted, core]
+      nation_concept: [ethnic, core]
+      leadership_form: [charismatic_leader, core]
+      state_scope: [total, core]
+      violence_legitimacy: [total_war, core]
+      political_pluralism: [single_party, core]
+      hierarchy_stance: [natural_good, core]
+      reproductive_politics: [natalist_restrictive, core]
+      rights_basis: [none_power, core]
+      speech_norms: [ideologically_policed, core]
+      colonialism_stance: [justified, core]
+      scale_of_polity: [imperial, strong]
+      economic_coordination: [indicative_planning, strong]
+      art_and_culture: [propaganda_functional, core]
+      immigration: [restrict_sharply, core]
+  - id: strasserism
+    name: "Strasserism"
+    prior_weight: 0.08
+    blurb: "National socialism's left wing — take the anti-capitalism seriously and break with big industry."
+    positions:
+      property_regime: [state_owned, core]
+      class_analysis: [producer_parasite, core]
+      nation_concept: [ethnic, core]
+      firm_form: [worker_cooperative, strong]
+      economic_coordination: [central_planning, strong]
+      leadership_form: [collective, strong]
+      nationalism_stance: [core_value, core]
+      internationalism: [isolationist, strong]
+      state_scope: [total, strong]
+      hierarchy_stance: [functional_necessary, typical]
+  - id: falangism
+    name: "Falangism"
+    prior_weight: 0.08
+    blurb: "National-syndicalism with Catholic and imperial nostalgia — vertical unions binding worker and owner."
+    positions:
+      firm_form: [guild, core]
+      religion_in_public_life: [established_church, core]
+      nationalism_stance: [core_value, core]
+      state_scope: [total, strong]
+      class_analysis: [rejected, core]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, strong]
+      scale_of_polity: [imperial, strong]
+      tradition_stance: [restore, core]
+      violence_legitimacy: [total_war, strong]
+      organisation_form: [union, typical]
+  - id: brazilian_integralism
+    name: "Brazilian Integralism"
+    aliases: [Salgado, Ação Integralista]
+    prior_weight: 0.03
+    blurb: "A spiritual nationalism of God, fatherland and family, explicitly rejecting racial hierarchy for a mixed nation."
+    positions:
+      religion_in_public_life: [culturally_grounded, core]
+      nation_concept: [cultural_linguistic, core]
+      race_politics: [colourblind_universalist, core]
+      state_scope: [total, strong]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, core]
+      family_form: [patriarchal_household, core]
+      class_analysis: [rejected, strong]
+      firm_form: [guild, strong]
+      hierarchy_stance: [natural_good, strong]
+  - id: rexism
+    name: "Rexism"
+    prior_weight: 0.02
+    blurb: "Catholic authoritarian nationalism against parliamentary corruption, radicalised by collaboration."
+    positions:
+      religion_in_public_life: [established_church, core]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, core]
+      class_analysis: [elite_mass, core]
+      state_scope: [total, strong]
+      nationalism_stance: [core_value, core]
+      tradition_stance: [restore, strong]
+      firm_form: [guild, typical]
+      violence_legitimacy: [total_war, strong]
+  - id: legionarism
+    name: "Legionarism"
+    aliases: [Iron Guard, Codreanu]
+    prior_weight: 0.04
+    blurb: "A mystical Orthodox brotherhood pursuing national resurrection through sacrifice and martyrdom."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      utopian_horizon: [transcendent_eschaton, core]
+      violence_legitimacy: [revolutionary_terror, core]
+      nation_concept: [ethnic, core]
+      organisation_form: [church_movement, core]
+      leadership_form: [charismatic_leader, core]
+      human_nature: [perfectible, strong]
+      urban_rural: [agrarian_rural, strong]
+      epistemic_authority: [revelation, strong]
+      education_aim: [ideological_formation, core]
+  - id: ustase
+    name: "Ustaše ideology"
+    prior_weight: 0.02
+    blurb: "Ethnoreligious nationalism seeking a racially and confessionally pure state by force."
+    positions:
+      nation_concept: [religious, core]
+      race_politics: [separatism, core]
+      violence_legitimacy: [total_war, core]
+      religion_in_public_life: [established_church, core]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, core]
+      nationalism_stance: [core_value, core]
+      state_scope: [total, strong]
+  - id: hungarism
+    name: "Hungarism"
+    aliases: [Arrow Cross, Szálasi]
+    prior_weight: 0.02
+    blurb: "A Carpathian-Danubian nation state under a self-appointed leader, with an agrarian and corporatist economy."
+    positions:
+      nation_concept: [ethnic, core]
+      scale_of_polity: [regional, core]
+      leadership_form: [charismatic_leader, core]
+      firm_form: [guild, strong]
+      urban_rural: [agrarian_rural, strong]
+      state_scope: [total, core]
+      race_politics: [hierarchy_asserted, core]
+      religion_in_public_life: [culturally_grounded, strong]
+      political_pluralism: [single_party, core]
+  - id: metaxism
+    name: "Metaxism"
+    aliases: [Third Hellenic Civilisation]
+    prior_weight: 0.02
+    blurb: "A disciplined national rebirth claiming to fuse classical Greece with Byzantium under a paternal dictator."
+    positions:
+      leadership_form: [charismatic_leader, core]
+      political_pluralism: [no_parties_traditional, core]
+      tradition_stance: [restore, core]
+      religion_in_public_life: [established_church, core]
+      nationalism_stance: [core_value, core]
+      state_scope: [total, strong]
+      education_aim: [ideological_formation, core]
+      art_and_culture: [preserve_canon, strong]
+      utopian_horizon: [restorationist_golden_age, core]
+  - id: austrofascism
+    name: "Austrofascism"
+    aliases: [Ständestaat]
+    prior_weight: 0.02
+    blurb: "A Catholic corporate state of estates, authoritarian but explicitly against racial nationalism."
+    positions:
+      firm_form: [guild, core]
+      religion_in_public_life: [theocratic, core]
+      political_pluralism: [no_parties_traditional, core]
+      race_politics: [colourblind_universalist, strong]
+      class_analysis: [status_group, core]
+      state_scope: [total, strong]
+      leadership_form: [charismatic_leader, strong]
+      decision_procedure: [clerical_authority, strong]
+      tradition_stance: [restore, core]
+  - id: salazarism
+    name: "Salazarism"
+    aliases: [Estado Novo]
+    prior_weight: 0.04
+    blurb: "Quiet Catholic authoritarianism — God, fatherland, family, empire and no politics at all."
+    positions:
+      religion_in_public_life: [established_church, core]
+      political_pluralism: [no_parties_traditional, core]
+      family_form: [patriarchal_household, core]
+      colonialism_stance: [justified, core]
+      state_scope: [developmental, strong]
+      firm_form: [guild, strong]
+      leadership_form: [technocratic_board, typical]
+      tradition_stance: [conserve, core]
+      growth_stance: [steady_state, typical]
+      speech_norms: [ideologically_policed, strong]
+  - id: clerical_fascism
+    name: "Clerical fascism"
+    prior_weight: 0.04
+    blurb: "Fascist mass politics carrying the authority of an established church."
+    positions:
+      religion_in_public_life: [theocratic, core]
+      political_pluralism: [single_party, core]
+      leadership_form: [charismatic_leader, core]
+      state_scope: [total, core]
+      decision_procedure: [clerical_authority, strong]
+      nationalism_stance: [core_value, core]
+      tradition_stance: [restore, core]
+      violence_legitimacy: [revolutionary_terror, strong]
+      family_form: [patriarchal_household, strong]
+  - id: action_francaise
+    name: "Integral nationalism"
+    aliases: [Maurras, Action Française]
+    prior_weight: 0.04
+    blurb: "The nation as the supreme value, restored by a hereditary monarchy and defended against internal enemies."
+    positions:
+      nationalism_stance: [core_value, core]
+      leadership_form: [hereditary, core]
+      decision_procedure: [monarch, core]
+      religion_in_public_life: [established_church, core]
+      tradition_stance: [restore, core]
+      federalism: [confederal, typical]
+      political_pluralism: [no_parties_traditional, core]
+      nation_concept: [cultural_linguistic, core]
+      hierarchy_stance: [natural_good, core]
+      epistemic_authority: [tradition, core]
+  - id: rhodesian_settler_nationalism
+    name: "Settler nationalism"
+    prior_weight: 0.02
+    blurb: "A minority settler community claiming permanent sovereignty and civilisational trusteeship over a majority."
+    positions:
+      race_politics: [hierarchy_asserted, core]
+      colonialism_stance: [justified, core]
+      nation_concept: [ethnic, core]
+      political_pluralism: [dominant_party, strong]
+      secession_right: [national_only, strong]
+      land_regime: [private_absolute, strong]
+      internationalism: [isolationist, strong]
+      violence_legitimacy: [total_war, strong]
+  - id: afrikaner_christian_nationalism
+    name: "Afrikaner Christian nationalism"
+    prior_weight: 0.02
+    blurb: "A covenant people with a divine calling, separating races by law as a religious duty."
+    positions:
+      race_politics: [separatism, core]
+      religion_in_public_life: [established_church, core]
+      nation_concept: [ethnic, core]
+      rights_basis: [divine_law, core]
+      language_politics: [national_language, core]
+      colonialism_stance: [justified, core]
+      family_form: [patriarchal_household, strong]
+      political_pluralism: [dominant_party, strong]
+      education_aim: [transmit_tradition, core]
+  - id: showa_statism
+    name: "Shōwa statism"
+    prior_weight: 0.02
+    blurb: "Military-led national mobilisation around the emperor, with pan-Asian empire as its stated purpose."
+    positions:
+      leadership_form: [hereditary, core]
+      state_scope: [total, core]
+      colonialism_stance: [justified, core]
+      scale_of_polity: [imperial, core]
+      legitimate_violence: [state_monopoly, core]
+      religion_in_public_life: [established_church, core]
+      political_pluralism: [no_parties_traditional, core]
+      economic_coordination: [indicative_planning, strong]
+      nationalism_stance: [core_value, core]
+  - id: neofascism
+    name: "Neo-fascism"
+    prior_weight: 0.12
+    blurb: "Postwar continuation of fascist politics within electoral forms, softened in language but not in aim."
+    positions:
+      nationalism_stance: [core_value, core]
+      immigration: [restrict_sharply, core]
+      leadership_form: [charismatic_leader, strong]
+      electoral_participation: [central, strong]
+      hierarchy_stance: [natural_good, strong]
+      tradition_stance: [restore, core]
+      state_scope: [developmental, strong]
+      nation_concept: [ethnic, strong]
+      speech_norms: [restricted_for_harm, typical]
+      class_analysis: [elite_mass, strong]

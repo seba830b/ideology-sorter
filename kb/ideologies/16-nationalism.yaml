@@ -1,0 +1,366 @@
+family: nationalism
+label: Nationalism & national liberation
+family_defaults:
+  art_and_culture: [popular_folk, typical]
+  class_analysis: [status_group, typical]
+  decision_procedure: [representative_election, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [civic_formation, typical]
+  electoral_participation: [central, typical]
+  human_nature: [historically_produced, typical]
+  internationalism: [national_interest, typical]
+  language_politics: [national_language, typical]
+  legitimate_violence: [state_monopoly, typical]
+  market_role: [retained_bounded, typical]
+  nationalism_stance: [core_value, typical]
+  political_pluralism: [multiparty, typical]
+  property_regime: [private_regulated, typical]
+  scale_of_polity: [national, typical]
+  sovereignty_locus: [nation, typical]
+  state_scope: [developmental, typical]
+  tradition_stance: [conserve, typical]
+  transition_method: [electoral, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  welfare_provision: [universal_public, typical]
+ideologies:
+  - id: civic_nationalism
+    name: "Civic nationalism"
+    prior_weight: 0.4
+    blurb: "The nation is whoever shares its laws and institutions, regardless of ancestry."
+    positions:
+      nation_concept: [civic, core]
+      nationalism_stance: [core_value, strong]
+      immigration: [manage, strong]
+      race_politics: [colourblind_universalist, core]
+      constitutionalism: [entrenched_rights, strong]
+      education_aim: [civic_formation, core]
+      religion_in_public_life: [secular_neutral, strong]
+      language_politics: [national_language, strong]
+      political_pluralism: [multiparty, core]
+  - id: ethnonationalism
+    name: "Ethnonationalism"
+    prior_weight: 0.3
+    blurb: "The nation is a people of common descent, and the state exists to serve it alone."
+    positions:
+      nation_concept: [ethnic, core]
+      nationalism_stance: [core_value, core]
+      immigration: [restrict_sharply, core]
+      borders: [closed, core]
+      race_politics: [separatism, strong]
+      language_politics: [national_language, core]
+      federalism: [unitary, strong]
+      tradition_stance: [restore, strong]
+      reproductive_politics: [natalist_restrictive, typical]
+  - id: romantic_nationalism
+    name: "Romantic nationalism"
+    prior_weight: 0.08
+    blurb: "Each people has a unique spirit expressed in its language, folklore and landscape, which the state must embody."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      art_and_culture: [popular_folk, core]
+      language_politics: [national_language, core]
+      tradition_stance: [restore, core]
+      urban_rural: [agrarian_rural, strong]
+      education_aim: [transmit_tradition, core]
+      nationalism_stance: [core_value, core]
+      epistemic_authority: [tradition, strong]
+  - id: anticolonial_nationalism
+    name: "Anti-colonial nationalism"
+    prior_weight: 0.25
+    blurb: "National independence as the precondition for any other freedom, won against an occupying power."
+    positions:
+      colonialism_stance: [reparative_decolonial, core]
+      nationalism_stance: [instrumental_for_liberation, core]
+      imperialism_analysis: [central_frame, core]
+      internationalism: [anti_imperialist_nationalist, core]
+      violence_legitimacy: [insurrectionary, strong]
+      state_scope: [developmental, strong]
+      education_aim: [critical_consciousness, strong]
+      nation_concept: [civic, typical]
+  - id: pan_africanism
+    name: "Pan-Africanism"
+    prior_weight: 0.15
+    blurb: "Africans on the continent and in the diaspora as one people, whose liberation must be continental."
+    positions:
+      scale_of_polity: [continental_bloc, core]
+      race_politics: [liberationist_nationalist, core]
+      colonialism_stance: [reparative_decolonial, core]
+      nation_concept: [diasporic, core]
+      imperialism_analysis: [central_frame, core]
+      federalism: [federal, strong]
+      internationalism: [anti_imperialist_nationalist, core]
+      education_aim: [critical_consciousness, strong]
+  - id: pan_arabism
+    name: "Pan-Arabism"
+    prior_weight: 0.1
+    blurb: "The Arabic-speaking peoples form one nation artificially divided by colonial borders."
+    positions:
+      scale_of_polity: [continental_bloc, core]
+      nation_concept: [cultural_linguistic, core]
+      language_politics: [national_language, core]
+      colonialism_stance: [reparative_decolonial, core]
+      internationalism: [anti_imperialist_nationalist, core]
+      religion_in_public_life: [secular_neutral, strong]
+      state_scope: [developmental, strong]
+      federalism: [federal, strong]
+  - id: baathism
+    name: "Ba'athism"
+    aliases: [Aflaq, Arab socialism]
+    prior_weight: 0.08
+    blurb: "Unity, freedom, socialism — one Arab nation with an eternal mission, built by a single party."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      political_pluralism: [single_party, core]
+      economic_coordination: [central_planning, strong]
+      religion_in_public_life: [secular_neutral, core]
+      scale_of_polity: [continental_bloc, core]
+      state_scope: [total, strong]
+      leadership_form: [charismatic_leader, strong]
+      property_regime: [state_owned, strong]
+      nationalism_stance: [core_value, core]
+  - id: nasserism
+    name: "Nasserism"
+    prior_weight: 0.06
+    blurb: "Arab socialism with land reform, nationalised industry and non-alignment against both blocs."
+    positions:
+      internationalism: [anti_imperialist_nationalist, core]
+      property_regime: [state_owned, core]
+      land_regime: [collectivised, strong]
+      state_scope: [developmental, core]
+      leadership_form: [charismatic_leader, core]
+      religion_in_public_life: [secular_neutral, strong]
+      political_pluralism: [single_party, strong]
+      scale_of_polity: [continental_bloc, strong]
+      imperialism_analysis: [central_frame, core]
+  - id: syrian_social_nationalism
+    name: "Syrian Social Nationalism"
+    aliases: [Saadeh, Greater Syria]
+    prior_weight: 0.02
+    blurb: "A natural Syrian nation defined by geography rather than language or religion, from the Taurus to Sinai."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      scale_of_polity: [regional, core]
+      religion_in_public_life: [militantly_secular, core]
+      sphere_separation: [church_state_separate, core]
+      political_pluralism: [single_party, strong]
+      state_scope: [total, strong]
+      nationalism_stance: [core_value, core]
+      leadership_form: [charismatic_leader, strong]
+      class_analysis: [rejected, strong]
+  - id: phalangism_lebanese
+    name: "Lebanese Phalangism"
+    aliases: [Kataeb]
+    prior_weight: 0.02
+    blurb: "A Christian-led Lebanon defined against Arab nationalism, organised on confessional lines."
+    positions:
+      nation_concept: [religious, core]
+      religion_in_public_life: [culturally_grounded, core]
+      political_pluralism: [multiparty, typical]
+      nationalism_stance: [core_value, core]
+      internationalism: [isolationist, strong]
+      legitimate_violence: [communal_militia, strong]
+      federalism: [confederal, typical]
+      immigration: [restrict_sharply, strong]
+  - id: kemalism
+    name: "Kemalism"
+    aliases: [Six Arrows]
+    prior_weight: 0.08
+    blurb: "Republicanism, secularism and state-led modernisation imposed from above on a new national identity."
+    positions:
+      religion_in_public_life: [militantly_secular, core]
+      sphere_separation: [church_state_separate, core]
+      nation_concept: [civic, core]
+      state_scope: [developmental, core]
+      attitude_to_modernity: [embrace, core]
+      language_politics: [national_language, core]
+      federalism: [unitary, core]
+      leadership_form: [charismatic_leader, strong]
+      education_aim: [civic_formation, core]
+      economic_coordination: [indicative_planning, strong]
+      tradition_stance: [reject, strong]
+  - id: labour_zionism
+    name: "Labour Zionism"
+    prior_weight: 0.08
+    blurb: "A Jewish nation rebuilt through collective agricultural settlement and socialist institutions."
+    positions:
+      nation_concept: [ethnic, core]
+      property_regime: [cooperative, core]
+      scale_of_polity: [village_commune, strong]
+      urban_rural: [back_to_land, strong]
+      work_ethic: [work_is_virtue, core]
+      religion_in_public_life: [secular_neutral, strong]
+      organisation_form: [union, strong]
+      nationalism_stance: [core_value, core]
+      economic_coordination: [mixed_economy, strong]
+  - id: revisionist_zionism
+    name: "Revisionist Zionism"
+    aliases: [Jabotinsky]
+    prior_weight: 0.06
+    blurb: "A sovereign Jewish majority secured by force and an iron wall, with a liberal market economy behind it."
+    positions:
+      nation_concept: [ethnic, core]
+      violence_legitimacy: [total_war, strong]
+      market_role: [central, core]
+      nationalism_stance: [core_value, core]
+      borders: [closed, strong]
+      state_scope: [limited, strong]
+      legitimate_violence: [state_monopoly, core]
+      religion_in_public_life: [secular_neutral, typical]
+  - id: territorialism
+    name: "Jewish Territorialism"
+    prior_weight: 0.02
+    blurb: "A Jewish homeland was urgently needed, but anywhere suitable would do — Palestine was not essential."
+    positions:
+      nation_concept: [diasporic, core]
+      nationalism_stance: [instrumental_for_liberation, core]
+      scale_of_polity: [regional, strong]
+      religion_in_public_life: [secular_neutral, strong]
+      transition_method: [exit_secession, core]
+      utopian_horizon: [none_pragmatic, typical]
+      borders: [controlled, typical]
+  - id: jewish_autonomism
+    name: "Jewish Autonomism"
+    aliases: [Dubnow]
+    prior_weight: 0.02
+    blurb: "National life secured through cultural self-government wherever Jews already live, not through territory."
+    positions:
+      nation_concept: [diasporic, core]
+      language_politics: [minority_protection, core]
+      federalism: [confederal, core]
+      scale_of_polity: [household, typical]
+      nationalism_stance: [instrumental_for_liberation, strong]
+      education_aim: [transmit_tradition, strong]
+      secession_right: [none, typical]
+      borders: [open, strong]
+  - id: bundism
+    name: "Bundism"
+    aliases: [doikayt, hereness]
+    prior_weight: 0.05
+    blurb: "Jewish socialism fought for here, in Yiddish, alongside other workers — not by emigrating to a state."
+    positions:
+      nation_concept: [diasporic, core]
+      language_politics: [minority_protection, core]
+      class_analysis: [central_marxist, core]
+      nationalism_stance: [hostile, strong]
+      organisation_form: [union, core]
+      internationalism: [proletarian_internationalist, core]
+      federalism: [confederal, strong]
+      education_aim: [critical_consciousness, strong]
+      transition_method: [general_strike, strong]
+  - id: irish_republicanism
+    name: "Irish republicanism"
+    prior_weight: 0.08
+    blurb: "A sovereign all-island republic, historically pursued by physical force against partition."
+    positions:
+      nation_concept: [civic, strong]
+      colonialism_stance: [oppose, core]
+      violence_legitimacy: [insurrectionary, strong]
+      secession_right: [national_only, core]
+      nationalism_stance: [instrumental_for_liberation, core]
+      federalism: [unitary, strong]
+      class_analysis: [central_marxist, typical]
+      language_politics: [national_language, strong]
+  - id: abertzale_left
+    name: "Basque abertzale left"
+    prior_weight: 0.05
+    blurb: "Basque national liberation and socialism together, with a distinct language at its centre."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      language_politics: [national_language, core]
+      secession_right: [national_only, core]
+      class_analysis: [central_marxist, strong]
+      scale_of_polity: [regional, core]
+      nationalism_stance: [instrumental_for_liberation, core]
+      colonialism_stance: [oppose, strong]
+      decision_procedure: [direct_democracy, strong]
+      federalism: [confederal, strong]
+  - id: catalan_independentism
+    name: "Catalan independentism"
+    prior_weight: 0.05
+    blurb: "A distinct nation with its own language seeking statehood through referendum and civil mobilisation."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      language_politics: [national_language, core]
+      secession_right: [national_only, core]
+      decision_procedure: [direct_democracy, core]
+      violence_legitimacy: [never, strong]
+      scale_of_polity: [regional, core]
+      electoral_participation: [central, core]
+      internationalism: [cosmopolitan_universal, typical]
+  - id: scottish_civic_nationalism
+    name: "Scottish civic nationalism"
+    prior_weight: 0.05
+    blurb: "Independence argued in civic and social-democratic terms rather than ethnic ones."
+    positions:
+      nation_concept: [civic, core]
+      secession_right: [national_only, core]
+      state_scope: [welfare_broad, core]
+      immigration: [welcome, strong]
+      decision_procedure: [representative_election, strong]
+      electoral_participation: [central, core]
+      violence_legitimacy: [never, core]
+      internationalism: [cosmopolitan_universal, strong]
+  - id: kurdish_national_liberation
+    name: "Kurdish national liberation"
+    prior_weight: 0.07
+    blurb: "A stateless people divided across four states, organising for self-determination in each."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      language_politics: [minority_protection, core]
+      secession_right: [national_only, core]
+      colonialism_stance: [oppose, core]
+      legitimate_violence: [communal_militia, strong]
+      federalism: [confederal, strong]
+      nationalism_stance: [instrumental_for_liberation, core]
+      gender_order: [structural_liberation, typical]
+  - id: tamil_eelam_nationalism
+    name: "Tamil Eelam nationalism"
+    prior_weight: 0.02
+    blurb: "A separate Tamil homeland in the island's north and east, pursued after decades of majoritarian rule."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      secession_right: [national_only, core]
+      language_politics: [minority_protection, core]
+      violence_legitimacy: [insurrectionary, strong]
+      legitimate_violence: [communal_militia, strong]
+      scale_of_polity: [regional, core]
+      nationalism_stance: [instrumental_for_liberation, core]
+  - id: quebec_sovereigntism
+    name: "Quebec sovereigntism"
+    prior_weight: 0.04
+    blurb: "A French-speaking nation within Canada seeking sovereignty, historically by referendum."
+    positions:
+      nation_concept: [cultural_linguistic, core]
+      language_politics: [national_language, core]
+      secession_right: [national_only, core]
+      decision_procedure: [direct_democracy, strong]
+      religion_in_public_life: [militantly_secular, strong]
+      state_scope: [welfare_broad, strong]
+      violence_legitimacy: [never, strong]
+      electoral_participation: [central, core]
+  - id: cascadian_bioregionalism
+    name: "Bioregional secessionism"
+    aliases: [Cascadia]
+    prior_weight: 0.03
+    blurb: "Political borders should follow watersheds and ecosystems, not the lines colonial states drew."
+    positions:
+      scale_of_polity: [bioregional, core]
+      ecology_priority: [primary_frame, core]
+      secession_right: [universal_right, core]
+      federalism: [confederal, core]
+      nation_concept: [post_national, strong]
+      indigenous_sovereignty: [land_return, strong]
+      technology_stance: [appropriate_scale, strong]
+      decision_procedure: [direct_democracy, strong]
+  - id: micronationalism
+    name: "Micronationalism"
+    prior_weight: 0.02
+    blurb: "Declare your own sovereign state, whether as protest, art project or genuine legal experiment."
+    positions:
+      scale_of_polity: [household, core]
+      secession_right: [exit_by_individual, core]
+      sovereignty_locus: [individual, strong]
+      utopian_horizon: [none_pragmatic, strong]
+      transition_method: [exit_secession, core]
+      constitutionalism: [no_constitution, typical]
+      political_pluralism: [no_parties_traditional, typical]

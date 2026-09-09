@@ -1,0 +1,251 @@
+family: technocracy
+label: Technocracy & managerialism
+family_defaults:
+  art_and_culture: [commercial_free, typical]
+  attitude_to_modernity: [embrace, typical]
+  class_analysis: [rejected, typical]
+  decision_procedure: [expert_rule, typical]
+  distribution_principle: [need, typical]
+  economic_coordination: [indicative_planning, typical]
+  education_aim: [technical_capacity, typical]
+  electoral_participation: [tactical, typical]
+  epistemic_authority: [scientific_expertise, typical]
+  firm_form: [state_enterprise, typical]
+  gender_order: [formal_equality, typical]
+  growth_stance: [growth_managed, typical]
+  healthcare: [universal_public, typical]
+  hierarchy_stance: [functional_necessary, typical]
+  housing: [social_provision, typical]
+  human_nature: [historically_produced, typical]
+  land_regime: [state_owned, typical]
+  leadership_form: [technocratic_board, typical]
+  market_role: [transitional, typical]
+  money_form: [abolished, typical]
+  political_pluralism: [no_parties_traditional, typical]
+  property_regime: [state_owned, typical]
+  religion_in_public_life: [militantly_secular, typical]
+  scale_of_polity: [continental_bloc, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [developmental, typical]
+  technology_stance: [accelerate, typical]
+  tradition_stance: [reject, typical]
+  transition_method: [gradual_reform, typical]
+  urban_rural: [urban_industrial, typical]
+  utopian_horizon: [achievable_new_order, typical]
+  welfare_provision: [universal_public, typical]
+  work_ethic: [work_reduced, typical]
+ideologies:
+  - id: technocracy_movement
+    name: "Technocracy Incorporated"
+    aliases: [the Technate, energy certificates]
+    prior_weight: 0.06
+    blurb: "Abolish money and prices; engineers allocate goods by energy accounting across a whole continent."
+    positions:
+      money_form: [abolished, core]
+      decision_procedure: [expert_rule, core]
+      leadership_form: [technocratic_board, core]
+      economic_coordination: [moneyless_planning, core]
+      scale_of_polity: [continental_bloc, core]
+      epistemic_authority: [scientific_expertise, core]
+      political_pluralism: [no_parties_traditional, core]
+      distribution_principle: [equal_share, core]
+      technology_stance: [accelerate, strong]
+      work_ethic: [work_reduced, strong]
+      market_role: [abolished, core]
+  - id: managerialism
+    name: "Managerialism"
+    aliases: [Burnham, the managerial revolution]
+    prior_weight: 0.05
+    blurb: "Neither capitalists nor workers rule — the managers who actually run large organisations do."
+    positions:
+      class_analysis: [elite_mass, core]
+      leadership_form: [technocratic_board, core]
+      decision_procedure: [expert_rule, core]
+      firm_form: [state_enterprise, strong]
+      economic_coordination: [indicative_planning, strong]
+      hierarchy_stance: [functional_necessary, core]
+      utopian_horizon: [none_pragmatic, strong]
+      state_scope: [developmental, strong]
+  - id: cybersocialism
+    name: "Cybersocialism"
+    aliases: [Project Cybersyn, Stafford Beer]
+    prior_weight: 0.06
+    blurb: "Real-time data networks let a socialist economy self-regulate without either markets or a central bureaucracy."
+    positions:
+      economic_coordination: [indicative_planning, core]
+      technology_stance: [accelerate, core]
+      decision_procedure: [expert_rule, strong]
+      property_regime: [state_owned, core]
+      epistemic_authority: [scientific_expertise, core]
+      firm_form: [worker_cooperative, strong]
+      hierarchy_stance: [minimise, strong]
+      market_role: [abolished, strong]
+      leadership_form: [technocratic_board, strong]
+  - id: ogas_cybernetic_planning
+    name: "Cybernetic planning"
+    aliases: [OGAS, Glushkov]
+    prior_weight: 0.03
+    blurb: "A nationwide computer network running the plan, replacing paperwork with optimisation."
+    positions:
+      economic_coordination: [central_planning, core]
+      technology_stance: [accelerate, core]
+      decision_procedure: [expert_rule, core]
+      epistemic_authority: [scientific_expertise, core]
+      property_regime: [state_owned, core]
+      leadership_form: [technocratic_board, core]
+      market_role: [abolished, core]
+      state_scope: [total, strong]
+  - id: linear_programming_socialism
+    name: "Linear-programming socialism"
+    aliases: [Kantorovich, optimal planning]
+    prior_weight: 0.02
+    blurb: "Shadow prices computed from the plan's own optimisation, giving efficiency without private ownership."
+    positions:
+      economic_coordination: [indicative_planning, core]
+      epistemic_authority: [scientific_expertise, core]
+      decision_procedure: [expert_rule, core]
+      property_regime: [state_owned, core]
+      market_role: [transitional, strong]
+      leadership_form: [technocratic_board, strong]
+      distribution_principle: [contribution_labour, strong]
+  - id: calculation_in_kind
+    name: "Calculation in kind"
+    aliases: [Neurath]
+    prior_weight: 0.03
+    blurb: "Plan in physical quantities and human needs directly; a single money measure hides what actually matters."
+    positions:
+      money_form: [abolished, core]
+      economic_coordination: [moneyless_planning, core]
+      market_role: [abolished, core]
+      distribution_principle: [need, core]
+      epistemic_authority: [scientific_expertise, strong]
+      decision_procedure: [expert_rule, strong]
+      housing: [decommodified_commons, strong]
+      welfare_provision: [universal_public, strong]
+  - id: parecon
+    name: "Participatory economics"
+    aliases: [Parecon, Albert, Hahnel]
+    prior_weight: 0.06
+    blurb: "Workers' and consumers' councils negotiate an annual plan, with balanced job complexes and no markets."
+    positions:
+      economic_coordination: [indicative_planning, core]
+      decision_procedure: [direct_democracy, core]
+      firm_form: [worker_cooperative, core]
+      market_role: [abolished, core]
+      distribution_principle: [contribution_labour, core]
+      hierarchy_stance: [abolish, core]
+      work_ethic: [work_reduced, strong]
+      property_regime: [communal, strong]
+      leadership_form: [rotating_delegates, strong]
+  - id: inclusive_democracy
+    name: "Inclusive Democracy"
+    aliases: [Fotopoulos]
+    prior_weight: 0.02
+    blurb: "Political, economic, social and ecological democracy at once, with a non-market voucher system for allocation."
+    positions:
+      decision_procedure: [direct_democracy, core]
+      money_form: [abolished, core]
+      market_role: [abolished, core]
+      scale_of_polity: [municipal_confederal, core]
+      ecology_priority: [primary_frame, core]
+      distribution_principle: [need, core]
+      federalism: [confederal, core]
+      hierarchy_stance: [abolish, core]
+      economic_coordination: [moneyless_planning, strong]
+  - id: algorithmic_governance
+    name: "Algorithmic governance"
+    prior_weight: 0.05
+    blurb: "Public decisions delegated to models and metrics, on the view that they beat human judgement."
+    positions:
+      decision_procedure: [expert_rule, core]
+      technology_stance: [accelerate, core]
+      epistemic_authority: [scientific_expertise, core]
+      leadership_form: [technocratic_board, core]
+      political_pluralism: [no_parties_traditional, strong]
+      state_scope: [developmental, strong]
+      speech_norms: [restricted_for_harm, typical]
+  - id: meritocratic_technocracy
+    name: "Meritocratic technocracy"
+    prior_weight: 0.08
+    blurb: "Government by demonstrated competence, selected by examination and record rather than by popularity."
+    positions:
+      decision_procedure: [expert_rule, core]
+      education_aim: [technical_capacity, core]
+      hierarchy_stance: [functional_necessary, core]
+      political_pluralism: [no_parties_traditional, strong]
+      epistemic_authority: [scientific_expertise, core]
+      leadership_form: [technocratic_board, core]
+      state_scope: [developmental, strong]
+      distribution_principle: [desert_market, strong]
+  - id: taylorism_politics
+    name: "Scientific management politics"
+    aliases: [Taylorism]
+    prior_weight: 0.03
+    blurb: "Apply time-and-motion rationality to the whole of society; there is one best way to do everything."
+    positions:
+      decision_procedure: [expert_rule, core]
+      work_ethic: [work_is_duty, core]
+      epistemic_authority: [scientific_expertise, core]
+      hierarchy_stance: [functional_necessary, core]
+      firm_form: [investor_owned, strong]
+      education_aim: [technical_capacity, core]
+      growth_stance: [growth_essential, strong]
+      technology_stance: [industrial_neutral, strong]
+  - id: resource_based_economy
+    name: "Resource-based economy"
+    aliases: [Venus Project, Zeitgeist Movement]
+    prior_weight: 0.04
+    blurb: "Automation plus a survey of the earth's resources makes money, work and government unnecessary."
+    positions:
+      money_form: [abolished, core]
+      work_ethic: [work_abolished, core]
+      technology_stance: [accelerate, core]
+      economic_coordination: [moneyless_planning, core]
+      decision_procedure: [expert_rule, core]
+      market_role: [abolished, core]
+      distribution_principle: [need, core]
+      state_trajectory: [wither_away, strong]
+      utopian_horizon: [achievable_new_order, core]
+      scale_of_polity: [world_federal, strong]
+  - id: comprehensive_design_science
+    name: "Design science revolution"
+    aliases: [Buckminster Fuller]
+    prior_weight: 0.03
+    blurb: "Solve politics by design — do more with less until scarcity, and the fights over it, disappear."
+    positions:
+      technology_stance: [accelerate, core]
+      epistemic_authority: [scientific_expertise, core]
+      utopian_horizon: [achievable_new_order, core]
+      scale_of_polity: [world_federal, core]
+      transition_method: [prefigurative, core]
+      growth_stance: [growth_managed, strong]
+      electoral_participation: [boycott, strong]
+      distribution_principle: [need, strong]
+  - id: digital_planning_socialism
+    name: "Digital planning socialism"
+    aliases: [Cockshott, Cottrell]
+    prior_weight: 0.04
+    blurb: "Modern computing makes labour-time planning tractable, so the socialist calculation debate is settled."
+    positions:
+      economic_coordination: [central_planning, core]
+      distribution_principle: [contribution_labour, core]
+      money_form: [abolished, core]
+      technology_stance: [accelerate, core]
+      decision_procedure: [direct_democracy, strong]
+      property_regime: [state_owned, core]
+      epistemic_authority: [scientific_expertise, core]
+      market_role: [abolished, core]
+      class_analysis: [central_marxist, strong]
+  - id: state_capacity_technocracy
+    name: "State capacity technocracy"
+    prior_weight: 0.06
+    blurb: "The state should be small in scope but genuinely competent, building infrastructure and clearing red tape."
+    positions:
+      state_scope: [developmental, core]
+      decision_procedure: [expert_rule, strong]
+      epistemic_authority: [scientific_expertise, core]
+      market_role: [retained_bounded, core]
+      growth_stance: [growth_essential, core]
+      technology_stance: [accelerate, strong]
+      housing: [social_provision, typical]
+      utopian_horizon: [gradual_improvement, core]

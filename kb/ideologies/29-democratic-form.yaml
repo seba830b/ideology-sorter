@@ -1,0 +1,180 @@
+family: democratic_form
+label: Constitutional & democratic-form
+family_defaults:
+  attitude_to_modernity: [embrace, typical]
+  class_analysis: [rejected, typical]
+  constitutionalism: [entrenched_rights, typical]
+  decision_procedure: [direct_democracy, typical]
+  economic_coordination: [mixed_economy, typical]
+  education_aim: [civic_formation, typical]
+  electoral_participation: [central, typical]
+  epistemic_authority: [popular_reason, typical]
+  federalism: [federal, typical]
+  gender_order: [formal_equality, typical]
+  hierarchy_stance: [minimise, typical]
+  human_nature: [cooperative_good, typical]
+  leadership_form: [rotating_delegates, typical]
+  market_role: [retained_bounded, typical]
+  nationalism_stance: [indifferent, typical]
+  political_pluralism: [multiparty, typical]
+  reform_vs_rupture: [reform, typical]
+  religion_in_public_life: [secular_neutral, typical]
+  rights_basis: [positive_legal, typical]
+  scale_of_polity: [national, typical]
+  speech_norms: [broadly_free, typical]
+  state_scope: [welfare_broad, typical]
+  technology_stance: [industrial_neutral, typical]
+  tradition_stance: [critically_inherit, typical]
+  transition_method: [gradual_reform, typical]
+  utopian_horizon: [gradual_improvement, typical]
+  welfare_provision: [universal_public, typical]
+ideologies:
+  - id: sortition
+    name: "Sortition"
+    aliases: [demarchy, government by lottery]
+    prior_weight: 0.06
+    blurb: "Fill offices by random selection from the citizenry; elections produce an aristocracy, lotteries a sample."
+    positions:
+      decision_procedure: [sortition, core]
+      political_pluralism: [no_parties_councils, core]
+      electoral_participation: [boycott, core]
+      leadership_form: [rotating_delegates, core]
+      epistemic_authority: [popular_reason, core]
+      hierarchy_stance: [minimise, core]
+      constitutionalism: [entrenched_rights, typical]
+      class_analysis: [elite_mass, strong]
+  - id: citizens_assembly_maximalism
+    name: "Citizens' assembly maximalism"
+    prior_weight: 0.04
+    blurb: "Randomly selected deliberating assemblies should decide the questions parliaments cannot."
+    positions:
+      decision_procedure: [sortition, core]
+      epistemic_authority: [popular_reason, core]
+      political_pluralism: [multiparty, typical]
+      education_aim: [civic_formation, core]
+      leadership_form: [rotating_delegates, strong]
+      transition_method: [gradual_reform, core]
+      hierarchy_stance: [minimise, strong]
+  - id: liquid_democracy
+    name: "Liquid democracy"
+    prior_weight: 0.04
+    blurb: "Vote yourself or delegate your vote to whoever you trust on that issue, and revoke it at any time."
+    positions:
+      decision_procedure: [delegation_recallable, core]
+      technology_stance: [accelerate, strong]
+      organisation_form: [network, core]
+      political_pluralism: [no_parties_councils, strong]
+      leadership_form: [rotating_delegates, core]
+      epistemic_authority: [popular_reason, strong]
+      hierarchy_stance: [minimise, strong]
+  - id: delegative_democracy
+    name: "Delegative democracy"
+    prior_weight: 0.03
+    blurb: "Mandated, instantly recallable delegates rather than representatives with independent judgement."
+    positions:
+      decision_procedure: [delegation_recallable, core]
+      leadership_form: [rotating_delegates, core]
+      political_pluralism: [no_parties_councils, core]
+      federalism: [confederal, strong]
+      hierarchy_stance: [minimise, core]
+      electoral_participation: [central, typical]
+  - id: futarchy
+    name: "Futarchy"
+    aliases: [Hanson]
+    prior_weight: 0.03
+    blurb: "Vote on values, bet on beliefs — elect the goal, then let prediction markets pick the policy."
+    positions:
+      decision_procedure: [prediction_market, core]
+      epistemic_authority: [market_aggregation, core]
+      political_pluralism: [no_parties_traditional, strong]
+      technology_stance: [accelerate, strong]
+      leadership_form: [none, strong]
+      market_role: [central, strong]
+      state_scope: [limited, typical]
+  - id: epistocracy
+    name: "Epistocracy"
+    aliases: [Brennan]
+    prior_weight: 0.04
+    blurb: "Weight political power by demonstrated competence; universal suffrage produces uninformed harm."
+    positions:
+      decision_procedure: [expert_rule, core]
+      epistemic_authority: [scientific_expertise, core]
+      hierarchy_stance: [functional_necessary, core]
+      education_aim: [technical_capacity, core]
+      political_pluralism: [multiparty, typical]
+      class_analysis: [elite_mass, typical]
+      constitutionalism: [entrenched_rights, strong]
+  - id: consociationalism
+    name: "Consociationalism"
+    aliases: [consensus democracy]
+    prior_weight: 0.05
+    blurb: "Divided societies governed by grand coalition, mutual veto and segmental autonomy."
+    positions:
+      decision_procedure: [consensus, core]
+      political_pluralism: [multiparty, core]
+      federalism: [federal, core]
+      class_analysis: [status_group, core]
+      language_politics: [minority_protection, core]
+      constitutionalism: [entrenched_rights, core]
+      rights_basis: [collective_historical, strong]
+      leadership_form: [collective, strong]
+  - id: directorial_system
+    name: "Directorial government"
+    prior_weight: 0.02
+    blurb: "A collegial executive of equals with a rotating chair, and no single head of government at all."
+    positions:
+      leadership_form: [collective, core]
+      decision_procedure: [consensus, strong]
+      political_pluralism: [multiparty, core]
+      federalism: [confederal, strong]
+      hierarchy_stance: [minimise, core]
+      constitutionalism: [entrenched_rights, strong]
+  - id: anational_federalism
+    name: "Anational federalism"
+    prior_weight: 0.02
+    blurb: "Federate by function and voluntary association rather than by territory or nationality."
+    positions:
+      federalism: [confederal, core]
+      nation_concept: [post_national, core]
+      scale_of_polity: [household, strong]
+      secession_right: [exit_by_individual, core]
+      borders: [abolished, strong]
+      organisation_form: [federation, core]
+      nationalism_stance: [hostile, strong]
+  - id: constitutional_patriotism
+    name: "Constitutional patriotism"
+    prior_weight: 0.04
+    blurb: "Loyalty owed to a set of democratic principles rather than to a people, a history or a soil."
+    positions:
+      nation_concept: [civic, core]
+      constitutionalism: [entrenched_rights, core]
+      rights_basis: [positive_legal, core]
+      nationalism_stance: [hostile, strong]
+      immigration: [welcome, strong]
+      education_aim: [civic_formation, core]
+      religion_in_public_life: [secular_neutral, core]
+      tradition_stance: [critically_inherit, strong]
+  - id: direct_democracy_maximalism
+    name: "Direct democracy maximalism"
+    prior_weight: 0.08
+    blurb: "Referendums on everything; representatives are an unnecessary filter between people and decisions."
+    positions:
+      decision_procedure: [direct_democracy, core]
+      political_pluralism: [no_parties_councils, strong]
+      electoral_participation: [central, core]
+      epistemic_authority: [popular_reason, core]
+      leadership_form: [none, strong]
+      hierarchy_stance: [minimise, core]
+      scale_of_polity: [municipal_confederal, typical]
+  - id: mixed_constitution
+    name: "Mixed constitution"
+    prior_weight: 0.03
+    blurb: "Balance monarchy, aristocracy and democracy against each other so that none can dominate."
+    positions:
+      constitutionalism: [entrenched_rights, core]
+      hierarchy_stance: [functional_necessary, core]
+      decision_procedure: [representative_election, strong]
+      leadership_form: [hereditary, typical]
+      political_pluralism: [multiparty, typical]
+      tradition_stance: [conserve, core]
+      epistemic_authority: [tradition, strong]
